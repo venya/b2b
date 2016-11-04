@@ -1,0 +1,43 @@
+
+@mixin box-shadow($params) {
+	box-shadow: $params;
+}
+
+@mixin border-radius($params) {
+	border-radius: $params;
+}
+
+@mixin clearfix() {
+	overflow: hidden;
+}
+
+@mixin define-size($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+@mixin define-font($font-name, $filename) {
+	@font-face {
+		font-family: $font-name;
+		src: url('../fonts/#{ $filename }.eot');
+		src: url('../fonts/#{ $filename }.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/#{ $filename }.woff2') format('woff2'),
+			url('../fonts/#{ $filename }.woff') format('woff'),
+			url('../fonts/#{ $filename }.ttf') format('truetype'),
+			url('../fonts/#{ $filename }.svg?#fontawesomeregular') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+}
+
+@mixin iconic-font($font-name) {
+	display: inline-block;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 100%;
+	font-family: $font-name;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

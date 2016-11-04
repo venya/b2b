@@ -1,0 +1,44 @@
+
+@include define-font('FA', $font-iconset);
+
+.icon {
+	// $size: 20px;
+	// width: $size;
+	// height: $size;
+	display: inline-block;
+	font-family: 'FA';
+	font-weight: normal;
+	font-size: 21px;
+	line-height: 100%;
+	font-style: normal;
+	overflow: hidden;
+	vertical-align: middle;
+
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	&-menu:before	{content: '\f0c9';}
+	&-trash:before	{content: '\f014';}
+	&-down:before	{content: '\f107';}
+	&-up:before		{content: '\f106';}
+	&-search:before	{content: '\f002';}
+	&-user:before	{content: '\f007';}
+	&-plus:before	{content: '\f067';}
+	&-tag:before	{content: '\f02b';}
+	&-more:before	{content: '\f142';}
+
+	&-online {
+		$size: 10px;
+		@include define-size($size, $size);
+		@include border-radius($size/2);
+		border: none;
+		background: #7ad298;
+	}
+}
+
+@mixin icon-glyph($id, $character) {
+	.icon-#{$id}:before {
+		content: $character;
+	}
+}

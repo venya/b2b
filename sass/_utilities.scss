@@ -1,0 +1,21 @@
+
+
+a {
+	color: $color-link;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+.muted {
+	color: $color-gray;
+}
+
+.pull-right {
+	float: right;
+}
+
+.pull-left {
+	float: left;
+}

@@ -1,0 +1,108 @@
+
+@import "variables";
+@import "mixins";
+
+@import "layout";
+@import "utilities";
+@import "buttons";
+@import "icons";
+@import "catalog";
+@import "nav";
+
+
+.order-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	&__item {
+		border-bottom: solid $color-light-silver 1px;
+		padding: $v-spacing $h-padding;
+		@include clearfix;
+	}
+
+	&__cell {
+		display: inline-block;
+		border: solid $color-silver 1px;
+		height: $orderlist-cell-size;
+		line-height: $orderlist-cell-size;
+		box-sizing: border-box;
+		min-width: $orderlist-cell-size;
+		text-align: center;
+		vertical-align: top;
+		float: right;
+		margin-left: $orderlist-cell-spacing;
+	}
+
+	&__qty {
+		float: left;
+		margin: 0 $orderlist-cell-spacing 0 0;
+	}
+
+	&__price {
+		min-width: $orderlist-price-width;
+		font-size: 16px;
+	}
+
+	&__old-price {
+		display: block;
+		color: $color-gray;
+		font-size: 13px;
+	}
+
+	&__product {
+		display: block;
+		font-size: 1.3em;
+	}
+
+	&__discount {
+		color: $color-silver;
+	}
+
+	&__info {
+		display: block;
+		color: $color-gray;
+		font-size: 0.9em;
+		overflow: hidden;
+	}
+
+	&__discount_active {
+		.order-list__discount {
+			border-color: $color-light-blue;
+			color: $color-blue;
+		}
+		.order-list__price {
+			line-height: 100%;
+			padding-top: $v-spacing;
+		}
+	}
+}
+
+
+.totals {
+	background: $color-superlight;
+	font-size: 1.2em;
+
+	&__row {
+		border-top: dashed $color-light-silver 2px;
+		padding: $v-spacing $h-padding;
+		@include clearfix;
+
+		&:first-child {
+			border-top: none;
+		}
+	}
+
+	&__amount {
+		float: right;
+	}
+
+	&__charge {
+		background: $color-green;
+		color: $color-white;
+		text-transform: uppercase;
+		padding: $v-spacing $h-padding;
+		line-height: 160%;
+		font-size: 1.6em;
+	}
+}
