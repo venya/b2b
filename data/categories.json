@@ -1,0 +1,10 @@
+[
+	{"code": "CCS", "info": "Cold Coffee specials"},
+	{"code": "HCS", "info": "Hot Coffee specials"},
+	{"code": "DES", "info": "Desserts"},
+	{"code": "DRK", "info": "Drinks"},
+	{"code": "SAL", "info": "Salads"},
+	{"code": "CC", "info": "Coffee Classics"},
+	{"code": "FRU", "info": "Fruits"},
+	{"code": "HD", "info": "Hotdogs"},
+]
