@@ -1,10 +1,17 @@
 
+html {
+	height: 100%;
+	// display: flex;
+}
 
 body {
 	margin: 0;
 	font-family: $font-base-family;
 	font-size: $font-base-size;
 	color: $color-black;
+	display: flex;
+	height: 100%;
+	flex-direction: row;
 }
 
 .header {
@@ -25,19 +32,38 @@ body {
 
 
 main {
-	position: absolute;
 	width: $main-width;
-	left: 0;
-	height: 100%;
+	// position: absolute;
+	// left: 0;
+	// height: 100%;
+	// z-index: 1;
 	@include box-shadow(2px 0 5px rgba(0,0,0, .2));
-	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
 }
 
 aside {
-	position: absolute;
+	// position: absolute;
 	width: 100%-$main-width;
-	right: 0;
-	height: 100%;
-	overflow: auto;
+	// right: 0;
+	// height: 100%;
+	// overflow: auto;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
 	background: $color-superlight;
+	@include box-shadow(inset 2px 0 5px rgba(0,0,0, .2));
+
+	.header {
+		@include box-shadow(inset 2px 0 5px rgba(0,0,0, .2));
+	}
+}
+
+.categories {
+	flex: 1 0;
+}
+
+.products {
+	flex: 3 1;
 }
