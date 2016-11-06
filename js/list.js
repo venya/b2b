@@ -9,9 +9,9 @@ function scrolledList(name, dataPath, renderer, options) {
 	// Initialize
 	_load(dataPath);
 	_enableSwipe();
-	_pager.add();
-	_pager.add();
-	_pager.add();
+	_pager.add( function(){ _swipe.slide(0); } );
+	_pager.add( function(){ _swipe.slide(1); } );
+	_pager.add( function(){ _swipe.slide(2); } );
 
 	function _enableSwipe() {
 		// add required classes to underlying html structure

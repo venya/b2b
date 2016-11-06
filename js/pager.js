@@ -7,9 +7,15 @@ function pager(container) {
 	// Initialize
 	_node.empty();
 
-	function add() {
+	function add(handler) {
 		// console.log('add page: '+_pages);
-		_node.append('<a class="pager__item" href="#" data-page="'+_pages+'" title="Navigate to page '+(_pages+1)+'"></a>');
+		var el = $(document.createElement('a'))
+			.addClass('pager__item')
+			.attr('href', '#')
+			.attr('title', 'Navigate to page '+(_pages+1))
+			.click(handler);
+		// _node.append('<a class="pager__item" href="#" data-page="'+_pages+'" title="Navigate to page '+(_pages+1)+'"></a>');
+		_node.append(el);
 		if (!_current) activate(_pages);
 		_pages++;
 	};
