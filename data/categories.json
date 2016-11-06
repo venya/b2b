@@ -1,10 +1,10 @@
 [
-	{"code": "CCS", "info": "Cold Coffee specials"},
-	{"code": "HCS", "info": "Hot Coffee specials"},
-	{"code": "DES", "info": "Desserts"},
-	{"code": "DRK", "info": "Drinks"},
-	{"code": "SAL", "info": "Salads"},
-	{"code": "CC", "info": "Coffee Classics"},
-	{"code": "FRU", "info": "Fruits"},
-	{"code": "HD", "info": "Hotdogs"},
+	{"id": "CCS", "info": "Cold Coffee specials"},
+	{"id": "HCS", "info": "Hot Coffee specials"},
+	{"id": "DES", "info": "Desserts"},
+	{"id": "DRK", "info": "Drinks", "default": true},
+	{"id": "SAL", "info": "Salads"},
+	{"id": "CC", "info": "Coffee Classics"},
+	{"id": "FRU", "info": "Fruits"},
+	{"id": "HD", "info": "Hotdogs"}
 ]
