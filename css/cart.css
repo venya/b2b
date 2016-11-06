@@ -41,10 +41,10 @@ aside {
   aside .header {
     box-shadow: inset 2px 0 5px rgba(0, 0, 0, 0.2); }
 
-.categories {
-  flex: 1 0; }
+.catalog#categories {
+  flex: 0; }
 
-.products {
+.catalog#products {
   flex: 3 1; }
 
 a {
@@ -122,112 +122,118 @@ a {
     border: none;
     background: #7ad298; }
 
-.categories {
+.catalog {
   margin: 8px 19px;
-  min-height: 160px; }
-
-.categories-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  flex: 1;
-  overflow: hidden; }
-  .categories-list__item {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column; }
+  .catalog__list {
+    overflow: hidden;
+    position: relative;
+    flex: 1; }
+  .catalog__page {
+    float: left;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap; }
+  .catalog__item {
     width: 25%;
     float: left;
     padding: 0 4px 8px;
     box-sizing: border-box; }
-    .categories-list__item#CCS .categories-list__item_link {
-      background-color: #ebf5e5; }
-    .categories-list__item#HCS .categories-list__item_link {
-      background-color: #dbf0f3; }
-    .categories-list__item#DES .categories-list__item_link {
-      background-color: #dcdef7; }
-    .categories-list__item#DRK .categories-list__item_link {
-      background-color: #d9e8f2; }
-    .categories-list__item#SAL .categories-list__item_link {
-      background-color: #f8efd3; }
-    .categories-list__item#CC .categories-list__item_link {
-      background-color: #f9dede; }
-    .categories-list__item#FRU .categories-list__item_link {
-      background-color: #e3d8e6; }
-    .categories-list__item#HD .categories-list__item_link {
-      background-color: #e8e3e2; }
-    .categories-list__item_link {
-      display: block;
-      height: 66px;
-      box-sizing: border-box;
-      padding: 8px 8px;
-      text-decoration: none !important;
-      color: inherit;
-      background: #eeeeee; }
-    .categories-list__item_title {
-      margin: 0;
-      font-size: 22px;
-      line-height: 100%;
-      margin-bottom: 7px; }
-    .categories-list__item_info {
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis; }
-  .categories-list__item_active .categories-list__item_link {
+  .catalog__card {
+    display: block;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    color: inherit; }
+    .catalog__card:hover {
+      box-shadow: inset 0 0 2px rgba(0, 0, 32, 0.4); }
+    .catalog__card:active {
+      background: #90caf9;
+      box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.3); }
+
+#categories {
+  min-height: 170px; }
+
+.category-card {
+  height: 66px;
+  padding: 8px 8px; }
+  #CCS .category-card {
+    background-color: #ebf5e5; }
+  #HCS .category-card {
+    background-color: #dbf0f3; }
+  #DES .category-card {
+    background-color: #dcdef7; }
+  #DRK .category-card {
+    background-color: #d9e8f2; }
+  #SAL .category-card {
+    background-color: #f8efd3; }
+  #CC .category-card {
+    background-color: #f9dede; }
+  #FRU .category-card {
+    background-color: #e3d8e6; }
+  #HD .category-card {
+    background-color: #e8e3e2; }
+  .category-card__link {
+    height: 66px;
+    padding: 8px 8px; }
+  .category-card__title {
+    margin: 0;
+    font-size: 22px;
+    line-height: 100%;
+    margin-bottom: 7px; }
+  .category-card__info {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .active .category-card {
     background: #90caf9 !important;
     color: #fff;
     border-bottom: solid #2e9adb 4px; }
 
-.products {
-  margin: 8px 19px; }
-
-.products-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  flex: 1;
-  display: flex;
-  flex-flow: row wrap;
-  overflow: hidden; }
-  .products-list__item {
-    width: 25%;
-    padding: 0 4px 8px;
-    box-sizing: border-box; }
-    .products-list__item_link {
-      display: block;
-      height: 160px;
-      line-height: 160px;
-      box-sizing: border-box;
-      background: #d9e8f2;
-      text-decoration: none;
-      position: relative;
-      text-align: center;
-      color: inherit; }
-      .products-list__item_link:hover {
-        box-shadow: inset 0 0 2px rgba(0, 0, 32, 0.4); }
-      .products-list__item_link:active {
-        background: #90caf9;
-        box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3); }
-    .products-list__item_pic {
-      max-width: 100%;
-      max-height: 100%;
-      vertical-align: middle;
-      border: none; }
-    .products-list__item_price {
-      position: absolute;
-      top: 8px;
-      right: 8px;
-      line-height: normal;
-      font-size: 1.2em; }
-    .products-list__item_title {
-      position: absolute;
-      bottom: 8px;
-      left: 8px;
-      line-height: normal;
-      text-align: left; }
+.product-card {
+  height: 160px;
+  line-height: 160px;
+  background: #d9e8f2;
+  position: relative;
+  text-align: center; }
+  .product-card__link {
+    height: 160px;
+    line-height: 160px;
+    background: #d9e8f2;
+    position: relative;
+    text-align: center; }
+  .product-card__pic {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+    border: none; }
+  .product-card__price {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    line-height: normal;
+    font-size: 1.2em; }
+  .product-card__title {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    line-height: normal;
+    text-align: left; }
 
 .pager {
   text-align: center;
   font-size: 0;
   margin: 0;
-  padding: 0 23px 8px; }
+  padding: 0 23px 8px;
+  flex: 0; }
   .pager__item {
     display: inline-block;
     box-sizing: border-box;
@@ -313,18 +319,6 @@ a {
   .dropdown.open .dropdown__handle, .dropdown__hover:hover .dropdown__handle {
     background: #2e9adb;
     color: #fff; }
-
-.swipe {
-  overflow: hidden;
-  position: relative; }
-  .swipe__wrap {
-    overflow: hidden;
-    position: relative; }
-  .swipe__item {
-    float: left;
-    width: 100%;
-    position: relative;
-    overflow: hidden; }
 
 .order-list {
   list-style: none;

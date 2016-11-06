@@ -14,7 +14,6 @@ function pager(container) {
 			.attr('href', '#')
 			.attr('title', 'Navigate to page '+(_pages+1))
 			.click(handler);
-		// _node.append('<a class="pager__item" href="#" data-page="'+_pages+'" title="Navigate to page '+(_pages+1)+'"></a>');
 		_node.append(el);
 		if (!_current) activate(_pages);
 		_pages++;

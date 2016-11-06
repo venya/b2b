@@ -9,13 +9,13 @@ $(function() {
 	});
 
 	window.categories = new scrolledList(
-		"categories",
+		$("#categories"),
 		"data/categories.json",
 		function(cat) {
-			return '<li class="categories-list__item'+ (cat.default ? ' categories-list__item_active' : '') +'" id="' + cat.id + '">'
-				+'<a class="categories-list__item_link" href="#">'
-					+'<div class="categories-list__item_title">' + cat.id + '</div>'
-					+'<div class="categories-list__item_info">' + cat.info + '</div>'
+			return '<li class="catalog__item'+ (cat.default ? ' active' : '') +'" id="' + cat.id + '">'
+				+'<a class="catalog__card category-card" href="#">'
+					+'<div class="category-card__title">' + cat.id + '</div>'
+					+'<div class="category-card__info">' + cat.info + '</div>'
 				+'</a>'
 			+'</li>';
 			}
@@ -23,14 +23,14 @@ $(function() {
 
 
 	window.products = new scrolledList(
-		"products",
+		$("#products"),
 		"data/products.json",
 		function(item){
-			return '<li class="products-list__item">'
-				+'<a class="products-list__item_link" href="#">'
-					+'<img class="products-list__item_pic" src="'+ item.pic +'">'
-					+'<span class="products-list__item_price">$'+ item.price.toFixed(2) +'</span>'
-					+'<span class="products-list__item_title">'+ item.title +'</span>'
+			return '<li class="catalog__item">'
+				+'<a class="catalog__card product-card" href="#">'
+					+'<img class="product-card__pic" src="'+ item.pic +'">'
+					+'<span class="product-card__price">$'+ item.price.toFixed(2) +'</span>'
+					+'<span class="product-card__title">'+ item.title +'</span>'
 				+'</a>'
 			+'</li>';
 			}

@@ -51,7 +51,7 @@ $pager-spacing: $h-spacing;
 $pager-color-border: $color-blue;
 $pager-color-normal: $color-white;
 $pager-color-active: $color-blue;
-$pager-full-height: $pager-handle-size + $pager-handle-size;
+$pager-full-height: $pager-handle-size + $pager-handle-size*2;
 
 // Catalog: categories
 $categories-per-row: 4;

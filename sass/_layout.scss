@@ -60,10 +60,10 @@ aside {
 	}
 }
 
-.categories {
-	flex: 1 0;
+.catalog#categories {
+	flex: 0;
 }
 
-.products {
+.catalog#products {
 	flex: 3 1;
 }

@@ -1,10 +1,11 @@
 
-function scrolledList(name, dataPath, renderer, options) {
+function scrolledList(container, dataPath, renderer, options) {
 	// var _selector = name;
-	var _node = $('.'+name+'-list');
-	var _swipe;
+	var _node = container;
 	var _perPage = 12;
-	var _pager = new pager($('#'+name).children('.pager'));
+	var _swipe;
+	var _currentPage = container.find('.catalog__page');
+	var _pager = new pager(_node.children('.pager'));
 
 	// Initialize
 	_load(dataPath);
@@ -14,13 +15,8 @@ function scrolledList(name, dataPath, renderer, options) {
 	_pager.add( function(){ _swipe.slide(2); } );
 
 	function _enableSwipe() {
-		// add required classes to underlying html structure
-		var el = $('#'+name);
-		el.addClass('swipe');
-		el.children('').first().addClass('swipe__wrap');
-		el.children('').first().children().addClass('swipe__item');
 		// attach and initialize Swipe component
-		_swipe = new Swipe(el.get(0), {
+		_swipe = new Swipe(_node.get(0), {
 			draggable: true,
 			continuous: false,
 			stopPropagation: true,
@@ -34,9 +30,9 @@ function scrolledList(name, dataPath, renderer, options) {
 	function _load(path) {
 		$.ajax({url: path, dataType: 'json'})
 		.done(function(data) {// Success: populate list with data received
-			_node.empty();
+			_currentPage.empty();
 			$.each(data, function(id, item) {
-				_node.append(renderer(item));
+				_currentPage.append(renderer(item));
 			})
 		})
 		.fail(function(data) {
