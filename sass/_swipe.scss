@@ -1,0 +1,19 @@
+
+
+.swipe {
+	overflow: hidden;
+	// visibility: hidden;
+	position: relative;
+
+	&__wrapper {
+		overflow: hidden;
+		position: relative;
+	}
+
+	&__item {
+		float: left;
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+	}
+}

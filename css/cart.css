@@ -121,9 +121,12 @@ a {
     border: none;
     background: #7ad298; }
 
+.categories {
+  margin: 8px 23px; }
+
 .categories-list {
   list-style: none;
-  padding: 8px 23px;
+  padding: 0;
   margin: 0;
   flex: 1;
   overflow: hidden; }
@@ -170,9 +173,12 @@ a {
     color: #fff;
     border-bottom: solid #2e9adb 4px; }
 
+.products {
+  margin: 8px 23px; }
+
 .products-list {
   list-style: none;
-  padding: 8px 23px;
+  padding: 0;
   margin: 0;
   flex: 1;
   overflow: hidden; }
@@ -303,6 +309,18 @@ a {
   .dropdown.open .dropdown__handle, .dropdown__hover:hover .dropdown__handle {
     background: #2e9adb;
     color: #fff; }
+
+.swipe {
+  overflow: hidden;
+  position: relative; }
+  .swipe__wrapper {
+    overflow: hidden;
+    position: relative; }
+  .swipe__item {
+    float: left;
+    width: 100%;
+    position: relative;
+    overflow: hidden; }
 
 .order-list {
   list-style: none;

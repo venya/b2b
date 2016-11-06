@@ -1,10 +1,20 @@
 
-function scrolledList(selector, dataPath, renderer) {
-	var _path = dataPath;
-	var _selector = selector;
-	var _node = $(selector);
+function scrolledList(name, dataPath, renderer, options) {
+	var _selector = name;
+	var _node = $('.'+name+'-list');
+	var _swipe;
 
-	_load(_path);
+	// Initialize
+	_load(dataPath);
+	_enableSwipe();
+
+	function _enableSwipe() {
+		var el = $('#'+name);
+		el.addClass('swipe');
+		el.children('').first().addClass('swipe__wrap');
+		el.children('').first().children().addClass('swipe__item');
+		_swipe = new Swipe(el.get(0), { draggable: true, continuous: false, stopPropagation:true });
+	}
 
 	function _load(path) {
 		$.ajax({url: path, dataType: 'json'})
@@ -12,21 +22,13 @@ function scrolledList(selector, dataPath, renderer) {
 			// Populate list with data received
 			_node.empty();
 			$.each(data, function(id, item) {
-				console.log(item);
+				// console.log(item);
 				_node.append(renderer(item));
 			})
 		})
 		.fail(function(data) {
 			console.log('failed loading: ' + path);
 		})
-	}
-
-	function select(id) {
-		console.log('Set selection: '+id);
-	}
-
-	return {
-		select: select,
 	}
 }
 
@@ -40,7 +42,7 @@ $(function() {
 	});
 
 	window.categories = new scrolledList(
-		".categories-list",
+		"categories",
 		"data/categories.json",
 		function(cat) {
 			return '<li class="categories-list__item'+ (cat.default ? ' categories-list__item_active' : '') +'" id="' + cat.id + '">'
@@ -52,8 +54,9 @@ $(function() {
 			}
 		);
 
+
 	window.products = new scrolledList(
-		".products-list",
+		"products",
 		"data/products.json",
 		function(item){
 			return '<li class="products-list__item">'
