@@ -1,5 +1,6 @@
 .categories {
-	margin: $v-spacing $h-padding;
+	margin: $v-spacing $h-padding - $h-spacing/2;
+	min-height: $categories-item-height*2 + $v-spacing + $pager-full-height;
 }
 
 .categories-list {
@@ -13,7 +14,8 @@
 	&__item {
 		width: 100% / $categories-per-row;
 		float: left;
-		padding: 0 $h-spacing $v-spacing 0;
+		// padding: 0 $h-spacing $v-spacing 0;
+		padding: 0 $h-spacing/2 $v-spacing;
 		box-sizing: border-box;
 
 		&#CCS &_link { background-color: #ebf5e5; }
@@ -58,7 +60,7 @@
 
 
 .products {
-	margin: $v-spacing $h-padding;
+	margin: $v-spacing $h-padding - $h-spacing/2;
 }
 
 .products-list {
@@ -67,17 +69,21 @@
 	padding: 0;
 	margin: 0;
 	flex: 1;
+	display: flex;
+	flex-flow: row wrap;
 	@include clearfix;
 
 	&__item {
 		width: 100% / $products-per-row;
-		float: left;
-		padding: 0 $h-spacing $v-spacing 0;
+		// float: left;
+		// padding: 0 $h-spacing $v-spacing 0;
+		padding: 0 $h-spacing/2 $v-spacing;
 		box-sizing: border-box;
 
 		&_link {
 			display: block;
 			height: $products-item-height;
+			height: 100% /3;
 			line-height: $products-item-height;
 			box-sizing: border-box;
 			background: $products-color-bg;

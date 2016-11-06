@@ -6,17 +6,17 @@
 	margin: 0;
 	width: 100%;
 	box-sizing: border-box;
-	display: table;
-	table-layout: fixed;
+	display: flex;
+	flex-direction: row;
 	border: none;
 	border-collapse: collapse;
 
 	&__item {
-		display: table-cell;
+		flex: 1;
 		border-left: solid $color-silver 1px;
 
 		&:first-child {
-			border-color: none;
+			border: none;
 		}
 	}
 
@@ -63,6 +63,7 @@
 		font-weight: $font-base-weight;
 		text-transform: none; 
 		text-align: left;
+		z-index: 1;
 		@include box-shadow(1px 2px 6px rgba(0,0,0,.3));
 
 		&_up {
