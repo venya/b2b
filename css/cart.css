@@ -41,10 +41,10 @@ aside {
     box-shadow: inset 2px 0 5px rgba(0, 0, 0, 0.2); }
 
 .categories {
-  flex: 1 0; }
+  flex: 0; }
 
 .products {
-  flex: 3 1; }
+  flex: 1 1; }
 
 a {
   color: #2e9adb;
@@ -122,7 +122,8 @@ a {
     background: #7ad298; }
 
 .categories {
-  margin: 8px 23px; }
+  margin: 8px 19px;
+  min-height: 170px; }
 
 .categories-list {
   list-style: none;
@@ -133,7 +134,7 @@ a {
   .categories-list__item {
     width: 25%;
     float: left;
-    padding: 0 8px 8px 0;
+    padding: 0 4px 8px;
     box-sizing: border-box; }
     .categories-list__item#CCS .categories-list__item_link {
       background-color: #ebf5e5; }
@@ -174,22 +175,24 @@ a {
     border-bottom: solid #2e9adb 4px; }
 
 .products {
-  margin: 8px 23px; }
+  margin: 8px 19px; }
 
 .products-list {
   list-style: none;
   padding: 0;
   margin: 0;
   flex: 1;
+  display: flex;
+  flex-flow: row wrap;
   overflow: hidden; }
   .products-list__item {
     width: 25%;
-    float: left;
-    padding: 0 8px 8px 0;
+    padding: 0 4px 8px;
     box-sizing: border-box; }
     .products-list__item_link {
       display: block;
       height: 162px;
+      height: 100% /3;
       line-height: 162px;
       box-sizing: border-box;
       background: #d9e8f2;
@@ -314,7 +317,7 @@ a {
 .swipe {
   overflow: hidden;
   position: relative; }
-  .swipe__wrapper {
+  .swipe__wrap {
     overflow: hidden;
     position: relative; }
   .swipe__item {
