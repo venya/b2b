@@ -28,7 +28,7 @@ $(function() {
 		function(item){
 			return '<li class="catalog__item">'
 				+'<a class="catalog__card product-card" href="#">'
-					+'<img class="product-card__pic" src="'+ item.pic +'">'
+					+(item.pic ? ('<img class="product-card__pic" src="'+ item.pic +'">') : '')
 					+'<span class="product-card__price">$'+ item.price.toFixed(2) +'</span>'
 					+'<span class="product-card__title">'+ item.title +'</span>'
 				+'</a>'
