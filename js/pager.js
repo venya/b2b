@@ -21,7 +21,7 @@ function pager(container) {
 	};
 
 	function activate(index) {
-		console.log('activage page: '+index);
+		// console.log('activage page: '+index);
 		if (_current)
 			_current.removeClass('pager__item_active');
 		_current = _node.find(':eq('+ index +')');
