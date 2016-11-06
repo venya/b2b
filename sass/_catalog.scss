@@ -15,6 +15,7 @@
 	&__page {
 		float: left;
 		width: 100%;
+		height: 100%;
 		position: relative;
 		overflow: hidden;
 		flex: 1;
@@ -99,11 +100,19 @@
 
 
 .product-card {
-	height: $products-item-height;
-	line-height: $products-item-height;
+	// min-height: $products-item-height;
+	height: 100%;
+	// line-height: $products-item-height;
 	background: $products-color-bg;
 	position: relative;
 	text-align: center;
+
+	&:before {
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		height: 100%;
+	}
 
 	&__link {
 		height: $products-item-height;
