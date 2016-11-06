@@ -200,6 +200,7 @@ a {
     border-bottom: solid #2e9adb 4px; }
 
 .product-card {
+  min-height: 125px;
   height: 100%;
   background: #d9e8f2;
   position: relative;
@@ -210,8 +211,8 @@ a {
     vertical-align: middle;
     height: 100%; }
   .product-card__link {
-    height: 160px;
-    line-height: 160px;
+    height: 125px;
+    line-height: 125px;
     background: #d9e8f2;
     position: relative;
     text-align: center; }
