@@ -10,20 +10,20 @@
 		overflow: hidden;
 		position: relative;
 		flex: 1;
+
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
 	}
 
 	&__page {
-		float: left;
 		width: 100%;
-		height: 100%;
 		position: relative;
 		overflow: hidden;
-		flex: 1;
 
 		list-style: none;
 		padding: 0;
 		margin: 0;
-		// @include clearfix;
 		display: flex;
 		flex-flow: row wrap;
 	}
@@ -33,6 +33,8 @@
 		float: left;
 		padding: 0 $h-spacing/2 $v-spacing;
 		box-sizing: border-box;
+		display: flex;
+		// position: relative;
 	}
 
 	&__card {
@@ -40,6 +42,7 @@
 		box-sizing: border-box;
 		text-decoration: none!important;
 		color: inherit;
+		width: 100%;
 
 		&:hover {
 			@include box-shadow(inset 0 0 2px rgba(0,0,32, .4));
@@ -59,7 +62,7 @@
 }
 
 .category-card {
-	height: $categories-item-height;
+	// height: $categories-item-height;
 	padding: $v-spacing $h-spacing;
 
 	#CCS & { background-color: #ebf5e5; }
@@ -98,14 +101,14 @@
 
 
 
-
 .product-card {
-	min-height: $products-item-height;
-	height: 100%;
-	// line-height: $products-item-height;
+	// min-height: $products-item-height;
+	// height: 100%;
 	background: $products-color-bg;
 	position: relative;
 	text-align: center;
+	// position: absolute;
+	flex: 1;
 
 	&:before {
 		content: "";
@@ -123,8 +126,8 @@
 	}
 
 	&__pic {
-		max-width: 100%;
-		max-height: 100%;
+		max-width: 90%;
+		max-height: 90%;
 		vertical-align: middle;
 		border: none;
 	}
