@@ -19,6 +19,10 @@ function pager(container) {
 		_pages++;
 	};
 
+	function totalPages() {
+		return _pages;
+	};
+
 	function activate(index) {
 		// console.log('activage page: '+index);
 		if (_current)
@@ -30,5 +34,6 @@ function pager(container) {
 	return {
 		add: add,
 		activate: activate,
+		totalPages: totalPages,
 	}
 }

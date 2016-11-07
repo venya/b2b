@@ -6,5 +6,20 @@
 	{"id": "SAL", "info": "Salads"},
 	{"id": "CC", "info": "Coffee Classics"},
 	{"id": "FRU", "info": "Fruits"},
-	{"id": "HD", "info": "Hotdogs"}
+	{"id": "HD", "info": "Hotdogs"},
+
+	{"id": "DRK", "info": "Drinks"},
+	{"id": "SAL", "info": "Salads"},
+	{"id": "CC", "info": "Coffee Classics"},
+	{"id": "FRU", "info": "Fruits"},
+	{"id": "HD", "info": "Hotdogs"},
+	{"id": "CCS", "info": "Cold Coffee specials"},
+	{"id": "HCS", "info": "Hot Coffee specials"},
+	{"id": "DES", "info": "Desserts"},
+
+	{"id": "DES", "info": "Desserts"},
+	{"id": "CCS", "info": "Cold Coffee specials"},
+	{"id": "HCS", "info": "Hot Coffee specials"},
+	{"id": "DRK", "info": "Drinks"},
+	{"id": "SAL", "info": "Salads"}
 ]
