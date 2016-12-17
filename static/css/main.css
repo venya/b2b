@@ -1,0 +1,52 @@
+body {
+	margin: 0;
+	font: 12px Roboto;
+	background: #e6e6e6;
+	color: #444;
+}
+
+header {
+	background: #2E99DB;
+	color: white;
+	height: 60px;
+}
+header:before,
+header:end {
+	content: "";
+	display: table;
+	/*clear: both;*/
+}
+
+header.prelogin {
+	height: 150px;
+	position: relative;
+}
+
+.prelogin .logo {
+	width: 100px;
+	height: 100px;
+	background: white;
+	border: solid #e6e6e6 20px;
+	border-radius: 100px;
+	position: absolute;
+	bottom: -70px;
+	margin-left: -70px;
+	left: 50%;
+
+	color: black;
+	font-size: 80px;
+	line-height: 80px;
+	text-align: center;
+}
+.prelogin .logo:before {
+	content: "e";
+}
+
+.prelogin.loading {
+	position: absolute;
+	top: 50%;
+	color: #999;
+	font-size: 20px;
+	text-align: center;
+	width: 100%;
+}
