@@ -18,11 +18,11 @@ define(function(require) {
 	app.title = 'Durandal Example';
 
 	app.configurePlugins({
-		// router:true,
+		router:true,
 		// dialog: true
 	});
 
 	app.start().then(function() {
-		app.setRoot('home');
+		app.setRoot('shell');
 	});
 });

@@ -1,6 +1,6 @@
 define(function(require) {
 
-	var app = require('durandal/app');
+	// var app = require('durandal/app');
 	var ko = require('knockout');
 
 	return {
