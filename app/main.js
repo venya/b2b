@@ -23,6 +23,6 @@ define(function(require) {
 	});
 
 	app.start().then(function() {
-		app.setRoot('shell');
+		app.setRoot('activate');
 	});
 });

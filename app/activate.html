@@ -1,0 +1,24 @@
+<div>
+	<header class="prelogin">
+		<div class="logo"></div>
+		<i class="icon icon-help"></i>
+	</header>
+	<section>
+		<div class="container container-prelogin">
+			<p>To activate this device as POS terminal please enter your eHopper enterprise ID and license key:</p>
+			<label class="form-group input-group" data-bind="css: companyIdFocused() ? 'focus' : '' ">
+				<label for="company_id">Company ID:</label>
+				<input id="company_id" placeholder="required" autofocus required data-bind="value: companyId, valueUpdate: 'input', hasFocus: companyIdFocused">
+				<i class="icon icon-clear" data-bind="visible: companyId()!='', click: clearCompanyId"></i>
+			</label>
+
+			<label class="form-group input-group" data-bind="css: licenseKeyFocused() ? 'focus' : '' ">
+				<label for="license_key">License Key:</label>
+				<input id="license_key" placeholder="required" required data-bind="value: licenseKey, valueUpdate: 'input', hasFocus: licenseKeyFocused">
+				<i class="icon icon-clear" data-bind="visible: licenseKey()!='', click: clearLicenseKey"></i>
+			</label>
+
+			<button class="btn btn-primary" type="submit">Activate</button>
+		</div>
+	</section>
+</div>
