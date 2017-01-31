@@ -33,6 +33,17 @@ main.pos {
 	}
 }
 
+
+
 section {
 	padding: 20px;
+}
+
+
+
+section.categories {
+	background: $color-silver-light;
+	text-align: center;
+	min-height: 170px;
+	padding-top: 70px;
 }

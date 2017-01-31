@@ -3,11 +3,15 @@
 
 $color-blue: #2e99db;
 $color-white: #fff;
-$color-silver-light: #eeeeee;
-$color-silver-superlight: #f4f4f4; //f8f8f8 is too light?
+$color-silver: #aaa;
+$color-silver-light: #e8e8e8;
+$color-silver-superlight: #f6f6f6; //f8f8f8 is too light?
 $color-gray: #434c55;
+$color-pre-black: #333;
 
 //	Elements colors
+$body-background: $color-silver-superlight;
+$color-delimiter: rgba(black, .16);
 $color-mask-background: rgba($color-gray, .7);
 $color-menu-text: #c6c9cc;
 $color-menu-hover: #3c637d;
@@ -21,14 +25,19 @@ $font-weight-medium: 500;
 $font-weight-bold: 700;
 
 $font-base-family: "Open Sans", Roboto, Arial;
-$font-base-size: 14px;
+$font-base-size: 13px;
 $font-base-weight: $font-weight-light;
 
 
 
+//	Base sizing
+
+$base-spacing: 10px;
+$base-double-spacing: 2*$base-spacing;
+
+
 //	Layout
 
-$body-background: $color-silver-superlight;
 
 $header-height: 50px;
 $header-font-size: 20px;
@@ -46,6 +55,16 @@ $menu-width: 300px;
 $menu-item-height: 50px;
 $menu-font-size: 16px;
 $menu-animation-time: .3s;
+
+
+//	Inputs
+
+$input-font-size: 14px;
+$input-font-weight: $font-weight-normal;
+
+$toolbar-background: $color-silver-light;
+$toolbar-height: 60px;
+
 
 
 //	Icons

@@ -74,12 +74,13 @@
 
 	&__mask {
 		background: rgba($color-gray, 0);
-		transition: background-color $menu-animation-time;
+		transition: background-color 0;
 		z-index: -1;
 		display: block;
 	}
 
 	&-active + .menu__mask {
 		background: $menu-mask;
+		transition-duration: $menu-animation-time;
 	}
 }
