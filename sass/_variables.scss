@@ -1,0 +1,55 @@
+
+//	Global Color Palette
+
+$color-blue: #2e99db;
+$color-white: #fff;
+$color-silver-light: #eeeeee;
+$color-silver-superlight: #f4f4f4; //f8f8f8 is too light?
+$color-gray: #434c55;
+
+//	Elements colors
+$color-mask-background: rgba($color-gray, .7);
+$color-menu-text: #c6c9cc;
+$color-menu-hover: #3c637d;
+$color-menu-active: #3c637d;
+
+
+//	Fonts
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+$font-base-family: "Open Sans", Roboto, Arial;
+$font-base-size: 14px;
+$font-base-weight: $font-weight-light;
+
+
+
+//	Layout
+
+$body-background: $color-silver-superlight;
+
+$header-height: 50px;
+$header-font-size: 20px;
+$header-background: $color-blue;
+$header-color: $color-white;
+
+
+//	Main Menu
+
+$menu-background: $color-gray;
+$menu-color: $color-menu-text;
+$color-menu-active-text: $color-white;
+$menu-mask: $color-mask-background;
+$menu-width: 300px;
+$menu-item-height: 50px;
+$menu-font-size: 16px;
+$menu-animation-time: .3s;
+
+
+//	Icons
+
+$icon-size: 40px;
+$icon-width: $icon-size;
+$icon-height: $icon-size;

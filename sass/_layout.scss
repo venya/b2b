@@ -1,0 +1,29 @@
+
+
+
+body {
+	background: $body-background;
+	font: $font-base-size $font-base-family;
+	font-weight: $font-base-weight;
+}
+
+
+
+header {
+	background: $header-background;
+	color: $header-color;
+	font-size: $header-font-size;
+	font-weight: $font-weight-medium;
+	height: $header-height;
+	line-height: $header-height;
+	cursor: default;
+
+	& .icon.pull-left,
+	& .icon.pull-right {
+		margin: 5px 10px;
+	}
+}
+
+.cutout-left {
+	box-shadow: inset 7px 0 4px -4px rgba(0,0,0, .2);
+}

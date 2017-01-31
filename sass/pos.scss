@@ -1,0 +1,38 @@
+// 
+//	Main CSS file assembly for eHopper POS (2017 version)
+//	©2017 B2B Soft
+//	author: Veniamin Zolotukhin <venya@venya.com>
+
+@import "reset";
+@import "mixins";
+@import "variables";
+@import "layout";
+@import "menu";
+@import "buttons";
+@import "icons";
+@import "utilities";
+
+
+
+
+// TEMPORARY CODE (should be refactored)
+
+
+main.pos {
+	$catalog-width: 55%;
+
+	main {
+		width: 100% - $catalog-width;
+		overflow: hidden;
+	}
+
+	aside {
+		float: right;
+		width: $catalog-width;
+		min-height: 300px;
+	}
+}
+
+section {
+	padding: 20px;
+}

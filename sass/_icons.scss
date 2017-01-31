@@ -1,0 +1,19 @@
+
+
+.icon {
+	display: inline-block;
+	width: $icon-width;
+	height: $icon-height;
+	// Temporarily stub
+	background: rgba(0,0,0, .05);
+	text-align: center;
+	line-height: $icon-height;
+	font-size: 24px;
+
+
+	&:before {content: "©";}
+	&-menu:before {content: "≡";}
+	&-delete:before {content: "×";}
+	&-search:before {content: "S";}
+	&-back:before {content: "<";}
+}
