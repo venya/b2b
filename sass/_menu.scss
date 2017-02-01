@@ -9,6 +9,7 @@
 	width: $menu-width;
 	background: $menu-background;
 	z-index: 2;
+	overflow-y: auto;
 
 	&__mask {
 		display: none;
@@ -45,19 +46,25 @@
 		line-height: $menu-item-height;
 		border-bottom: solid $color-menu-border 1px;
 
+
+		&-active &-link {
+			background: $color-menu-current;
+			color: $color-menu-current-text;
+		}
+
 		&-link {
 			display: block;
 			color: $menu-color;
 			text-decoration: none;
 
 			&:hover {
-				background: $color-menu-active;
+				background: $color-menu-current;
 			}
-		}
 
-		&-active &-link {
-			background: $color-menu-active;
-			color: $color-menu-active-text;
+			&:active {
+				background: $color-menu-active;
+				color: $color-menu-active-text;
+			}
 		}
 
 		&-icon {
@@ -90,4 +97,14 @@
 		background: $menu-mask;
 		transition-duration: $menu-animation-time;
 	}
+
+	header {
+		background: $menu-background;
+		transition: background-color $menu-animation-time;
+	}
+
+	&-active header {
+		background: $header-background;
+	}
 }
+

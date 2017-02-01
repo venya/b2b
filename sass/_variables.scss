@@ -15,8 +15,10 @@ $color-delimiter: rgba(black, .16);
 $color-mask-background: rgba($color-gray, .7);
 $color-menu-text: #7D838B;
 $color-menu-hover: #4C5560;
-$color-menu-active: #4C5560;
+$color-menu-current: #4C5560;
 $color-menu-border: $color-menu-hover;
+$color-menu-active: $color-blue;
+$color-menu-active-text: $color-white;
 
 $color-muted-visibility: .5;
 $color-text-muted: $color-silver;
@@ -61,7 +63,7 @@ $header-color: $color-white;
 
 $menu-background: $color-gray;
 $menu-color: $color-menu-text;
-$color-menu-active-text: $color-white;
+$color-menu-current-text: $color-white;
 $menu-mask: $color-mask-background;
 $menu-width: 300px;
 $menu-item-height: 50px;
