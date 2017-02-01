@@ -20,6 +20,7 @@
 		left: 0;
 		right: 0;
 		background: $menu-mask;
+		@include opacity(0);
 	}
 
 	&-active {
@@ -28,6 +29,7 @@
 		& + .menu__mask {
 			display: block;
 			z-index: 1!important;
+			@include opacity($color-mask-opacity);
 		}
 	}
 
@@ -88,16 +90,12 @@
 	}
 
 	&__mask {
-		background: rgba($color-gray, 0);
-		@include opacity(0);
 		transition: all 0;
 		z-index: -1;
 		display: block;
 	}
 
 	&-active + .menu__mask {
-		background: $menu-mask;
-		@include opacity($color-mask-opacity);
 		transition-duration: $menu-animation-time;
 	}
 
