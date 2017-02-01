@@ -43,6 +43,7 @@
 		list-style: none;
 		height: $menu-item-height;
 		line-height: $menu-item-height;
+		border-bottom: solid $color-menu-border 1px;
 
 		&-link {
 			display: block;
