@@ -3,7 +3,8 @@
 .menu {
 	display: block;
 	position: fixed;
-	left: -$menu-width;
+	left: 0;
+	@include translate(-300px, 0);
 	top: 0;
 	bottom: 0;
 	width: $menu-width;
@@ -22,7 +23,7 @@
 	}
 
 	&-active {
-		left: 0;
+		@include translate(0,0);
 
 		& + .menu__mask {
 			display: block;
@@ -77,10 +78,10 @@
 
 
 .animated .menu {
-	transition: left $menu-animation-time ease-out;
+	transition: all $menu-animation-time ease-out;
 
 	&__item-link {
-		transition: background-color $menu-animation-time ease-in-out;
+		// transition: background-color $menu-animation-time ease-in-out;
 		&:hover {
 			transition: none;
 		}
@@ -88,19 +89,21 @@
 
 	&__mask {
 		background: rgba($color-gray, 0);
-		transition: background-color 0;
+		@include opacity(0);
+		transition: all 0;
 		z-index: -1;
 		display: block;
 	}
 
 	&-active + .menu__mask {
 		background: $menu-mask;
+		@include opacity($color-mask-opacity);
 		transition-duration: $menu-animation-time;
 	}
 
 	header {
 		background: $menu-background;
-		transition: background-color $menu-animation-time;
+		// transition: background-color $menu-animation-time;
 	}
 
 	&-active header {

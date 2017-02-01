@@ -12,7 +12,8 @@ $color-pre-black: #333;
 //	Elements colors
 $body-background: $color-silver-superlight;
 $color-delimiter: rgba(black, .16);
-$color-mask-background: rgba($color-gray, .7);
+$color-mask-background: $color-gray;
+$color-mask-opacity: .7;
 $color-menu-text: #7D838B;
 $color-menu-hover: #4C5560;
 $color-menu-current: #4C5560;
@@ -68,7 +69,7 @@ $menu-mask: $color-mask-background;
 $menu-width: 300px;
 $menu-item-height: 50px;
 $menu-font-size: 16px;
-$menu-animation-time: .3s;
+$menu-animation-time: .4s;
 
 
 //	Inputs
