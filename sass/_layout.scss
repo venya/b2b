@@ -24,6 +24,11 @@ header {
 	& .icon.pull-right {
 		margin: 5px 10px;
 	}
+
+	h1 {
+		font-size: $header-font-size;
+		margin: 0;
+	}
 }
 
 
