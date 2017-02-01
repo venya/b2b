@@ -16,7 +16,7 @@ $color-mask-background: rgba($color-gray, .7);
 $color-menu-text: #7D838B;
 $color-menu-hover: #4C5560;
 $color-menu-active: #4C5560;
-$color-menu-border: #4C5560;
+$color-menu-border: $color-menu-hover;
 
 $color-muted-visibility: .5;
 $color-text-muted: $color-silver;
