@@ -24,7 +24,8 @@ $font-weight-normal: 400;
 $font-weight-medium: 500;
 $font-weight-bold: 700;
 
-$font-base-family: "Open Sans", Roboto, Arial;
+$font-base-family: Roboto, Arial;
+$font-header-family: "Open Sans", $font-base-family;
 $font-base-size: 13px;
 $font-base-weight: $font-weight-light;
 

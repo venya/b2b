@@ -29,6 +29,9 @@
 		}
 	}
 
+	header {
+		cursor: pointer;
+	}
 
 	&__items {
 		list-style: none;
@@ -70,6 +73,9 @@
 
 	&__item-link {
 		transition: background-color $menu-animation-time ease-in-out;
+		&:hover {
+			transition: none;
+		}
 	}
 
 	&__mask {
