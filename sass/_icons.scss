@@ -1,44 +1,133 @@
 
-@include define-font('FA', $font-iconset);
 
 .icon {
-	// $size: 20px;
-	// width: $size;
-	// height: $size;
 	display: inline-block;
-	font-family: 'FA';
-	font-weight: normal;
-	font-size: 21px;
-	line-height: 100%;
+	width: $icon-width;
+	height: $icon-height;
 	font-style: normal;
-	overflow: hidden;
-	vertical-align: middle;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	// Temporarily stub
+	background: rgba(0,0,0, .05);
+	background: transparent;
+	text-align: center;
+	line-height: $icon-height;
+	font-size: 24px;
+	speak: none;
 
-	text-rendering: auto;
+	// Icomoon code:
+	font-family: 'icomoon' !important;
+	//line-height: 1;
+	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-
-	&-menu:before	{content: '\f0c9';}
-	&-trash:before	{content: '\f014';}
-	&-down:before	{content: '\f107';}
-	&-up:before		{content: '\f106';}
-	&-search:before	{content: '\f002';}
-	&-user:before	{content: '\f007';}
-	&-plus:before	{content: '\f067';}
-	&-tag:before	{content: '\f02b';}
-	&-more:before	{content: '\f142';}
-
-	&-online {
-		$size: 10px;
-		@include define-size($size, $size);
-		@include border-radius($size/2);
-		border: none;
-		background: #7ad298;
-	}
 }
 
-@mixin icon-glyph($id, $character) {
-	.icon-#{$id}:before {
-		content: $character;
-	}
+
+// IcoMoon
+
+@font-face {
+	font-family: 'icomoon';
+	src:  url('../fonts/icomoon.eot?tjqqh5');
+	src:  url('../fonts/icomoon.eot?tjqqh5#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?tjqqh5') format('truetype'),
+		url('../fonts/icomoon.woff?tjqqh5') format('woff'),
+		url('../fonts/icomoon.svg?tjqqh5#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
+
+
+
+.icon-plus:before {
+  content: "\e145";
+}
+.icon-back:before {
+  content: "\e5c4";
+}
+.icon-caret:before {
+  content: "\e5c5";
+}
+.icon-caret-up:before {
+  content: "\e5c7";
+}
+.icon-next:before {
+  content: "\e5c8";
+}
+.icon-backspace:before {
+  content: "\e14a";
+}
+.icon-check:before {
+  content: "\e5ca";
+}
+.icon-nav-before:before {
+  content: "\e408";
+}
+.icon-nav-next:before {
+  content: "\e409";
+}
+.icon-close:before {
+  content: "\e5cd";
+}
+.icon-offline:before {
+  content: "\e2c1";
+}
+.icon-cc:before {
+  content: "\e8a1";
+}
+.icon-bo:before {
+  content: "\e1af";
+}
+.icon-delete:before {
+  content: "\e872";
+}
+.icon-exit:before {
+  content: "\e879";
+}
+.icon-collapse:before {
+  content: "\e5ce";
+}
+.icon-expand:before {
+  content: "\e5cf";
+}
+.icon-help:before {
+  content: "\e8fd";
+}
+.icon-lock:before {
+  content: "\e897";
+}
+.icon-pos:before {
+  content: "\e8cc";
+}
+.icon-sync:before {
+  content: "\e627";
+}
+.icon-menu:before {
+  content: "\e5d2";
+}
+.icon-more:before {
+  content: "\e5d3";
+}
+.icon-more-v:before {
+  content: "\e5d4";
+}
+.icon-user:before {
+  content: "\e416";
+}
+.icon-undo:before {
+  content: "\e042";
+}
+.icon-search:before {
+  content: "\e8b6";
+}
+.icon-cog:before {
+  content: "\e8b8";
+}
+.icon-orders:before {
+  content: "\e563";
+}
+.icon-texture:before {
+  content: "\e421";
+}
+

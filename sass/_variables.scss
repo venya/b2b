@@ -1,65 +1,95 @@
+
+//	Global Color Palette
+
+$color-blue: #2e99db;
 $color-white: #fff;
-$color-black: #212121;
-$color-blue: #2e9adb;
-$color-light-blue: #90caf9;
-$color-green: #66bb6a;
-$color-gray: #777;
-$color-silver: #cecece;
-$color-light-silver: #eeeeee;
-$color-superlight: #f8f8f8;
+$color-silver: #aaa;
+$color-silver-light: #e8e8e8;
+$color-silver-superlight: #f6f6f6; //f8f8f8 is too light?
+$color-gray: #434c55;
+$color-pre-black: #333;
 
-$color-link: $color-blue;
+//	Elements colors
+$body-background: $color-silver-superlight;
+$color-delimiter: rgba(black, .16);
+$color-mask-background: rgba($color-gray, .7);
+$color-menu-text: #7D838B;
+$color-menu-hover: #4C5560;
+$color-menu-current: #4C5560;
+$color-menu-border: $color-menu-hover;
+$color-menu-active: $color-blue;
+$color-menu-active-text: $color-white;
+
+$color-muted-visibility: .5;
+$color-text-muted: $color-silver;
 
 
-// Fonts
-$font-base-family: "Open Sans", Helvetica, sans-serif;
-$font-base-size: 14px;
-$font-base-weight: normal;
+//	Fonts
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
 
-$font-iconset: "fontawesome-webfont";
+$font-base-family: Roboto, Arial;
+$font-header-family: "Open Sans", $font-base-family;
+$font-base-size: 13px;
+$font-base-weight: $font-weight-light;
+
+$font-h1-size: 22px;
+$font-h2-size: 18px;
+$font-h3-size: 16px;
+$font-h4-size: 15px;
+$font-h5-size: 14px;
+$font-h6-size: $font-base-size;
 
 
 
-// Layout
-$h-padding: 23px;
-$h-spacing: 8px;
-$v-spacing: $h-spacing;
-$main-width: 45%;
+//	Base sizing
 
-// Header
-$header-height: 56px;
+$base-spacing: 10px;
+$base-double-spacing: 2*$base-spacing;
 
-// Bottom menu
-$menu-height: 60px;
 
-// Dropdown
-$dropdown-color-bg: $color-white;
-$dropdown-color-text: $color-black;
-$dropdown-color-active-bg: $color-blue;
-$dropdown-color-active-text: $color-white;
-$dropdown-item-height: 50px;
-$dropdown-item-h-padding: $h-padding;
+//	Layout
 
-// Order List
-$orderlist-cell-size: 48px;
-$orderlist-cell-spacing: 17px;
-$orderlist-price-width: 80px;
 
-// Pager
-$pager-handle-size: 10px;
-$pager-spacing: $h-spacing;
-$pager-color-border: $color-blue;
-$pager-color-normal: $color-white;
-$pager-color-active: $color-blue;
-$pager-full-height: $pager-handle-size + $pager-handle-size*2;
+$header-height: 50px;
+$header-font-size: 20px;
+$header-background: $color-blue;
+$header-color: $color-white;
 
-// Catalog: categories
-$categories-per-row: 4;
-$categories-item-height: 66px;
 
-// Catalog: products
-$products-per-row: $categories-per-row;
-$products-item-height: 125px;
-$products-color-bg: #d9e8f2;
-$products-color-active: $color-light-blue;
+//	Main Menu
+
+$menu-background: $color-gray;
+$menu-color: $color-menu-text;
+$color-menu-current-text: $color-white;
+$menu-mask: $color-mask-background;
+$menu-width: 300px;
+$menu-item-height: 50px;
+$menu-font-size: 16px;
+$menu-animation-time: .3s;
+
+
+//	Inputs
+
+$input-font-size: 14px;
+$input-font-weight: $font-weight-normal;
+
+$toolbar-background: $color-silver-light;
+$toolbar-height: 60px;
+$select-background: $toolbar-background;
+
+
+
+//	Icons
+
+$icon-size: 40px;
+$icon-width: $icon-size;
+$icon-height: $icon-size;
+
+
+//	Screen-related configurations
+
+$pos-catalog-width: 55%;
 

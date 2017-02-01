@@ -1,0 +1,52 @@
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-base-family;
+	font-weight: $font-weight-medium;
+	margin: 2*$base-spacing 0 $base-spacing;
+}
+
+h1 {
+	font-family: $font-header-family;
+	font-size: $font-h1-size;
+}
+
+h2 {
+	font-size: $font-h2-size;
+}
+
+h3 {
+	font-size: $font-h3-size;
+}
+
+h4 {
+	font-size: $font-h4-size;
+}
+
+h5 {
+	font-size: $font-h5-size;
+}
+
+
+
+
+.small {
+	font-size: 70%;
+}
+
+.muted {
+	opacity: $color-muted-visibility;
+}
+
+.pull-right {
+	float: right;
+}
+.pull-left {
+	float: left;
+}
+
+.text-right {
+	text-align: right;
+}
+.text-center {
+	text-align: center;
+}
