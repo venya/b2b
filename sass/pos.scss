@@ -19,18 +19,14 @@
 // TEMPORARY CODE (should be refactored)
 
 
-main.pos {
-	$catalog-width: 55%;
+article.pos {
 
 	main {
-		width: 100% - $catalog-width;
-		overflow: hidden;
+		width: 100% - $pos-catalog-width;
 	}
 
 	aside {
-		float: right;
-		width: $catalog-width;
-		min-height: 300px;
+		width: $pos-catalog-width;
 	}
 }
 
@@ -47,4 +43,15 @@ section.categories {
 	text-align: center;
 	min-height: 170px;
 	padding-top: 70px;
+}
+
+
+section.products {
+
+}
+
+
+.products__empty {
+	text-align: center;
+	color: $color-text-muted;
 }

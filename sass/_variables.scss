@@ -18,6 +18,9 @@ $color-menu-hover: #4C5560;
 $color-menu-active: #4C5560;
 $color-menu-border: #4C5560;
 
+$color-muted-visibility: .5;
+$color-text-muted: $color-silver;
+
 
 //	Fonts
 $font-weight-light: 300;
@@ -73,6 +76,7 @@ $input-font-weight: $font-weight-normal;
 
 $toolbar-background: $color-silver-light;
 $toolbar-height: 60px;
+$select-background: $toolbar-background;
 
 
 
@@ -81,3 +85,9 @@ $toolbar-height: 60px;
 $icon-size: 40px;
 $icon-width: $icon-size;
 $icon-height: $icon-size;
+
+
+//	Screen-related configurations
+
+$pos-catalog-width: 55%;
+

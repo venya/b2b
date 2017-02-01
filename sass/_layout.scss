@@ -32,6 +32,26 @@ header {
 }
 
 
+// <article> tag used to define separate UI screen (eg: POS, Orders list, etc.)
+article {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: $body-background;
+
+	main {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+	}
+
+	aside {
+		position: absolute;
+		height: 100%;
+		right: 0;
+	}
+}
+
 
 .cutout-left {
 	box-shadow: inset 6px 0 4px -5px rgba(0,0,0, .2);

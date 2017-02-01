@@ -23,6 +23,7 @@
 .select {
 	$height: $toolbar-height;
 	display: inline-block;
+	background: $select-background;
 	height: $toolbar-height;
 	line-height: $toolbar-height;
 	padding: 0 $base-double-spacing;
@@ -33,6 +34,7 @@
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	overflow: hidden;
+	user-select: none;
 
 	&:after {
 		content: "";
