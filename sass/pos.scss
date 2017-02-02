@@ -51,7 +51,7 @@ section {
 	}
 
 	&__item {
-		padding: $base-spacing $base-double-spacing;
+		padding: $base-double-spacing $base-double-spacing;
 		border-bottom: solid $color-delimiter 1px;
 	}
 
@@ -75,7 +75,9 @@ section {
 
 
 
-
+.pos-menu {
+	display: none;
+}
 
 
 section.categories {
