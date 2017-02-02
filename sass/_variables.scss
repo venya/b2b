@@ -3,18 +3,18 @@
 
 $color-blue: #2e99db;
 $color-white: #fff;
-$color-green: green;
+$color-green: #66BB6A;
 $color-red: red;
 $color-silver: #aaa;
-$color-silver-light: #e8e8e8;
-$color-silver-superlight: #f6f6f6; //f8f8f8 is too light?
+$color-silver-light: #eeeeee;		//#eeeeee is too light | #e8e8e8
+$color-silver-superlight: #f8f8f8;	//#f8f8f8 is too light | #f6f6f6
 $color-gray: #434c55;
 $color-pre-black: #333;
 $color-black: black;
 
 //	Elements colors
 $body-background: $color-silver-superlight;
-$color-delimiter: rgba(black, .16);
+$color-delimiter: rgba(black, .1);
 $color-mask-background: $color-gray;
 $color-mask-opacity: .7;
 $color-menu-text: #7D838B;

@@ -4,6 +4,7 @@
 	text-decoration: none;
 	cursor: pointer;
 	outline: none;
+	text-align: center;
 
 	&:active {
 		box-shadow: inset 2px 2px 6px rgba(black, .2);
@@ -19,7 +20,12 @@
 	color: $color-white;
 }
 
-
+.btn-charge {
+	$height: $toolbar-height;
+	height: $height;
+	line-height: $height;
+	font-size: 22px;
+}
 
 
 
