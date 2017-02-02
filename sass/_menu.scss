@@ -80,28 +80,28 @@
 
 
 .animated .menu {
-	transition: all $menu-animation-time ease-out;
+	transition: all $menu-animation-in-time ease-out;
 
 	&__item-link {
-		// transition: background-color $menu-animation-time ease-in-out;
+		// transition: background-color $menu-animation-in-time ease-in-out;
 		&:hover {
 			transition: none;
 		}
 	}
 
 	&__mask {
-		transition: all 0;
+		transition: opacity $menu-animation-out-time;
 		z-index: -1;
 		display: block;
 	}
 
 	&-active + .menu__mask {
-		transition-duration: $menu-animation-time;
+		transition-duration: $menu-animation-in-time;
 	}
 
 	header {
 		background: $menu-background;
-		// transition: background-color $menu-animation-time;
+		// transition: background-color $menu-animation-in-time;
 	}
 
 	&-active header {

@@ -8,6 +8,7 @@ $color-silver-light: #e8e8e8;
 $color-silver-superlight: #f6f6f6; //f8f8f8 is too light?
 $color-gray: #434c55;
 $color-pre-black: #333;
+$color-black: black;
 
 //	Elements colors
 $body-background: $color-silver-superlight;
@@ -18,7 +19,7 @@ $color-menu-text: #7D838B;
 $color-menu-hover: #4C5560;
 $color-menu-current: #4C5560;
 $color-menu-border: $color-menu-hover;
-$color-menu-active: $color-blue;
+$color-menu-active: $color-pre-black;
 $color-menu-active-text: $color-white;
 
 $color-muted-visibility: .5;
@@ -69,7 +70,8 @@ $menu-mask: $color-mask-background;
 $menu-width: 300px;
 $menu-item-height: 50px;
 $menu-font-size: 16px;
-$menu-animation-time: .4s;
+$menu-animation-in-time: .2s;
+$menu-animation-out-time: 0s;
 
 
 //	Inputs
