@@ -38,6 +38,12 @@
 	font-style: normal;
 }
 
+.icon:before {
+  // unknown icon
+  content: "\e421";
+}
+
+
 
 
 .icon-plus:before {
