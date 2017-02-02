@@ -33,8 +33,48 @@ article.pos {
 
 
 section {
-	padding: 20px;
+	padding: $base-double-spacing;
 }
+
+
+
+.order {
+	@at-root {
+		section#{&} {
+			padding: 0;
+		}
+	}
+
+	&__items {
+		background: $color-white;
+		min-height: 200px;
+	}
+
+	&__item {
+		padding: $base-spacing $base-double-spacing;
+		border-bottom: solid $color-delimiter 1px;
+	}
+
+	&__empty {
+		text-align: center;
+		color: $color-text-muted;
+		padding: $base-double-spacing;
+
+		&:before {
+			$size: 60px;
+			content: "";
+			display: inline-block;
+			width: $size;
+			height: $size;
+			background: $color-white;
+			@include border-radius(9px);
+			border: dotted #cfcfcf 2px;
+		}
+	}
+}
+
+
+
 
 
 
@@ -55,3 +95,4 @@ section.products {
 	text-align: center;
 	color: $color-text-muted;
 }
+

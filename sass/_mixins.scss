@@ -9,3 +9,7 @@
 @mixin opacity($opacity) {
 	opacity: $opacity;
 }
+
+@mixin border-radius($params) {
+	border-radius: $params;
+}
