@@ -86,6 +86,17 @@ $toolbar-height: 60px;
 $select-background: $toolbar-background;
 
 
+// Buttons
+$btn-text-size: $input-font-size;
+$btn-text-weight: $font-base-weight;
+$btn-height: 50px;
+$btn-padding: $base-spacing;
+$btn-min-width: $btn-height;
+
+$btn-lg-text-size: $input-font-size + 3px;
+$btn-lg-height: $toolbar-height;
+$btn-lg-min-width: $btn-lg-height;
+
 
 //	Icons
 

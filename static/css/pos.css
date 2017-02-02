@@ -197,12 +197,38 @@ p {
   text-decoration: none;
   cursor: pointer;
   outline: none;
-  text-align: center; }
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 300;
+  height: 50px;
+  line-height: 50px;
+  min-width: 50px;
+  user-select: none;
+  padding: 0 10px;
+  margin: 0; }
   .btn:active {
     box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.2); }
+  .btn .icon {
+    vertical-align: middle; }
 
-.btn-green {
+.btn-lg {
+  font-size: 17px;
+  height: 60px;
+  line-height: 60px;
+  min-width: 60px; }
+
+.btn-default {
+  background: #eeeeee;
+  color: inherit; }
+
+.btn-green,
+.btn-success {
   background: #66BB6A;
+  color: #fff; }
+
+.btn-primary {
+  background: #2e99db;
   color: #fff; }
 
 .btn-charge {
@@ -212,7 +238,8 @@ p {
 
 .btn.icon {
   color: inherit;
-  padding: 0; }
+  padding: 0;
+  min-width: 0; }
 
 .toolbar {
   display: block;

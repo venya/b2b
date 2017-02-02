@@ -5,18 +5,52 @@
 	cursor: pointer;
 	outline: none;
 	text-align: center;
+	display: inline-block;
+	font-size: $btn-text-size;
+	font-weight: $btn-text-weight;
+	height: $btn-height;
+	line-height: $btn-height;
+	min-width: $btn-min-width;
+	user-select: none;
+	padding: 0 $btn-padding;
+	margin: 0;
 
 	&:active {
 		box-shadow: inset 2px 2px 6px rgba(black, .2);
 	}
+
+	.icon {
+		vertical-align: middle;
+	}
 }
 
+
+// Button Sizess
+
+.btn-lg {
+	font-size: $btn-lg-text-size;
+	height: $btn-lg-height;
+	line-height: $btn-lg-height;
+	min-width: $btn-lg-min-width;
+}
 
 
 // Button Colors
 
-.btn-green {
+
+.btn-default {
+	background: $color-silver-light;
+	color: inherit;
+}
+
+.btn-green,
+.btn-success {
 	background: $color-green;
+	color: $color-white;
+}
+
+.btn-primary {
+	background: $color-blue;
 	color: $color-white;
 }
 
@@ -35,6 +69,7 @@
 .btn.icon {
 	color: inherit;
 	padding: 0;
+	min-width: 0;
 }
 
 
