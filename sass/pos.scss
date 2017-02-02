@@ -37,6 +37,21 @@ section {
 }
 
 
+.pos-order {
+	.toolbar {
+		background: white;
+	}
+
+	.select {
+		background: none;
+		border-bottom: solid $color-delimiter 1px;
+
+		&:hover {
+			background: $color-silver-superlight;
+		}
+	}
+}
+
 
 .order {
 	@at-root {

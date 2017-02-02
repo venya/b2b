@@ -53,6 +53,14 @@ header {
   line-height: 50px;
   cursor: default;
   user-select: none; }
+  header .icon-menu,
+  header .icon-back {
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+    border-radius: 0 !important;
+    margin-right: 5px; }
   header .icon.pull-left,
   header .icon.pull-right {
     margin: 5px 10px; }
@@ -241,6 +249,12 @@ p {
   padding: 0;
   min-width: 0; }
 
+header .btn.icon {
+  border-radius: 40px; }
+  header .btn.icon:active {
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: none; }
+
 .toolbar {
   display: block;
   background: #eeeeee;
@@ -255,11 +269,13 @@ p {
   position: relative;
   font-size: 14px;
   font-weight: 400;
-  cursor: default;
+  cursor: pointer;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   user-select: none; }
+  .select:hover {
+    background: white; }
   .select:after {
     content: "";
     display: inline-block;
@@ -409,6 +425,15 @@ article.pos aside {
 
 section {
   padding: 20px; }
+
+.pos-order .toolbar {
+  background: white; }
+
+.pos-order .select {
+  background: none;
+  border-bottom: solid rgba(0, 0, 0, 0.1) 1px; }
+  .pos-order .select:hover {
+    background: #f8f8f8; }
 
 section.order {
   padding: 0; }

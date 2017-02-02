@@ -51,7 +51,8 @@ $font-h6-size: $font-base-size;
 //	Base sizing
 
 $base-spacing: 10px;
-$base-double-spacing: 2*$base-spacing;
+$base-double-spacing: $base-spacing * 2;
+$base-small-spacing:  $base-spacing / 2;
 
 
 //	Layout

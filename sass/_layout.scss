@@ -20,8 +20,18 @@ header {
 	cursor: default;
 	user-select: none;
 
-	& .icon.pull-left,
-	& .icon.pull-right {
+	.icon-menu,
+	.icon-back {
+		float: left;
+		height: $header-height;
+		line-height: $header-height;
+		width: $header-height;
+		border-radius: 0 !important;
+		margin-right: $base-small-spacing;
+	}
+
+	.icon.pull-left,
+	.icon.pull-right {
 		margin: 5px 10px;
 	}
 
