@@ -13,6 +13,7 @@
 	<script src="static/js/list.js"></script>
 	<script src="static/js/ui.js"></script>
 	-->
+	<script src="static/js/demo.js"></script>
 	<link rel="icon" href="https://ehopper.com/wp-content/uploads/2016/03/favicon-01.png" type="image/png">
 </head>
 
@@ -40,7 +41,7 @@
 
 		<main class="pos-order">
 			<header>
-				<button class="btn icon icon-menu pull-left" title="Menu" onclick="menu.className+=' menu-active'"></button>
+				<button class="btn icon icon-menu pull-left" title="Menu" onclick="toggleClass(menu, 'menu-active')"></button>
 				<button class="btn icon icon-delete pull-right" title="Close"></button>
 				<h1>Order</h1>
 			</header>
@@ -68,7 +69,7 @@
 				<li><a href="">Save</a></li>
 				<li><a href="">Notes</a></li>
 				<li><a href="">Terminal</a></li>
-				<li><a href="">Drawer</a></li>
+				<li class="disabled"><a href="">Drawer</a></li>
 				<li><a href="">More<i class="icon icon-more-v"></i></a></li>
 			</ul>
 		</main>
@@ -77,7 +78,7 @@
 
 
 	<nav class="menu" id="menu">
-		<header onclick="menu.className='menu'">
+		<header onclick="menuClose()">
 			<i class="icon icon-back pull-left"></i>
 			<h1>Acme Inc.</h1>
 		</header>
@@ -96,7 +97,7 @@
 			<li class="menu__item"><a href="pos.html" class="menu__item-link"><i class="icon icon-exit menu__item-icon"></i>Logout</a></li>
 		</ul>
 	</nav>
-	<div class="menu__mask" onclick="menu.className='menu'"></div>
+	<div class="menu__mask" onclick="menuClose()"></div>
 
 
 </body>

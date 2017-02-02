@@ -6,13 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
 	<link rel="stylesheet" type="text/css" href="static/css/pos.css">
-	<!--
-	<script src="static/js/jquery/jquery.min.js"></script>
-	<script src="static/js/swipe.js"></script>
-	<script src="static/js/pager.js"></script>
-	<script src="static/js/list.js"></script>
-	<script src="static/js/ui.js"></script>
-	-->
+	<script src="static/js/demo.js"></script>
 	<link rel="icon" href="https://ehopper.com/wp-content/uploads/2016/03/favicon-01.png" type="image/png">
 </head>
 
@@ -22,7 +16,7 @@
 	<article class="pos">
 
 		<header>
-			<button class="btn icon icon-menu pull-left" title="Menu" onclick="menu.className+=' menu-active'"></button>
+			<button class="btn icon icon-menu pull-left" title="Menu" onclick="toggleClass(menu, 'menu-active')"></button>
 			<a href="pos.html" class="btn icon icon-delete pull-right" title="Close"></a>
 			<h1>UI Kit</h1>
 		</header>
@@ -57,13 +51,33 @@
 				<i class="icon icon-back"></i>
 			</div>
 
+
+			<h1>Headers</h1>
+			<p>Regular header. Without any buttons</p>
+			<header><h1>Title</h1></header>
+
+			<p>With Menu button. And Single Icon on the right</p>
+			<header>
+				<button class="btn icon icon-menu pull-left" onclick="toggleClass(menu, 'menu-active')"></button>
+				<button class="btn icon icon-search pull-right"></button>
+				<h1>Title</h1>
+			</header>
+
+			<p>Back button instead of menu. Header title with very long text. Multiple icons on the right</p>
+			<header>
+				<button class="btn icon icon-back pull-left"></button>
+				<button class="btn icon icon-offline pull-right">Sync</button>
+				<button class="btn icon icon-search pull-right"></button>
+				<h1>Header title with very long text should not interfere with right icons and not wrap on the next line</h1>
+			</header>
+
 		</section>
 
 	</article>
 
 
 	<nav class="menu" id="menu">
-		<header onclick="menu.className='menu'">
+		<header onclick="menuClose()">
 			<i class="icon icon-back pull-left"></i>
 			<h1>Acme Inc.</h1>
 		</header>
@@ -82,7 +96,7 @@
 			<li class="menu__item"><a href="pos.html" class="menu__item-link"><i class="icon icon-exit menu__item-icon"></i>Logout</a></li>
 		</ul>
 	</nav>
-	<div class="menu__mask" onclick="menu.className='menu'"></div>
+	<div class="menu__mask" onclick="menuClose()"></div>
 
 
 </body>
