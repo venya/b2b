@@ -16,6 +16,7 @@ function toggleClass(element, className, newState) {
 		element.classList.remove(className);
 		//element.className.replace(new RegExp('(?:^|\\s)'+ className + '(?:\\s|$)'), '');
 	}
+	return newState;
 }
 
 
