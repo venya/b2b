@@ -171,7 +171,8 @@ p {
   .menu__items {
     list-style: none;
     font-size: 16px;
-    margin-top: 20px; }
+    margin-top: 20px;
+    user-select: none; }
   .menu__item {
     list-style: none;
     height: 50px;
@@ -274,7 +275,10 @@ header .btn.icon {
 .toolbar {
   display: block;
   background: #eeeeee;
-  height: 60px; }
+  height: 60px;
+  overflow: hidden; }
+  .toolbar__item {
+    float: left; }
 
 .select {
   display: inline-block;

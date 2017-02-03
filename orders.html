@@ -25,20 +25,40 @@
 		</header>
 
 		<div class="toolbar">
-			<div class="select">Filter 1</div>
-			<div class="select">Filter 2</div>
+			<div class="toolbar__item">
+				<div class="select">Filter 1</div>
+			</div>
+			<div class="toolbar__item">
+				<div class="select">Second Filter 2</div>
+			</div>
 			<button class="btn btn-lg btn-white pull-right"><i class="icon icon-undo"></i>Apply&nbsp;</button>
 		</div>
 
-		<table class="table">
+		<table class="table table-striped w100">
 			<thead>
 				<tr>
-					<th>Col 1</th>
-					<th>Col 2</th>
+					<th>Status</th>
+					<th class="table__sortable table__sorted-asc">Order</th>
+					<th>Store</th>
+					<th>Register</th>
+					<th>Type</th>
+					<th>Fulfillment</th>
+					<th class="table__sortable">Date</th>
+					<th>Employee</th>
+					<th>Customer</th>
+					<th class="text-right">Action</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
+					<td><i class="icon icon-check"></i></td>
+					<td>1200933</td>
+					<td>Col1</td>
+					<td>Col2</td>
+				</tr>
+				<tr>
+					<td><i class="icon icon-close"></i></td>
+					<td>1200801</td>
 					<td>Col1</td>
 					<td>Col2</td>
 				</tr>

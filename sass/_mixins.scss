@@ -15,6 +15,9 @@
 }
 
 
+@mixin clearfix() {
+	overflow: hidden;
+}
 
 
 @mixin define-box($display, $width, $height) {

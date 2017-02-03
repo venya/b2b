@@ -41,6 +41,7 @@
 		list-style: none;
 		font-size: $menu-font-size;
 		margin-top: 20px;
+		user-select: none;
 	}
 
 	&__item {
