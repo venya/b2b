@@ -186,15 +186,15 @@ p {
       margin: 0 8px; }
 
 .animated .menu {
-  transition: all 0.2s ease-out; }
+  transition: all 0.3s ease-out; }
   .animated .menu__item-link:hover {
     transition: none; }
   .animated .menu__mask {
-    transition: opacity 0s;
+    transition: opacity 0s ease-out;
     z-index: -1;
     display: block; }
   .animated .menu-active + .menu__mask {
-    transition-duration: 0.2s; }
+    transition-duration: 0.3s; }
   .animated .menu header {
     background: #434c55; }
   .animated .menu-active header {
@@ -207,6 +207,7 @@ p {
   outline: none;
   text-align: center;
   display: inline-block;
+  font-family: Roboto, Arial;
   font-size: 14px;
   font-weight: 300;
   height: 50px;

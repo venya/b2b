@@ -73,12 +73,13 @@ $menu-mask: $color-mask-background;
 $menu-width: 300px;
 $menu-item-height: 50px;
 $menu-font-size: 16px;
-$menu-animation-in-time: .2s;
+$menu-animation-in-time: .3s;
 $menu-animation-out-time: 0s;
 
 
 //	Inputs
 
+$input-font-family: $font-base-family;
 $input-font-size: 14px;
 $input-font-weight: $font-weight-normal;
 
@@ -88,6 +89,7 @@ $select-background: $toolbar-background;
 
 
 // Buttons
+$btn-font-family: $input-font-family;
 $btn-text-size: $input-font-size;
 $btn-text-weight: $font-base-weight;
 $btn-height: 50px;

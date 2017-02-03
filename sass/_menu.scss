@@ -90,7 +90,7 @@
 	}
 
 	&__mask {
-		transition: opacity $menu-animation-out-time;
+		transition: opacity $menu-animation-out-time ease-out;
 		z-index: -1;
 		display: block;
 	}
