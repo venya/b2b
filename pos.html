@@ -24,7 +24,7 @@
 
 		<aside class="pos-catalog cutout-left">
 			<header class="cutout-left">
-				<button class="btn icon icon-search pull-right" title="Search"></button>
+				<div class="header__icons"><button class="btn icon icon-search" title="Search"></button></div>
 				<h1>Category</h1>
 			</header>
 
@@ -42,8 +42,8 @@
 
 		<main class="pos-order">
 			<header>
-				<button class="btn icon icon-menu" title="Menu" onclick="toggleClass(menu, 'menu-active')"></button>
-				<button class="btn icon icon-delete pull-right" title="Close"></button>
+				<button class="btn icon icon-menu" title="Menu" onclick="menuShow()"></button>
+				<div class="header__icons"><button class="btn icon icon-delete" title="Close"></button></div>
 				<h1>Order</h1>
 			</header>
 
@@ -86,7 +86,7 @@
 
 		<ul class="menu__items">
 			<li class="menu__item menu__item-active"><a href="pos.html" class="menu__item-link"><i class="icon icon-pos menu__item-icon"></i>Point of Sale</a></li>
-			<li class="menu__item"><a href="pos.html" class="menu__item-link"><i class="icon icon-orders menu__item-icon"></i>Orders</a></li>
+			<li class="menu__item"><a href="orders.html" class="menu__item-link"><i class="icon icon-orders menu__item-icon"></i>Orders</a></li>
 			<li class="menu__item"><a href="pos.html" class="menu__item-link"><i class="icon icon-undo menu__item-icon"></i>Manual Refund</a></li>
 			<li class="menu__item"><a href="pos.html" class="menu__item-link"><i class="icon icon-close menu__item-icon"></i>Close Register</a></li>
 			<li class="menu__item"><a href="pos.html" class="menu__item-link"><i class="icon icon-cc menu__item-icon"></i>Payins / Payouts</a></li>

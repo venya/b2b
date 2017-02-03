@@ -24,3 +24,8 @@ function menuClose() {
 	return false;
 }
 
+function menuShow() {
+	toggleClass(menu, 'menu-active', true);
+	return false;
+}
+

@@ -71,6 +71,14 @@ header {
     overflow: hidden;
     text-overflow: ellipsis; }
 
+.header__icons {
+  float: right;
+  margin: 0;
+  font-size: 0; }
+  .header__icons .icon {
+    vertical-align: top;
+    margin: 5px 5px 0 0; }
+
 article {
   position: absolute;
   height: 100%;
@@ -239,6 +247,9 @@ p {
 .btn-primary {
   background: #2e99db;
   color: #fff; }
+
+.btn-white {
+  background: #fff; }
 
 .btn-charge {
   height: 60px;

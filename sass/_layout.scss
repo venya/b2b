@@ -30,6 +30,7 @@ header {
 		margin-right: $base-small-spacing;
 	}
 
+
 	.icon.pull-left,
 	.icon.pull-right {
 		margin: 5px 10px;
@@ -44,6 +45,18 @@ header {
 	}
 }
 
+.header__icons {
+	float: right;
+	margin: 0;
+	font-size: 0;
+
+	.icon {
+		vertical-align: top;
+		$margin-v: ($header-height - $icon-size)/2;
+		$margin-h: $margin-v;
+		margin: $margin-v $margin-h 0 0;
+	}
+}
 
 // <article> tag used to define separate UI screen (eg: POS, Orders list, etc.)
 article {

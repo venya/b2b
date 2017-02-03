@@ -16,8 +16,8 @@
 	<article class="pos">
 
 		<header>
-			<button class="btn icon icon-menu" title="Menu" onclick="toggleClass(menu, 'menu-active')"></button>
-			<a href="pos.html" class="btn icon icon-delete pull-right" title="Close"></a>
+			<button class="btn icon icon-menu" title="Menu" onclick="menuShow()"></button>
+			<div class="header__icons"><a href="pos.html" class="btn icon icon-delete" title="Close"></a></div>
 			<h1>UI Kit</h1>
 		</header>
 
@@ -96,16 +96,20 @@
 
 			<p>With Menu button. And Single Icon on the right</p>
 			<header>
-				<button class="btn icon icon-menu" onclick="toggleClass(menu, 'menu-active')"></button>
-				<button class="btn icon icon-search pull-right"></button>
+				<button class="btn icon icon-menu" onclick="menuShow()"></button>
+				<div class="header__icons">
+					<button class="btn icon icon-search"></button>
+				</div>
 				<h1>Title</h1>
 			</header>
 
 			<p>Back button instead of menu. Header title with very long text. Multiple icons on the right</p>
 			<header>
 				<button class="btn icon icon-back"></button>
-				<button class="btn icon icon-offline pull-right" title="Sync"></button>
-				<button class="btn icon icon-search pull-right"></button>
+				<div class="header__icons">
+					<button class="btn icon icon-search"></button>	
+					<button class="btn icon icon-offline" title="Sync"></button>				
+				</div>
 				<h1>Header title with very long text should not interfere with right icons and not wrap on the next line</h1>
 			</header>
 
@@ -127,6 +131,28 @@
 				<li class="pos-menu__item">Item with Icon<i class="icon icon-more-v"></i></li>
 			</ul>
 
+			<h1>Table Grids</h1>
+			<p>Unified Table grid design when applied <code>.table</code> class to any table. Add <code>.w100</code> to make it full page width.</p>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Col 1</th>
+						<th>Column 2</th>
+						<th>Right</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr><td>Col 1</td>
+						<td>Column 2 Value</td>
+						<td>$1.50</td>
+					</tr>
+					<tr><td>Second line</td>
+						<td>Column 2 Value</td>
+						<td>$100.00</td>
+					</tr>
+				</tbody>
+			</table>
+
 		</section>
 
 	</article>
@@ -140,7 +166,7 @@
 
 		<ul class="menu__items">
 			<li class="menu__item"><a href="pos.html" class="menu__item-link"><i class="icon icon-pos menu__item-icon"></i>Point of Sale</a></li>
-			<li class="menu__item"><a href="pos.html" class="menu__item-link"><i class="icon icon-orders menu__item-icon"></i>Orders</a></li>
+			<li class="menu__item"><a href="orders.html" class="menu__item-link"><i class="icon icon-orders menu__item-icon"></i>Orders</a></li>
 			<li class="menu__item"><a href="pos.html" class="menu__item-link"><i class="icon icon-undo menu__item-icon"></i>Manual Refund</a></li>
 			<li class="menu__item"><a href="pos.html" class="menu__item-link"><i class="icon icon-close menu__item-icon"></i>Close Register</a></li>
 			<li class="menu__item"><a href="pos.html" class="menu__item-link"><i class="icon icon-cc menu__item-icon"></i>Payins / Payouts</a></li>
