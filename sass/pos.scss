@@ -10,6 +10,7 @@
 @import "typography";
 @import "menu";
 @import "buttons";
+@import "controls";
 @import "icons";
 @import "utilities";
 
@@ -30,11 +31,6 @@ article.pos {
 	}
 }
 
-
-
-section {
-	padding: $base-double-spacing;
-}
 
 
 .pos-order {
@@ -78,11 +74,9 @@ section {
 		&:before {
 			$size: 60px;
 			content: "";
-			display: inline-block;
-			width: $size;
-			height: $size;
-			background: $color-white;
+			@include define-box(inline-block, $size, $size);
 			@include border-radius(9px);
+			background: $color-white;
 			border: dotted #cfcfcf 2px;
 		}
 	}
@@ -163,5 +157,14 @@ section.products {
 .products__empty {
 	text-align: center;
 	color: $color-text-muted;
+
+	&:before {
+		$size: 60px;
+		content: "";
+		@include define-box(inline-block, $size, $size);
+		@include border-radius(9px);
+		background: $color-white;
+		border: dotted #cfcfcf 2px;
+	}
 }
 

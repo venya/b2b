@@ -44,6 +44,9 @@ body {
   font-weight: 300;
   color: #333; }
 
+section {
+  padding: 20px; }
+
 header {
   background: #2e99db;
   color: #fff;
@@ -92,9 +95,6 @@ article {
     position: absolute;
     height: 100%;
     right: 0; }
-
-.cutout-left {
-  box-shadow: inset 6px 0 4px -5px rgba(0, 0, 0, 0.2); }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Roboto, Arial;
@@ -198,11 +198,15 @@ p {
   .animated .menu__item-link:hover {
     transition: none; }
   .animated .menu__mask {
-    transition: opacity 0s ease-out;
+    transition: opacity 0.2s ease-out, z-index 0.2s step-end;
     z-index: -1;
     display: block; }
+    .animated .menu__mask else {
+      transition: opacity 0.2s ease-out; }
   .animated .menu-active + .menu__mask {
-    transition-duration: 0.3s; }
+    transition: opacity 0.3s ease-out, z-index 0s; }
+    .animated .menu-active + .menu__mask else {
+      transition-duration: 0.3s; }
   .animated .menu header {
     background: #434c55; }
   .animated .menu-active header {
@@ -429,14 +433,14 @@ header .btn.icon {
 .w50 {
   width: 50%; }
 
+.cutout-left {
+  box-shadow: inset 6px 0 4px -5px rgba(0, 0, 0, 0.2); }
+
 article.pos main {
   width: 45%; }
 
 article.pos aside {
   width: 55%; }
-
-section {
-  padding: 20px; }
 
 .pos-order .toolbar {
   background: white; }
@@ -467,8 +471,8 @@ section.order {
     display: inline-block;
     width: 60px;
     height: 60px;
-    background: #fff;
     border-radius: 9px;
+    background: #fff;
     border: dotted #cfcfcf 2px; }
 
 .pos-menu {
@@ -520,3 +524,11 @@ section.categories {
 .products__empty {
   text-align: center;
   color: #aaa; }
+  .products__empty:before {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 9px;
+    background: #fff;
+    border: dotted #cfcfcf 2px; }

@@ -90,13 +90,27 @@
 	}
 
 	&__mask {
-		transition: opacity $menu-animation-out-time ease-out;
+		@if $menu-animation-out-time > 0 {
+			transition:
+				opacity $menu-animation-out-time ease-out,
+				z-index $menu-animation-out-time step-end;
+		} else {
+			transition:
+				opacity $menu-animation-out-time ease-out;
+		}
 		z-index: -1;
 		display: block;
 	}
 
 	&-active + .menu__mask {
-		transition-duration: $menu-animation-in-time;
+		@if $menu-animation-out-time > 0 {
+			transition:
+				opacity $menu-animation-in-time ease-out,
+				z-index 0s;
+		} else {
+			transition-duration: $menu-animation-in-time;
+		}
+		
 	}
 
 	header {

@@ -1,9 +1,7 @@
 
 
 .icon {
-	display: inline-block;
-	width: $icon-width;
-	height: $icon-height;
+		@include define-box(inline-block, $icon-width, $icon-height);
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
@@ -39,105 +37,105 @@
 }
 
 .icon:before {
-  // unknown icon
-  content: "\e421";
+		// unknown icon
+		content: "\e421";
 }
 
 
 
 
 .icon-plus:before {
-  content: "\e145";
+		content: "\e145";
 }
 .icon-back:before {
-  content: "\e5c4";
+	content: "\e5c4";
 }
 .icon-caret:before {
-  content: "\e5c5";
+	content: "\e5c5";
 }
 .icon-caret-up:before {
-  content: "\e5c7";
+	content: "\e5c7";
 }
 .icon-next:before {
-  content: "\e5c8";
+	content: "\e5c8";
 }
 .icon-backspace:before {
-  content: "\e14a";
+	content: "\e14a";
 }
 .icon-check:before {
-  content: "\e5ca";
+	content: "\e5ca";
 }
 .icon-nav-before:before {
-  content: "\e408";
+	content: "\e408";
 }
 .icon-nav-next:before {
-  content: "\e409";
+	content: "\e409";
 }
 .icon-close:before {
-  content: "\e5cd";
+	content: "\e5cd";
 }
 .icon-offline:before {
-  content: "\e2c1";
+	content: "\e2c1";
 }
 .icon-cc:before {
-  content: "\e8a1";
+	content: "\e8a1";
 }
 .icon-delete:before {
-  content: "\e872";
+	content: "\e872";
 }
 .icon-exit:before {
-  content: "\e879";
+	content: "\e879";
 }
 .icon-collapse:before {
-  content: "\e5ce";
+	content: "\e5ce";
 }
 .icon-expand:before {
-  content: "\e5cf";
+	content: "\e5cf";
 }
 .icon-help:before {
-  content: "\e8fd";
+	content: "\e8fd";
 }
 .icon-lock:before {
-  content: "\e897";
+	content: "\e897";
 }
 .icon-pos:before {
-  content: "\e8cc";
+	content: "\e8cc";
 }
 .icon-sync:before {
-  content: "\e627";
+	content: "\e627";
 }
 .icon-menu:before {
-  content: "\e5d2";
+	content: "\e5d2";
 }
 .icon-more:before {
-  content: "\e5d3";
+	content: "\e5d3";
 }
 .icon-more-v:before {
-  content: "\e5d4";
+	content: "\e5d4";
 }
 .icon-user:before {
-  content: "\e416";
+	content: "\e416";
 }
 .icon-undo:before {
-  content: "\e042";
+	content: "\e042";
 }
 .icon-search:before {
-  content: "\e8b6";
+	content: "\e8b6";
 }
 .icon-cog:before {
-  content: "\e8b8";
+	content: "\e8b8";
 }
 .icon-orders:before {
-  content: "\e563";
+	content: "\e563";
 }
 .icon-texture:before {
-  content: "\e421";
+	content: "\e421";
 }
 .icon-tips:before {
-  content: "\e8e0";
+	content: "\e8e0";
 }
 .icon-bo:before {
-  content: "\e051";
+	content: "\e051";
 }
 
 

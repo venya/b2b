@@ -10,6 +10,12 @@ body {
 
 
 
+section {
+	padding: $base-double-spacing;
+}
+
+
+
 header {
 	background: $header-background;
 	color: $header-color;
@@ -79,7 +85,4 @@ article {
 }
 
 
-.cutout-left {
-	box-shadow: inset 6px 0 4px -5px rgba(0,0,0, .2);
-}
 

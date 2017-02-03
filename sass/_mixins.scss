@@ -13,3 +13,12 @@
 @mixin border-radius($params) {
 	border-radius: $params;
 }
+
+
+
+
+@mixin define-box($display, $width, $height) {
+	display: $display;
+	width: $width;
+	height: $height;
+}
