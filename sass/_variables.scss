@@ -89,13 +89,16 @@ $pos-menu-disabled: $color-silver-superlight;
 
 
 //	Inputs
+$input-sm-height: 40px;
+$input-height: 50px;
+$input-lg-height: 60px;
 
 $input-font-family: $font-base-family;
 $input-font-size: 14px;
 $input-font-weight: $font-weight-normal;
 
 $toolbar-background: $color-silver-light;
-$toolbar-height: 60px;
+$toolbar-height: $input-lg-height;
 $select-background: $toolbar-background;
 
 
@@ -103,7 +106,7 @@ $select-background: $toolbar-background;
 $btn-font-family: $input-font-family;
 $btn-text-size: $input-font-size;
 $btn-text-weight: $font-base-weight;
-$btn-height: 50px;
+$btn-height: $input-sm-height;
 $btn-padding: $base-spacing;
 $btn-min-width: $btn-height;
 
@@ -112,11 +115,32 @@ $btn-lg-height: $toolbar-height;
 $btn-lg-min-width: $btn-lg-height;
 
 
+//	Dropdown Menus
+$dropdown-menu-background: $color-white;
+$dropdown-menu-item-height: $input-height;
+$dropdown-menu-item-hover: $color-silver-light;
+$dropdown-menu-animation-in:  .3s;
+$dropdown-menu-animation-out: .2s;
+
+$dropdown-label-size: 12px;
+$dropdown-label-height: 16px;
+
 //	Icons
 
 $icon-size: 40px;
 $icon-width: $icon-size;
 $icon-height: $icon-size;
+
+
+// Z-index library
+
+$Zindex-base: 0;
+$Zindex-dropdown-mask: $Zindex-base + 1;
+$Zindex-dropdown-body: $Zindex-dropdown-mask + 1;
+$Zindex-menu-mask: $Zindex-base + 10;
+$Zindex-menu-body: $Zindex-menu-mask + 1;
+
+
 
 
 //	Screen-related configurations

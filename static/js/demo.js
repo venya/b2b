@@ -9,7 +9,7 @@ function toggleClass(element, className, newState) {
 		// determine current state, inverted
 		newState = !element.classList.contains(className);
 	}
-	//console.log(element, className, newState);
+	// console.log(element, className, newState);
 	if (newState) {
 		element.classList.add(className);
 	} else {

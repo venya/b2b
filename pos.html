@@ -48,8 +48,25 @@
 			</header>
 
 			<div class="toolbar">
-				<div class="select pull-left w50">Type: Quick Order</div>
-				<div class="select pull-left w50">Customer: Walk In</div>
+				<div class="toolbar__item w50">
+					<div class="dropdown w100" onclick="toggleClass(orderTypeDropdown, 'dropdown-menu-open')">
+						<div class="dropdown__selected">
+							<div class="dropdown__selected-label">Order Type:</div>
+							<div class="dropdown__selected-value">Quick Sale</div>
+						</div>
+						<ul class="dropdown-menu" id="orderTypeDropdown">
+							<li class="dropdown-menu__item dropdown-menu__item-selected">Quick Sale</li>
+							<li class="dropdown-menu__item">Dine In</li>
+							<li class="dropdown-menu__item">Take Out</li>
+							<li class="dropdown-menu__item">Drive Thru</li>
+							<li class="dropdown-menu__item">Delivery</li>
+						</ul>
+						<div class="dropdown-menu__mask" onc__lick="toggleClass(orderTypeDropdown, 'dropdown-menu-open')"></div>
+					</div>
+				</div>
+				<div class="toolbar__item w50">
+					<div class="select">Customer: Walk In</div>
+				</div>
 			</div>
 
 			<section class="order">
@@ -67,7 +84,7 @@
 				<div class="btn btn-green btn-charge w100">Charge $100.20</div>
 			</div>
 			<ul class="pos-menu">
-				<li class="pos-menu__item"><a href="">Save</a></li>
+				<li class="pos-menu__item pos-menu__item-disabled"><a href="">Save</a></li>
 				<li class="pos-menu__item"><a href="">Notes</a></li>
 				<li class="pos-menu__item"><a href="">Terminal</a></li>
 				<li class="pos-menu__item pos-menu__item-disabled"><a href="">Drawer</a></li>
