@@ -13,6 +13,8 @@ $color-pre-black: #333;
 $color-black: black;
 
 //	Elements colors
+$color-primary: $color-blue;
+
 $body-background: $color-silver-superlight;
 $color-delimiter: rgba(black, .1);
 $color-mask-background: $color-gray;
@@ -60,7 +62,7 @@ $base-small-spacing:  $base-spacing / 2;
 
 $header-height: 50px;
 $header-font-size: 20px;
-$header-background: $color-blue;
+$header-background: $color-primary;
 $header-color: $color-white;
 
 
@@ -75,6 +77,15 @@ $menu-item-height: 50px;
 $menu-font-size: 16px;
 $menu-animation-in-time: .3s;
 $menu-animation-out-time: 0s;
+
+//	POS Menu
+
+$pos-menu-height: 60px;
+$pos-menu-background: $color-white;
+$pos-menu-hover: $color-silver-superlight;
+$pos-menu-active: $color-primary;
+$pos-menu-font-size: $font-base-size;
+$pos-menu-disabled: $color-silver-superlight;
 
 
 //	Inputs
