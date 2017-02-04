@@ -55,14 +55,36 @@
 
 			<h2>Dropowns</h2>
 
-			<div class="select">Dropdown-1</div><div class="select">Narrow</div>
+			<div class="dropdown">
+				<div class="dropdown__selected">Simple Dropdown</div>
+			</div>
+			<div class="dropdown dropdown-white">
+				<div class="dropdown__selected">White Version</div>
+			</div>
+			<div class="dropdown">
+				<div class="dropdown__selected">
+					<div class="dropdown__selected-label">Label:</div>
+					<div class="dropdown__selected-value">Value</div>
+				</div>
+			</div>
 
 			<h2>Toolbar</h2>
 			<p>Takes full row of horizontal space</p>
 
 			<div class="toolbar">
-				<div class="select pull-left w50">Type: Quick Order</div>
-				<div class="select pull-left w50">Customer: Walk In</div>
+				<div class="toolbar__item">
+					<div class="dropdown">
+						<div class="dropdown__selected">Second Dropdown</div>
+					</div>
+				</div>
+				<div class="toolbar__item w50">
+					<div class="dropdown w100">
+						<div class="dropdown__selected">Simple Dropdown</div>
+					</div>
+				</div>
+				<div class="toolbar__item">
+					<button class="btn btn-lg btn-default">Button</button>
+				</div>
 			</div>
 
 			<h1>Icons</h1>

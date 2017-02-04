@@ -272,13 +272,6 @@ header .btn.icon {
     background: rgba(0, 0, 0, 0.1);
     box-shadow: none; }
 
-.toolbar {
-  display: block;
-  background: #eeeeee;
-  height: 60px; }
-  .toolbar__item {
-    float: left; }
-
 .dropdown-menu {
   display: none;
   background: #fff;
@@ -318,39 +311,19 @@ header .btn.icon {
   height: 60px;
   line-height: 60px;
   padding: 0 20px;
-  position: relative; }
-  .dropdown__selected {
-    font-size: 14px;
-    font-weight: 400; }
-    .dropdown__selected-label {
-      line-height: 16px;
-      font-size: 12px;
-      color: #aaa;
-      margin: 10px 0 4px; }
-    .dropdown__selected-label + .dropdown__selected-value {
-      line-height: normal; }
-  .dropdown .dropdown-menu {
-    left: 0;
-    width: 100%;
-    top: 100%; }
-
-.select {
-  display: inline-block;
-  background: #eeeeee;
-  height: 60px;
-  line-height: 60px;
-  padding: 0 20px;
   position: relative;
+  cursor: pointer;
   font-size: 14px;
   font-weight: 400;
-  cursor: pointer;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
   user-select: none; }
-  .select:hover {
-    background: white; }
-  .select:after {
+  .dropdown__selected-label {
+    line-height: 16px;
+    font-size: 12px;
+    color: #aaa;
+    margin: 10px 0 4px; }
+  .dropdown__selected-label + .dropdown__selected-value {
+    line-height: normal; }
+  .dropdown__selected:after {
     content: "";
     display: inline-block;
     position: absolute;
@@ -360,8 +333,29 @@ header .btn.icon {
     border: solid transparent 6px;
     border-top-color: #aaa;
     border-bottom: 0; }
-  .select + .select {
+  .dropdown:hover {
+    background: #fff; }
+  .dropdown:active {
+    box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.4); }
+  .dropdown-white {
+    background: white; }
+    .dropdown-white:hover {
+      background: #eeeeee; }
+  .dropdown .dropdown-menu {
+    left: 0;
+    width: 100%;
+    top: 100%; }
+
+.toolbar {
+  display: block;
+  background: #eeeeee;
+  height: 60px; }
+  .toolbar__item {
+    float: left;
     border-left: solid rgba(0, 0, 0, 0.1) 1px; }
+    .toolbar__item:first-child {
+      background: yellow;
+      border-left: none; }
 
 .icon {
   display: inline-block;

@@ -49,7 +49,7 @@
 
 			<div class="toolbar">
 				<div class="toolbar__item w50">
-					<div class="dropdown w100" onclick="toggleClass(orderTypeDropdown, 'dropdown-menu-open')">
+					<div class="dropdown dropdown-white w100" onclick="toggleClass(orderTypeDropdown, 'dropdown-menu-open')">
 						<div class="dropdown__selected">
 							<div class="dropdown__selected-label">Order Type:</div>
 							<div class="dropdown__selected-value">Quick Sale</div>
@@ -61,11 +61,21 @@
 							<li class="dropdown-menu__item">Drive Thru</li>
 							<li class="dropdown-menu__item">Delivery</li>
 						</ul>
-						<div class="dropdown-menu__mask" onc__lick="toggleClass(orderTypeDropdown, 'dropdown-menu-open')"></div>
+						<div class="dropdown-menu__mask"></div>
 					</div>
 				</div>
 				<div class="toolbar__item w50">
-					<div class="select">Customer: Walk In</div>
+					<div class="dropdown w100" onclick="toggleClass(orderCustomerDropdown, 'dropdown-menu-open')">
+						<div class="dropdown__selected">
+							<div class="dropdown__selected-label">Customer:</div>
+							<div class="dropdown__selected-value">Walk In</div>
+						</div>
+						<ul class="dropdown-menu" id="orderCustomerDropdown">
+							<li class="dropdown-menu__item dropdown-menu__item-selected">Walk In</li>
+							<li class="dropdown-menu__item">Recent Customer</li>
+						</ul>
+						<div class="dropdown-menu__mask"></div>
+					</div>
 				</div>
 			</div>
 
