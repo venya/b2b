@@ -22,23 +22,6 @@
 
 	<article class="pos">
 
-		<aside class="pos-catalog cutout-left">
-			<header class="cutout-left">
-				<div class="header__icons"><button class="btn icon icon-search" title="Search"></button></div>
-				<h1>Category</h1>
-			</header>
-
-			<section class="categories cutout-left">List of Categories</section>
-
-			<section class="products">
-				<div class="products__empty">
-					<h5>No items in this category</h5>
-					<p>You can add them in Back Office</p>
-				</div>
-			</section>
-			<p class="text-center"><button class="btn btn-default" onclick="toggleClass(animated, 'icon-check', toggleClass(body, 'animated'))"><i class="icon icon-check" id="animated"></i>Toggle Animations</button></p>
-		</aside>
-
 
 		<main class="pos-order">
 			<header>
@@ -65,7 +48,7 @@
 					</div>
 				</div>
 				<div class="toolbar__item w50">
-					<div class="dropdown w100" onclick="toggleClass(orderCustomerDropdown, 'dropdown-menu-open')">
+					<div class="dropdown dropdown-white w100" onclick="toggleClass(orderCustomerDropdown, 'dropdown-menu-open')">
 						<div class="dropdown__selected">
 							<div class="dropdown__selected-label">Customer:</div>
 							<div class="dropdown__selected-value">Walk In</div>
@@ -101,6 +84,24 @@
 				<li class="pos-menu__item"><a href="">More<i class="icon icon-more-v"></i></a></li>
 			</ul>
 		</main>
+
+
+		<aside class="pos-catalog cutout-left">
+			<header class="cutout-left">
+				<div class="header__icons"><button class="btn icon icon-search" title="Search"></button></div>
+				<h1>Category</h1>
+			</header>
+
+			<section class="categories cutout-left">List of Categories</section>
+
+			<section class="products">
+				<div class="products__empty">
+					<h5>No items in this category</h5>
+					<p>You can add them in Back Office</p>
+				</div>
+			</section>
+			<p class="text-center"><button class="btn btn-default" onclick="toggleClass(animated, 'icon-check', toggleClass(body, 'animated'))"><i class="icon icon-check" id="animated"></i>Toggle Animations</button></p>
+		</aside>
 
 	</article>
 

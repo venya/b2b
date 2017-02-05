@@ -28,6 +28,19 @@ article.pos {
 	aside {
 		width: $pos-catalog-width;
 	}
+
+	@media (orientation:portrait) {
+		main {
+			width: 100%;
+			position: relative;
+			height: auto;
+		}
+		aside {
+			width: 100%;
+			position: relative;
+			height: auto;
+		}
+	}
 }
 
 

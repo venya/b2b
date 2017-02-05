@@ -282,7 +282,8 @@ header .btn.icon {
   .dropdown-menu__item {
     line-height: 50px;
     padding: 0 20px;
-    cursor: pointer; }
+    cursor: pointer;
+    white-space: nowrap; }
     .dropdown-menu__item:hover {
       background: #eeeeee; }
   .dropdown-menu__mask {
@@ -315,24 +316,27 @@ header .btn.icon {
   cursor: pointer;
   font-size: 14px;
   font-weight: 400;
-  user-select: none; }
-  .dropdown__selected-label {
-    line-height: 16px;
-    font-size: 12px;
-    color: #aaa;
-    margin: 10px 0 4px; }
-  .dropdown__selected-label + .dropdown__selected-value {
-    line-height: normal; }
-  .dropdown__selected:after {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    margin-top: -3px;
-    border: solid transparent 6px;
-    border-top-color: #aaa;
-    border-bottom: 0; }
+  user-select: none;
+  -webkit-tap-highlight-color: transparent; }
+  .dropdown__selected {
+    white-space: nowrap; }
+    .dropdown__selected-label {
+      line-height: 16px;
+      font-size: 12px;
+      color: #aaa;
+      margin: 10px 0 4px; }
+    .dropdown__selected-label + .dropdown__selected-value {
+      line-height: normal; }
+    .dropdown__selected:after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      margin-top: -3px;
+      border: solid transparent 6px;
+      border-top-color: #aaa;
+      border-bottom: 0; }
   .dropdown:hover {
     background: #fff; }
   .dropdown:active {
@@ -343,7 +347,7 @@ header .btn.icon {
       background: #eeeeee; }
   .dropdown .dropdown-menu {
     left: 0;
-    width: 100%;
+    min-width: 100%;
     top: 100%; }
 
 .toolbar {
@@ -354,7 +358,6 @@ header .btn.icon {
     float: left;
     border-left: solid rgba(0, 0, 0, 0.1) 1px; }
     .toolbar__item:first-child {
-      background: yellow;
       border-left: none; }
 
 .icon {
@@ -493,6 +496,16 @@ article.pos main {
 
 article.pos aside {
   width: 55%; }
+
+@media (orientation: portrait) {
+  article.pos main {
+    width: 100%;
+    position: relative;
+    height: auto; }
+  article.pos aside {
+    width: 100%;
+    position: relative;
+    height: auto; } }
 
 .pos-order .toolbar {
   background: white; }

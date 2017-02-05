@@ -57,6 +57,11 @@ $base-double-spacing: $base-spacing * 2;
 $base-small-spacing:  $base-spacing / 2;
 
 
+//	Animation
+
+$base-animation-in: .3s;
+$base-animation-out: .2s;
+
 //	Layout
 
 
@@ -75,8 +80,8 @@ $menu-mask: $color-mask-background;
 $menu-width: 300px;
 $menu-item-height: 50px;
 $menu-font-size: 16px;
-$menu-animation-in-time: .3s;
-$menu-animation-out-time: .2s;
+$menu-animation-in-time: $base-animation-in;
+$menu-animation-out-time: $base-animation-out;
 
 //	POS Menu
 
