@@ -20,13 +20,31 @@ function toggleClass(element, className, newState) {
 }
 
 
-function menuClose() {
-	toggleClass(menu, 'menu-active', false);
-	return false;
-}
 
-function menuShow() {
-	toggleClass(menu, 'menu-active', true);
-	return false;
-}
+
+document.addEventListener("DOMContentLoaded", function(event) { 
+	console.log("DOM ready. Run init...");
+	//	Open main menu
+	document.querySelectorAll(".btn.icon-menu").forEach(function(el){
+		el.onclick = function() {
+			toggleClass(menu, 'menu-active', true);
+		};
+	})
+	//	Close main menu
+	document.querySelectorAll(".menu header, .menu__mask").forEach(function(el){
+		el.onclick = function() {
+			toggleClass(menu, 'menu-active', false);
+		};
+	})
+	//	Dropdown open/close
+	document.querySelectorAll(".dropdown").forEach(function(el){
+		el.onclick = function() {
+			var menu = this.querySelector('.dropdown-menu');
+			if (menu) {
+				toggleClass(menu, 'dropdown-menu-open');
+			}
+		};
+	})
+});
+
 
