@@ -25,6 +25,12 @@ function editItem() {
 }
 
 
+function duplicateItem(item) {
+	var html = item.outerHTML;
+	console.log(html);
+	item.outerHTML = html + html;
+}
+
 
 document.addEventListener("DOMContentLoaded", function(event) { 
 	console.log("DOM ready. Run init...");

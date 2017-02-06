@@ -54,7 +54,8 @@ article.pos {
 			}
 			&-amount {
 				float: right;
-				font-size: 110%;
+				// font-size: 110%;
+				font-size: 25px;
 			}
 		}
 
@@ -107,7 +108,7 @@ article.pos {
 	&__items {
 		background: $color-white;
 		min-height: 200px;
-		max-height: 300px;
+		max-height: 400px;
 		overflow-y: auto;
 	}
 
