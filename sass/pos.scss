@@ -80,7 +80,7 @@ article.pos {
 
 
 .pos-order {
-	.toolbar {
+	&__toolbar {
 		background: white;
 		height: $toolbar-height + 1px;
 		border-bottom: solid $color-delimiter 1px;
@@ -107,11 +107,23 @@ article.pos {
 	&__items {
 		background: $color-white;
 		min-height: 200px;
+		max-height: 300px;
+		overflow-y: auto;
 	}
 
 	&__item {
 		padding: $base-double-spacing $base-double-spacing;
 		border-bottom: solid $color-delimiter 1px;
+		font-size: $pos-order-font-size;
+
+		&-active {
+			background: $color-blue-superlight;
+		}
+
+		&-info {
+			font-size: $pos-order-font-small;
+			color: $color-text-muted;
+		}
 	}
 
 	&__empty {
@@ -213,6 +225,21 @@ section.products {
 		@include border-radius(9px);
 		background: $color-white;
 		border: dotted #cfcfcf 2px;
+	}
+}
+
+
+// Editing Order Item (in the right panel)
+
+.pos-item {
+	background: $body-background;
+
+	.icon-close {
+		float: right;
+	}
+
+	&__info {
+		background: white;
 	}
 }
 

@@ -30,7 +30,7 @@
 				<h1>Order</h1>
 			</header>
 
-			<div class="toolbar">
+			<div class="toolbar pos-order__toolbar">
 				<div class="toolbar__item w50">
 					<div class="dropdown dropdown-white w100">
 						<div class="dropdown__selected">
@@ -71,7 +71,7 @@
 						<div class="order__item-quantity">1&times;</div>
 						<div class="order__item-price">100.00</div>
 					</li>
-					<li class="order__item">
+					<li class="order__item order__item-active" onclick="editItem()">
 						<div class="order__item-title">T-Shirt with Print 23</div>
 						<div class="order__item-info">Description</div>
 						<div class="order__item-quantity">1&times;</div>
@@ -122,6 +122,31 @@
 				</div>
 			</section>
 			<p class="text-center"><button class="btn btn-default" onclick="toggleClass(animated, 'icon-check', toggleClass(body, 'animated'))"><i class="icon icon-check" id="animated"></i>Toggle Animations</button></p>
+		</aside>
+
+
+		<!-- Edit Item: quantity, discount, etc -->
+		<aside class="pos-item cutout-left hide">
+			<section class="pos-item__info cutout-left">
+				<button class="btn icon icon-close" onclick="editItem()"></button>
+				[item card]
+				<div>Description:</div>
+			</section>
+			<ul class="tabs pos-item__tabs">
+				<li class="tabs__item tabs__item-active">
+					<div class="tabs__item-label">Quantity:</div>
+					<div class="tabs__item-value">20</div>
+				</li>
+				<li class="tabs__item">
+					<div class="tabs__item-label">Discount:</div>
+					<div class="tabs__item-value">15%</div>
+				</li>
+			</ul>
+			<section>
+				<p>Active tab content</p>
+				<button class="btn btn-lg btn-default btn-block"><i class="icon icon-check"></i>Done</button>
+
+			</section>
 		</aside>
 
 	</article>

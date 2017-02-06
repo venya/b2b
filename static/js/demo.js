@@ -20,6 +20,10 @@ function toggleClass(element, className, newState) {
 }
 
 
+function editItem() {
+	toggleClass(document.querySelector('.pos-item'), 'hide');
+}
+
 
 
 document.addEventListener("DOMContentLoaded", function(event) { 

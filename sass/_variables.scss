@@ -2,6 +2,7 @@
 //	Global Color Palette
 
 $color-blue: #2e99db;
+$color-blue-superlight: #ecf7fd;
 $color-white: #fff;
 $color-green: #66BB6A;
 $color-red: red;
@@ -38,7 +39,7 @@ $font-weight-bold: 700;
 
 $font-base-family: Roboto, Arial;
 $font-header-family: "Open Sans", $font-base-family;
-$font-base-size: 13px;
+$font-base-size: 14px;
 $font-base-weight: $font-weight-light;
 
 $font-h1-size: 22px;
@@ -159,3 +160,6 @@ $responsive-portrait: only screen and (orientation: portrait) and (max-width: $r
 
 $pos-catalog-width: 55%;
 $pos-payment-primary-width: 60%;
+$pos-order-font-size: 16px;
+$pos-order-font-small: 13px;
+
