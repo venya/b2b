@@ -1,0 +1,54 @@
+
+
+.tabs {
+	display: block;
+	width: 100%;
+	background: $tabs-background;
+	border-top: solid $color-delimiter $tabs-border-width;
+	@include clearfix();
+
+	&__item {
+		float: left;
+		height: $tabs-height;
+		padding: $base-small-spacing $base-spacing;
+		border-right: solid $color-delimiter $tabs-border-width;
+		cursor: pointer;
+		user-select: none;
+
+		&-right {
+			float: right;
+			border-left: solid $color-delimiter $tabs-border-width;
+			border-right-width: 0;
+		}
+
+		&-active {
+			background: $tabs-active-background;
+		}
+	}
+
+	//	Larger tabs
+	&-lg {
+		.tabs__item {
+			height: $tabs-lg-height;
+		}
+	}
+
+	//	Autosizing tabs (justify)
+	&-flex {
+		display: table;
+
+		.tabs__item {
+			display: table-cell;
+			float: none;
+
+			&-right {
+				float: none;
+				border-width: 0 $tabs-border-width 0 0;
+			}
+
+			&:last-child {
+				border-right-width: 0;
+			}
+		}
+	}
+}

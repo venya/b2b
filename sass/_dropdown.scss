@@ -79,7 +79,7 @@
 	background: $select-background;
 	height: $toolbar-height;
 	line-height: $toolbar-height;
-	padding: 0 $base-double-spacing;
+	padding: 0 $base-double-spacing+$base-spacing 0 $base-double-spacing;
 	position: relative;
 	cursor: pointer;
 	font-size: $input-font-size;

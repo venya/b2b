@@ -319,7 +319,7 @@ header .btn.icon {
   background: #eeeeee;
   height: 60px;
   line-height: 60px;
-  padding: 0 20px;
+  padding: 0 30px 0 20px;
   position: relative;
   cursor: pointer;
   font-size: 14px;
@@ -360,6 +360,38 @@ header .btn.icon {
     left: 0;
     min-width: 100%;
     top: 100%; }
+
+.tabs {
+  display: block;
+  width: 100%;
+  background: #eeeeee;
+  border-top: solid rgba(0, 0, 0, 0.1) 2px;
+  overflow: hidden; }
+  .tabs__item {
+    float: left;
+    height: 50px;
+    padding: 5px 10px;
+    border-right: solid rgba(0, 0, 0, 0.1) 2px;
+    cursor: pointer;
+    user-select: none; }
+    .tabs__item-right {
+      float: right;
+      border-left: solid rgba(0, 0, 0, 0.1) 2px;
+      border-right-width: 0; }
+    .tabs__item-active {
+      background: #f8f8f8; }
+  .tabs-lg .tabs__item {
+    height: 80px; }
+  .tabs-flex {
+    display: table; }
+    .tabs-flex .tabs__item {
+      display: table-cell;
+      float: none; }
+      .tabs-flex .tabs__item-right {
+        float: none;
+        border-width: 0 2px 0 0; }
+      .tabs-flex .tabs__item:last-child {
+        border-right-width: 0; }
 
 .toolbar {
   display: block;
@@ -565,7 +597,8 @@ section.order {
 .order__item {
   padding: 20px 20px;
   border-bottom: solid rgba(0, 0, 0, 0.1) 1px;
-  font-size: 16px; }
+  font-size: 16px;
+  cursor: pointer; }
   .order__item-active {
     background: #ecf7fd; }
   .order__item-info {

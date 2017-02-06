@@ -8,6 +8,9 @@
 	<link rel="stylesheet" type="text/css" href="static/css/pos.css">
 	<script src="static/js/demo.js"></script>
 	<link rel="icon" href="https://ehopper.com/wp-content/uploads/2016/03/favicon-01.png" type="image/png">
+	<style>
+		code {background: #d7f3ff; padding: 0 7px 0 5px; border-radius: 3px; color: #65b1d0;}
+	</style>
 </head>
 
 
@@ -30,14 +33,14 @@
 			<h1>Input Controls</h1>
 
 			<h2>Buttons</h2>
-			<p>Different implementations</p>
+			<p>Different implementations. Almost any element including link, button, input, div or span can be turned to button by adding <code>.btn</code> class.</p>
 			<a href="?" class="btn btn-default">Link Button</a>
 			<span href="?" class="btn btn-default">Span</span>
 			<div href="?" class="btn btn-default">Div</div>
 			<button class="btn btn-default">Button</button>
 			<input type="button" class="btn btn-default" value="Input.Button">
 
-			<p>Large Variations</p>
+			<p>Large Variations attained via additional <code>.btn-lg</code> class.</p>
 			<a href="?" class="btn btn-lg btn-default">Link Button</a>
 			<span href="?" class="btn btn-lg btn-default">Span</span>
 			<div href="?" class="btn btn-lg btn-default">Div</div>
@@ -47,7 +50,9 @@
 			<p>Styling</p>
 			<button class="btn btn-default">Default</button>
 			<button class="btn btn-primary">Primary</button>
+			<button class="btn btn-secondary">Secondary</button>
 			<button class="btn btn-success">Success</button>
+			<button class="btn btn-danger">Danger</button>
 			<button class="btn">Unstyled</button>
 
 			<button class="btn btn-default"><i class="icon"></i>With Icon</button>
@@ -80,8 +85,11 @@
 
 			<div class="toolbar">
 				<div class="toolbar__item">
-					<div class="dropdown">
-						<div class="dropdown__selected">Second Dropdown</div>
+					<div class="dropdown w100">
+						<div class="dropdown__selected">
+							<div class="dropdown__selected-label">First:</div>
+							<div class="dropdown__selected-value">Dropdown</div>
+						</div>
 					</div>
 				</div>
 				<div class="toolbar__item w50">
@@ -146,7 +154,15 @@
 			<p class="muted">(Not implemented)</p>
 			<ul class="tabs">
 				<li class="tabs__item">Tab 1</li>
-				<li class="tabs__item">Right Tab</li>
+				<li class="tabs__item tabs__item-right">Right Tab</li>
+				<li class="tabs__item tabs__item-active">Active Tab</li>
+				<li class="tabs__item"><a class="tabs__item-link">Link-Tab</a></li>
+			</ul>
+			<br>
+
+			<ul class="tabs tabs-lg">
+				<li class="tabs__item">Larger Tabs</li>
+				<li class="tabs__item tabs__item-right">Right Tab</li>
 				<li class="tabs__item tabs__item-active">Active Tab</li>
 				<li class="tabs__item"><a class="tabs__item-link">Link-Tab</a></li>
 			</ul>

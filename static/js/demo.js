@@ -40,13 +40,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		el.onclick = function() {
 			toggleClass(menu, 'menu-active', true);
 		};
-	})
+	});
 	//	Close main menu
 	document.querySelectorAll(".menu header, .menu__mask").forEach(function(el){
 		el.onclick = function() {
 			toggleClass(menu, 'menu-active', false);
 		};
-	})
+	});
 	//	Dropdown open/close
 	document.querySelectorAll(".dropdown").forEach(function(el){
 		el.onclick = function() {
@@ -55,7 +55,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
 				toggleClass(menu, 'dropdown-menu-open');
 			}
 		};
-	})
+	});
+	// Tabs
+	document.querySelectorAll(".tabs__item").forEach(function(el) {
+		el.onclick = function() {
+			var prevTab = this.parentElement.querySelector(".tabs__item-active");
+			if (prevTab)
+				toggleClass(prevTab, "tabs__item-active", false);
+			toggleClass(this, "tabs__item-active", true);
+		}
+	});
 });
 
 

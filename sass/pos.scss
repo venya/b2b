@@ -116,6 +116,7 @@ article.pos {
 		padding: $base-double-spacing $base-double-spacing;
 		border-bottom: solid $color-delimiter 1px;
 		font-size: $pos-order-font-size;
+		cursor: pointer;
 
 		&-active {
 			background: $color-blue-superlight;
@@ -241,6 +242,9 @@ section.products {
 
 	&__info {
 		background: white;
+	}
+
+	.tabs {
 	}
 }
 
