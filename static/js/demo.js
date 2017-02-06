@@ -24,6 +24,7 @@ function toggleClass(element, className, newState) {
 
 document.addEventListener("DOMContentLoaded", function(event) { 
 	console.log("DOM ready. Run init...");
+	var menu = document.querySelector(".menu");
 	//	Open main menu
 	document.querySelectorAll(".btn.icon-menu").forEach(function(el){
 		el.onclick = function() {
