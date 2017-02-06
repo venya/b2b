@@ -48,6 +48,8 @@ article.pos {
 .pos-order {
 	.toolbar {
 		background: white;
+		height: $toolbar-height + 1px;
+		border-bottom: solid $color-delimiter 1px;
 	}
 
 	.select {

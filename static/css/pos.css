@@ -284,8 +284,17 @@ header .btn.icon {
     padding: 0 20px;
     cursor: pointer;
     white-space: nowrap; }
+    .dropdown-menu__item-selected {
+      background: #eeeeee; }
     .dropdown-menu__item:hover {
       background: #eeeeee; }
+    .dropdown-menu__item:active {
+      background: #2e99db;
+      color: #fff; }
+    .dropdown-menu__item .icon {
+      position: relative;
+      vertical-align: top;
+      margin: 5px 5px 0 -10px; }
   .dropdown-menu__mask {
     position: fixed;
     background: #434c55;
@@ -508,7 +517,9 @@ article.pos aside {
     height: auto; } }
 
 .pos-order .toolbar {
-  background: white; }
+  background: white;
+  height: 61px;
+  border-bottom: solid rgba(0, 0, 0, 0.1) 1px; }
 
 .pos-order .select {
   background: none;

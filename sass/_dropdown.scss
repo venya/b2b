@@ -16,8 +16,22 @@
 		cursor: pointer;
 		white-space: nowrap;
 
+		&-selected {
+			background: $dropdown-menu-item-current;
+		}
+
 		&:hover {
 			background: $dropdown-menu-item-hover;
+		}
+		&:active {
+			background: $dropdown-menu-item-active;
+			color: $color-white;
+		}
+
+		.icon {
+			position: relative;
+			vertical-align: top;
+			margin: ($dropdown-menu-item-height - $icon-height)/2 $base-small-spacing 0 (-$base-spacing);
 		}
 	}
 
