@@ -335,6 +335,10 @@ header .btn.icon {
       margin: 10px 0 4px; }
     .dropdown__selected-label + .dropdown__selected-value {
       line-height: normal; }
+    .dropdown__selected-icon {
+      float: left;
+      position: relative;
+      margin-left: -10px; }
     .dropdown__selected:after {
       content: "";
       display: inline-block;

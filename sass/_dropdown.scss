@@ -99,6 +99,11 @@
 		&-label + &-value {
 			line-height: normal;
 		}
+		&-icon {
+			float: left;
+			position: relative;
+			margin-left: -$base-spacing;
+		}
 		&:after {
 			content: "";
 			display: inline-block;
