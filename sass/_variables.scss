@@ -127,8 +127,8 @@ $dropdown-menu-item-height: $input-height;
 $dropdown-menu-item-hover: $color-silver-light;
 $dropdown-menu-item-current: $color-silver-light;
 $dropdown-menu-item-active: $color-primary;
-$dropdown-menu-animation-in:  .3s;
-$dropdown-menu-animation-out: .2s;
+$dropdown-menu-animation-in:  $base-animation-in;
+$dropdown-menu-animation-out: $base-animation-out / 2;
 
 $dropdown-label-size: 12px;
 $dropdown-label-height: 16px;

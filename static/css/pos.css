@@ -305,14 +305,14 @@ header .btn.icon {
     left: 0;
     opacity: 0; }
     .animated .dropdown-menu__mask {
-      transition: opacity 0.3s ease-out, z-index 0s 0.3s; }
+      transition: opacity 0.1s ease-out, z-index 0s 0.1s; }
   .dropdown-menu-open {
     display: block; }
     .dropdown-menu-open + .dropdown-menu__mask {
       z-index: 1;
       opacity: 0.7; }
       .animated .dropdown-menu-open + .dropdown-menu__mask {
-        transition: opacity 0.2s ease-out, z-index 0s; }
+        transition: opacity 0.3s ease-out, z-index 0s; }
 
 .dropdown {
   display: inline-block;
@@ -529,7 +529,7 @@ article.pos .toolbar-payments {
       padding-right: 20px; }
     article.pos .toolbar-payments__primary-amount {
       float: right;
-      font-size: 110%; }
+      font-size: 25px; }
   article.pos .toolbar-payments .toolbar__item {
     border-color: #89cb8c; }
 
@@ -560,7 +560,7 @@ section.order {
 .order__items {
   background: #fff;
   min-height: 200px;
-  max-height: 300px;
+  max-height: 400px;
   overflow-y: auto; }
 
 .order__item {

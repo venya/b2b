@@ -48,8 +48,8 @@
 
 		.animated & {
 			transition:
-				opacity $dropdown-menu-animation-in ease-out,
-				z-index 0s $dropdown-menu-animation-in;
+				opacity $dropdown-menu-animation-out ease-out,
+				z-index 0s $dropdown-menu-animation-out;
 		}
 	}
 
@@ -63,7 +63,7 @@
 
 			.animated & {
 				transition:
-					opacity $dropdown-menu-animation-out ease-out,
+					opacity $dropdown-menu-animation-in ease-out,
 					z-index 0s;
 			}
 		}
