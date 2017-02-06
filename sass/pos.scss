@@ -29,6 +29,40 @@ article.pos {
 		width: $pos-catalog-width;
 	}
 
+	.toolbar-payments {
+		border: none;
+
+		&__secondary {
+			width: 100% - $pos-payment-primary-width;
+
+			.btn {
+				text-align: left;
+				padding-left: $base-double-spacing;
+			}
+			.icon {
+				float: right;
+				margin: ($toolbar-height - $icon-height)/2 0 -$base-spacing;
+			}
+		}
+
+		&__primary {
+			width: $pos-payment-primary-width;
+
+			.btn {
+				text-align: left;
+				padding-right: $base-double-spacing;
+			}
+			&-amount {
+				float: right;
+				font-size: 110%;
+			}
+		}
+
+		.toolbar__item {
+			border-color: lighten($color-green, 10%);
+		}
+	}
+
 	@media #{$responsive-portrait} {
 		main {
 			width: 100%;

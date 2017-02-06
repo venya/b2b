@@ -240,6 +240,10 @@ p {
   line-height: 60px;
   min-width: 60px; }
 
+.btn-block {
+  display: block;
+  width: 100%; }
+
 .btn-default {
   background: #eeeeee;
   color: inherit; }
@@ -255,11 +259,6 @@ p {
 
 .btn-white {
   background: #fff; }
-
-.btn-charge {
-  height: 60px;
-  line-height: 60px;
-  font-size: 22px; }
 
 .btn.icon {
   color: inherit;
@@ -505,6 +504,27 @@ article.pos main {
 
 article.pos aside {
   width: 55%; }
+
+article.pos .toolbar-payments {
+  border: none; }
+  article.pos .toolbar-payments__secondary {
+    width: 40%; }
+    article.pos .toolbar-payments__secondary .btn {
+      text-align: left;
+      padding-left: 20px; }
+    article.pos .toolbar-payments__secondary .icon {
+      float: right;
+      margin: 10px -10px; }
+  article.pos .toolbar-payments__primary {
+    width: 60%; }
+    article.pos .toolbar-payments__primary .btn {
+      text-align: left;
+      padding-right: 20px; }
+    article.pos .toolbar-payments__primary-amount {
+      float: right;
+      font-size: 110%; }
+  article.pos .toolbar-payments .toolbar__item {
+    border-color: #89cb8c; }
 
 @media (max-width: 480px) {
   article.pos main {

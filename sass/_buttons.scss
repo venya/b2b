@@ -34,6 +34,10 @@
 	line-height: $btn-lg-height;
 	min-width: $btn-lg-min-width;
 }
+.btn-block {
+	display: block;
+	width: 100%;
+}
 
 
 // Button Colors
@@ -60,12 +64,7 @@
 }
 
 
-.btn-charge {
-	$height: $toolbar-height;
-	height: $height;
-	line-height: $height;
-	font-size: 22px;
-}
+
 
 
 
