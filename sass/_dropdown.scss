@@ -105,15 +105,14 @@
 			margin-left: -$base-spacing;
 		}
 		&:after {
-			content: "";
+			font-family: $font-icon-family;
+			content: "\e5cf";
 			display: inline-block;
 			position: absolute;
-			right: $base-spacing;
-			top: 50%;
-			margin-top: -3px;
-			border: solid transparent 6px;
-			border-top-color: $color-silver;
-			border-bottom: 0;
+			right: $base-small-spacing;
+			font-size: $icon-font-size;
+			top: 0;
+			color: $color-text-muted;
 		}
 	}
 

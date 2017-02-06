@@ -340,15 +340,14 @@ header .btn.icon {
       position: relative;
       margin-left: -10px; }
     .dropdown__selected:after {
-      content: "";
+      font-family: "Icons";
+      content: "\e5cf";
       display: inline-block;
       position: absolute;
-      right: 10px;
-      top: 50%;
-      margin-top: -3px;
-      border: solid transparent 6px;
-      border-top-color: #aaa;
-      border-bottom: 0; }
+      right: 5px;
+      font-size: 24px;
+      top: 0;
+      color: #aaa; }
   .dropdown:hover {
     background: #fff; }
   .dropdown:active {
@@ -386,13 +385,13 @@ header .btn.icon {
   line-height: 40px;
   font-size: 24px;
   speak: none;
-  font-family: 'icomoon' !important;
+  font-family: "Icons" !important;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
 @font-face {
-  font-family: 'icomoon';
+  font-family: "Icons";
   src: url("../fonts/icomoon.eot?tjqqh5");
   src: url("../fonts/icomoon.eot?tjqqh5#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?tjqqh5") format("truetype"), url("../fonts/icomoon.woff?tjqqh5") format("woff"), url("../fonts/icomoon.svg?tjqqh5#icomoon") format("svg");
   font-weight: normal;

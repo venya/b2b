@@ -1,7 +1,7 @@
 
 
 .icon {
-		@include define-box(inline-block, $icon-width, $icon-height);
+	@include define-box(inline-block, $icon-width, $icon-height);
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
@@ -11,11 +11,11 @@
 	background: transparent;
 	text-align: center;
 	line-height: $icon-height;
-	font-size: 24px;
+	font-size: $icon-font-size;
 	speak: none;
 
 	// Icomoon code:
-	font-family: 'icomoon' !important;
+	font-family: $font-icon-family !important;
 	//line-height: 1;
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
@@ -26,9 +26,9 @@
 // IcoMoon
 
 @font-face {
-	font-family: 'icomoon';
-	src:  url('../fonts/icomoon.eot?tjqqh5');
-	src:  url('../fonts/icomoon.eot?tjqqh5#iefix') format('embedded-opentype'),
+	font-family: $font-icon-family;
+	src: url('../fonts/icomoon.eot?tjqqh5');
+	src: url('../fonts/icomoon.eot?tjqqh5#iefix') format('embedded-opentype'),
 		url('../fonts/icomoon.ttf?tjqqh5') format('truetype'),
 		url('../fonts/icomoon.woff?tjqqh5') format('woff'),
 		url('../fonts/icomoon.svg?tjqqh5#icomoon') format('svg');
@@ -37,8 +37,8 @@
 }
 
 .icon:before {
-		// unknown icon
-		content: "\e421";
+	// unknown icon
+	content: "\e421";
 }
 
 
