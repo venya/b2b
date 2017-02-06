@@ -506,7 +506,7 @@ article.pos main {
 article.pos aside {
   width: 55%; }
 
-@media (orientation: portrait) {
+@media (max-width: 480px) {
   article.pos main {
     width: 100%;
     position: relative;

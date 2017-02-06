@@ -29,7 +29,7 @@ article.pos {
 		width: $pos-catalog-width;
 	}
 
-	@media (orientation:portrait) {
+	@media #{$responsive-portrait} {
 		main {
 			width: 100%;
 			position: relative;

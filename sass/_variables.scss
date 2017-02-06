@@ -147,6 +147,11 @@ $Zindex-dropdown-body: $Zindex-dropdown-mask + 1;
 $Zindex-menu-mask: $Zindex-base + 10;
 $Zindex-menu-body: $Zindex-menu-mask + 1;
 
+//	Responsiveness
+
+$responsive-tablet-min-width: 480px;
+$responsive-portrait: only screen and (orientation: portrait) and (max-width: $responsive-tablet-min-width);
+// $responsive-portrait: (orientation: portrait);
 
 
 
