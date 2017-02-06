@@ -26,18 +26,18 @@
 		<main class="pos-order">
 			<header>
 				<button class="btn icon icon-menu" title="Menu"></button>
-				<div class="header__icons"><button class="btn icon icon-delete" title="Close"></button></div>
+				<div class="header__icons"><button class="btn icon icon-delete" title="Empty Order" onclick="toggleClass(demo_order_items,'hide', !toggleClass(demo_order_empty,'hide'))"></button></div>
 				<h1>Order</h1>
 			</header>
 
 			<div class="toolbar">
 				<div class="toolbar__item w50">
-					<div class="dropdown dropdown-white w100" onclick="toggleClass(orderTypeDropdown, 'dropdown-menu-open')">
+					<div class="dropdown dropdown-white w100">
 						<div class="dropdown__selected">
 							<div class="dropdown__selected-label">Order Type:</div>
 							<div class="dropdown__selected-value">Quick Sale</div>
 						</div>
-						<ul class="dropdown-menu" id="orderTypeDropdown">
+						<ul class="dropdown-menu">
 							<li class="dropdown-menu__item dropdown-menu__item-selected">Quick Sale</li>
 							<li class="dropdown-menu__item">Dine In</li>
 							<li class="dropdown-menu__item">Take Out</li>
@@ -48,13 +48,13 @@
 					</div>
 				</div>
 				<div class="toolbar__item w50">
-					<div class="dropdown dropdown-white w100" onclick="toggleClass(orderCustomerDropdown, 'dropdown-menu-open')">
+					<div class="dropdown dropdown-white w100">
 						<div class="dropdown__selected">
 							<i class="icon icon-next dropdown__selected-icon"></i>
 							<div class="dropdown__selected-label">Customer:</div>
 							<div class="dropdown__selected-value">Walk In</div>
 						</div>
-						<ul class="dropdown-menu" id="orderCustomerDropdown">
+						<ul class="dropdown-menu">
 							<li class="dropdown-menu__item dropdown-menu__item-selected"><i class="icon icon-next"></i>Walk In</li>
 							<li class="dropdown-menu__item"><i class="icon icon-user"></i>Recent Customer</li>
 						</ul>
@@ -64,7 +64,7 @@
 			</div>
 
 			<section class="order">
-				<ul class="order__items">
+				<ul class="order__items" id="demo_order_items">
 					<li class="order__item">
 						<div class="order__item-title">Hot Dog XL</div>
 						<div class="order__item-info">Description</div>
@@ -78,7 +78,7 @@
 						<div class="order__item-price">100.00</div>
 					</li>
 				</ul>
-				<div class="order__empty">
+				<div class="order__empty hide" id="demo_order_empty">
 					<h5>Order is empty</h5>
 					<p>Add items from catalog</p>
 				</div>
@@ -127,7 +127,7 @@
 	</article>
 
 
-	<nav class="menu" id="menu">
+	<nav class="menu">
 		<header>
 			<i class="icon icon-back"></i>
 			<h1>Acme Inc.</h1>

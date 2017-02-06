@@ -494,6 +494,9 @@ header .btn.icon {
 .icon-bo:before {
   content: "\e051"; }
 
+.hide {
+  display: none !important; }
+
 .w100 {
   width: 100%; }
 
