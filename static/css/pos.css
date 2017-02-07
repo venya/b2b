@@ -696,7 +696,6 @@ section.order {
     background: #fff;
     text-align: left;
     white-space: nowrap;
-    overflow: hidden;
     vertical-align: top;
     cursor: pointer;
     user-select: none;
@@ -704,15 +703,22 @@ section.order {
     .categories__item:hover,
     .products__item:hover {
       border-color: #2e99db; }
+    .categories__item-title,
+    .products__item-title {
+      overflow: hidden;
+      text-overflow: ellipsis; }
 
 .categories {
   background: #eeeeee;
   min-height: 170px; }
   .categories__item {
     height: 80px; }
+    .categories__item-active {
+      background: #2e99db;
+      color: #fff; }
 
 .products__item {
-  border-width: 2px; }
+  height: 120px; }
 
 .products__empty {
   text-align: center;

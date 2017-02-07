@@ -19,7 +19,6 @@
 		background: $pos-catalog-item-bg;
 		text-align: left;
 		white-space: nowrap;
-		overflow: hidden;
 		vertical-align: top;
 		cursor: pointer;
 		user-select: none;
@@ -27,6 +26,11 @@
 
 		&:hover {
 			border-color: $color-primary;
+		}
+
+		// elements
+		&-title {
+			@include text-overflow;
 		}
 	}
 }
@@ -41,6 +45,11 @@
 
 	&__item {
 		height: 80px;
+
+		&-active {
+			background: $color-selection-bg;
+			color: $color-selection-text;
+		}
 	}
 }
 
@@ -51,7 +60,7 @@
 .products {
 
 	&__item {
-		border-width: 2px;
+		height: 120px;
 	}
 
 	&__empty {

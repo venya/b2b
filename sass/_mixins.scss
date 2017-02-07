@@ -25,3 +25,8 @@
 	width: $width;
 	height: $height;
 }
+
+@mixin text-overflow() {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
