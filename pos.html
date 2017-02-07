@@ -66,16 +66,36 @@
 			<section class="order">
 				<ul class="order__items" id="demo_order_items">
 					<li class="order__item" onclick="demoDuplicateItem(this)">
-						<div class="order__item-title">Hot Dog XL</div>
-						<div class="order__item-info">Description</div>
-						<div class="order__item-quantity">1&times;</div>
-						<div class="order__item-price">100.00</div>
+						<div class="order__item-data">
+							<div class="order__item-data1">
+								<div class="order__item-qty">1&times;</div>
+								<div class="order__item-price">3.00</div>
+							</div>
+							<div class="order__item-data2">
+								<div class="order__item-total">3.00</div>
+								<div class="order__item-discount"></div>
+							</div>
+						</div>
+						<div class="order__item-product">
+							<div class="order__item-title">Hot Dog XL</div>
+							<div class="order__item-info">Regular big Hot-Dog</div>
+						</div>
 					</li>
 					<li class="order__item order__item-active" onclick="demoEditItem()">
-						<div class="order__item-title">T-Shirt with Print 23</div>
-						<div class="order__item-info">Description</div>
-						<div class="order__item-quantity">1&times;</div>
-						<div class="order__item-price">100.00</div>
+						<div class="order__item-data">
+							<div class="order__item-data1">
+								<div class="order__item-qty">2&times;</div>
+								<div class="order__item-price">100.00</div>
+							</div>
+							<div class="order__item-data2">
+								<div class="order__item-total">200.00</div>
+								<div class="order__item-discount">-5.10</div>
+							</div>
+						</div>
+						<div class="order__item-product">
+							<div class="order__item-title">T-Shirt with Print 23</div>
+							<div class="order__item-info">Long Sleeves, XL size, Black color</div>
+						</div>
 					</li>
 				</ul>
 				<div class="order__empty hide" id="demo_order_empty">
@@ -140,7 +160,7 @@
 		<!-- Edit Item: quantity, discount, etc -->
 		<aside class="pos-item cutout-left hide">
 			<section class="pos-item__info cutout-left">
-				<button class="btn icon icon-close" onclick="editItem()"></button>
+				<button class="btn icon icon-close" onclick="demoEditItem()"></button>
 				[item card]
 				<div>Description:</div>
 			</section>

@@ -115,18 +115,56 @@ article.pos {
 	}
 
 	&__item {
-		padding: $base-double-spacing $base-double-spacing;
+		padding: $pos-order-vspacing $pos-order-hspacing;
 		border-bottom: solid $color-delimiter 1px;
 		font-size: $pos-order-font-size;
 		cursor: pointer;
+		user-select: none;
 
-		&-active {
-			background: $color-blue-superlight;
+		// groups
+		&-product {
+			overflow: hidden;
+		}
+		&-data {
+			float: right;
+			width: 40%;
+			text-align: right;
+		}
+		&-data1 {
+			width: 40%;
+			float: left;
 		}
 
+		// items
+		&-title {
+			font-weight: $font-weight-normal;
+		}
 		&-info {
 			font-size: $pos-order-font-small;
 			color: $color-text-muted;
+		}
+		&-qty {
+			font-weight: $font-weight-normal;
+		}
+		&-price {
+			font-size: $pos-order-font-small;
+			color: $color-text-muted;
+		}
+		&-total {
+			font-weight: $font-weight-normal;
+		}
+		&-discount {
+			font-size: $pos-order-font-small;
+			color: $pos-order-discount-color;
+		}
+
+		// states
+		&-active {
+			background: $color-blue-superlight;
+		}
+		&:active {
+			background: $color-selection-bg;
+			color: $color-selection-text;
 		}
 	}
 

@@ -31,6 +31,9 @@ $color-menu-active-text: $color-white;
 $color-muted-visibility: .5;
 $color-text-muted: $color-silver;
 
+$color-selection-bg: $color-blue;
+$color-selection-text: $color-white;
+
 
 //	Fonts
 $font-weight-light: 300;
@@ -128,7 +131,8 @@ $dropdown-menu-background: $color-white;
 $dropdown-menu-item-height: $input-height;
 $dropdown-menu-item-hover: $color-silver-light;
 $dropdown-menu-item-current: $color-silver-light;
-$dropdown-menu-item-active: $color-primary;
+$dropdown-menu-item-active: $color-selection-bg;
+$dropdown-menu-item-active-text: $color-selection-text;
 $dropdown-menu-animation-in:  $base-animation-in;
 $dropdown-menu-animation-out: $base-animation-out / 2;
 
@@ -157,7 +161,6 @@ $pagination-item-hover: $color-white;
 $pagination-item-active: $color-blue;
 $pagination-item-spacing: $base-small-spacing / 2;
 
-
 // Z-index library
 
 $Zindex-base: 0;
@@ -178,6 +181,10 @@ $responsive-portrait: only screen and (orientation: portrait) and (max-width: $r
 
 $pos-catalog-width: 55%;
 $pos-payment-primary-width: 60%;
+$pos-order-vspacing: 13px;
+$pos-order-hspacing: $base-double-spacing;
+$pos-order-discount-color: $color-red;
 $pos-order-font-size: 16px;
 $pos-order-font-small: 13px;
+
 

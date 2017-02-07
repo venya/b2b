@@ -627,15 +627,40 @@ section.order {
   overflow-y: auto; }
 
 .order__item {
-  padding: 20px 20px;
+  padding: 13px 20px;
   border-bottom: solid rgba(0, 0, 0, 0.1) 1px;
   font-size: 16px;
-  cursor: pointer; }
-  .order__item-active {
-    background: #ecf7fd; }
+  cursor: pointer;
+  user-select: none; }
+  .order__item-product {
+    overflow: hidden; }
+  .order__item-data {
+    float: right;
+    width: 40%;
+    text-align: right; }
+  .order__item-data1 {
+    width: 40%;
+    float: left; }
+  .order__item-title {
+    font-weight: 400; }
   .order__item-info {
     font-size: 13px;
     color: #aaa; }
+  .order__item-qty {
+    font-weight: 400; }
+  .order__item-price {
+    font-size: 13px;
+    color: #aaa; }
+  .order__item-total {
+    font-weight: 400; }
+  .order__item-discount {
+    font-size: 13px;
+    color: red; }
+  .order__item-active {
+    background: #ecf7fd; }
+  .order__item:active {
+    background: #2e99db;
+    color: #fff; }
 
 .order__empty {
   text-align: center;
