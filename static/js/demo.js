@@ -36,6 +36,10 @@ function demoEmptyOrder() {
 	toggleClass(demo_order_items,'hide', !toggleClass(demo_order_empty,'hide'));
 }
 
+function demoToggleAnimation() {
+	toggleClass(demoAnimated, 'icon-check', toggleClass(body, 'animated'));
+}
+
 
 document.addEventListener("DOMContentLoaded", function(event) { 
 	console.log("DOM ready. Run init...");
