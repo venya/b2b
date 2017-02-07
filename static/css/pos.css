@@ -127,16 +127,19 @@ p {
   opacity: 0.5; }
 
 .pull-right {
-  float: right; }
+  float: right !important; }
 
 .pull-left {
-  float: left; }
+  float: left !important; }
 
-.text-right {
-  text-align: right; }
+.text-left {
+  text-align: left !important; }
 
 .text-center {
-  text-align: center; }
+  text-align: center !important; }
+
+.text-right {
+  text-align: right !important; }
 
 .menu {
   display: block;
@@ -536,6 +539,32 @@ header .btn.icon {
 
 .cutout-left {
   box-shadow: inset 6px 0 4px -5px rgba(0, 0, 0, 0.2); }
+
+.pagination {
+  list-style: none;
+  text-align: center;
+  vertical-align: top;
+  cursor: default;
+  font-size: 0; }
+  .pagination__item {
+    display: inline-block;
+    list-style: none; }
+    .pagination__item-link {
+      display: block;
+      width: 12px;
+      height: 12px;
+      background: #eeeeee;
+      border-radius: 12px;
+      outline: none;
+      margin: 2.5px; }
+      .pagination__item-link:hover, .pagination__item-link:focus {
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); }
+      .pagination__item-link:active {
+        box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3); }
+    .pagination__item-active .pagination__item-link {
+      background: #2e99db !important; }
+  .pagination-white .pagination__item-link {
+    background: #fff; }
 
 article.pos main {
   width: 45%; }
