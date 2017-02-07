@@ -20,15 +20,20 @@ function toggleClass(element, className, newState) {
 }
 
 
-function editItem() {
+function demoEditItem() {
 	toggleClass(document.querySelector('.pos-item'), 'hide');
 }
 
 
-function duplicateItem(item) {
+function demoDuplicateItem(item) {
 	var html = item.outerHTML;
 	console.log(html);
 	item.outerHTML = html + html;
+}
+
+
+function demoEmptyOrder() {
+	toggleClass(demo_order_items,'hide', !toggleClass(demo_order_empty,'hide'));
 }
 
 

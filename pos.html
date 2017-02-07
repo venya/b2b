@@ -26,7 +26,7 @@
 		<main class="pos-order">
 			<header>
 				<button class="btn icon icon-menu" title="Menu"></button>
-				<div class="header__icons"><button class="btn icon icon-delete" title="Empty Order" onclick="toggleClass(demo_order_items,'hide', !toggleClass(demo_order_empty,'hide'))"></button></div>
+				<div class="header__icons"><button class="btn icon icon-delete" title="Empty Order" onclick="demoEmptyOrder()"></button></div>
 				<h1>Order</h1>
 			</header>
 
@@ -65,13 +65,13 @@
 
 			<section class="order">
 				<ul class="order__items" id="demo_order_items">
-					<li class="order__item" onclick="duplicateItem(this)">
+					<li class="order__item" onclick="demoDuplicateItem(this)">
 						<div class="order__item-title">Hot Dog XL</div>
 						<div class="order__item-info">Description</div>
 						<div class="order__item-quantity">1&times;</div>
 						<div class="order__item-price">100.00</div>
 					</li>
-					<li class="order__item order__item-active" onclick="editItem()">
+					<li class="order__item order__item-active" onclick="demoEditItem()">
 						<div class="order__item-title">T-Shirt with Print 23</div>
 						<div class="order__item-info">Description</div>
 						<div class="order__item-quantity">1&times;</div>
