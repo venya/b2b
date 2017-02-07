@@ -2,13 +2,13 @@
 //	(used at the bottom of POS screen)
 
 
-.pos-menu {
+.hmenu {
 	display: table;
 	width: 100%;
-	height: $pos-menu-height;
-	line-height: $pos-menu-height;
-	font-size: $pos-menu-font-size;
-	background: $pos-menu-background;
+	height: $hmenu-height;
+	line-height: $hmenu-height;
+	font-size: $hmenu-font-size;
+	background: $hmenu-background;
 
 	&__item {
 		display: table-cell;
@@ -24,10 +24,10 @@
 		}
 
 		&:hover {
-			background: $pos-menu-hover;
+			background: $hmenu-hover;
 		}
 		&:active {
-			background: $pos-menu-active;
+			background: $hmenu-active;
 			color: $color-white;
 			box-shadow: inset 2px 2px 4px rgba(black, .2);
 		}
@@ -36,12 +36,12 @@
 			display: block;
 			color: inherit;
 			text-decoration: none;
-			line-height: $pos-menu-height;
+			line-height: $hmenu-height;
 		}
 
 		.icon {
 			width: 16px;
-			line-height: $pos-menu-height;
+			line-height: $hmenu-height;
 			vertical-align: top;
 			opacity: .5;
 		}
@@ -50,7 +50,7 @@
 		&-disabled:hover,
 		&-disabled a {
 			color: $color-text-muted;
-			background: $pos-menu-disabled;
+			background: $hmenu-disabled;
 			cursor: default;
 			pointer-events: none;
 		}
