@@ -1,0 +1,87 @@
+
+
+.order {
+	@at-root {
+		section#{&} {
+			padding: 0;
+		}
+	}
+
+	&__items {
+		background: $color-white;
+		min-height: 200px;
+		max-height: 400px;
+		overflow-y: auto;
+	}
+
+	&__item {
+		padding: $pos-order-vspacing $pos-order-hspacing;
+		border-bottom: solid $color-delimiter 1px;
+		font-size: $pos-order-font-size;
+		cursor: pointer;
+		user-select: none;
+
+		// groups
+		&-product {
+			overflow: hidden;
+		}
+		&-data {
+			float: right;
+			width: 40%;
+			text-align: right;
+		}
+		&-data1 {
+			width: 40%;
+			float: left;
+		}
+
+		// items
+		&-title {
+			font-weight: $font-weight-normal;
+		}
+		&-info {
+			font-size: $pos-order-font-small;
+			color: $color-text-muted;
+		}
+		&-qty {
+			font-weight: $font-weight-normal;
+		}
+		&-price {
+			font-size: $pos-order-font-small;
+			color: $color-text-muted;
+		}
+		&-total {
+			font-weight: $font-weight-normal;
+		}
+		&-discount {
+			font-size: $pos-order-font-small;
+			color: $pos-order-discount-color;
+		}
+
+		// states
+		&-active {
+			background: $color-blue-superlight;
+		}
+		&:active {
+			background: $color-selection-bg;
+			color: $color-selection-text;
+		}
+	}
+
+	&__empty {
+		text-align: center;
+		color: $color-text-muted;
+		padding: $base-double-spacing;
+
+		&:before {
+			$size: 60px;
+			content: "";
+			@include define-box(inline-block, $size, $size);
+			@include border-radius(9px);
+			background: $color-white;
+			border: dotted #cfcfcf 2px;
+		}
+	}
+}
+
+

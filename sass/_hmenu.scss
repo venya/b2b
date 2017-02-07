@@ -1,0 +1,60 @@
+//	Horizontal menu
+//	(used at the bottom of POS screen)
+
+
+.pos-menu {
+	display: table;
+	width: 100%;
+	height: $pos-menu-height;
+	line-height: $pos-menu-height;
+	font-size: $pos-menu-font-size;
+	background: $pos-menu-background;
+
+	&__item {
+		display: table-cell;
+		width: 1%;
+		text-align: center;
+		border-right: solid $color-delimiter 1px;
+		white-space: nowrap;
+		cursor: pointer;
+		user-select: none;
+
+		&:last-child {
+			border-right: none;
+		}
+
+		&:hover {
+			background: $pos-menu-hover;
+		}
+		&:active {
+			background: $pos-menu-active;
+			color: $color-white;
+			box-shadow: inset 2px 2px 4px rgba(black, .2);
+		}
+
+		a {
+			display: block;
+			color: inherit;
+			text-decoration: none;
+			line-height: $pos-menu-height;
+		}
+
+		.icon {
+			width: 16px;
+			line-height: $pos-menu-height;
+			vertical-align: top;
+			opacity: .5;
+		}
+
+		&-disabled,
+		&-disabled:hover,
+		&-disabled a {
+			color: $color-text-muted;
+			background: $pos-menu-disabled;
+			cursor: default;
+			pointer-events: none;
+		}
+	}
+}
+
+
