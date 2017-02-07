@@ -61,6 +61,7 @@ $font-h6-size: $font-base-size;
 $base-spacing: 10px;
 $base-double-spacing: $base-spacing * 2;
 $base-small-spacing:  $base-spacing / 2;
+$base-delimiter-width: 1px;
 
 
 //	Animation
@@ -89,7 +90,7 @@ $menu-font-size: 16px;
 $menu-animation-in-time: $base-animation-in;
 $menu-animation-out-time: $base-animation-out;
 
-//	POS Menu
+//	POS Bottom Menu
 
 $hmenu-height: 60px;
 $hmenu-background: $color-white;
@@ -200,5 +201,10 @@ $pos-order-hspacing: $base-double-spacing;
 $pos-order-discount-color: $color-red;
 $pos-order-font-size: 16px;
 $pos-order-font-small: 13px;
+
+$pos-catalog-border-width: $base-delimiter-width;
+$pos-catalog-border-color: $color-delimiter;
+$pos-catalog-item-bg: $color-white;
+
 
 

@@ -30,7 +30,7 @@
 				<h1>Order</h1>
 			</header>
 
-			<div class="toolbar pos-order__toolbar">
+			<div class="toolbar toolbar-delimiter">
 				<div class="toolbar__item w50">
 					<div class="dropdown dropdown-white w100">
 						<div class="dropdown__selected">
@@ -104,6 +104,10 @@
 				</div>
 			</section>
 
+			<div class="order-totals">
+				Order totals
+			</div>
+
 			<div class="toolbar toolbar-payments">
 				<div class="toolbar__item toolbar-payments__secondary">
 					<button class="btn btn-green btn-lg btn-block">
@@ -117,6 +121,7 @@
 						<span>Cash:</span>
 				</button></div>
 			</div>
+
 			<ul class="hmenu">
 				<li class="hmenu__item hmenu__item-disabled"><a href="">Save</a></li>
 				<li class="hmenu__item"><a href="">Notes</a></li>
@@ -133,8 +138,22 @@
 				<h1>Category</h1>
 			</header>
 
+			<!-- CATEGORIES -->
 			<section class="categories cutout-left">
-				<h4>List of Categories</h4>
+
+				<!-- Scrollable list of categories -->
+				<ul class="categories__wrapper">
+					<li class="categories__item">
+						<div class="categories__item-code">DEF</div>
+						<div class="categories__item-title">Default Category</div>
+					</li>
+					<li class="categories__item categories__item-active">
+						<div class="categories__item-code">CUR</div>
+						<div class="categories__item-title">Currently Selected Category</div>
+					</li>
+				</ul>
+
+
 				<ul class="pagination pagination-white">
 					<li class="pagination__item pagination__item-active" title="1"><a href="#" class="pagination__item-link"></a></li>
 					<li class="pagination__item" title="2"><a href="#" class="pagination__item-link"></a></li>
@@ -142,11 +161,28 @@
 				</ul>
 			</section>
 
+			<!-- PRODUCTS -->
 			<section class="products">
+
+				<!-- Message: no products in category -->
 				<div class="products__empty">
 					<h5>No items in this category</h5>
 					<p>You can add them in Back Office</p>
 				</div>
+
+				<!-- Scrollable list of products -->
+				<ul class="products__wrapper">
+					<li class="products__item">
+						<div class="products__item-title">Hot Dog XL</div>
+						<div class="products__item-code">HDXL</div>
+						<div class="products__item-price">$4.00</div>
+					</li>
+					<li class="products__item">
+						<div class="products__item-title">Simple Item</div>
+						<div class="products__item-price">$100.00</div>
+					</li>
+				</ul>
+
 				<ul class="pagination">
 					<li class="pagination__item pagination__item-active" title="1"><a href="#" class="pagination__item-link"></a></li>
 					<li class="pagination__item" title="2"><a href="#" class="pagination__item-link"></a></li>

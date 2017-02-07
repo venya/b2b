@@ -1,0 +1,73 @@
+//	.categories - scrollable list of catalog categories
+//		.categories__item - each category block
+//	.products - same for list of products
+//		.products__item	- each product
+
+
+
+
+//	Shared Products + Categories styling
+
+.categories,
+.products {
+	display: block;
+
+	&__item {
+		display: inline-block;
+		padding: $base-spacing;
+		border: solid $pos-catalog-border-color $pos-catalog-border-width;
+		background: $pos-catalog-item-bg;
+		text-align: left;
+		white-space: nowrap;
+		overflow: hidden;
+		vertical-align: top;
+		cursor: pointer;
+		user-select: none;
+		width: 25%;
+
+		&:hover {
+			border-color: $color-primary;
+		}
+	}
+}
+
+
+
+//	Categories specific
+
+.categories {
+	background: $color-silver-light;
+	min-height: 170px;
+
+	&__item {
+		height: 80px;
+	}
+}
+
+
+
+//	Products specific
+
+.products {
+
+	&__item {
+		border-width: 2px;
+	}
+
+	&__empty {
+		text-align: center;
+		color: $color-text-muted;
+
+		&:before {
+			$size: 60px;
+			content: "";
+			@include define-box(inline-block, $size, $size);
+			@include border-radius(9px);
+			background: $color-white;
+			border: dotted #cfcfcf 2px;
+		}
+	}
+
+}
+
+

@@ -18,6 +18,15 @@
 			border-left: none;
 		}
 	}
+
+	&-white {
+		background: $color-white;
+	}
+
+	&-delimiter {
+		height: $toolbar-height + $base-delimiter-width;
+		border-bottom: solid $color-delimiter $base-delimiter-width;
+	}
 }
 
 
