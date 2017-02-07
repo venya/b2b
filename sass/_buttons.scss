@@ -15,6 +15,7 @@
 	user-select: none;
 	padding: 0 $btn-padding;
 	margin: 0;
+	vertical-align: $input-valign;
 
 	&:active {
 		box-shadow: inset 2px 2px 6px rgba(black, .2);
@@ -44,27 +45,35 @@
 
 
 .btn-default {
-	background: $color-silver-light;
-	color: inherit;
+	background: $btn-default-bg;
+	color: $btn-default-text;
+}
+
+.btn-primary {
+	background: $btn-primary-bg;
+	color: $btn-primary-text;
+}
+
+.btn-secondary {
+	background: $btn-secondary-bg;
+	color: $btn-secondary-text;
+}
+
+.btn-danger {
+	background: $btn-danger-bg;
+	color: $btn-danger-text;
 }
 
 .btn-green,
 .btn-success {
-	background: $color-green;
-	color: $color-white;
-}
-
-.btn-primary {
-	background: $color-blue;
-	color: $color-white;
+	background: $btn-success-bg;
+	color: $btn-success-text;
 }
 
 .btn-white {
 	background: $color-white;
+	color: inherit;
 }
-
-
-
 
 
 

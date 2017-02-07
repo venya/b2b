@@ -274,7 +274,8 @@ a {
   min-width: 40px;
   user-select: none;
   padding: 0 10px;
-  margin: 0; }
+  margin: 0;
+  vertical-align: bottom; }
   .btn:active {
     box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.2); }
   .btn .icon {
@@ -294,17 +295,26 @@ a {
   background: #eeeeee;
   color: inherit; }
 
+.btn-primary {
+  background: #2e99db;
+  color: #fff; }
+
+.btn-secondary {
+  background: #ecf7fd;
+  color: #2e99db; }
+
+.btn-danger {
+  background: #FF6431;
+  color: #fff; }
+
 .btn-green,
 .btn-success {
   background: #66BB6A;
   color: #fff; }
 
-.btn-primary {
-  background: #2e99db;
-  color: #fff; }
-
 .btn-white {
-  background: #fff; }
+  background: #fff;
+  color: inherit; }
 
 .btn.icon {
   color: inherit;
@@ -367,6 +377,7 @@ header .btn.icon {
   line-height: 60px;
   padding: 0 30px 0 20px;
   position: relative;
+  vertical-align: bottom;
   cursor: pointer;
   font-size: 14px;
   font-weight: 400;

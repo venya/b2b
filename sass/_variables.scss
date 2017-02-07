@@ -108,6 +108,7 @@ $input-font-family: $font-base-family;
 $input-font-size: 14px;
 $input-font-weight: $font-weight-normal;
 
+$input-valign: bottom;
 $toolbar-background: $color-silver-light;
 $toolbar-height: $input-lg-height;
 $select-background: $toolbar-background;
@@ -124,6 +125,17 @@ $btn-min-width: $btn-height;
 $btn-lg-text-size: $input-font-size + 3px;
 $btn-lg-height: $toolbar-height;
 $btn-lg-min-width: $btn-lg-height;
+
+$btn-default-bg: $color-silver-light;
+$btn-default-text: inherit;
+$btn-primary-bg: $color-primary;
+$btn-primary-text: $color-white;
+$btn-secondary-bg: $color-blue-superlight;
+$btn-secondary-text: $color-blue;
+$btn-danger-bg: $color-red;
+$btn-danger-text: $color-white;
+$btn-success-bg: $color-green;
+$btn-success-text: $color-white;
 
 
 //	Dropdown Menus
