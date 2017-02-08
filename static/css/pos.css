@@ -404,7 +404,7 @@ header .btn.icon {
   .dropdown:hover {
     background: #fff; }
   .dropdown:active {
-    box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.4); }
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.3); }
   .dropdown-white {
     background: white; }
     .dropdown-white:hover {
@@ -694,31 +694,43 @@ header .btn.icon {
   .products__item {
     display: inline-block;
     padding: 10px;
-    margin: 0 5px;
     border: solid rgba(0, 0, 0, 0.1) 1px;
     background: #fff;
     text-align: left;
     white-space: nowrap;
     vertical-align: top;
-    cursor: pointer;
+    width: calc(25% - 10px);
+    cursor: default; }
+  .categories .categories__item,
+  .products .categories__item, .categories
+  .products__item,
+  .products
+  .products__item {
+    margin: 5px;
     user-select: none;
-    width: calc(25% - 10px); }
-    .categories__item:hover,
+    cursor: pointer; }
+    .categories .categories__item:hover,
+    .products .categories__item:hover, .categories
+    .products__item:hover,
+    .products
     .products__item:hover {
       border-color: #2e99db; }
-    .categories__item-title,
-    .products__item-title {
-      overflow: hidden;
-      text-overflow: ellipsis; }
+    .categories .categories__item:active,
+    .products .categories__item:active, .categories
+    .products__item:active,
+    .products
+    .products__item:active {
+      box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.3); }
 
 .categories {
-  background: #eeeeee;
   height: 162px;
-  padding: 10px 10px; }
+  padding: 5px 10px; }
   .categories__item {
     height: 60px; }
     .categories__item-title {
       font-size: 13px;
+      overflow: hidden;
+      text-overflow: ellipsis;
       opacity: 0.5; }
     .categories__item-code {
       font-size: 20px; }
@@ -729,9 +741,39 @@ header .btn.icon {
 .products {
   position: absolute;
   width: 100%;
-  height: calc(100% - 212px); }
+  height: calc(100% - 212px);
+  padding: 5px 10px; }
+  .products__wrapper {
+    height: calc(100% - 22px); }
   .products__item {
-    height: 120px; }
+    min-height: 95px;
+    height: 33.33333%;
+    position: relative; }
+    .products__item-title {
+      font-size: 16px;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .products__item-code {
+      font-size: 30px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: center;
+      line-height: 100%;
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      left: 0;
+      margin-top: -15px; }
+    .products__item-price {
+      font-size: 18px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      padding: 0 10px 10px;
+      text-align: right;
+      overflow: hidden;
+      text-overflow: ellipsis; }
   .products__empty {
     text-align: center;
     color: #aaa; }
@@ -781,6 +823,11 @@ article.pos .toolbar-payments {
     width: 100%;
     position: relative;
     height: auto; }
+    article.pos main .hmenu,
+    article.pos main .toolbar-payments,
+    article.pos main .order,
+    article.pos main .order__items {
+      position: static; }
   article.pos aside {
     width: 100%;
     position: relative;

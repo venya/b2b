@@ -121,7 +121,7 @@
 		background: $color-white;
 	}
 	&:active {
-		box-shadow: inset 2px 2px 6px rgba(black, .4);
+		box-shadow: inset $base-inset-shadow;
 	}
 
 	&-white {

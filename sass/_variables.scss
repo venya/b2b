@@ -64,13 +64,17 @@ $base-small-spacing:  $base-spacing / 2;
 $base-delimiter-width: 1px;
 
 
-//	Animation
+//	Animation & Effects
 
 $base-animation-in: .3s;
 $base-animation-out: .2s;
 
+$base-inset-shadow: 2px 2px 4px rgba(black, .3);
+
+
 //	Layout
 
+//	Headers
 
 $header-height: 50px;
 $header-font-size: 20px;
@@ -175,6 +179,7 @@ $pagination-item-color: $color-silver-light;
 $pagination-item-hover: $color-white;
 $pagination-item-active: $color-blue;
 $pagination-item-spacing: $base-small-spacing / 2;
+$pagination-height: $pagination-item-size;
 
 // Z-index library
 
@@ -214,13 +219,14 @@ $pos-categories-title-font: 13px;
 $pos-categories-code-font: 20px;
 $pos-categories-v-padding: $base-spacing;
 $pos-categories-h-padding: 15px;
-$pos-categories-section-height: $pos-categories-height*2 + $pos-catalog-spacing + $pos-categories-v-padding*2 + $pagination-item-size;
+$pos-categories-section-height: $pos-categories-height*2 + $pos-catalog-spacing*2 + $pos-categories-v-padding + $pagination-item-size;
 
 $pos-products-v-padding: $pos-categories-v-padding;
 $pos-products-h-padding: $pos-categories-h-padding;
 $pos-products-title-font: 16px;
 $pos-products-price-font: 18px;
 $pos-products-code-font: 30px;
+$pos-products-rows: 3;
 
 
 

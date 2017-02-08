@@ -80,6 +80,13 @@ article.pos {
 			width: 100%;
 			position: relative;
 			height: auto;
+
+			.hmenu,
+			.toolbar-payments,
+			.order,
+			.order__items {
+				position: static;
+			}
 		}
 		aside {
 			width: 100%;

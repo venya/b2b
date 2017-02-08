@@ -16,23 +16,27 @@
 	&__item {
 		display: inline-block;
 		padding: $base-spacing;
-		margin: 0 $pos-catalog-spacing/2;
 		border: solid $pos-catalog-border-color $pos-catalog-border-width;
 		background: $pos-catalog-item-bg;
 		text-align: left;
 		white-space: nowrap;
 		vertical-align: top;
-		cursor: pointer;
-		user-select: none;
 		width: calc(25% - #{$pos-catalog-spacing});
+		cursor: default;
+	}
+
+	// when in list (or wrapper?)
+	& &__item {
+		margin: $pos-catalog-spacing/2;
+		user-select: none;
+		cursor: pointer;
 
 		&:hover {
 			border-color: $color-primary;
 		}
 
-		// elements
-		&-title {
-			@include text-overflow;
+		&:active {
+			box-shadow: inset $base-inset-shadow;
 		}
 	}
 }
@@ -42,15 +46,16 @@
 //	Categories specific
 
 .categories {
-	background: $color-silver-light;
+	// background: $color-silver-light;
 	height: $pos-categories-section-height;
-	padding: $pos-categories-v-padding ($pos-categories-h-padding - $pos-catalog-spacing/2);
+	padding: ($pos-categories-v-padding - $pos-catalog-spacing/2) ($pos-categories-h-padding - $pos-catalog-spacing/2);
 
 	&__item {
 		height: $pos-categories-height;
 
 		&-title {
 			font-size: $pos-categories-title-font;
+			@include text-overflow;
 			@include muted-text();
 		}
 		&-code {
@@ -73,9 +78,42 @@
 	// width: 100%;
 	// height: calc(100% - #{($pos-categories-section-height+$header-height)} );
 	@include auto-height($pos-categories-section-height + $header-height);
+	padding: ($pos-categories-v-padding - $pos-catalog-spacing/2) ($pos-categories-h-padding - $pos-catalog-spacing/2);
+
+	&__wrapper {
+		height: calc(100% - #{$pagination-height + $pos-products-v-padding});
+	}
 
 	&__item {
-		height: 120px;
+		min-height: 95px;
+		height: 100% / $pos-products-rows;
+		position: relative;
+
+		&-title {
+			font-size: $pos-products-title-font;
+			@include text-overflow;
+		}
+		&-code {
+			font-size: $pos-products-code-font;
+			@include text-overflow;
+			text-align: center;
+			line-height: 100%;
+			position: absolute;
+			top: 50%;
+			width: 100%;
+			left: 0;
+			margin-top: -$pos-products-code-font/2;
+		}
+		&-price {
+			font-size: $pos-products-price-font;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+			padding: 0 $base-spacing $base-spacing;
+			text-align: right;
+			@include text-overflow;
+		}
 	}
 
 	&__empty {
