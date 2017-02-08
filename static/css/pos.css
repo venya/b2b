@@ -747,7 +747,7 @@ header .btn.icon {
     height: calc(100% - 22px); }
   .products__item {
     min-height: 95px;
-    height: 33.33333%;
+    height: calc((100% - 30px)/ 3);
     position: relative; }
     .products__item-title {
       font-size: 16px;

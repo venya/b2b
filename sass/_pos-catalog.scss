@@ -86,7 +86,7 @@
 
 	&__item {
 		min-height: 95px;
-		height: 100% / $pos-products-rows;
+		height: calc((100% - #{ $pos-catalog-spacing * $pos-products-rows })/ #{$pos-products-rows});
 		position: relative;
 
 		&-title {
