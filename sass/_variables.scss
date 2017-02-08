@@ -193,6 +193,7 @@ $responsive-portrait: only screen and (orientation: portrait) and (max-width: $r
 
 
 //	Screen-related configurations
+//	POS:
 
 $pos-catalog-width: 55%;
 $pos-payment-primary-width: 60%;
@@ -202,9 +203,24 @@ $pos-order-discount-color: $color-red;
 $pos-order-font-size: 16px;
 $pos-order-font-small: 13px;
 
+//	product catalog
 $pos-catalog-border-width: $base-delimiter-width;
 $pos-catalog-border-color: $color-delimiter;
 $pos-catalog-item-bg: $color-white;
+$pos-catalog-spacing: $base-spacing;
+
+$pos-categories-height: 60px;
+$pos-categories-title-font: 13px;
+$pos-categories-code-font: 20px;
+$pos-categories-v-padding: $base-spacing;
+$pos-categories-h-padding: 15px;
+$pos-categories-section-height: $pos-categories-height*2 + $pos-catalog-spacing + $pos-categories-v-padding*2 + $pagination-item-size;
+
+$pos-products-v-padding: $pos-categories-v-padding;
+$pos-products-h-padding: $pos-categories-h-padding;
+$pos-products-title-font: 16px;
+$pos-products-price-font: 18px;
+$pos-products-code-font: 30px;
 
 
 

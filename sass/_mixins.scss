@@ -30,3 +30,15 @@
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
+
+@mixin muted-text() {
+	@include opacity($color-muted-visibility);
+}
+
+
+@mixin auto-height($displacement, $position:absolute) {
+	position: $position;
+	width: 100%;
+	height: calc(100% - #{$displacement} );
+}
+

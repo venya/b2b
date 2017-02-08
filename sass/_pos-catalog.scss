@@ -11,10 +11,12 @@
 .categories,
 .products {
 	display: block;
+	font-size: 0;
 
 	&__item {
 		display: inline-block;
 		padding: $base-spacing;
+		margin: 0 $pos-catalog-spacing/2;
 		border: solid $pos-catalog-border-color $pos-catalog-border-width;
 		background: $pos-catalog-item-bg;
 		text-align: left;
@@ -22,7 +24,7 @@
 		vertical-align: top;
 		cursor: pointer;
 		user-select: none;
-		width: 25%;
+		width: calc(25% - #{$pos-catalog-spacing});
 
 		&:hover {
 			border-color: $color-primary;
@@ -41,10 +43,19 @@
 
 .categories {
 	background: $color-silver-light;
-	min-height: 170px;
+	height: $pos-categories-section-height;
+	padding: $pos-categories-v-padding ($pos-categories-h-padding - $pos-catalog-spacing/2);
 
 	&__item {
-		height: 80px;
+		height: $pos-categories-height;
+
+		&-title {
+			font-size: $pos-categories-title-font;
+			@include muted-text();
+		}
+		&-code {
+			font-size: $pos-categories-code-font;
+		}
 
 		&-active {
 			background: $color-selection-bg;
@@ -58,6 +69,10 @@
 //	Products specific
 
 .products {
+	// position: absolute;
+	// width: 100%;
+	// height: calc(100% - #{($pos-categories-section-height+$header-height)} );
+	@include auto-height($pos-categories-section-height + $header-height);
 
 	&__item {
 		height: 120px;

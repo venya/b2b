@@ -1,17 +1,16 @@
 
 
 .order {
-	@at-root {
-		section#{&} {
-			padding: 0;
-		}
-	}
+	padding: 0;
+	@include auto-height($header-height + $toolbar-height+$base-delimiter-width + $hmenu-height + $btn-lg-height);
 
 	&__items {
 		background: $color-white;
-		min-height: 200px;
-		max-height: 400px;
+		// min-height: 200px;
+		// max-height: 400px;
 		overflow-y: auto;
+
+		@include auto-height(0px);	// Refactor !?
 	}
 
 	&__item {
