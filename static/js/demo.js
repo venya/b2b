@@ -19,6 +19,15 @@ function toggleClass(element, className, newState) {
 	return newState;
 }
 
+//	Replacement for ES5 .forEach()
+function forEvery(parent, selector, func) {
+	// console.log("For every "+selector);
+	var items = parent.querySelectorAll(selector);
+	for (var i = 0; i < items.length; i++) {
+		func(items[i]);
+	}
+}
+
 
 function demoEditItem() {
 	toggleClass(document.querySelector('.pos-item'), 'hide');
@@ -45,19 +54,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	console.log("DOM ready. Run init...");
 	var menu = document.querySelector(".menu");
 	//	Open main menu
-	document.querySelectorAll(".btn.icon-menu").forEach(function(el){
+	forEvery(document, ".btn.icon-menu", function(el) {
 		el.onclick = function() {
+			console.log('menu clicked');
 			toggleClass(menu, 'menu-active', true);
 		};
+		console.log(el.onclick);
 	});
 	//	Close main menu
-	document.querySelectorAll(".menu header, .menu__mask").forEach(function(el){
+	forEvery(document, ".menu header, .menu__mask", function(el){
 		el.onclick = function() {
 			toggleClass(menu, 'menu-active', false);
 		};
 	});
 	//	Dropdown open/close
-	document.querySelectorAll(".dropdown").forEach(function(el){
+	forEvery(document, ".dropdown", function(el) {
 		el.onclick = function() {
 			var menu = this.querySelector('.dropdown-menu');
 			if (menu) {
@@ -66,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		};
 	});
 	// Tabs
-	document.querySelectorAll(".tabs__item").forEach(function(el) {
+	forEvery(document, ".tabs__item", function(el) {
 		el.onclick = function() {
 			var prevTab = this.parentElement.querySelector(".tabs__item-active");
 			if (prevTab)
