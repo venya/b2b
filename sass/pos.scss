@@ -109,6 +109,12 @@ article.pos {
 
 	&__info {
 		background: white;
+		@include clearfix();
+
+		&-product {
+			float: left;
+			margin-right: $base-double-spacing;
+		}
 	}
 
 	.tabs {

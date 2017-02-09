@@ -71,6 +71,19 @@
 	}
 }
 
+.animated {
+	.dropdown-menu {
+		display: block;
+		top: 0 !important;
+		transition: transform $dropdown-menu-animation-in ease-out;
+		transform: scaleY(0) translate(0, -100%);
+
+		&-open {
+			transform: scaleY(1) translate(0, $toolbar-height);
+		}
+	}
+}
+
 
 
 //	Dropdown Item (aka select replacement)

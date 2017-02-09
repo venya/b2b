@@ -384,6 +384,14 @@ header .btn.icon {
       .animated .dropdown-menu-open + .dropdown-menu__mask {
         transition: opacity 0.3s ease-out, z-index 0s; }
 
+.animated .dropdown-menu {
+  display: block;
+  top: 0 !important;
+  transition: transform 0.3s ease-out;
+  transform: scaleY(0) translate(0, -100%); }
+  .animated .dropdown-menu-open {
+    transform: scaleY(1) translate(0, 60px); }
+
 .dropdown {
   display: inline-block;
   background: #eeeeee;
@@ -856,4 +864,8 @@ article.pos .toolbar-payments {
   .pos-item .icon-close {
     float: right; }
   .pos-item__info {
-    background: white; }
+    background: white;
+    overflow: hidden; }
+    .pos-item__info-product {
+      float: left;
+      margin-right: 20px; }
