@@ -3,6 +3,7 @@
 	border: none;
 	text-decoration: none;
 	cursor: pointer;
+	box-sizing: border-box;
 	outline: none;
 	text-align: center;
 	display: inline-block;
@@ -39,40 +40,46 @@
 	display: block;
 	width: 100%;
 }
+.btn-rounded {
+	@include border-radius($btn-border-radius);
+}
 
 
-// Button Colors
+// Button Colors (using unified mixin)
+
+@mixin btn-color-version($background, $color:inherit) {
+	background: $background;
+	color: $color;
+
+	&:active {
+		background-color: darken($background, $btn-pressed-effect);
+	}
+}
 
 
 .btn-default {
-	background: $btn-default-bg;
-	color: $btn-default-text;
+	@include btn-color-version($btn-default-bg, $btn-default-text);
 }
 
 .btn-primary {
-	background: $btn-primary-bg;
-	color: $btn-primary-text;
+	@include btn-color-version($btn-primary-bg, $btn-primary-text);
 }
 
 .btn-secondary {
-	background: $btn-secondary-bg;
-	color: $btn-secondary-text;
+	@include btn-color-version($btn-secondary-bg, $btn-secondary-text);
 }
 
 .btn-danger {
-	background: $btn-danger-bg;
-	color: $btn-danger-text;
+	@include btn-color-version($btn-danger-bg, $btn-danger-text);
 }
 
 .btn-green,
 .btn-success {
-	background: $btn-success-bg;
-	color: $btn-success-text;
+	@include btn-color-version($btn-success-bg, $btn-success-text);
 }
 
 .btn-white {
-	background: $color-white;
-	color: inherit;
+	@include btn-color-version($color-white);
 }
 
 

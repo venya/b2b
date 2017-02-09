@@ -13,6 +13,7 @@
 	&__item {
 		line-height: $dropdown-menu-item-height;
 		padding: 0 $base-double-spacing;
+		list-style: none;
 		cursor: pointer;
 		white-space: nowrap;
 

@@ -56,10 +56,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	//	Open main menu
 	forEvery(document, ".btn.icon-menu", function(el) {
 		el.onclick = function() {
-			console.log('menu clicked');
 			toggleClass(menu, 'menu-active', true);
 		};
-		console.log(el.onclick);
 	});
 	//	Close main menu
 	forEvery(document, ".menu header, .menu__mask", function(el){

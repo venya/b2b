@@ -10,6 +10,7 @@
 	<link rel="icon" href="https://ehopper.com/wp-content/uploads/2016/03/favicon-01.png" type="image/png">
 	<style>
 		code {background: #d7f3ff; padding: 0 7px 0 5px; border-radius: 3px; color: #65b1d0;}
+		p {margin: 20px 0;}
 	</style>
 </head>
 
@@ -56,7 +57,13 @@
 				<button class="btn btn-secondary">Secondary</button>
 				<button class="btn btn-success">Success</button>
 				<button class="btn btn-danger">Danger</button>
+				<button class="btn btn-white">White</button>
 				<button class="btn">Unstyled</button>
+			</p>
+
+			<p>Styling options: <code>.btn-rounded</code>, with <code>.icon</code> inside, <code>.btn.icon</code></p>
+			<p>
+				<button class="btn btn-default btn-rounded">Rounded</button>
 				<button class="btn btn-default"><i class="icon"></i>With Icon</button>
 				<a class="btn icon" title="Icon button"></a>
 			</p>
@@ -65,14 +72,34 @@
 
 			<div class="dropdown">
 				<div class="dropdown__selected">Dropdown</div>
+				<div class="dropdown-menu">
+					<li class="dropdown-menu__item">Option 1</li>
+					<li class="dropdown-menu__item">Option 2</li>
+				</div>
+			</div>
+			<div class="dropdown">
+				<div class="dropdown__selected">Lightboxed</div>
+				<div class="dropdown-menu">
+					<li class="dropdown-menu__item">Option 1</li>
+					<li class="dropdown-menu__item">Option 2</li>
+				</div>
+				<div class="dropdown-menu__mask"></div>
 			</div>
 			<div class="dropdown dropdown-white">
 				<div class="dropdown__selected">White Version</div>
+				<div class="dropdown-menu">
+					<li class="dropdown-menu__item">Option 1</li>
+					<li class="dropdown-menu__item">Option 2</li>
+				</div>
 			</div>
 			<div class="dropdown">
 				<div class="dropdown__selected">
 					<div class="dropdown__selected-label">Label:</div>
 					<div class="dropdown__selected-value">Value</div>
+				</div>
+				<div class="dropdown-menu">
+					<li class="dropdown-menu__item">Option 1</li>
+					<li class="dropdown-menu__item">Option 2</li>
 				</div>
 			</div>
 			<div class="dropdown">
@@ -93,11 +120,21 @@
 							<div class="dropdown__selected-label">First:</div>
 							<div class="dropdown__selected-value">Dropdown</div>
 						</div>
+						<div class="dropdown-menu">
+							<li class="dropdown-menu__item">Option 1</li>
+							<li class="dropdown-menu__item">Option 2</li>
+						</div>
+						<div class="dropdown-menu__mask"></div>
 					</div>
 				</div>
-				<div class="toolbar__item w50">
+				<div class="toolbar__item">
 					<div class="dropdown w100">
 						<div class="dropdown__selected">Simple Dropdown</div>
+						<div class="dropdown-menu">
+							<li class="dropdown-menu__item">Option 1</li>
+							<li class="dropdown-menu__item">Option 2</li>
+						</div>
+						<div class="dropdown-menu__mask"></div>
 					</div>
 				</div>
 				<div class="toolbar__item">

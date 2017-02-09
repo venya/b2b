@@ -126,6 +126,8 @@ $btn-text-weight: $font-base-weight;
 $btn-height: $input-sm-height;
 $btn-padding: $base-spacing;
 $btn-min-width: $btn-height;
+$btn-pressed-effect: 8%;
+$btn-border-radius: 5px;
 
 $btn-lg-text-size: $input-font-size + 3px;
 $btn-lg-height: $toolbar-height;
@@ -147,6 +149,7 @@ $btn-success-text: $color-white;
 $dropdown-menu-background: $color-white;
 $dropdown-menu-item-height: $input-height;
 $dropdown-menu-item-hover: $color-silver-light;
+$dropdown-menu-item-current: $color-silver-light;
 $dropdown-menu-item-current: $color-silver-light;
 $dropdown-menu-item-active: $color-selection-bg;
 $dropdown-menu-item-active-text: $color-selection-text;
