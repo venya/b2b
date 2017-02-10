@@ -119,8 +119,9 @@ function demoAddToCart() {
 
 
 
-document.addEventListener("DOMContentLoaded", function(event) { 
+document.addEventListener("DOMContentLoaded", function(event) {
 	console.log("DOM ready. Run init...");
+	// alert([].forEach);
 	var menu = document.querySelector(".menu");
 	//	Open main menu
 	forEvery(document, ".btn.icon-menu", function(el) {

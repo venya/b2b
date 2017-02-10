@@ -31,6 +31,15 @@
 	height: $height;
 }
 
+@mixin create-mask($color: $color-mask-background) {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: $color;
+}
+
 @mixin text-overflow() {
 	overflow: hidden;
 	text-overflow: ellipsis;

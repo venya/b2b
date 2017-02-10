@@ -37,13 +37,14 @@
 	}
 
 	&__mask {
-		position: fixed;
-		background: $color-mask-background;
-		@include define-box(block, 100%, 100%);
 		// z-index: $Zindex-dropdown-mask;
+			// position: fixed;
+			// background: $color-mask-background;
+			// @include define-box(block, 100%, 100%);
+			// top: 0;
+			// left: 0;
+		@include create-mask();
 		z-index: -1;
-		top: 0;
-		left: 0;
 		opacity: 0;
 		// display: none;
 

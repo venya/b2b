@@ -1,0 +1,10 @@
+
+
+.dialog {
+
+
+	&__mask {
+		@include create-mask();
+	}
+}
+
