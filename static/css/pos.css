@@ -167,7 +167,7 @@ a {
     .menu-active + .menu__mask {
       display: block;
       z-index: 1 !important;
-      opacity: 0.7; }
+      opacity: 0.8; }
   .menu header {
     cursor: pointer; }
   .menu__items {
@@ -272,7 +272,8 @@ a {
   user-select: none;
   padding: 0 10px;
   margin: 0;
-  vertical-align: bottom; }
+  vertical-align: bottom;
+  -webkit-tap-highlight-color: transparent; }
   .btn:active {
     box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.2); }
   .btn .icon {
@@ -384,7 +385,7 @@ header .btn.icon {
     display: block; }
     .dropdown-menu-open + .dropdown-menu__mask {
       z-index: 1;
-      opacity: 0.7; }
+      opacity: 0.8; }
       .animated .dropdown-menu-open + .dropdown-menu__mask {
         transition: opacity 0.3s ease-out, z-index 0s; }
 
@@ -681,7 +682,7 @@ header .btn.icon {
   background: #333;
   color: #eeeeee;
   padding: 20px 20px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   width: 100%; }
   .snackbar__actions {
@@ -804,14 +805,16 @@ header .btn.icon {
     text-align: left;
     white-space: nowrap;
     vertical-align: top;
-    width: calc(25% - 10px);
-    cursor: default; }
+    width: calc(25% - 5px);
+    cursor: default;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none; }
   .categories .categories__item,
   .products .categories__item, .categories
   .products__item,
   .products
   .products__item {
-    margin: 5px;
+    margin: 2.5px;
     user-select: none;
     cursor: pointer; }
     .categories .categories__item:hover,
@@ -828,8 +831,8 @@ header .btn.icon {
       box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.3); }
 
 .categories {
-  height: 162px;
-  padding: 5px 10px; }
+  height: 152px;
+  padding: 7.5px 12.5px; }
   .categories__item {
     height: 60px; }
     .categories__item-title {
@@ -846,13 +849,13 @@ header .btn.icon {
 .products {
   position: absolute;
   width: 100%;
-  height: calc(100% - 212px);
-  padding: 5px 10px; }
+  height: calc(100% - 202px);
+  padding: 7.5px 12.5px; }
   .products__wrapper {
     height: calc(100% - 22px); }
   .products__item {
     min-height: 95px;
-    height: calc((100% - 30px)/ 3);
+    height: calc((100% - 15px)/ 3);
     position: relative; }
     .products__item-title {
       font-size: 16px;

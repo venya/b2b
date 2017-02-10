@@ -23,7 +23,7 @@ $color-text: $color-pre-black;
 $color-link: $color-blue;
 $color-delimiter: rgba(black, .1);
 $color-mask-background: $color-gray;
-$color-mask-opacity: .7;
+$color-mask-opacity: .8; // was .7
 $color-menu-text: #7D838B;
 $color-menu-hover: #4C5560;
 $color-menu-current: #4C5560;
@@ -48,6 +48,7 @@ $font-icon-family: 'Icons';
 $font-base-family: Roboto, Arial;
 $font-header-family: "Open Sans", $font-base-family;
 $font-base-size: 14px;
+$font-lg-size: 16px;
 $font-base-weight: $font-weight-light;
 
 $font-h1-size: 22px;
@@ -206,7 +207,7 @@ $snackbar-position: bottom;
 $snackbar-displacement: 0;
 $snackbar-background: $color-pre-black;
 $snackbar-color: $color-silver-light;
-$snackbar-font-size: $font-base-size;
+$snackbar-font-size: $font-lg-size;
 $snackbar-font-weight: $font-weight-normal;
 
 // Z-index library
@@ -241,7 +242,7 @@ $pos-order-font-small: 13px;
 $pos-catalog-border-width: $base-delimiter-width;
 $pos-catalog-border-color: $color-delimiter;
 $pos-catalog-item-bg: $color-white;
-$pos-catalog-spacing: $base-spacing;
+$pos-catalog-spacing: $base-small-spacing;
 
 $pos-categories-height: 60px;
 $pos-categories-title-font: 13px;

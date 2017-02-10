@@ -171,6 +171,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			toggleClass(this.parentElement, "toggle-off", !this.checked);
 		}
 	});
+
+	// Apply FastClick for specified controls only
+	//	+ Removes 300ms delay
+	//	+ Allows :active on iOS
+	forEvery(document, ".toggle, .btn, .dropdown, .products__item, .categories__item, .order__item", function(el) {
+		el.ontouchstart = function(){};
+	});
+
 });
 
 

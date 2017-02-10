@@ -17,6 +17,7 @@
 	padding: 0 $btn-padding;
 	margin: 0;
 	vertical-align: $input-valign;
+	@include ios-no-highlight();
 
 	&:active {
 		box-shadow: inset 2px 2px 6px rgba(black, .2);

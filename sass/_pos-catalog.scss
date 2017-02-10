@@ -23,6 +23,8 @@
 		vertical-align: top;
 		width: calc(25% - #{$pos-catalog-spacing});
 		cursor: default;
+		@include ios-no-highlight();
+		user-select: none;
 	}
 
 	// when in list (or wrapper?)
