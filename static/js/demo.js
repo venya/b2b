@@ -77,7 +77,7 @@ function demoSnackbar(style, action, handler) {
 	setTimeout(function() {
 		sb.querySelector('.snackbar__message').innerText = message;
 		sb.className = "snackbar" + (style ? " snackbar-"+style : '');
-	}, 300);
+	}, 200);
 
 	sb.onclick = function() {
 		hide(sb);

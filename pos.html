@@ -26,7 +26,7 @@
 		<main class="pos-order">
 			<header>
 				<button class="btn icon icon-menu" title="Menu"></button>
-				<div class="header__icons"><button class="btn icon icon-delete" title="Empty Order" onclick="demoEmptyOrder()"></button></div>
+				<div class="header__icons"><button class="btn icon icon-delete" title="Empty Order" onclick="demoEmptyOrder(); demoSnackbar()"></button></div>
 				<h1>Order</h1>
 			</header>
 
@@ -194,7 +194,7 @@
 						<div class="products__item-title">Simple Item</div>
 						<div class="products__item-price">100.00</div>
 					</li>
-					<li class="products__item" style="background: khaki">
+					<li class="products__item" style="background: khaki" onclick="demoSnackbar(undefined, 'Action Button')">
 						<div class="products__item-title">Colored Item</div>
 						<div class="products__item-price">4,853.00</div>
 					</li>
@@ -244,6 +244,7 @@
 			</ul>
 			<section>
 				<p>Active tab content</p>
+				<p><label><input class="toggle" type="checkbox" checked> Example toggle switcher</label></p>
 				<button class="btn btn-lg btn-default btn-block"><i class="icon icon-check"></i>Done</button>
 
 			</section>
@@ -274,6 +275,10 @@
 	</nav>
 	<div class="menu__mask"></div>
 
+	<div class="snackbar hide">
+		<div class="snackbar__actions"><button class="btn btn-default"></button></div>
+		<div class="snackbar__message"></div>
+	</div>
 
 </body>
 </html>

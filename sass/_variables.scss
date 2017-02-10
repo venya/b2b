@@ -19,6 +19,7 @@ $color-success: $color-green;
 $color-danger: $color-red;
 
 $body-background: $color-silver-superlight;
+$color-text: $color-pre-black;
 $color-link: $color-blue;
 $color-delimiter: rgba(black, .1);
 $color-mask-background: $color-gray;
@@ -137,7 +138,7 @@ $btn-lg-height: $toolbar-height;
 $btn-lg-min-width: $btn-lg-height;
 
 $btn-default-bg: $color-silver-light;
-$btn-default-text: inherit;
+$btn-default-text: $color-text;
 $btn-primary-bg: $color-primary;
 $btn-primary-text: $color-white;
 $btn-secondary-bg: $color-blue-superlight;

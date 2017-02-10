@@ -293,7 +293,7 @@ a {
 
 .btn-default {
   background: #eeeeee;
-  color: inherit; }
+  color: #333; }
   .btn-default:active {
     background-color: #dadada; }
 
@@ -671,6 +671,7 @@ header .btn.icon {
 
 .snackbar {
   position: fixed;
+  bottom: 0;
   bottom: 0;
   background: #333;
   color: #eeeeee;
