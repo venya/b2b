@@ -669,6 +669,33 @@ header .btn.icon {
 .cutout-left {
   box-shadow: inset 6px 0 4px -5px rgba(0, 0, 0, 0.2); }
 
+.snackbar {
+  position: fixed;
+  bottom: 0;
+  background: #333;
+  color: #eeeeee;
+  padding: 10px 20px;
+  width: 100%; }
+  .snackbar__actions {
+    float: right;
+    margin-left: 20px; }
+  .snackbar__message {
+    overflow: hidden;
+    margin: 10px 0; }
+  .snackbar-success {
+    background: #66BB6A;
+    color: #fff; }
+  .snackbar-danger {
+    background: #FF6431;
+    color: #fff; }
+
+.animated .snackbar {
+  transform: translate(0, 0);
+  transition: transform 0.3s; }
+  .animated .snackbar.hide {
+    transform: translate(0, 100%);
+    display: block !important; }
+
 .pagination {
   list-style: none;
   text-align: center;

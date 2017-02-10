@@ -257,6 +257,16 @@
 				<li class="hmenu__item">Item with Icon<i class="icon icon-more-v"></i></li>
 			</ul>
 
+			<h1>Dialogs, Popups and Messages</h1>
+			<h2>Snackbar</h2>
+			<p>Used to display short notification messages without interrupting user tasks. Only one message can be displayed at any moment.</p>
+			<p>
+				<button class="btn btn-default" onclick="demoSnackbar()">Emit message</button>
+				<button class="btn btn-default" onclick="demoSnackbar('success')">Success</button>
+				<button class="btn btn-default" onclick="demoSnackbar('danger')">Warning</button>
+				<button class="btn btn-default" onclick="demoSnackbar(undefined, 'Action', function(){ alert('Message handler'); })">Wih Action</button>
+			</p>
+
 			<h1>Table Grids</h1>
 			<p>Unified Table grid design when applied <code>.table</code> class to any table. Add <code>.w100</code> to make it full page width.</p>
 			<table class="table">
@@ -313,6 +323,11 @@
 	</nav>
 	<div class="menu__mask"></div>
 
+
+	<div class="snackbar hide">
+		<div class="snackbar__actions"><button class="btn"></button></div>
+		<div class="snackbar__message">Snackbar Message</div>
+	</div>
 
 </body>
 </html>

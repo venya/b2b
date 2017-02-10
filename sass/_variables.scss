@@ -15,6 +15,8 @@ $color-black: black;
 
 //	Elements colors
 $color-primary: $color-blue;
+$color-success: $color-green;
+$color-danger: $color-red;
 
 $body-background: $color-silver-superlight;
 $color-link: $color-blue;
@@ -142,7 +144,7 @@ $btn-secondary-bg: $color-blue-superlight;
 $btn-secondary-text: $color-blue;
 $btn-danger-bg: $color-red;
 $btn-danger-text: $color-white;
-$btn-success-bg: $color-green;
+$btn-success-bg: $color-success;
 $btn-success-text: $color-white;
 
 //	Switches
@@ -152,7 +154,7 @@ $toggle-height: 30px;
 $toggle-width: 50px;
 $toggle-color: $color-primary;
 $toggle-danger-color: $color-red;
-$toggle-success-color: $color-green;
+$toggle-success-color: $color-success;
 $toggle-off-color: $color-silver-light;
 $toggle-thumb-size: $toggle-height - 6px;
 $toggle-thumb-color: $color-white;
@@ -197,6 +199,13 @@ $pagination-item-active: $color-blue;
 $pagination-item-spacing: $base-small-spacing / 2;
 $pagination-height: $pagination-item-size;
 
+//	Snackbar messages
+
+$snackbar-position: bottom;
+$snackbar-displacement: 0;
+$snackbar-background: $color-pre-black;
+$snackbar-color: $color-silver-light;
+
 // Z-index library
 
 $Zindex-base: 0;
@@ -204,6 +213,7 @@ $Zindex-dropdown-mask: $Zindex-base + 1;
 $Zindex-dropdown-body: $Zindex-dropdown-mask + 1;
 $Zindex-menu-mask: $Zindex-base + 10;
 $Zindex-menu-body: $Zindex-menu-mask + 1;
+$Zindex-snackbar: $Zindex-menu-body + 1;
 
 //	Responsiveness
 

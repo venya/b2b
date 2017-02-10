@@ -50,6 +50,47 @@ function demoToggleAnimation() {
 }
 
 
+var snackbarTimeout;
+function demoSnackbar(style, action, handler) {
+	var messages = [
+		"Hello, World!",
+		"This is sample notification message.",
+		"On this demonstration page messages generated randomly, but in real-world application text should be defined according to event happened.",
+		"Message can optionally contain only one action button!",
+		"Click or touch this bar to dismiss."
+		];
+	function hide(sb) {
+		toggleClass(sb, "hide", true);
+	}
+
+	var message = messages[Math.floor(Math.random()*messages.length)];
+	var sb = document.querySelector('.snackbar');
+	hide(sb);
+
+	var btn = sb.querySelector('.btn');
+	toggleClass(btn, "hide", action==undefined);
+	if (action) {
+		btn.innerText = action;
+		btn.onclick = handler;
+	}
+	//	Apply message only after animation delay
+	setTimeout(function() {
+		sb.querySelector('.snackbar__message').innerText = message;
+		sb.className = "snackbar" + (style ? " snackbar-"+style : '');
+	}, 300);
+
+	sb.onclick = function() {
+		hide(sb);
+	}
+	if (snackbarTimeout) clearTimeout(snackbarTimeout);
+	snackbarTimeout = setTimeout(function() {
+		hide(sb);
+	}, 3000);
+}
+
+
+
+
 document.addEventListener("DOMContentLoaded", function(event) { 
 	console.log("DOM ready. Run init...");
 	var menu = document.querySelector(".menu");

@@ -1,0 +1,47 @@
+
+
+.snackbar {
+	position: fixed;
+	#{ $snackbar-position }: $snackbar-displacement;
+	background: $snackbar-background;
+	color: $snackbar-color;
+	padding: $base-spacing $base-double-spacing;
+	width: 100%;
+
+
+	&__actions {
+		float: right;
+		margin-left: $base-double-spacing;
+	}
+
+
+	&__message {
+		overflow: hidden;
+		margin: $base-spacing 0;
+	}
+
+
+	// Colored versions
+
+	&-success {
+		background: $color-success;
+		color: $color-white;
+	}
+
+	&-danger {
+		background: $color-danger;
+		color: $color-white;
+	}
+
+}
+
+
+.animated .snackbar {
+	transform: translate(0, 0);
+	transition: transform $base-animation;
+
+	&.hide {
+		transform: translate(0, 100%);
+		display: block !important;
+	}	
+}
