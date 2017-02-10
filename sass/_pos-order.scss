@@ -65,7 +65,12 @@
 			background: $color-selection-bg;
 			color: $color-selection-text;
 		}
+
+		.animated & {
+			transition: background-color $base-animation;
+		}
 	}
+
 
 	&__empty {
 		text-align: center;

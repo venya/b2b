@@ -35,9 +35,17 @@ function demoEditItem() {
 
 
 function demoDuplicateItem(item) {
-	var html = item.outerHTML;
-	console.log(html);
-	item.outerHTML = html + html;
+	// var html = item.outerHTML;
+	// console.log(html);
+	// item.outerHTML = html + html;
+	var cart = demo_order_items;
+	forEvery(cart, '.order__item-active', function(el) {
+		toggleClass(el, 'order__item-active', false);
+	});
+	var copy = item.cloneNode(true);
+	toggleClass(copy, 'order__item-active');
+	cart.appendChild(copy);
+	cart.scrollTop = 9000;
 }
 
 
@@ -51,6 +59,7 @@ function demoToggleAnimation() {
 
 
 var snackbarTimeout;
+
 function demoSnackbar(style, action, handler) {
 	var messages = [
 		"Hello, World!",
@@ -88,6 +97,25 @@ function demoSnackbar(style, action, handler) {
 	}, 3000);
 }
 
+
+function demoAddToCart() {
+	var cart = demo_order_items;
+	forEvery(cart, '.order__item-active', function(el) {
+		toggleClass(el, 'order__item-active', false);
+	});
+	var title = document.createElement('div');
+	title.className = 'order__item-title';
+	title.innerText = "Sample";
+
+	var item = document.createElement('div');
+	item.className = 'order__item';
+	item.appendChild(title);
+	cart.appendChild(item);
+
+	toggleClass(item, 'order__item-active');
+	cart.scrollTop = 9000;
+	console.log(cart);
+}
 
 
 

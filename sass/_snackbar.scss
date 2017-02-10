@@ -6,7 +6,9 @@
 	#{ $snackbar-position }: $snackbar-displacement;
 	background: $snackbar-background;
 	color: $snackbar-color;
-	padding: $base-spacing $base-double-spacing;
+	padding: $base-double-spacing $base-double-spacing;
+	font-size: $snackbar-font-size;
+	font-weight: $snackbar-font-weight;
 	width: 100%;
 
 

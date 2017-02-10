@@ -680,7 +680,9 @@ header .btn.icon {
   bottom: 0;
   background: #333;
   color: #eeeeee;
-  padding: 10px 20px;
+  padding: 20px 20px;
+  font-size: 14px;
+  font-weight: 400;
   width: 100%; }
   .snackbar__actions {
     float: right;
@@ -774,6 +776,8 @@ header .btn.icon {
     .order__item:active {
       background: #2e99db;
       color: #fff; }
+    .animated .order__item {
+      transition: background-color 0.3s; }
   .order__empty {
     text-align: center;
     color: #aaa;
