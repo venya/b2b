@@ -125,10 +125,17 @@
 
 			<ul class="hmenu">
 				<li class="hmenu__item hmenu__item-disabled"><a href="">Save</a></li>
-				<li class="hmenu__item"><a href="">Notes</a></li>
-				<li class="hmenu__item"><a href="">Terminal</a></li>
+				<li class="hmenu__item">Notes</li>
+				<li class="hmenu__item">Terminal</li>
 				<li class="hmenu__item hmenu__item-disabled"><a href="">Drawer</a></li>
-				<li class="hmenu__item"><a href="">More<i class="icon icon-more-v"></i></a></li>
+				<li class="hmenu__item" onclick="toggleClass(demoMore, 'dropdown-menu-open')">
+					More<i class="icon icon-more-v"></i>
+					<ul class="dropdown-menu dropdown-menu-up" id="demoMore">
+						<li class="dropdown-menu__item">Enable animations</li>
+						<li class="dropdown-menu__item">More</li>
+					</ul>
+					<div class="dropdown-menu__mask"></div>
+				</li>
 			</ul>
 		</main>
 

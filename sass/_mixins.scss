@@ -20,6 +20,10 @@
 	overflow: hidden;
 }
 
+@mixin ios-no-highlight() {
+	-webkit-tap-highlight-color: rgba(0,0,0, 0);	// disable iOS tap hilight
+}
+
 
 @mixin define-box($display, $width, $height) {
 	display: $display;

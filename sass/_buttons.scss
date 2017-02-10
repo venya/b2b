@@ -27,6 +27,12 @@
 	}
 }
 
+input.btn {
+	-webkit-border-radius: 0; 
+	border-radius: 0;
+}
+
+
 
 // Button Sizess
 
@@ -43,6 +49,7 @@
 .btn-rounded {
 	@include border-radius($btn-border-radius);
 }
+
 
 
 // Button Colors (using unified mixin)

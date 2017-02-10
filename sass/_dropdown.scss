@@ -100,7 +100,8 @@
 	font-size: $input-font-size;
 	font-weight: $input-font-weight;
 	user-select: none;
-	-webkit-tap-highlight-color: rgba(0,0,0, 0);	// disable iOS tap hilight
+	@include ios-no-highlight();
+
 
 	&__selected {
 		white-space: nowrap;

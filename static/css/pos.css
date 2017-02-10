@@ -278,6 +278,10 @@ a {
   .btn .icon {
     vertical-align: middle; }
 
+input.btn {
+  -webkit-border-radius: 0;
+  border-radius: 0; }
+
 .btn-lg {
   font-size: 17px;
   height: 60px;
@@ -479,7 +483,8 @@ header .btn.icon {
   height: 30px;
   border-radius: 24px;
   background: #2e99db;
-  vertical-align: middle; }
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent; }
   .toggle__thumb {
     display: inline-block;
     width: 24px;

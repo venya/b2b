@@ -8,6 +8,7 @@
 	@include border-radius($toggle-thumb-size);
 	background: $toggle-color;
 	vertical-align: middle;
+	@include ios-no-highlight();
 	// text-align: right;
 
 	&__thumb {
