@@ -1,18 +1,22 @@
 
 
 .toggle {
+	$toggle-margin: ($toggle-height - $toggle-thumb-size) / 2;
+
 	position: relative;
 	@include define-box(inline-block, $toggle-width, $toggle-height);
-	@include border-radius($toggle-height / 2);
+	@include border-radius($toggle-thumb-size);
 	background: $toggle-color;
 	vertical-align: middle;
-	text-align: right;
+	// text-align: right;
 
 	&__thumb {
 		@include define-box(inline-block, $toggle-thumb-size, $toggle-thumb-size);
 		@include border-radius($toggle-thumb-size);
 		background: $toggle-thumb-color;
-		margin: ($toggle-height - $toggle-thumb-size) / 2;
+		position: absolute;
+		top: $toggle-margin;
+		right: $toggle-margin;
 		box-shadow: 2px 2px 2px rgba(black, .2);
 	}
 
@@ -36,10 +40,24 @@
 
 	&-off {
 		background: $toggle-off-color;
-		text-align: left;
+
+		.toggle__thumb {
+			right: $toggle-width - $toggle-thumb-size - $toggle-margin;
+		}
 	}
 
 	&:active {
 		box-shadow: inset $base-inset-shadow;
 	}
 }
+
+
+
+.animated .toggle {
+	transition: background $base-animation;
+
+	&__thumb {
+		transition: right $base-animation ease-out;
+	}
+}
+
