@@ -30,6 +30,20 @@
 			<p>This page contain as many GUI components in all different states as possible.</p>
 
 
+			<h1>Loading trobber</h1>
+			<p>Work in progress</p>
+			<svg viewBox="0 0 64 64" style="width: 60px">
+				<g fill="none" fill-rule="evenodd" stroke-width="3">
+					<circle cx="32" cy="32" r="19.5982" fill="rgba(0,0,0,.2)">
+						<animate attributeName="r" begin="0s" dur="2s" values="0;24" keyTimes="0;1" keySplines="0.1,0.2,0.3,1" calcMode="spline" repeatCount="indefinite"></animate>
+						<animate attributeName="fill-opacity" begin="0s" dur="2s" values=".2;1;.2;0" repeatCount="indefinite"></animate>
+					</circle>
+					<circle cx="32" cy="32" r="23.9972" fill="rgba(0,0,0,.2)">
+						<animate attributeName="r" begin="-1s" dur="2s" values="0;24" keyTimes="0;1" keySplines="0.1,0.2,0.3,1" calcMode="spline" repeatCount="indefinite"></animate>
+						<animate attributeName="fill-opacity" begin="-1s" dur="2s" values=".2;1;.2;0" repeatCount="indefinite"></animate>
+					</circle>
+				</g>
+			</svg>
 
 			<h1>Input Controls</h1>
 
@@ -86,10 +100,10 @@
 
 			<p>Checkboxes stylized to Toggle switches <code>.toggle</code></p>
 			<p>
-				<label><div class="toggle"><div class="toggle__thumb"></div><input type="checkbox" class="toggle"></div>Clickable label</label>
-				<label><div class="toggle toggle-off"><div class="toggle__thumb"></div><input type="checkbox" class="toggle"></div>Off</label>
 				<label><input type="checkbox" class="toggle">Off</label>
 				<label><input type="checkbox" class="toggle" checked>On</label>
+				<label><input type="checkbox" class="toggle toggle-danger" checked>Danger</label>
+				<label><input type="checkbox" class="toggle toggle-success" checked>Success</label>
 				<label><input type="checkbox" class="toggle" disabled>Disabled</label>
 			</p>
 

@@ -83,6 +83,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			toggleClass(this, "tabs__item-active", true);
 		}
 	});
+
+	//	Toggles
+	forEvery(document, "input.toggle", function(el) {
+		toggleClass(el, "toggle", false);
+		console.log("Decorate .toggle: ", el);
+		var additionalClasses = el.classList.contains("toggle-danger") ? " toggle-danger" : '';
+		additionalClasses += el.classList.contains("toggle-success") ? " toggle-success" : '';
+		additionalClasses += el.checked ? "" : " toggle-off";
+		el.outerHTML = '<div class="toggle' + additionalClasses + '">'
+			+ '<span class="toggle__thumb"></span>'
+			+ el.outerHTML
+			+ '</div>';
+	});
 });
 
 

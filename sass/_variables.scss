@@ -147,11 +147,13 @@ $btn-success-text: $color-white;
 //	Switches
 
 //	Toggles
-$toggle-height: $input-sm-height;
-$toggle-width: $toggle-height * 1.8;
+$toggle-height: 30px;
+$toggle-width: 50px;
 $toggle-color: $color-primary;
+$toggle-danger-color: $color-red;
+$toggle-success-color: $color-green;
 $toggle-off-color: $color-silver-light;
-$toggle-thumb-size: $toggle-height - 8px;
+$toggle-thumb-size: $toggle-height - 6px;
 $toggle-thumb-color: $color-white;
 
 
