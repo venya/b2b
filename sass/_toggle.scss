@@ -38,4 +38,8 @@
 		background: $toggle-off-color;
 		text-align: left;
 	}
+
+	&:active {
+		box-shadow: inset $base-inset-shadow;
+	}
 }

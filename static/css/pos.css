@@ -504,6 +504,8 @@ header .btn.icon {
   .toggle-off {
     background: #eeeeee;
     text-align: left; }
+  .toggle:active {
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.3); }
 
 .toolbar {
   display: block;

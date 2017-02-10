@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	//	Toggles
 	forEvery(document, "input.toggle", function(el) {
 		toggleClass(el, "toggle", false);
-		console.log("Decorate .toggle: ", el);
+		// console.log("Decorate .toggle: ", el);
 		var additionalClasses = el.classList.contains("toggle-danger") ? " toggle-danger" : '';
 		additionalClasses += el.classList.contains("toggle-success") ? " toggle-success" : '';
 		additionalClasses += el.checked ? "" : " toggle-off";
@@ -95,6 +95,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			+ '<span class="toggle__thumb"></span>'
 			+ el.outerHTML
 			+ '</div>';
+	});
+	forEvery(document, ".toggle input", function(el) {
+		el.onclick = function() {
+			// console.log(this.parentElement);
+			toggleClass(this.parentElement, "toggle-off", !this.checked);
+		}
 	});
 });
 
