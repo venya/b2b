@@ -5,6 +5,7 @@
 .dropdown-menu {
 	display: none;
 	background: $dropdown-menu-background;
+	color: $color-text;
 	box-shadow: 0 2px 4px rgba(black, .2);
 	position: absolute;
 	z-index: $Zindex-dropdown-body;
@@ -16,6 +17,7 @@
 		list-style: none;
 		cursor: pointer;
 		white-space: nowrap;
+		text-align: left;
 
 		&-selected {
 			background: $dropdown-menu-item-current;
@@ -55,6 +57,7 @@
 		}
 	}
 
+
 	&-open {
 		display: block;
 
@@ -82,6 +85,15 @@
 		&-open {
 			transform: scaleY(1) translate(0, $toolbar-height);
 		}
+	}
+
+	.dropdown-menu-up {
+		top: auto!important;
+		bottom: 0;
+
+	}
+	.dropdown-menu-up.dropdown-menu-open {
+		transform: scaleY(1) translate(0, -$toolbar-height);
 	}
 }
 
