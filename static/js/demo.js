@@ -102,6 +102,7 @@ function demoAddToCart() {
 	var cart = demo_order_items;
 	forEvery(cart, '.order__item-active', function(el) {
 		toggleClass(el, 'order__item-active', false);
+		toggleClass(el, 'order__item-added', false);
 	});
 	var title = document.createElement('div');
 	title.className = 'order__item-title';
@@ -110,9 +111,10 @@ function demoAddToCart() {
 	var item = document.createElement('div');
 	item.className = 'order__item';
 	item.appendChild(title);
+	toggleClass(item, 'order__item-active');
 	cart.appendChild(item);
 
-	toggleClass(item, 'order__item-active');
+	toggleClass(item, 'order__item-added1');
 	cart.scrollTop = 9000;
 	console.log(cart);
 }

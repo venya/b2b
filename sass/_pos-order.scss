@@ -19,6 +19,7 @@
 		font-size: $pos-order-font-size;
 		cursor: pointer;
 		user-select: none;
+		position: relative;
 
 		// groups
 		&-product {
@@ -68,6 +69,23 @@
 
 		.animated & {
 			transition: background-color $base-animation;
+
+			&-active:after {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				
+				transition: all 1s;
+			}
+		}
+		.animated &-added {
+
+			&:after {
+				background: $color-primary;
+			}
 		}
 	}
 

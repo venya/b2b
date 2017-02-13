@@ -93,11 +93,8 @@ input.btn {
 
 //	Ripple effect
 
-.btn-ripple {
+.animated .btn-ripple {
 	$ripple-size: 100%;
-	$ripple-animation-in: $base-animation *0;
-	$ripple-animation-out: $base-animation;
-	$ripple-color: $color-primary;
 
 	position: relative;
 	overflow: hidden;

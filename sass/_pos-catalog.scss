@@ -147,6 +147,7 @@
 		background-position: center;
 		background-origin: content-box;
 		padding: 0 0 $title-line-height;
+		// transition: transform $base-animation;
 
 		&-price {
 			width: auto;
@@ -170,7 +171,22 @@
 		}
 
 		&:active {
-			box-shadow: inset 2px 2px 20px rgba(black, .3) !important;
+			$blur-size: 10px;
+
+			box-shadow: inset 2px 2px $blur-size rgba(black, .3) !important;
+			// box-shadow: none!important;
+			transition-duration: 0s;
+			transform: translate(0, 2px);
+
+			.products__item-title {
+				box-shadow: inset  5px 0px $blur-size -3px rgba(black, .3) ;
+			}
+
+			.products__item-price {
+				box-shadow:
+					inset  (-$blur-size) $blur-size $blur-size (-$blur-size) rgba(black, .3),
+					-1px 1px 2px rgba(black, .3) ;
+			}
 		}
 	}
 }
