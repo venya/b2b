@@ -50,7 +50,8 @@ function demoDuplicateItem(item) {
 
 
 function demoEmptyOrder() {
-	toggleClass(demo_order_items,'hide', !toggleClass(demo_order_empty,'hide'));
+	var res = toggleClass(demo_order_items,'hide', !toggleClass(demo_order_empty,'hide'));
+	emitMessage(res ? 'All items removed from your shopping cart' : 'Order content restored.');
 }
 
 function demoToggleAnimation() {
@@ -68,11 +69,16 @@ function demoSnackbar(style, action, handler) {
 		"Message can optionally contain only one action button!",
 		"Click or touch this bar to dismiss."
 		];
+	var message = messages[Math.floor(Math.random()*messages.length)];
+	emitMessage(message, style, action, handler);
+}
+
+
+function emitMessage(message, style, action, handler) {
 	function hide(sb) {
 		toggleClass(sb, "hide", true);
 	}
 
-	var message = messages[Math.floor(Math.random()*messages.length)];
 	var sb = document.querySelector('.snackbar');
 	hide(sb);
 
