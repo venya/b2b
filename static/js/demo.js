@@ -19,6 +19,13 @@ function toggleClass(element, className, newState) {
 	return newState;
 }
 
+function newNode(tag, className, content) {
+	var node = document.createElement(tag);
+	node.className = className;
+	node.innerText = content;
+	return node;
+}
+
 //	Replacement for ES5 .forEach()
 function forEvery(parent, selector, func) {
 	// console.log("For every "+selector);
@@ -118,9 +125,16 @@ function demoAddToCart() {
 	title.className = 'order__item-title';
 	title.innerText = "Sample";
 
+	var title = newNode('div', 'order__item-title', "Sample");
+
+	var price = document.createElement('div');
+	price.className = 'order__item-total';
+	price.innerText = 10;
+
 	var item = document.createElement('div');
 	item.className = 'order__item';
 	item.appendChild(title);
+	item.appendChild(price);
 	toggleClass(item, 'order__item-active');
 	cart.appendChild(item);
 

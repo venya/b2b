@@ -78,7 +78,7 @@ $base-inset-shadow: 2px 2px 4px rgba(black, .3);
 
 $ripple-animation-in: 0s;
 $ripple-animation-out: 450ms;
-$ripple-color: $color-silver;
+$ripple-color: $color-white;
 
 
 //	Layout
@@ -240,7 +240,7 @@ $responsive-portrait: only screen and (orientation: portrait) and (max-width: $r
 //	Screen-related configurations
 //	POS:
 
-$pos-catalog-width: 55%;
+$pos-catalog-width: 60%;
 $pos-payment-primary-width: 60%;
 $pos-order-vspacing: 13px;
 $pos-order-hspacing: $base-double-spacing;
