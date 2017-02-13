@@ -334,6 +334,27 @@ input.btn {
   .btn-white:active {
     background-color: #ebebeb; }
 
+.btn-ripple {
+  position: relative;
+  overflow: hidden; }
+  .btn-ripple:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2e99db;
+    border-radius: 100%;
+    pointer-events: none;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    transform: scale(2);
+    opacity: 0; }
+  .btn-ripple:active:after {
+    transform: scale(0);
+    opacity: 1;
+    transition-duration: 0s; }
+
 .btn.icon {
   color: inherit;
   padding: 0;
@@ -902,7 +923,7 @@ header .btn.icon {
       border: dotted #cfcfcf 2px; }
 
 .products__item {
-  background-color: #9bceee;
+  background-color: #eeeeee;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -912,11 +933,12 @@ header .btn.icon {
     width: auto;
     max-width: 100%;
     top: 0;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.8);
     padding: 5px;
     padding-left: 10px;
     bottom: auto;
-    border-radius: 0 0 0 4px; }
+    border-radius: 0 0 0 4px;
+    box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.3); }
   .products__item-title {
     position: absolute;
     bottom: 0;
@@ -924,6 +946,8 @@ header .btn.icon {
     padding: 5px 5px 5px 10px;
     left: 0;
     width: 100%; }
+  .products__item:active {
+    box-shadow: inset 2px 2px 20px rgba(0, 0, 0, 0.3) !important; }
 
 article.pos main {
   width: 45%; }

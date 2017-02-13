@@ -91,6 +91,40 @@ input.btn {
 }
 
 
+//	Ripple effect
+
+.btn-ripple {
+	$ripple-size: 100%;
+	$ripple-animation-in: $base-animation *0;
+	$ripple-animation-out: $base-animation;
+	$ripple-color: $color-primary;
+
+	position: relative;
+	overflow: hidden;
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: $ripple-size;
+		height: $ripple-size;
+		background: $ripple-color;
+		border-radius: 100%;
+		pointer-events: none;
+		transition:
+			transform $ripple-animation-out ease-out,
+			opacity $ripple-animation-out ease-out;
+		transform: scale(2);
+		opacity: 0;
+	}
+	&:active:after {
+		transform: scale(0);
+		opacity: 1;
+		transition-duration: $ripple-animation-in;
+	}
+}
+
 
 
 //	Temp

@@ -140,8 +140,8 @@
 	$title-line-height: $base-small-spacing*2 + $pos-products-title-font;
 
 	&__item {
-		background-color: lighten($color-blue, 25);
-		// background-color: $color-silver;
+		// background-color: lighten($color-blue, 25);
+		background-color: $color-silver-light;
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
@@ -152,11 +152,12 @@
 			width: auto;
 			max-width: 100%;
 			top: 0;
-			background: $color-white;
+			background: rgba($color-white, .8);
 			padding: $base-small-spacing;
 			padding-left: $base-spacing;
 			bottom: auto;
 			border-radius: 0 0 0 4px;
+			box-shadow: -1px 1px 2px rgba(black, .3);
 		}
 
 		&-title {
@@ -166,6 +167,10 @@
 			padding: $base-small-spacing $base-small-spacing $base-small-spacing $base-spacing;
 			left: 0;
 			width: 100%;
+		}
+
+		&:active {
+			box-shadow: inset 2px 2px 20px rgba(black, .3) !important;
 		}
 	}
 }
