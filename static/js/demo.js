@@ -49,9 +49,11 @@ function demoDuplicateItem(item) {
 }
 
 
+
 function demoEmptyOrder() {
-	var res = toggleClass(demo_order_items,'hide', !toggleClass(demo_order_empty,'hide'));
-	emitMessage(res ? 'All items removed from your shopping cart' : 'Order content restored.');
+	demo_order_items.innerHTML = "";
+	toggleClass(demo_order_empty, 'hide', false);
+	emitMessage('All items removed from your shopping cart');
 }
 
 function demoToggleAnimation() {
@@ -106,6 +108,8 @@ function emitMessage(message, style, action, handler) {
 
 function demoAddToCart() {
 	var cart = demo_order_items;
+	toggleClass(demo_order_empty, 'hide', true);
+
 	forEvery(cart, '.order__item-active', function(el) {
 		toggleClass(el, 'order__item-active', false);
 		toggleClass(el, 'order__item-added', false);
@@ -184,9 +188,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	// Apply FastClick for specified controls only
 	//	+ Removes 300ms delay
 	//	+ Allows :active on iOS
-	forEvery(document, ".toggle, .btn, .dropdown, .products__item, .categories__item, .order__item", function(el) {
-		el.ontouchstart = function(){};
+	forEvery(document, ".toggle, .btn, .dropdown, .produ__cts__item, .categories__item, .order__item", function(el) {
+		el.ontouchstart = function() { };
 	});
+
+	//	Test original FastClick
+	// console.log(FastClick.attach(document.body));
 
 });
 
