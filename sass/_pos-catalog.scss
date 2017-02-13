@@ -134,4 +134,41 @@
 
 }
 
+//	Product Design improvement
+
+.products {
+	$title-line-height: $base-small-spacing*2 + $pos-products-title-font;
+
+	&__item {
+		background-color: lighten($color-blue, 25);
+		// background-color: $color-silver;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		background-origin: content-box;
+		padding: 0 0 $title-line-height;
+
+		&-price {
+			width: auto;
+			max-width: 100%;
+			top: 0;
+			background: $color-white;
+			padding: $base-small-spacing;
+			padding-left: $base-spacing;
+			bottom: auto;
+			border-radius: 0 0 0 4px;
+		}
+
+		&-title {
+			position: absolute;
+			bottom: 0;
+			background: white;
+			padding: $base-small-spacing $base-small-spacing $base-small-spacing $base-spacing;
+			left: 0;
+			width: 100%;
+		}
+	}
+}
+
+
 

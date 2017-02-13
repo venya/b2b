@@ -812,7 +812,7 @@ header .btn.icon {
     text-align: left;
     white-space: nowrap;
     vertical-align: top;
-    width: calc(25% - 5px);
+    width: calc(25% - 10px);
     cursor: default;
     -webkit-tap-highlight-color: transparent;
     user-select: none; }
@@ -821,7 +821,7 @@ header .btn.icon {
   .products__item,
   .products
   .products__item {
-    margin: 2.5px;
+    margin: 5px;
     user-select: none;
     cursor: pointer; }
     .categories .categories__item:hover,
@@ -838,8 +838,8 @@ header .btn.icon {
       box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.3); }
 
 .categories {
-  height: 152px;
-  padding: 7.5px 12.5px; }
+  height: 162px;
+  padding: 5px 10px; }
   .categories__item {
     height: 60px; }
     .categories__item-title {
@@ -856,13 +856,13 @@ header .btn.icon {
 .products {
   position: absolute;
   width: 100%;
-  height: calc(100% - 202px);
-  padding: 7.5px 12.5px; }
+  height: calc(100% - 212px);
+  padding: 5px 10px; }
   .products__wrapper {
     height: calc(100% - 22px); }
   .products__item {
     min-height: 95px;
-    height: calc((100% - 15px)/ 3);
+    height: calc((100% - 30px)/ 3);
     position: relative; }
     .products__item-title {
       font-size: 16px;
@@ -900,6 +900,30 @@ header .btn.icon {
       border-radius: 9px;
       background: #fff;
       border: dotted #cfcfcf 2px; }
+
+.products__item {
+  background-color: #9bceee;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-origin: content-box;
+  padding: 0 0 26px; }
+  .products__item-price {
+    width: auto;
+    max-width: 100%;
+    top: 0;
+    background: #fff;
+    padding: 5px;
+    padding-left: 10px;
+    bottom: auto;
+    border-radius: 0 0 0 4px; }
+  .products__item-title {
+    position: absolute;
+    bottom: 0;
+    background: white;
+    padding: 5px 5px 5px 10px;
+    left: 0;
+    width: 100%; }
 
 article.pos main {
   width: 45%; }
