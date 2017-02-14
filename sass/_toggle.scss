@@ -10,6 +10,7 @@
 	vertical-align: middle;
 	@include ios-no-highlight();
 	// text-align: right;
+	cursor: pointer;
 
 	&__thumb {
 		@include define-box(inline-block, $toggle-thumb-size, $toggle-thumb-size);
@@ -29,6 +30,7 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
+		cursor: pointer;
 	}
 
 	&-danger {
