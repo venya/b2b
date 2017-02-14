@@ -914,8 +914,20 @@ header .btn.icon {
   .products__item {
     min-height: 95px;
     height: calc((100% - 30px)/ 3);
-    position: relative; }
+    position: relative;
+    background-color: #eeeeee;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-origin: content-box;
+    padding: 0 0 30px; }
     .products__item-title {
+      position: absolute;
+      bottom: 0;
+      background: #fff;
+      padding: 5px 5px 5px 10px;
+      left: 0;
+      width: 100%;
       font-size: 16px;
       line-height: 20px;
       overflow: hidden;
@@ -953,21 +965,6 @@ header .btn.icon {
       border-radius: 9px;
       background: #fff;
       border: dotted #cfcfcf 2px; }
-
-.products__item {
-  background-color: #eeeeee;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-origin: content-box;
-  padding: 0 0 30px; }
-  .products__item-title {
-    position: absolute;
-    bottom: 0;
-    background: white;
-    padding: 5px 5px 5px 10px;
-    left: 0;
-    width: 100%; }
 
 article.pos main {
   width: 40%; }

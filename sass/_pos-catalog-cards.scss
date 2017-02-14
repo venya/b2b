@@ -96,7 +96,9 @@
 	}
 
 	&__item {
+		$title-line-height: $base-small-spacing*2 + $pos-products-title-lineheight;
 		min-height: 95px;
+
 		height: calc((100% - #{ $pos-catalog-spacing * $pos-products-rows })/ #{$pos-products-rows});
 		position: relative;
 		// background-color: lighten($color-blue, 25);
@@ -108,7 +110,6 @@
 		padding: 0 0 $title-line-height;
 
 		&-title {
-			$title-line-height: $base-small-spacing*2 + $pos-products-title-lineheight;
 			position: absolute;
 			bottom: 0;
 			background: $color-white;
