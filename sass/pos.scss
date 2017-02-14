@@ -116,6 +116,11 @@ article.pos {
 		&-product {
 			float: left;
 			margin-right: $base-double-spacing;
+			width: 20%;
+			height: 120px;
+		}
+		&-data {
+			overflow: hidden;
 		}
 	}
 

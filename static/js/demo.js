@@ -115,32 +115,22 @@ function emitMessage(message, style, action, handler) {
 
 function demoAddToCart() {
 	var cart = demo_order_items;
+	// hide "empty order"
 	toggleClass(demo_order_empty, 'hide', true);
-
+	// remove old selection
 	forEvery(cart, '.order__item-active', function(el) {
 		toggleClass(el, 'order__item-active', false);
 		toggleClass(el, 'order__item-added', false);
 	});
-	var title = document.createElement('div');
-	title.className = 'order__item-title';
-	title.innerText = "Sample";
-
-	var title = newNode('div', 'order__item-title', "Sample");
-
-	var price = document.createElement('div');
-	price.className = 'order__item-total';
-	price.innerText = 10;
-
+	// create new item in order list (from HTML template id="demoOrderItemTemplate")
 	var item = document.createElement('div');
-	item.className = 'order__item';
-	item.appendChild(title);
-	item.appendChild(price);
+	item.className = demoOrderItemTemplate.className;
 	toggleClass(item, 'order__item-active');
+	item.innerHTML = demoOrderItemTemplate.innerHTML;
+	item.onclick = demoEditItem;
+	console.log(item);
 	cart.appendChild(item);
-
-	toggleClass(item, 'order__item-added1');
 	cart.scrollTop = 9000;
-	console.log(cart);
 }
 
 

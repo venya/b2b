@@ -1029,4 +1029,8 @@ article.pos .toolbar-payments {
     overflow: hidden; }
     .pos-item__info-product {
       float: left;
-      margin-right: 20px; }
+      margin-right: 20px;
+      width: 20%;
+      height: 120px; }
+    .pos-item__info-data {
+      overflow: hidden; }

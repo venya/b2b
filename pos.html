@@ -71,6 +71,24 @@
 					<h5>Order is empty</h5>
 					<p>Add items from catalog</p>
 				</div>
+
+				<script type="text/html" id="demoOrderItemTemplate" class="order__item">
+					<div class="order__item-data">
+						<div class="order__item-data1">
+							<div class="order__item-qty">2&times;</div>
+							<div class="order__item-price">8.15</div>
+						</div>
+						<div class="order__item-data2">
+							<div class="order__item-total">16.30</div>
+							<div class="order__item-discount"></div>
+						</div>
+					</div>
+					<div class="order__item-product">
+						<div class="order__item-title">Sample Order Item</div>
+						<div class="order__item-info">No description</div>
+					</div>
+				</script>
+
 				<ul class="order__items" id="demo_order_items">
 					<li class="order__item" onclick="demoDuplicateItem(this)">
 						<div class="order__item-data">
@@ -251,13 +269,14 @@
 		<aside class="pos-item cutout-left hide">
 			<section class="pos-item__info cutout-left">
 				<button class="btn icon icon-close" onclick="demoEditItem()"></button>
-				<div class="products__item pos-item__info-product">
+
+				<div class="products__item pos-item__info-product" style="background-color: khaki">
 					<div class="products__item-title">Hot Dog XL</div>
 					<div class="products__item-code">HDXL</div>
 					<div class="products__item-price">$4.00</div>
 				</div>
 				<div class="pos-item__info-data">
-					<div class="pos-item__info-description">Description:</div>
+					<div class="pos-item__info-description"><p class="muted">Description:</p>If product have description we can show it here.<br>In vertically limited space to allow scrolling of big text fragments.</div>
 				</div>
 			</section>
 			<ul class="tabs tabs-lg tabs-flex pos-item__tabs">
