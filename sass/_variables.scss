@@ -253,6 +253,7 @@ $pos-catalog-border-width: $base-delimiter-width;
 $pos-catalog-border-color: $color-delimiter;
 $pos-catalog-item-bg: $color-white;
 $pos-catalog-spacing: $base-spacing;	// smaller?
+$pos-catalog-border-radius: 2px;
 
 $pos-categories-height: 60px;
 $pos-categories-title-font: 13px;
@@ -264,7 +265,8 @@ $pos-categories-section-height: $pos-categories-height*2 + $pos-catalog-spacing*
 $pos-products-v-padding: $pos-categories-v-padding;
 $pos-products-h-padding: $pos-categories-h-padding;
 $pos-products-title-font: 16px;
-$pos-products-price-font: 18px;
+$pos-products-title-lineheight: 20px;
+$pos-products-price-font: 16px;
 $pos-products-code-font: 30px;
 $pos-products-rows: 3;
 

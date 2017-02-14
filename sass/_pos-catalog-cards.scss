@@ -1,0 +1,165 @@
+//	Products and Categories redesigned to Material Cards
+//
+//	.categories - scrollable list of catalog categories
+//		.categories__item - each category block
+//	.products - same for list of products
+//		.products__item	- each product
+
+
+
+
+//	Shared Products + Categories styling
+
+.categories,
+.products {
+	display: block;
+	font-size: 0;
+
+	&__item {
+		display: inline-block;
+		padding: $base-spacing;
+		background: $pos-catalog-item-bg;
+		text-align: left;
+		white-space: nowrap;
+		vertical-align: top;
+		width: calc(25% - #{$pos-catalog-spacing});
+		cursor: default;
+		@include ios-no-highlight();
+		user-select: none;
+		box-shadow:
+			0 0px 1px rgba(black, .2),
+			0 2px 4px rgba(black, .1);
+		border-radius: $pos-catalog-border-radius;
+		overflow: hidden;
+	}
+
+	// when in list (or wrapper?)
+	& &__item {
+		margin: $pos-catalog-spacing/2;
+		user-select: none;
+		cursor: pointer;
+
+		&:hover {
+			box-shadow: 0 2px 5px rgba(black, .3);
+		}
+
+		&:active {
+			box-shadow: none;
+			transition-duration: 0ms;
+			// transform: translate(0, 2px);
+			transform: scale(.97);
+		}
+	}
+}
+
+
+
+//	Categories specific
+
+.categories {
+	// background: $color-silver-light;
+	height: $pos-categories-section-height;
+	padding: ($pos-categories-v-padding - $pos-catalog-spacing/2) ($pos-categories-h-padding - $pos-catalog-spacing/2);
+
+	&__item {
+		height: $pos-categories-height;
+
+		&-title {
+			font-size: $pos-categories-title-font;
+			@include text-overflow;
+			@include muted-text();
+		}
+		&-code {
+			font-size: $pos-categories-code-font;
+		}
+
+		&-active {
+			background: $color-selection-bg;
+			color: $color-selection-text;
+		}
+	}
+}
+
+
+
+//	Products specific
+
+.products {
+	// position: absolute;
+	// width: 100%;
+	// height: calc(100% - #{($pos-categories-section-height+$header-height)} );
+	@include auto-height($pos-categories-section-height + $header-height);
+	padding: ($pos-categories-v-padding - $pos-catalog-spacing/2) ($pos-categories-h-padding - $pos-catalog-spacing/2);
+
+	&__wrapper {
+		height: calc(100% - #{$pagination-height + $pos-products-v-padding});
+	}
+
+	&__item {
+		min-height: 95px;
+		height: calc((100% - #{ $pos-catalog-spacing * $pos-products-rows })/ #{$pos-products-rows});
+		position: relative;
+		// background-color: lighten($color-blue, 25);
+		background-color: $color-silver-light;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		background-origin: content-box;
+		padding: 0 0 $title-line-height;
+
+		&-title {
+			$title-line-height: $base-small-spacing*2 + $pos-products-title-lineheight;
+			position: absolute;
+			bottom: 0;
+			background: $color-white;
+			padding: $base-small-spacing $base-small-spacing $base-small-spacing $base-spacing;
+			left: 0;
+			width: 100%;
+			font-size: $pos-products-title-font;
+			line-height: $pos-products-title-lineheight;
+			@include text-overflow;
+		}
+		&-code {
+			font-size: $pos-products-code-font;
+			@include text-overflow;
+			text-align: center;
+			line-height: 100%;
+			position: absolute;
+			top: 50%;
+			width: 100%;
+			left: 0;
+			margin-top: -$pos-products-code-font/2;
+		}
+		&-price {
+			font-size: $pos-products-price-font;
+			position: absolute;
+			top: $base-small-spacing;
+			right: $base-small-spacing;
+			padding: 2px $base-small-spacing;
+			border-radius: 20px;
+			text-align: right;
+			@include text-overflow;
+			background: rgba($color-white, .7);
+			// box-shadow: 0px 1px 2px rgba(black, .3);
+		}
+	}
+
+	&__empty {
+		text-align: center;
+		color: $color-text-muted;
+
+		&:before {
+			$size: 60px;
+			content: "";
+			@include define-box(inline-block, $size, $size);
+			@include border-radius(9px);
+			background: $color-white;
+			border: dotted #cfcfcf 2px;
+		}
+	}
+
+}
+
+
+
+

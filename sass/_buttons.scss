@@ -117,7 +117,7 @@ input.btn {
 	}
 	&:active:after {
 		transform: scale(0);
-		opacity: 1;
+		opacity: .5;
 		transition-duration: $ripple-animation-in;
 	}
 }
