@@ -719,7 +719,12 @@ header .btn.icon {
   padding: 20px 20px;
   font-size: 16px;
   font-weight: 400;
-  width: 100%; }
+  width: 60%;
+  left: 20%; }
+  @media (max-width: 480px) {
+    .snackbar {
+      width: 100%;
+      left: 0; } }
   .snackbar__actions {
     float: right;
     margin-left: 20px; }

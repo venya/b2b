@@ -9,7 +9,13 @@
 	padding: $base-double-spacing $base-double-spacing;
 	font-size: $snackbar-font-size;
 	font-weight: $snackbar-font-weight;
-	width: 100%;
+	width: 60%;
+	left: 20%;
+
+	@media #{$responsive-portrait} {
+		width: 100%;
+		left: 0;
+	}
 
 
 	&__actions {
