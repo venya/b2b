@@ -11,6 +11,11 @@
 	<style>
 		code {background: #d7f3ff; padding: 0 7px 0 5px; border-radius: 3px; color: #65b1d0;}
 		p {margin: 20px 0;}
+		.catalog-demo .categories__item,
+		.catalog-demo .products__item
+			{margin-right: 10px;max-width: 150px;}
+		.catalog-demo .products__item
+			{height: 130px;}
 	</style>
 </head>
 
@@ -44,6 +49,48 @@
 					</circle>
 				</g>
 			</svg>
+
+			<h1>POS Catalog</h1>
+			<h2>Products</h2>
+			<ul class="catalog-demo">
+				<li class="products__item btn-ripple">
+					<div class="products__item-price">1.00</div>
+					<div class="products__item-title">Regular Item with Long Description to demo text clipping</div>
+				</li>
+				<li class="products__item btn-ripple" style="background-color: khaki">
+					<div class="products__item-price">2.00</div>
+					<div class="products__item-code">KHA</div>
+					<div class="products__item-title">Colored</div>
+				</li>
+				<li class="products__item btn-ripple" style="background-image: url(static/img/products/sushi.jpg)">
+					<div class="products__item-price">2.50</div>
+					<div class="products__item-title">Sushi</div>
+				</li>
+			</ul>
+
+			<h2>Categories</h2>
+			<ul class="catalog-demo">
+				<li class="categories__item btn-ripple" style="background-color: khaki">
+					<div class="categories__item-code">COL</div>
+					<div class="categories__item-title">Colored</div></li>
+				<li class="categories__item btn-ripple">
+					<div class="categories__item-code">REG</div>
+					<div class="categories__item-title">Regular Category</div>
+				</li>
+				<li class="categories__item btn-ripple categories__item-active">
+					<div class="categories__item-code">SEL</div>
+					<div class="categories__item-title">Currently Selected</div>
+				</li>
+			</ul>
+
+			<h2>Pagination</h2>
+			<ul class="pagination">
+				<li class="pagination__item pagination__item-active" title="1"><a href="#" class="pagination__item-link"></a></li>
+				<li class="pagination__item" title="2"><a href="#" class="pagination__item-link"></a></li>
+				<li class="pagination__item" title="3"><a href="#" class="pagination__item-link"></a></li>
+			</ul>
+
+
 
 			<h1>Input Controls</h1>
 
@@ -289,12 +336,6 @@
 				</tbody>
 			</table>
 
-			<h1>Pagination</h1>
-			<ul class="pagination">
-				<li class="pagination__item pagination__item-active" title="1"><a href="#" class="pagination__item-link"></a></li>
-				<li class="pagination__item" title="2"><a href="#" class="pagination__item-link"></a></li>
-				<li class="pagination__item" title="3"><a href="#" class="pagination__item-link"></a></li>
-			</ul>
 
 		</section>
 

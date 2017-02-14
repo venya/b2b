@@ -94,30 +94,30 @@ input.btn {
 //	Ripple effect
 
 .animated .btn-ripple {
-	$ripple-size: 100%;
-
 	position: relative;
 	overflow: hidden;
 
 	&:after {
 		content: "";
 		position: absolute;
-		top: 0;
-		left: 0;
+		top: 50%;
+		left: 50%;
 		width: $ripple-size;
 		height: $ripple-size;
+		margin-top: -$ripple-size/2;
+		margin-left: -$ripple-size/2;
 		background: $ripple-color;
-		border-radius: 200px;
+		border-radius: $ripple-radius;
 		pointer-events: none;
 		transition:
 			transform $ripple-animation-out ease-out,
 			opacity $ripple-animation-out ease-out;
-		transform: scale(2);
+		transform: scale(15);
 		opacity: 0;
 	}
 	&:active:after {
 		transform: scale(0);
-		opacity: .5;
+		opacity: $ripple-opacity;
 		transition-duration: $ripple-animation-in;
 	}
 }
