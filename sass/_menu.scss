@@ -26,6 +26,7 @@
 
 	&-active {
 		@include translate(0,0);
+		// box-shadow: 2px 0px 10px rgba(black, .6);
 
 		& + .menu__mask {
 			display: block;
