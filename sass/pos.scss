@@ -16,10 +16,14 @@
 @import "snackbar";
 @import "dialog";
 
+//	Screen specific components
+//	POS
 @import "pagination";
 @import "pos-order";
 @import "pos-catalog-cards";
 
+//	Orders
+@import "orders";
 
 
 // TEMPORARY CODE (should be refactored)

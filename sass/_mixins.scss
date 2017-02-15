@@ -56,3 +56,17 @@
 	height: calc(100% - #{$displacement} );
 }
 
+@mixin layout-left($width) {
+	width: $width;
+	left: 0;
+	right: auto;
+}
+
+@mixin layout-right($width) {
+	width: $width;
+	right: 0;
+	left: auto;
+}
+
+
+

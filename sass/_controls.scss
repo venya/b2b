@@ -18,6 +18,14 @@
 		&:first-child {
 			border-left: none;
 		}
+
+		&-right {
+			float: right;
+
+			&:last-child {
+				border-left: none;
+			}
+		}
 	}
 
 	&-white {

@@ -35,6 +35,15 @@ a {
 	color: $color-link;
 }
 
+hr {
+	margin: 0;
+	background: $color-delimiter;
+	color: $color-delimiter;
+	border: none;
+	height: 2px;
+}
+
+
 
 .small {
 	font-size: 70%;
@@ -59,4 +68,16 @@ a {
 }
 .text-right {
 	text-align: right !important;
+}
+
+
+.labeled-info {
+	font-size: $font-lg-size;
+
+	label,
+	&__label {
+		font-size: $font-sm-size;
+		display: block;
+		color: $color-text-muted;
+	}
 }

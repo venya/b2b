@@ -1,0 +1,19 @@
+
+
+//	Orders list
+article.orders {
+
+}
+
+//	Order details page
+article.order-details {
+	$aside-width: 300px;
+
+	aside {
+		@include layout-left($aside-width);
+		background: $color-white;
+	}
+	main {
+		@include layout-right(calc(100% - #{$aside-width}));
+	}
+}
