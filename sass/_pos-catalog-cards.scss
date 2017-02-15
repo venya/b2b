@@ -134,10 +134,10 @@
 		&-price {
 			font-size: $pos-products-price-font;
 			position: absolute;
-			top: $base-small-spacing;
-			right: $base-small-spacing;
+			top: 0; //$base-small-spacing;
+			right: 0; //$base-small-spacing;
 			padding: 2px $base-small-spacing;
-			border-radius: 20px;
+			// border-radius: 20px;
 			text-align: right;
 			@include text-overflow;
 			background: rgba($color-white, .7);
