@@ -192,6 +192,15 @@ $tabs-active-background: $body-background;
 $tabs-border-width: 2px;
 
 //	Tables (Grids)
+$table-th-background: $color-silver-light;
+$table-th-color: $color-text;
+$table-th-border-color: $color-silver;
+$table-th-border-width: $base-delimiter-width;
+
+$table-td-border-color: $color-silver-light;
+$table-td-border-width: $base-delimiter-width;
+$table-td-even-background: $color-white;
+
 
 //	Icons
 

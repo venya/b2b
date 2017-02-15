@@ -119,6 +119,13 @@ p {
 a {
   color: #2e99db; }
 
+hr {
+  margin: 0;
+  background: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.1);
+  border: none;
+  height: 2px; }
+
 .small {
   font-size: 70%; }
 
@@ -139,6 +146,13 @@ a {
 
 .text-right {
   text-align: right !important; }
+
+.labeled-info {
+  font-size: 16px; }
+  .labeled-info label, .labeled-info__label {
+    font-size: 12px;
+    display: block;
+    color: #aaa; }
 
 .menu {
   display: block;
@@ -564,11 +578,37 @@ header .btn.icon {
     border-left: solid rgba(0, 0, 0, 0.1) 1px; }
     .toolbar__item:first-child {
       border-left: none; }
+    .toolbar__item-right {
+      float: right; }
+      .toolbar__item-right:last-child {
+        border-left: none; }
   .toolbar-white {
     background: #fff; }
   .toolbar-delimiter {
     height: 61px;
     border-bottom: solid rgba(0, 0, 0, 0.1) 1px; }
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 20px; }
+  .table thead th {
+    vertical-align: bottom;
+    text-align: left;
+    padding: 10px;
+    background: #eeeeee;
+    border-bottom: solid #aaa 1px; }
+  .table tbody td {
+    padding: 10px;
+    border-top: solid #eeeeee 1px; }
+  .table tbody tr:first-child td,
+  .table tbody tr:first-child th {
+    border-top: none; }
+  .table-striped tbody tr:nth-child(even) td,
+  .table-striped tbody tr:nth-child(even) th {
+    background-color: #fff; }
 
 .icon {
   display: inline-block;
@@ -949,7 +989,7 @@ header .btn.icon {
       top: 50%;
       width: 100%;
       left: 0;
-      margin-top: -15px; }
+      margin-top: -25px; }
     .products__item-price {
       font-size: 16px;
       position: absolute;
@@ -972,6 +1012,17 @@ header .btn.icon {
       border-radius: 9px;
       background: #fff;
       border: dotted #cfcfcf 2px; }
+
+article.order-details aside {
+  width: 300px;
+  left: 0;
+  right: auto;
+  background: #fff; }
+
+article.order-details main {
+  width: calc(100% - 300px);
+  right: 0;
+  left: auto; }
 
 article.pos main {
   width: 40%; }
