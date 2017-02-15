@@ -351,25 +351,23 @@ input.btn {
 .animated .btn-ripple {
   position: relative;
   overflow: hidden; }
-  .animated .btn-ripple:after {
-    content: "";
+  .animated .btn-ripple__effect {
     position: absolute;
-    top: 50%;
-    left: 50%;
     width: 20px;
     height: 20px;
+    top: 50%;
+    left: 50%;
     margin-top: -10px;
     margin-left: -10px;
     background: #fff;
     border-radius: 10px;
-    pointer-events: none;
     transition: transform 450ms ease-out, opacity 450ms ease-out;
-    transform: scale(15);
-    opacity: 0; }
-  .animated .btn-ripple:active:after {
     transform: scale(0);
     opacity: 0.5;
-    transition-duration: 0s; }
+    z-index: 100; }
+    .animated .btn-ripple__effect.effect-on {
+      transform: scale(10);
+      opacity: 0; }
 
 .btn.icon {
   color: inherit;
