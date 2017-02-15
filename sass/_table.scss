@@ -1,0 +1,46 @@
+
+//	Table Grids
+
+.table {
+	width: 100%;
+	max-width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin-bottom: $base-double-spacing;
+
+	thead {
+		th {
+			vertical-align: bottom;
+			text-align: left;
+			padding: $base-spacing;
+			background: $table-th-background;
+			@if $table-th-border-width > 0 {
+				border-bottom: solid $table-th-border-color $table-th-border-width;
+			}
+		}
+	}
+
+	tbody {
+		td {
+			padding: $base-spacing;
+			@if $table-td-border-width > 0 {
+				border-top: solid $table-td-border-color $table-td-border-width;
+			}
+
+		}
+		@if $table-td-border-width > 0 {
+			tr:first-child td,
+			tr:first-child th {
+				border-top: none;
+			}
+		}
+	}
+
+	&-striped {
+		tbody tr:nth-child(even) td,
+		tbody tr:nth-child(even) th {
+			background-color: $table-td-even-background;
+		}
+	}
+
+}
