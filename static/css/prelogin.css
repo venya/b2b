@@ -34,6 +34,18 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.hide {
+  display: none !important; }
+
+.w100 {
+  width: 100%; }
+
+.w50 {
+  width: 50%; }
+
+.cutout-left {
+  box-shadow: inset 6px 0 4px -5px rgba(0, 0, 0, 0.2); }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: Roboto, Arial;
   font-weight: 500;
@@ -233,6 +245,9 @@ header .btn.icon {
   line-height: 20px;
   font-size: 16px; }
 
+.icon-narrow {
+  width: 24px; }
+
 @font-face {
   font-family: "Icons";
   src: url("../fonts/icomoon.eot?tjqqh5");
@@ -373,6 +388,11 @@ header .btn.icon {
     margin: 0 auto;
     overflow: hidden;
     max-width: 450px; }
+  .prelogin .footer {
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 700;
+    color: #aaa; }
 
 .intro-block {
   background: #f8f8f8;
@@ -399,6 +419,43 @@ header .btn.icon {
   .fieldset-last {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px; }
+
+.pin {
+  background: #fff;
+  min-height: 60px;
+  position: relative;
+  margin-bottom: 1px; }
+  .pin__display {
+    min-height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 0; }
+    .pin__display-item {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background: white;
+      border: solid #2e99db 2px;
+      border-radius: 24px;
+      vertical-align: middle;
+      margin: 0 10px; }
+      .pin__display-item-active {
+        background: #2e99db; }
+  .pin__error {
+    background: #FF6431;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+    .pin__error-icon {
+      float: right;
+      margin: 10px; }
+    .pin__error-text {
+      padding: 20px;
+      overflow: hidden;
+      font-size: 16px; }
 
 .keyboard {
   width: 100%; }

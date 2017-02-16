@@ -634,6 +634,9 @@ header .btn.icon {
   line-height: 20px;
   font-size: 16px; }
 
+.icon-narrow {
+  width: 24px; }
+
 @font-face {
   font-family: "Icons";
   src: url("../fonts/icomoon.eot?tjqqh5");

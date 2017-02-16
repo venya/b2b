@@ -27,14 +27,19 @@
 				<li class="pin__display-item"></li>
 				<li class="pin__display-item"></li>
 			</ul>
-			<div class="pin__error">
-				Incorrect PIN
-				<i class="icon icon-clear"></i>
+			<div class="pin__error hide"id="demoError">
+				<i class="icon icon-clear pin__error-icon" onclick="this.parentElement.className += ' hide'" ></i>
+				<div class="pin__error-text">Incorrect PIN</div>
 			</div>
 		</div>
 
 		<div class="keyboard">
-			<div class="keyboard__row keyboard__row-first">
+			<div class="keyboard__row">
+				<button class="btn btn-lg btn-secondary btn-ripple keyboard__key">Clock In</button>
+				<button class="btn btn-lg btn-secondary btn-ripple keyboard__key">Clock Out</button>
+				<a class="btn btn-lg btn-success btn-ripple keyboard__key" href="sync.html">Login<i class="icon icon-next icon-narrow"></i></a>
+			</div>
+			<div class="keyboard__row">
 				<button class="btn btn-lg btn-white btn-ripple keyboard__key keyboard__key-first">1</button>
 				<button class="btn btn-lg btn-white btn-ripple keyboard__key">2</button>
 				<button class="btn btn-lg btn-white btn-ripple keyboard__key keyboard__key-last">3</button>
@@ -51,12 +56,12 @@
 			</div>
 			<div class="keyboard__row keyboard__row-last">
 				<button class="btn btn-lg btn-white btn-ripple keyboard__key keyboard__key-first"><i class="icon icon-clear"></i></button>
-				<button class="btn btn-lg btn-white btn-ripple keyboard__key">0</button>
+				<button class="btn btn-lg btn-white btn-ripple keyboard__key" onclick="demoError.className = 'pin__error';">0</button>
 				<button class="btn btn-lg btn-white btn-ripple keyboard__key keyboard__key-last"><i class="icon icon-backspace"></i></button>
 			</div>
 		</div>
 
-		<p class="text-center"><b><a href="signup.html" class="shy">Not yet registered? Create New Account</a></b></p>
+		<p class="footer">Attention: after multiple incorrect attempts terminal will be locked</p>
 	</main>
 
 </body>
