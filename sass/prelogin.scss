@@ -23,6 +23,15 @@
 		background: $header-background;
 		color: $header-color;
 		height: $header-height;
+
+		&__logo {
+			text-align: center;
+			line-height: $header-height;
+		}
+		&__logo-img {
+			max-width: 250px;
+			vertical-align: middle;
+		}
 	}
 
 	main {

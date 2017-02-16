@@ -1,0 +1,123 @@
+html, body, div, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+img, dl, dt, dd, ol, ul, li,
+fieldset, form, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas,
+footer, header,
+menu, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  box-sizing: border-box; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Roboto, Arial;
+  font-weight: 500;
+  margin: 20px 0 10px; }
+
+h1 {
+  font-family: "Open Sans", Roboto, Arial;
+  font-size: 22px; }
+
+h2 {
+  font-size: 18px; }
+
+h3 {
+  font-size: 16px; }
+
+h4 {
+  font-size: 15px; }
+
+h5 {
+  font-size: 14px; }
+
+p {
+  margin: 10px 0; }
+
+a {
+  color: #2e99db; }
+
+hr {
+  margin: 0;
+  background: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.1);
+  border: none;
+  height: 2px; }
+
+.small {
+  font-size: 70%; }
+
+.muted {
+  opacity: 0.5; }
+
+.pull-right {
+  float: right !important; }
+
+.pull-left {
+  float: left !important; }
+
+.text-left {
+  text-align: left !important; }
+
+.text-center {
+  text-align: center !important; }
+
+.text-right {
+  text-align: right !important; }
+
+.labeled-info {
+  font-size: 16px; }
+  .labeled-info label, .labeled-info__label {
+    font-size: 12px;
+    display: block;
+    color: #aaa; }
+
+.prelogin {
+  background-color: #eeeeee;
+  color: #333;
+  font: 14px Roboto, Arial;
+  font-weight: 300; }
+  .prelogin .header {
+    background: #2e99db;
+    color: #fff;
+    height: 150px; }
+    .prelogin .header__logo {
+      text-align: center;
+      line-height: 150px; }
+    .prelogin .header__logo-img {
+      max-width: 250px;
+      vertical-align: middle; }
+  .prelogin main {
+    width: 60%;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 450px; }
+
+.icon-loading {
+  width: 150px;
+  height: 150px;
+  margin: 80px 0 60px; }
