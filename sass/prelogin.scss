@@ -1,0 +1,44 @@
+//
+//	Stylesheets used on POS pre-login screens only:
+//	Onboarding, PIN screen, signup, etc.
+//	©2017 B2B Soft
+//	author: Veniamin Zolotukhin <venya@venya.com>
+
+@import "reset";
+@import "mixins";
+@import "variables-prelogin";
+
+@import "typography";
+
+
+.prelogin {
+	background-color: $prelogin-background;
+	color: $prelogin-text;
+
+	font: $font-base-size $font-base-family;
+	font-weight: $font-base-weight;
+
+
+	.header {
+		background: $header-background;
+		color: $header-color;
+		height: $header-height;
+	}
+
+	main {
+		width: $prelogin-width;
+		margin: 0 auto;
+		@include clearfix();
+		max-width: $prelogin-max-width;
+	}
+
+}
+
+
+.icon-loading {
+	width: $prelogin-icon-loading-size;
+	height: $prelogin-icon-loading-size;
+	margin: 80px 0 60px;
+}
+
+

@@ -192,14 +192,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	// Apply FastClick for specified controls only
 	//	+ Removes 300ms delay
 	//	+ Allows :active on iOS
-	forEvery(document, ".toggle, .btn, .dropdown, .produ__ctsitem, .categories__item, .order__item", function(el) {
+	forEvery(document, ".toggle, .btn, .dropdown, .productsitem, .categories__item, .order__item", function(el) {
 		el.ontouchstart = function() { };
 	});
 
 	//	Bind JS-based Ripple effect
 	forEvery(document, ".btn-ripple", function(el) {
 		el.onmousedown = function(e) {
-			console.log(e);
+			// if (!e.target.classList.contains('btn-ripple'))
+			// 	return false;
+			// console.log(e);
 			var effect = document.createElement('div');
 			effect.className = 'btn-ripple__effect';
 			effect.style.left = (e.pageX - e.target.getBoundingClientRect().left) + 'px';
