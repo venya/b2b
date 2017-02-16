@@ -96,6 +96,246 @@ hr {
     display: block;
     color: #aaa; }
 
+.btn {
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  outline: none;
+  text-align: center;
+  display: inline-block;
+  font-family: Roboto, Arial;
+  font-size: 14px;
+  font-weight: 300;
+  height: 40px;
+  line-height: 40px;
+  min-width: 40px;
+  user-select: none;
+  padding: 0 10px;
+  margin: 0;
+  vertical-align: bottom;
+  -webkit-tap-highlight-color: transparent; }
+  .btn:active {
+    box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.2); }
+  .btn .icon {
+    vertical-align: middle; }
+
+input.btn {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0; }
+
+.btn-lg {
+  font-size: 17px;
+  height: 60px;
+  line-height: 60px;
+  min-width: 60px; }
+
+.btn-block {
+  display: block;
+  width: 100%; }
+
+.btn-rounded {
+  border-radius: 5px; }
+
+.btn-default {
+  background: #eeeeee;
+  color: #333; }
+  .btn-default:active {
+    background-color: #dadada; }
+
+.btn-primary {
+  background: #2e99db;
+  color: #fff; }
+  .btn-primary:active {
+    background-color: #2183bf; }
+
+.btn-secondary {
+  background: #ecf7fd;
+  color: #2e99db; }
+  .btn-secondary:active {
+    background-color: #c7e7f9; }
+
+.btn-danger {
+  background: #FF6431;
+  color: #fff; }
+  .btn-danger:active {
+    background-color: #ff4508; }
+
+.btn-green,
+.btn-success {
+  background: #66BB6A;
+  color: #fff; }
+  .btn-green:active,
+  .btn-success:active {
+    background-color: #4cac51; }
+
+.btn-white {
+  background: #fff;
+  color: inherit; }
+  .btn-white:active {
+    background-color: #ebebeb; }
+
+.animated .btn-ripple {
+  position: relative;
+  overflow: hidden; }
+  .animated .btn-ripple__effect {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -10px;
+    background: #fff;
+    border-radius: 10px;
+    pointer-events: none;
+    transition: transform 450ms ease-out, opacity 450ms ease-out;
+    transform: scale(0);
+    opacity: 0.5;
+    z-index: 100; }
+    .animated .btn-ripple__effect.effect-on {
+      transform: scale(10);
+      opacity: 0; }
+
+.btn.icon {
+  color: inherit;
+  padding: 0;
+  min-width: 0; }
+
+header .btn.icon {
+  border-radius: 40px; }
+  header .btn.icon:active {
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: none; }
+
+.icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  background: rgba(0, 0, 0, 0.05);
+  background: transparent;
+  text-align: center;
+  line-height: 40px;
+  font-size: 24px;
+  speak: none;
+  font-family: "Icons" !important;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-sm {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 16px; }
+
+@font-face {
+  font-family: "Icons";
+  src: url("../fonts/icomoon.eot?tjqqh5");
+  src: url("../fonts/icomoon.eot?tjqqh5#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?tjqqh5") format("truetype"), url("../fonts/icomoon.woff?tjqqh5") format("woff"), url("../fonts/icomoon.svg?tjqqh5#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.icon:before {
+  content: "\e421"; }
+
+.icon-plus:before {
+  content: "\e145"; }
+
+.icon-back:before {
+  content: "\e5c4"; }
+
+.icon-caret:before {
+  content: "\e5c5"; }
+
+.icon-caret-up:before {
+  content: "\e5c7"; }
+
+.icon-next:before {
+  content: "\e5c8"; }
+
+.icon-backspace:before {
+  content: "\e14a"; }
+
+.icon-check:before {
+  content: "\e5ca"; }
+
+.icon-nav-before:before {
+  content: "\e408"; }
+
+.icon-nav-next:before {
+  content: "\e409"; }
+
+.icon-close:before {
+  content: "\e5cd"; }
+
+.icon-offline:before {
+  content: "\e2c1"; }
+
+.icon-cc:before {
+  content: "\e8a1"; }
+
+.icon-delete:before {
+  content: "\e872"; }
+
+.icon-exit:before {
+  content: "\e879"; }
+
+.icon-collapse:before {
+  content: "\e5ce"; }
+
+.icon-expand:before {
+  content: "\e5cf"; }
+
+.icon-help:before {
+  content: "\e8fd"; }
+
+.icon-lock:before {
+  content: "\e897"; }
+
+.icon-pos:before {
+  content: "\e8cc"; }
+
+.icon-sync:before {
+  content: "\e627"; }
+
+.icon-menu:before {
+  content: "\e5d2"; }
+
+.icon-more:before {
+  content: "\e5d3"; }
+
+.icon-more-v:before {
+  content: "\e5d4"; }
+
+.icon-user:before {
+  content: "\e416"; }
+
+.icon-undo:before {
+  content: "\e042"; }
+
+.icon-search:before {
+  content: "\e8b6"; }
+
+.icon-cog:before {
+  content: "\e8b8"; }
+
+.icon-orders:before {
+  content: "\e563"; }
+
+.icon-texture:before {
+  content: "\e421"; }
+
+.icon-tips:before {
+  content: "\e8e0"; }
+
+.icon-bo:before {
+  content: "\e051"; }
+
 .prelogin {
   background-color: #eeeeee;
   color: #333;
@@ -104,20 +344,74 @@ hr {
   .prelogin .header {
     background: #2e99db;
     color: #fff;
-    height: 150px; }
+    height: 150px;
+    overflow: hidden; }
     .prelogin .header__logo {
       text-align: center;
       line-height: 150px; }
     .prelogin .header__logo-img {
       max-width: 250px;
       vertical-align: middle; }
+    .prelogin .header__company {
+      height: 60px;
+      line-height: 60px;
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      background: rgba(255, 255, 255, 0.1);
+      width: 60%;
+      margin: 90px auto 0;
+      max-width: 450px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      padding: 0 20px; }
   .prelogin main {
     width: 60%;
     margin: 0 auto;
     overflow: hidden;
     max-width: 450px; }
 
+.intro-block {
+  background: #f8f8f8;
+  padding: 20px; }
+
 .icon-loading {
   width: 150px;
   height: 150px;
   margin: 80px 0 60px; }
+
+.icon-help {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5px; }
+
+.fieldset {
+  background: #fff; }
+  .fieldset + .fieldset {
+    margin-top: 1px; }
+  .fieldset-first {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px; }
+  .fieldset-last {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px; }
+
+.keyboard {
+  width: 100%; }
+  .keyboard__row {
+    margin-bottom: 1px;
+    font-size: 0;
+    white-space: nowrap; }
+  .keyboard__key {
+    width: calc((100% - 2px) / 3);
+    margin-left: 1px; }
+    .keyboard__key:first-child {
+      margin-left: 0; }
+  .keyboard__row-last .keyboard__key-last {
+    border-bottom-right-radius: 8px; }
+  .keyboard__row-last .keyboard__key-first {
+    border-bottom-left-radius: 8px; }

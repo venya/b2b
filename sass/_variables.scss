@@ -77,6 +77,8 @@ $base-animation-out: .2s;
 
 $base-inset-shadow: 2px 2px 4px rgba(black, .3);
 
+$base-border-radius: 5px;
+
 $ripple-animation-in: 0s;
 $ripple-animation-out: 450ms;
 $ripple-color: $color-white;
@@ -140,7 +142,7 @@ $btn-height: $input-sm-height;
 $btn-padding: $base-spacing;
 $btn-min-width: $btn-height;
 $btn-pressed-effect: 8%;
-$btn-border-radius: 5px;
+$btn-border-radius: $base-border-radius;
 
 $btn-lg-text-size: $input-font-size + 3px;
 $btn-lg-height: $toolbar-height;

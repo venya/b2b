@@ -9,9 +9,20 @@ $prelogin-width: 60%;
 $prelogin-max-width: 450px;
 
 
+//	Effects
+$base-border-radius: 8px;
+
+
 //	Prelogin header
 $header-background: $color-primary;
 $header-color: $color-white;
 $header-height: 150px;
+$header-company-height: 60px;
+$header-company-font-size: 20px;
+$header-company-font-weight: $font-weight-bold;
 
 $prelogin-icon-loading-size: 150px;
+
+
+//	PIN keyboard
+$keyboard-border-width: 1px;

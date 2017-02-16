@@ -9,6 +9,9 @@
 @import "variables-prelogin";
 
 @import "typography";
+@import "buttons";
+@import "icons";
+
 
 
 .prelogin {
@@ -23,6 +26,7 @@
 		background: $header-background;
 		color: $header-color;
 		height: $header-height;
+		overflow: hidden;
 
 		&__logo {
 			text-align: center;
@@ -31,6 +35,22 @@
 		&__logo-img {
 			max-width: 250px;
 			vertical-align: middle;
+		}
+		&__company {
+			height: $header-company-height;
+			line-height: $header-company-height;
+			font-size: $header-company-font-size;
+			font-weight: $header-company-font-weight;
+			text-transform: uppercase;
+			@include text-overflow;
+			white-space: nowrap;
+			background: rgba(white, .1);
+			width: $prelogin-width;
+			margin: $header-height - $header-company-height auto 0;
+			max-width: $prelogin-max-width;
+			border-top-left-radius: $base-border-radius;
+			border-top-right-radius: $base-border-radius;
+			padding: 0 $base-double-spacing;
 		}
 	}
 
@@ -43,11 +63,82 @@
 
 }
 
+.intro-block {
+	background: $color-silver-superlight;
+	padding: $base-double-spacing;
+}
+
 
 .icon-loading {
 	width: $prelogin-icon-loading-size;
 	height: $prelogin-icon-loading-size;
 	margin: 80px 0 60px;
+}
+
+.icon-help {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: $base-small-spacing;
+}
+
+// Formfields
+
+.fieldset {
+	background: $color-white;
+
+	& + & {
+		margin-top: 1px;
+	}
+
+	&-first {
+		border-top-left-radius: $base-border-radius;
+		border-top-right-radius: $base-border-radius;
+	}
+	&-last {
+		border-bottom-left-radius: $base-border-radius;
+		border-bottom-right-radius: $base-border-radius;
+	}
+}
+
+
+//	PAGE SPECIFIC:
+
+//	Loading
+//	..
+
+// PIN screen
+.page-pin {
+
+}
+
+.keyboard {
+	// display: table;
+	width: 100%;
+
+	&__row {
+		// display: table-row;
+		margin-bottom: 1px;
+		font-size: 0;
+		white-space: nowrap;
+	}
+
+	&__key {
+		// display: table-cell;
+		width: calc((100% - #{$keyboard-border-width*2}) / 3);
+		margin-left: 1px;
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+
+	&__row-last &__key-last {
+		border-bottom-right-radius: $base-border-radius;
+	}
+	&__row-last &__key-first {
+		border-bottom-left-radius: $base-border-radius;
+	}
 }
 
 
