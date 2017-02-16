@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset=utf-8>
-	<title>Activate your POS &bull; eHopper</title>
+	<title>Create New Account &bull; eHopper</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
 	<link rel="stylesheet" type="text/css" href="static/css/prelogin.css">
@@ -19,7 +19,7 @@
 	</header>
 
 	<main class="content">
-		<p class="intro muted">To activate this device as a POS terminal please enter your eHopper enterprise ID and license key:</p>
+		<p class="intro muted">In order to create new eHopper account, please fill-in your business profile and indicate your acceptance of terms and conditions. Upon acceptance, you will receive an email with instructions on how to activate your account for Android, Windows and Poynt.</p>
 
 		<form method="get" action="pin.html">
 			<div class="fieldset fieldset-first">
@@ -30,10 +30,16 @@
 				<label class="fieldset__label" for="license_key">License Key:</label>
 				<input class="fieldset__input" id="license_key" type="text" title="required" required autofous>
 			</div>
-			<button class="btn btn-lg btn-primary btn-block fieldset-last">Activate<i class="icon icon-next"></i></button>
+			<div class="fieldset fieldset-last">
+				<label class="fieldset__label" for="license_key">License Key:</label>
+				<input class="fieldset__input" id="license_key" type="text" title="required" required autofous>
+			</div>
+
+			[x] Agree
+
+			<button class="btn btn-lg btn-primary btn-block btn-rounded">Submit<i class="icon icon-next"></i></button>
 		</form>
 
-		<p class="footer">Not yet registered? <a href="signup.html" class="shy">Create New Account</a></p>
 	</main>
 
 </body>
