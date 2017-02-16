@@ -130,6 +130,7 @@ input.btn {
 		margin-left: -$ripple-size/2;
 		background: $ripple-color;
 		border-radius: $ripple-radius;
+		pointer-events: none;
 		transition:
 			transform $ripple-animation-out ease-out,
 			opacity $ripple-animation-out ease-out;

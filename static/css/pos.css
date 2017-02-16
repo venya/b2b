@@ -361,6 +361,7 @@ input.btn {
     margin-left: -10px;
     background: #fff;
     border-radius: 10px;
+    pointer-events: none;
     transition: transform 450ms ease-out, opacity 450ms ease-out;
     transform: scale(0);
     opacity: 0.5;

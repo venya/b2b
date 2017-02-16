@@ -202,8 +202,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			console.log(e);
 			var effect = document.createElement('div');
 			effect.className = 'btn-ripple__effect';
-			effect.style.left = (e.pageX - this.offsetLeft) + 'px';
-			effect.style.top = (e.pageY - this.offsetTop) + 'px';
+			effect.style.left = (e.pageX - e.target.getBoundingClientRect().left) + 'px';
+			effect.style.top = (e.pageY - e.target.getBoundingClientRect().top) + 'px';
+			// effect.style.left = (e.pageX - e.currentTarget.offsetLeft) + 'px';
+			// effect.style.top = (e.pageY - e.currentTarget.offsetTop) + 'px';
 			// effect.style.left = (e.pageX) + 'px';
 			// effect.style.top = (e.pageY) + 'px';
 			this.appendChild(effect);
