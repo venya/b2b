@@ -375,7 +375,8 @@ input.btn {
 .btn.icon {
   color: inherit;
   padding: 0;
-  min-width: 0; }
+  min-width: 0;
+  background: transparent; }
 
 header .btn.icon {
   border-radius: 40px; }
@@ -611,24 +612,24 @@ header .btn.icon {
   .table-striped tbody tr:nth-child(even) th {
     background-color: #fff; }
 
-.icon {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
+.icon,
+.icon-text {
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
-  background: rgba(0, 0, 0, 0.05);
-  background: transparent;
-  text-align: center;
-  line-height: 40px;
   font-size: 24px;
   speak: none;
   font-family: "Icons" !important;
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px; }
 
 .icon-sm {
   width: 20px;

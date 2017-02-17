@@ -214,7 +214,8 @@ input.btn {
 .btn.icon {
   color: inherit;
   padding: 0;
-  min-width: 0; }
+  min-width: 0;
+  background: transparent; }
 
 header .btn.icon {
   border-radius: 40px; }
@@ -265,30 +266,30 @@ header .btn.icon {
     box-sizing: border-box;
     vertical-align: middle; }
   .fieldset-first {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px; }
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; }
   .fieldset-last {
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px; }
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px; }
+
+.icon,
+.icon-text {
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: 24px;
+  speak: none;
+  font-family: "Icons" !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 .icon {
   display: inline-block;
   width: 40px;
   height: 40px;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  background: rgba(0, 0, 0, 0.05);
-  background: transparent;
   text-align: center;
-  line-height: 40px;
-  font-size: 24px;
-  speak: none;
-  font-family: "Icons" !important;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  line-height: 40px; }
 
 .icon-sm {
   width: 20px;
@@ -431,8 +432,8 @@ header .btn.icon {
       width: 60%;
       margin: 90px auto 0;
       max-width: 450px;
-      border-top-left-radius: 8px;
-      border-top-right-radius: 8px;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
       padding: 0 20px; }
   .prelogin main {
     width: 60%;
@@ -467,6 +468,19 @@ header .btn.icon {
 .page-signup .intro {
   margin-top: 4em;
   margin-bottom: 2em; }
+
+.page-sync main {
+  background: white;
+  text-align: center;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  padding: 80px 20px;
+  box-sizing: border-box; }
+  .page-sync main .icon-loading {
+    margin: 0; }
+  .page-sync main .footer {
+    margin-top: 20px;
+    margin-bottom: 20px; }
 
 .pin {
   background: #fff;
@@ -517,6 +531,6 @@ header .btn.icon {
     .keyboard__key:first-child {
       margin-left: 0; }
   .keyboard__row-last .keyboard__key-last {
-    border-bottom-right-radius: 8px; }
+    border-bottom-right-radius: 3px; }
   .keyboard__row-last .keyboard__key-first {
-    border-bottom-left-radius: 8px; }
+    border-bottom-left-radius: 3px; }

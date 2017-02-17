@@ -116,6 +116,25 @@
 	}
 }
 
+.page-sync {
+	main {
+		background: white;
+		text-align: center;
+		border-bottom-right-radius: $base-border-radius;
+		border-bottom-left-radius: $base-border-radius;
+		padding: 80px $base-double-spacing;
+		box-sizing: border-box;
+
+		.icon-loading {
+			margin: 0;
+		}
+
+		.footer {
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+	}
+}
 
 .pin {
 	background: $pin-display-background;
