@@ -1,0 +1,40 @@
+
+// Formfields
+
+.fieldset {
+	background: $color-white;
+	font-size: 0;
+	padding-right: $base-double-spacing;
+
+	& + & {
+		margin-top: 1px;
+	}
+
+	&__label {
+		padding: $base-small-spacing $base-spacing $base-small-spacing $base-double-spacing;
+		display: inline-block;
+		width: $fieldset-label-width;
+		box-sizing: border-box;
+		font-size: $font-base-size;
+		vertical-align: middle;
+	}
+
+	&__input {
+		border: none;
+		width: 100% - $fieldset-label-width;
+		background: transparent;
+		box-sizing: border-box;
+		vertical-align: middle;
+	}
+
+	//	Rounded first and last items
+
+	&-first {
+		border-top-left-radius: $base-border-radius;
+		border-top-right-radius: $base-border-radius;
+	}
+	&-last {
+		border-bottom-left-radius: $base-border-radius;
+		border-bottom-right-radius: $base-border-radius;
+	}
+}

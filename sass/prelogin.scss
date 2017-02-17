@@ -11,6 +11,8 @@
 @import "utilities";
 @import "typography";
 @import "buttons";
+@import "input";
+@import "fieldset";
 @import "icons";
 
 
@@ -34,7 +36,7 @@
 			line-height: $header-height;
 		}
 		&__logo-img {
-			max-width: 250px;
+			max-width: 200px;
 			vertical-align: middle;
 		}
 		&__company {
@@ -89,35 +91,32 @@
 	margin: $base-small-spacing;
 }
 
-// Formfields
-
-.fieldset {
-	background: $color-white;
-
-	& + & {
-		margin-top: 1px;
-	}
-
-	&-first {
-		border-top-left-radius: $base-border-radius;
-		border-top-right-radius: $base-border-radius;
-	}
-	&-last {
-		border-bottom-left-radius: $base-border-radius;
-		border-bottom-right-radius: $base-border-radius;
-	}
-}
-
 
 //	PAGE SPECIFIC:
 
 //	Loading
 //	..
 
+.page-activate {
+	.intro {
+		margin-top: 5em;
+		margin-bottom: 2em;
+	}
+}
+
 // PIN screen
 .page-pin {
 
 }
+
+.page-signup {
+	.intro {
+		margin-top: 4em;
+		margin-bottom: 2em;
+	}
+}
+
+
 .pin {
 	background: $pin-display-background;
 	min-height: $pin-display-height;

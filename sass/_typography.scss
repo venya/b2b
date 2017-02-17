@@ -33,6 +33,10 @@ p {
 
 a {
 	color: $color-link;
+
+	&.shy {
+		color: inherit;
+	}
 }
 
 hr {

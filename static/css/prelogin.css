@@ -72,6 +72,8 @@ p {
 
 a {
   color: #2e99db; }
+  a.shy {
+    color: inherit; }
 
 hr {
   margin: 0;
@@ -117,7 +119,7 @@ hr {
   text-align: center;
   display: inline-block;
   font-family: Roboto, Arial;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   height: 40px;
   line-height: 40px;
@@ -137,7 +139,7 @@ input.btn {
   -webkit-border-radius: 0; }
 
 .btn-lg {
-  font-size: 17px;
+  font-size: 19px;
   height: 60px;
   line-height: 60px;
   min-width: 60px; }
@@ -219,6 +221,55 @@ header .btn.icon {
   header .btn.icon:active {
     background: rgba(0, 0, 0, 0.1);
     box-shadow: none; }
+
+.input {
+  height: 50px;
+  line-height: 50px;
+  color: #333;
+  font-family: Roboto, Arial;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  outline: none; }
+  .input-sm {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px; }
+  .input-lg {
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px; }
+  .input-default {
+    background: #eeeeee; }
+  .input-white {
+    background: #fff; }
+
+.fieldset {
+  background: #fff;
+  font-size: 0;
+  padding-right: 20px; }
+  .fieldset + .fieldset {
+    margin-top: 1px; }
+  .fieldset__label {
+    padding: 5px 10px 5px 20px;
+    display: inline-block;
+    width: 35%;
+    box-sizing: border-box;
+    font-size: 14px;
+    vertical-align: middle; }
+  .fieldset__input {
+    border: none;
+    width: 65%;
+    background: transparent;
+    box-sizing: border-box;
+    vertical-align: middle; }
+  .fieldset-first {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px; }
+  .fieldset-last {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px; }
 
 .icon {
   display: inline-block;
@@ -365,7 +416,7 @@ header .btn.icon {
       text-align: center;
       line-height: 150px; }
     .prelogin .header__logo-img {
-      max-width: 250px;
+      max-width: 200px;
       vertical-align: middle; }
     .prelogin .header__company {
       height: 60px;
@@ -409,16 +460,13 @@ header .btn.icon {
   right: 0;
   margin: 5px; }
 
-.fieldset {
-  background: #fff; }
-  .fieldset + .fieldset {
-    margin-top: 1px; }
-  .fieldset-first {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px; }
-  .fieldset-last {
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px; }
+.page-activate .intro {
+  margin-top: 5em;
+  margin-bottom: 2em; }
+
+.page-signup .intro {
+  margin-top: 4em;
+  margin-bottom: 2em; }
 
 .pin {
   background: #fff;

@@ -118,6 +118,8 @@ p {
 
 a {
   color: #2e99db; }
+  a.shy {
+    color: inherit; }
 
 hr {
   margin: 0;
@@ -278,7 +280,7 @@ hr {
   text-align: center;
   display: inline-block;
   font-family: Roboto, Arial;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   height: 40px;
   line-height: 40px;
@@ -298,7 +300,7 @@ input.btn {
   -webkit-border-radius: 0; }
 
 .btn-lg {
-  font-size: 17px;
+  font-size: 19px;
   height: 60px;
   line-height: 60px;
   min-width: 60px; }
@@ -450,7 +452,7 @@ header .btn.icon {
   position: relative;
   vertical-align: bottom;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   user-select: none;
   -webkit-tap-highlight-color: transparent; }

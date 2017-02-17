@@ -125,13 +125,18 @@ $input-height: 50px;
 $input-lg-height: 60px;
 
 $input-font-family: $font-base-family;
-$input-font-size: 14px;
+$input-font-size: 16px;
+$input-sm-font-size: 14px;
+$input-lg-font-size: 20px;
 $input-font-weight: $font-weight-normal;
 
 $input-valign: bottom;
-$toolbar-background: $color-silver-light;
+$input-background: $color-silver-light;
+$toolbar-background: $input-background;
 $toolbar-height: $input-lg-height;
 $select-background: $toolbar-background;
+
+$fieldset-label-width: 35%;
 
 
 // Buttons
