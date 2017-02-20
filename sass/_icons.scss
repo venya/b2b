@@ -51,8 +51,11 @@
 
 
 
+.icon-time:before {
+	content: "\e8b5";
+}
 .icon-plus:before {
-		content: "\e145";
+	content: "\e145";
 }
 .icon-back:before {
 	content: "\e5c4";
@@ -68,6 +71,9 @@
 }
 .icon-backspace:before {
 	content: "\e14a";
+}
+.icon-chat:before {
+	content: "\e0b7";
 }
 .icon-check:before {
 	content: "\e5ca";
@@ -87,6 +93,9 @@
 .icon-cc:before {
 	content: "\e8a1";
 }
+.icon-bo:before {
+	content: "\e871";
+}
 .icon-delete:before {
 	content: "\e872";
 }
@@ -102,11 +111,17 @@
 .icon-help:before {
 	content: "\e8fd";
 }
+.icon-clear:before {
+	content: "\e888";
+}
 .icon-lock:before {
 	content: "\e897";
 }
 .icon-pos:before {
 	content: "\e8cc";
+}
+.icon-lock-open:before {
+	content: "\e898";
 }
 .icon-sync:before {
 	content: "\e627";
@@ -135,14 +150,14 @@
 .icon-orders:before {
 	content: "\e563";
 }
+.icon-users:before {
+	content: "\e8d3";
+}
 .icon-texture:before {
 	content: "\e421";
 }
 .icon-tips:before {
 	content: "\e8e0";
-}
-.icon-bo:before {
-	content: "\e051";
 }
 
 
