@@ -418,6 +418,41 @@ header .btn.icon {
 .icon-tips:before {
   content: "\e8e0"; }
 
+.checkbox {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle; }
+  .checkbox__input,
+  .checkbox input {
+    opacity: 0;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer; }
+  .checkbox .icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background: #fff;
+    line-height: 30px;
+    padding: 0;
+    color: #eeeeee;
+    vertical-align: middle;
+    margin-right: 6px; }
+    .checkbox .icon:before {
+      content: "\e5ca"; }
+  .checkbox input:checked + .icon {
+    background-color: #2e99db;
+    color: #fff; }
+  .checkbox-success input:checked + .icon {
+    background-color: #66BB6A; }
+  .checkbox:active .icon {
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.3); }
+
 .prelogin {
   background-color: #eeeeee;
   color: #333;
@@ -483,6 +518,9 @@ header .btn.icon {
 .page-signup .intro {
   margin-top: 4em;
   margin-bottom: 2em; }
+
+.page-signup .terms {
+  margin: 20px 0; }
 
 .page-sync main {
   background: white;

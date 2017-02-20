@@ -176,6 +176,15 @@ $toggle-off-color: $color-silver-light;
 $toggle-thumb-size: $toggle-height - 6px;
 $toggle-thumb-color: $color-white;
 
+//	Checkbox
+$checkbox-size: 30px;
+$checkbox-border-radius: $base-border-radius;
+$checkbox-color: $color-white;
+$checkbox-text: $color-silver-light;
+$checkbox-checked-color: $color-primary;
+$checkbox-checked-text: $color-white;
+$checkbox-margin-right: 6px;
+
 
 //	Dropdown Menus
 $dropdown-menu-background: $color-white;

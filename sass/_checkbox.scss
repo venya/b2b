@@ -1,0 +1,49 @@
+
+
+
+.checkbox {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+
+	&__input,
+	input {
+		@include opacity(0);
+		position: absolute;
+		margin: 0;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		cursor: pointer;
+	}
+
+	.icon {
+		@include define-box(inline-block, $checkbox-size, $checkbox-size);
+		@include border-radius($checkbox-border-radius);
+		background: $checkbox-color;
+		line-height: $checkbox-size;
+		padding: 0;
+		color: $checkbox-text;
+		vertical-align: middle;
+		margin-right: $checkbox-margin-right;
+
+		&:before {
+			content: "\e5ca";
+		}
+
+	}
+
+	input:checked + .icon {
+		background-color: $checkbox-checked-color;
+		color: $checkbox-checked-text;
+	}
+
+	&-success input:checked + .icon {
+		background-color: $color-success;
+	}
+
+	&:active .icon {
+		box-shadow: inset $base-inset-shadow;
+	}
+}
