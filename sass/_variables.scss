@@ -185,6 +185,15 @@ $checkbox-checked-color: $color-primary;
 $checkbox-checked-text: $color-white;
 $checkbox-margin-right: 6px;
 
+//	Radio buttons
+$radio-size: $checkbox-size;
+$radio-color: $color-white;
+$radio-border-color: $color-silver-light;
+$radio-border-size: 2px;
+$radio-bullet-color: $color-primary;
+$radio-bullet-size: 20px;
+$radio-margin-right: 6px;
+
 
 //	Dropdown Menus
 $dropdown-menu-background: $color-white;
@@ -252,6 +261,7 @@ $snackbar-font-weight: $font-weight-normal;
 // Z-index library
 
 $Zindex-base: 0;
+$Zindex-default: 1;
 $Zindex-dropdown-mask: $Zindex-base + 1;
 $Zindex-dropdown-body: $Zindex-dropdown-mask + 1;
 $Zindex-menu-mask: $Zindex-base + 10;

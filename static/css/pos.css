@@ -606,6 +606,52 @@ header .btn.icon {
   .checkbox:active .icon {
     box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.3); }
 
+.radio {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  user-select: none; }
+  .radio__input,
+  .radio input {
+    opacity: 0;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1; }
+  .radio .icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background: #fff;
+    line-height: 30px;
+    border: solid #eeeeee 2px;
+    padding: 0;
+    vertical-align: middle;
+    margin-right: 6px; }
+    .radio .icon:before {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      border-radius: 10px;
+      margin: 3px;
+      transition: transform 0.3s ease-in-out;
+      transform: scale(1); }
+  .radio input:checked + .icon:before {
+    background-color: #2e99db; }
+  .radio-success input:checked + .icon:before {
+    background-color: #66BB6A; }
+  .radio:active .icon {
+    background-color: #eeeeee; }
+    .radio:active .icon:before {
+      transform: scale(0); }
+
 .toolbar {
   display: block;
   background: #eeeeee;
