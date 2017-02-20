@@ -94,6 +94,9 @@ hr {
 .pull-left {
   float: left !important; }
 
+.text-uppercase {
+  text-transform: uppercase; }
+
 .text-left {
   text-align: left !important; }
 
@@ -133,23 +136,26 @@ hr {
     box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.2); }
   .btn .icon {
     vertical-align: middle; }
+  .btn-link {
+    background: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit; }
+  .btn-lg {
+    font-size: 19px;
+    height: 60px;
+    line-height: 60px;
+    min-width: 60px; }
+  .btn-block {
+    display: block;
+    width: 100%; }
+  .btn-rounded {
+    border-radius: 5px; }
 
 input.btn {
   -webkit-appearance: none;
   -webkit-border-radius: 0; }
-
-.btn-lg {
-  font-size: 19px;
-  height: 60px;
-  line-height: 60px;
-  min-width: 60px; }
-
-.btn-block {
-  display: block;
-  width: 100%; }
-
-.btn-rounded {
-  border-radius: 5px; }
 
 .btn-default {
   background: #eeeeee;
@@ -200,16 +206,18 @@ input.btn {
     left: 50%;
     margin-top: -10px;
     margin-left: -10px;
-    background: #fff;
-    border-radius: 10px;
+    background: black;
+    border-radius: 999px;
     pointer-events: none;
-    transition: transform 450ms ease-out, opacity 450ms ease-out;
+    transition: transform 400ms ease-out, opacity 400ms ease-out;
     transform: scale(0);
-    opacity: 0.5;
+    opacity: 0.05;
     z-index: 100; }
     .animated .btn-ripple__effect.effect-on {
-      transform: scale(10);
+      transform: scale(2);
       opacity: 0; }
+  .animated .btn-ripple:active {
+    box-shadow: none; }
 
 .btn.icon {
   color: inherit;

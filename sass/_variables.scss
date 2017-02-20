@@ -80,11 +80,11 @@ $base-inset-shadow: 2px 2px 4px rgba(black, .3);
 $base-border-radius: 5px;
 
 $ripple-animation-in: 0s;
-$ripple-animation-out: 450ms;
-$ripple-color: $color-white;
+$ripple-animation-out: 400ms;
+$ripple-color: $color-black;
 $ripple-size: 20px;
 $ripple-radius: 10px;
-$ripple-opacity: 0.5;
+$ripple-opacity: .05;
 
 
 //	Layout

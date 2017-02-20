@@ -26,6 +26,32 @@
 	.icon {
 		vertical-align: middle;
 	}
+
+	&-link {
+		background: none;
+		color: inherit;
+		font-family: inherit;
+		font-size: inherit;
+		font-weight: inherit;
+	}
+
+
+	// Button Sizes
+
+	&-lg {
+		font-size: $btn-lg-text-size;
+		height: $btn-lg-height;
+		line-height: $btn-lg-height;
+		min-width: $btn-lg-min-width;
+	}
+	&-block {
+		display: block;
+		width: 100%;
+	}
+	&-rounded {
+		@include border-radius($btn-border-radius);
+	}
+
 }
 
 input.btn {
@@ -33,23 +59,6 @@ input.btn {
 	-webkit-border-radius: 0;
 }
 
-
-
-// Button Sizess
-
-.btn-lg {
-	font-size: $btn-lg-text-size;
-	height: $btn-lg-height;
-	line-height: $btn-lg-height;
-	min-width: $btn-lg-min-width;
-}
-.btn-block {
-	display: block;
-	width: 100%;
-}
-.btn-rounded {
-	@include border-radius($btn-border-radius);
-}
 
 
 
@@ -129,7 +138,8 @@ input.btn {
 		margin-top: -$ripple-size/2;
 		margin-left: -$ripple-size/2;
 		background: $ripple-color;
-		border-radius: $ripple-radius;
+		// border-radius: $ripple-radius;
+		border-radius: 999px;
 		pointer-events: none;
 		transition:
 			transform $ripple-animation-out ease-out,
@@ -139,10 +149,13 @@ input.btn {
 		z-index: 100;
 
 		&.effect-on {
-			transform: scale(10);
+			transform: scale(2);
 			opacity: 0;//;
 			// transition-duration: $ripple-animation-in;	
 		}
+	}
+	&:active {
+		box-shadow: none;
 	}
 }
 

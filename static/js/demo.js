@@ -203,13 +203,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			// 	return false;
 			// console.log(e);
 			var effect = document.createElement('div');
+			var parentRect = e.target.getBoundingClientRect();
 			effect.className = 'btn-ripple__effect';
-			effect.style.left = (e.pageX - e.target.getBoundingClientRect().left) + 'px';
-			effect.style.top = (e.pageY - e.target.getBoundingClientRect().top) + 'px';
+			effect.style.left = (e.pageX - parentRect.left) + 'px';
+			effect.style.top = (e.pageY - parentRect.top) + 'px';
 			// effect.style.left = (e.pageX - e.currentTarget.offsetLeft) + 'px';
 			// effect.style.top = (e.pageY - e.currentTarget.offsetTop) + 'px';
 			// effect.style.left = (e.pageX) + 'px';
 			// effect.style.top = (e.pageY) + 'px';
+
+			// Ripple size
+			var size = Math.max(parentRect.width, parentRect.height);
+			effect.style.width = size+'px';
+			effect.style.height = size+'px';
+			effect.style.marginTop = (size/-2)+'px';
+			effect.style.marginLeft = (size/-2)+'px';
+			effect.style.borderRadius = size+'px';
+
 			this.appendChild(effect);
 			window.setTimeout(function() {
 				// Toggle start animation
@@ -218,7 +228,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			window.setTimeout(function() {
 				// Remove element on complete
 				effect.parentElement.removeChild(effect);
-			}, 1000);
+			}, 500);
 		}
 		// el.ontouchstart = el.onmousedown;
 	});
