@@ -12,7 +12,7 @@
 <body class="prelogin animated page-signup">
 
 	<header class="header">
-		<button class="btn icon icon-help"></button>
+		<button class="btn icon icon-help" onclick="demoDialogOpen('help');"></button>
 		<div class="header__logo">
 			<img src="static/img/logo-white.svg" class="header__logo-img" alt="eHopper">
 		</div>
@@ -70,13 +70,44 @@
 					<i class="icon"></i>
 					I Agree with
 				</label>
-				<a href="terms.html" class="shy">Terms and Conditions</a>
+				<a href="terms.html" class="shy" onclick="return demoDialogOpen('terms');">Terms and Conditions</a>
 			</p>
 
 			<button class="btn btn-lg btn-primary btn-block btn-rounded btn-ripple">Create Account<i class="icon icon-next"></i></button>
 		</form>
 
 	</main>
+
+
+	<!-- Dialog example: Terms and Conditions -->
+	<div class="dialog" id="terms">
+		<div class="dialog__content">
+			<div class="dialog__header">
+				<header class="header">Terms and Conditions</header>
+			</div>
+			<div class="dialog__body">
+				<p>Here is full text of Terms and Conditions</p>
+				<p>We need to go <button class="btn btn-sm btn-default baseline" onclick="demoDialogOpen('help')">deeper&hellip;</button></p>
+			</div>
+		</div>
+	</div>
+	<div class="dialog__mask"></div>
+
+
+
+	<!-- Dialog: Help Panel -->
+	<div class="dialog dialog-help" id="help">
+		<div class="dialog__content">
+			<div class="dialog__header">
+				<header class="header">Help</header>
+			</div>
+			<div class="dialog__body">
+				<p>Help content</p>
+			</div>
+		</div>
+	</div>
+	<div class="dialog__mask"></div>
+
 
 </body>
 </html>

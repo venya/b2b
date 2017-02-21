@@ -80,7 +80,7 @@ $base-inset-shadow: 2px 2px 4px rgba(black, .3);
 $base-border-radius: 5px;
 
 $ripple-animation-in: 0s;
-$ripple-animation-out: 400ms;
+$ripple-animation-out: 500ms;
 $ripple-color: $color-black;
 $ripple-size: 20px;
 $ripple-radius: 10px;
@@ -247,6 +247,18 @@ $pagination-height: $pagination-item-size;
 
 $dialog-width: 80%;
 $dialog-max-width: 500px;
+$dialog-background: $color-white;
+$dialog-top-position: 200px;
+$dialog-vpadding: $base-double-spacing;
+$dialog-hpadding: $dialog-vpadding;
+$dialog-shadow: 0 2px 4px rgba(black, .3);
+
+$help-panel-width: 300px;
+$help-panel-position: right;
+$help-panel-background: $dialog-background;
+$help-vpadding: 30px;
+$help-hpadding: $help-vpadding;
+$help-panel-shadow: $dialog-shadow;
 
 
 //	Snackbar messages

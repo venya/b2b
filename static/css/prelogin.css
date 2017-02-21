@@ -46,6 +46,9 @@ table {
 .cutout-left {
   box-shadow: inset 6px 0 4px -5px rgba(0, 0, 0, 0.2); }
 
+.baseline {
+  vertical-align: middle !important; }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: Roboto, Arial;
   font-weight: 500;
@@ -209,7 +212,7 @@ input.btn {
     background: black;
     border-radius: 999px;
     pointer-events: none;
-    transition: transform 400ms ease-out, opacity 400ms ease-out;
+    transition: transform 500ms ease-out, opacity 500ms ease-out;
     transform: scale(0);
     opacity: 0.05;
     z-index: 100; }
@@ -460,6 +463,69 @@ header .btn.icon {
     background-color: #66BB6A; }
   .checkbox:active .icon {
     box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.3); }
+
+.dialog__content {
+  display: none;
+  width: 500px;
+  position: fixed;
+  z-index: 2;
+  background: #fff;
+  top: 0;
+  left: 50%;
+  margin-left: -250px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); }
+
+.dialog__mask {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #434c55;
+  display: none;
+  opacity: 0;
+  z-index: 1; }
+
+.dialog__body {
+  padding: 20px 20px; }
+
+.dialog-open .dialog__content {
+  display: block; }
+
+.dialog-open + .dialog__mask {
+  display: block;
+  opacity: 0.8; }
+
+.dialog-help .dialog__content {
+  width: 300px;
+  right: 0;
+  top: 0;
+  height: 100%;
+  left: auto;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); }
+
+.animated .dialog__mask {
+  transition: opacity 0.3s ease-out;
+  display: block;
+  z-index: -1 !important; }
+
+.animated .dialog__content {
+  transition: transform 0.3s ease-out;
+  display: block;
+  transform: translate(0, -110%); }
+
+.animated .dialog-help .dialog__content {
+  transform: translate(110%, 0); }
+
+.animated .dialog-open + .dialog__mask {
+  z-index: 1 !important; }
+
+.animated .dialog-open .dialog__content {
+  transform: translate(0, 200px); }
+
+.animated .dialog-help.dialog-open .dialog__content {
+  transform: translate(0, 0); }
 
 .prelogin {
   background-color: #eeeeee;

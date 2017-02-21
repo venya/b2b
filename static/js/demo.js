@@ -68,6 +68,21 @@ function demoToggleAnimation() {
 }
 
 
+function demoDialogOpen(id) {
+	var dialog = document.getElementById(id);
+	if (!dialog) return false;
+	var mask = document.querySelector('.dialog#'+ id +' + .dialog__mask');
+	mask.onclick = function() {demoDialogClose(dialog)};
+	console.log(mask);
+	toggleClass(dialog, 'dialog-open', true);
+	return false;
+}
+
+function demoDialogClose(dialog) {
+	console.log("close dialog?");
+	toggleClass(dialog, 'dialog-open', false);
+}
+
 var snackbarTimeout;
 
 function demoSnackbar(style, action, handler) {

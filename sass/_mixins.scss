@@ -10,9 +10,12 @@
 	opacity: $opacity;
 }
 
-
 @mixin border-radius($params) {
 	border-radius: $params;
+}
+
+@mixin box-shadow($params) {
+	box-shadow: $params;
 }
 
 

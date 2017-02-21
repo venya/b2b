@@ -2,9 +2,82 @@
 
 .dialog {
 
+	&__content {
+		$dialog-width: $dialog-max-width; // temp?
+
+		display: none;
+		width: $dialog-width;
+		position: fixed;
+		z-index: 2;
+		background: $help-panel-background;
+		top: 0;
+		left: 50%;
+		margin-left: $dialog-width/-2;
+		@include box-shadow($dialog-shadow);
+	}
 
 	&__mask {
 		@include create-mask();
+		display: none;
+		opacity: 0;
+		z-index: 1;
 	}
+	&__body {
+		padding: $dialog-vpadding $dialog-hpadding;
+	}
+
+	//	Open Dialog
+
+	&-open &__content {
+		display: block;
+	}
+
+	&-open+&__mask {
+		display: block;
+		opacity: $color-mask-opacity;
+	}
+
+
+	//	Help Sidebar
+	&-help &__content {
+		width: $help-panel-width;
+		#{$help-panel-position}: 0;
+		top: 0;
+		height: 100%;
+		left: auto;
+		background: $help-panel-background;
+		@include box-shadow($help-panel-shadow);
+	}
+
 }
 
+.animated {
+	.dialog__mask {
+		transition: opacity $base-animation-in ease-out;
+		display: block;
+		z-index: -1 !important;
+	}
+
+	.dialog__content {
+		transition: transform $base-animation-in ease-out;
+		display: block;
+		transform: translate(0, -110%);
+	}
+	//	Help
+	.dialog-help .dialog__content {
+		transform: translate(110%, 0);
+	}
+
+	//	Open state
+	.dialog-open + .dialog__mask {
+		z-index: 1 !important;
+	}
+
+	.dialog-open .dialog__content {
+		transform: translate(0, $dialog-top-position);
+	}
+
+	.dialog-help.dialog-open .dialog__content {
+		transform: translate(0, 0);
+	}
+}
