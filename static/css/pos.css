@@ -43,6 +43,11 @@ body {
 section {
   padding: 20px; }
 
+.form-narrow {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 460px; }
+
 header {
   background: #2e99db;
   color: #fff;
@@ -87,10 +92,17 @@ article {
     position: absolute;
     height: 100%;
     width: 100%; }
+    article main.right {
+      right: 0;
+      width: 60%; }
   article aside {
     position: absolute;
     height: 100%;
     right: 0; }
+    article aside.left {
+      left: 0;
+      right: auto;
+      width: 40%; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Roboto, Arial;
@@ -126,7 +138,8 @@ hr {
   background: rgba(0, 0, 0, 0.1);
   color: rgba(0, 0, 0, 0.1);
   border: none;
-  height: 2px; }
+  height: 2px;
+  clear: both; }
 
 .small {
   font-size: 70%; }
@@ -151,6 +164,9 @@ hr {
 
 .text-right {
   text-align: right !important; }
+
+.bg-white {
+  background: #fff; }
 
 .labeled-info {
   font-size: 16px; }
@@ -660,6 +676,55 @@ header .btn.icon {
     .radio:active .icon:before {
       transform: scale(0); }
 
+.input {
+  height: 50px;
+  line-height: 50px;
+  color: #333;
+  font-family: Roboto, Arial;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  outline: none; }
+  .input-sm {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px; }
+  .input-lg {
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px; }
+  .input-default {
+    background: #eeeeee; }
+  .input-white {
+    background: #fff; }
+
+.fieldset {
+  background: #fff;
+  font-size: 0;
+  padding-right: 20px; }
+  .fieldset + .fieldset {
+    margin-top: 1px; }
+  .fieldset__label {
+    padding: 5px 10px 5px 20px;
+    display: inline-block;
+    width: 35%;
+    box-sizing: border-box;
+    font-size: 14px;
+    vertical-align: middle; }
+  .fieldset__input {
+    border: none;
+    width: 65%;
+    background: transparent;
+    box-sizing: border-box;
+    vertical-align: middle; }
+  .fieldset-first {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; }
+  .fieldset-last {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; }
+
 .toolbar {
   display: block;
   background: #eeeeee;
@@ -858,6 +923,9 @@ header .btn.icon {
 
 .cutout-left {
   box-shadow: inset 6px 0 4px -5px rgba(0, 0, 0, 0.2); }
+
+.cutout-right {
+  box-shadow: inset -6px 0 4px -5px rgba(0, 0, 0, 0.2); }
 
 .baseline {
   vertical-align: middle !important; }

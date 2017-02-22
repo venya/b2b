@@ -72,7 +72,12 @@ function demoDialogOpen(id) {
 	var dialog = document.getElementById(id);
 	if (!dialog) return false;
 	var mask = document.querySelector('.dialog#'+ id +' + .dialog__mask');
-	mask.onclick = function() {demoDialogClose(dialog)};
+	mask.onclick = function() {
+		demoDialogClose(dialog);
+	};
+	forEvery(dialog, '.dialog__close', function(el) {
+		el.onclick = mask.onclick;
+	});
 	console.log(mask);
 	toggleClass(dialog, 'dialog-open', true);
 	return false;
@@ -112,6 +117,7 @@ function emitMessage(message, style, action, handler) {
 		btn.innerText = action;
 		btn.onclick = handler;
 	}
+	console.log(btn.onclick);
 	//	Apply message only after animation delay
 	setTimeout(function() {
 		sb.querySelector('.snackbar__message').innerText = message;

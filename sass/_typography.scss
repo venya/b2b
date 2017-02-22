@@ -45,6 +45,7 @@ hr {
 	color: $color-delimiter;
 	border: none;
 	height: 2px;
+	clear: both;
 }
 
 
@@ -76,6 +77,10 @@ hr {
 }
 .text-right {
 	text-align: right !important;
+}
+
+.bg-white {
+	background: $color-white;
 }
 
 
