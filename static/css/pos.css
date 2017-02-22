@@ -1108,11 +1108,13 @@ header .btn.icon {
       font-size: 13px;
       color: #aaa; }
     .order__item-qty {
-      font-weight: 400; }
+      font-weight: 400;
+      color: #2e99db; }
     .order__item-price {
       font-size: 13px;
       color: #aaa; }
     .order__item-total {
+      color: #2e99db;
       font-weight: 400; }
     .order__item-discount {
       font-size: 13px;

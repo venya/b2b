@@ -45,12 +45,14 @@
 		}
 		&-qty {
 			font-weight: $font-weight-normal;
+			color: $color-link;
 		}
 		&-price {
 			font-size: $pos-order-font-small;
 			color: $color-text-muted;
 		}
 		&-total {
+			color: $color-link;
 			font-weight: $font-weight-normal;
 		}
 		&-discount {
