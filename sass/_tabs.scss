@@ -34,15 +34,21 @@
 	&-lg {
 		.tabs__item {
 			height: $tabs-lg-height;
+
+			&-value {
+				font-size: 24px;
+			}
 		}
 	}
 
 	//	Autosizing tabs (justify)
 	&-flex {
 		display: table;
+		table-layout: fixed;
 
 		.tabs__item {
 			display: table-cell;
+			vertical-align: middle;
 			float: none;
 
 			&-right {

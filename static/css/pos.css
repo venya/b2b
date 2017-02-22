@@ -544,10 +544,14 @@ header .btn.icon {
       color: inherit; }
   .tabs-lg .tabs__item {
     height: 80px; }
+    .tabs-lg .tabs__item-value {
+      font-size: 24px; }
   .tabs-flex {
-    display: table; }
+    display: table;
+    table-layout: fixed; }
     .tabs-flex .tabs__item {
       display: table-cell;
+      vertical-align: middle;
       float: none; }
       .tabs-flex .tabs__item-right {
         float: none;
