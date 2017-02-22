@@ -283,25 +283,29 @@
 			<div class="tabbed">
 				<!-- Tabs -->
 				<ul class="tabs tabs-lg tabs-flex pos-item__tabs">
-					<li class="tabs__item tabs__item-active cutout-left tabbed__selector" data-tab="1">
+					<li class="tabs__item tabs__item-active cutout-left" data-tab="qty">
 						<div class="tabs__item-label">Quantity:</div>
 						<big class="tabs__item-value">20</big>
 					</li>
-					<li class="tabs__item tabbed__selector" data-tab="2">
+					<li class="tabs__item" data-tab="discount">
 						<div class="tabs__item-label">Discount:</div>
 						<big class="tabs__item-value">15%</big>
 					</li>
-					<li class="tabs__item tabbed__selector" data-tab="3">
+					<li class="tabs__item" data-tab="price">
 						<div class="tabs__item-label">Price:</div>
 						<big class="tabs__item-value">auto</big>
 					</li>
-					<li class="tabs__item tabbed__selector" data-tab="4">
+					<li class="tabs__item" data-tab="tax">
 						<div class="tabs__item-label">Taxes:</div>
 						<big class="tabs__item-value">auto</big>
 					</li>
+					<li class="tabs__item" data-tab="note">
+						<div class="tabs__item-label">Notes:</div>
+						<big class="tabs__item-value muted">none</big>
+					</li>
 				</ul>
 				<!-- Tab 1:  -->
-				<section class="tabbed__panel" data-tab="1">
+				<section class="tabbed__panel" data-tab="qty">
 					<form class="form-narrow">
 						<div class="fieldset fieldset-lg fieldset-bordered fieldset-standalone">
 							<label class="fieldset__label" for="amount">Quantity:</label>
@@ -313,14 +317,12 @@
 							<textarea class="input fieldset__input" id="amount" placeholder="Click to add a Note"></textarea>
 						</div>
 
-						<button class="btn btn-lg btn-block btn-primary text-uppercase btn-ripple">Open Register</button>
+						<button class="btn btn-lg btn-block btn-primary text-uppercase btn-ripple">Done</button>
 					</form>
-					<p><label><input class="toggle" type="checkbox" checked> Example toggle switcher</label></p>
-					<button class="btn btn-lg btn-default btn-block"><i class="icon icon-check"></i>Done</button>
 				</section>
 				
 				<!-- Tab 4: Taxes  -->
-				<section class="tabbed__panel tabbed__panel-active" data-tab="4">
+				<section class="tabbed__panel" data-tab="tax">
 					<form class="form-narrow">
 						<div class="fieldset-standalone text-right">
 							<label>Exclude All Taxes <input class="toggle" type="checkbox"></label>
@@ -338,6 +340,18 @@
 						<div class="fieldset fieldset-bordered fieldset-standalone">
 							<label class="fieldset__label" for="tax2">State Tax (10%)</label>
 							<div class="fieldset__input text-right"><input class="toggle" id="tax2" type="checkbox"></div>
+						</div>
+
+						<button class="btn btn-lg btn-block btn-primary text-uppercase btn-ripple">Done</button>
+					</form>
+				</section>
+				
+				<!-- Tab 4: Notes  -->
+				<section class="tabbed__panel" data-tab="note">
+					<form class="form-narrow">
+						<div class="fieldset fieldset-lg fieldset-bordered fieldset-standalone fieldset-note">
+							<i class="icon icon-chat"></i>
+							<textarea class="input fieldset__input" id="amount" placeholder="Type here Item-specific note" style="height: 200px;"></textarea>
 						</div>
 
 						<button class="btn btn-lg btn-block btn-primary text-uppercase btn-ripple">Done</button>

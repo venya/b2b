@@ -292,12 +292,22 @@
 			</ul>
 			<br>
 
-			<ul class="tabs tabs-lg">
-				<li class="tabs__item">Larger Tabs</li>
-				<li class="tabs__item tabs__item-right">Right Tab</li>
-				<li class="tabs__item tabs__item-active">Active Tab</li>
-				<li class="tabs__item"><a class="tabs__item-link">Link-Tab</a></li>
-			</ul>
+			<div class="tabbed">
+				<ul class="tabs tabs-lg">
+					<li class="tabs__item" data-tab="1">Larger Tabs</li>
+					<li class="tabs__item tabs__item-right" data-tab="4">Right Tab</li>
+					<li class="tabs__item tabs__item-active" data-tab="2">Active Tab</li>
+					<li class="tabs__item" data-tab="3"><a class="tabs__item-link">Link-Tab</a></li>
+				</ul>
+				
+				<div class="tabbed__panel tabbed__panel-active" data-tab="1">
+					<p><code>.tabs</code> with multiple <code>.tabbed__panel</code> can be placed inside <code>.tabbed</code> container. Then each <code>.tabs__item</code> will unhide corresponding .tabbed__panel (linked via corresponding <code>data-tab=</code> value)</p>
+				</div>
+
+				<div class="tabbed__panel" data-tab="2"><p>Different content. For second tab</p></div>
+				<div class="tabbed__panel" data-tab="3"><p>Different content. For third (3) tab</p></div>
+				<div class="tabbed__panel" data-tab="4"><p>Different content. For tab #4</p></div>
+			</div>
 
 			<h1>Horizontal Menu</h1>
 			<p>Used in POS under order payment button. <code>.hmenu</code> containing multiple <code>.hmenu__item</code>.</p>

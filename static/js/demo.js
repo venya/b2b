@@ -217,6 +217,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		el.ontouchstart = function() { };
 	});
 
+	//	Bind .tabbed component
+	forEvery(document, ".tabbed .tabs__item", function(el) {
+		var group = el.parentElement.parentElement;	// TODO! remove hardcode
+		console.log(el);
+		el.onclick = function() {
+			//	copied from Tab control
+			var prevTab = this.parentElement.querySelector(".tabs__item-active");
+			if (prevTab)
+				toggleClass(prevTab, "tabs__item-active", false);
+			toggleClass(this, "tabs__item-active", true);
+			//	Activate corresponding tabbed panel
+			console.log(this.dataset.tab);
+			var panel = group.querySelector('.tabbed__panel[data-tab="' + this.dataset.tab +'"]');
+			console.log(panel);
+			toggleClass(panel, 'tabbed__panel-active', true);
+		}
+	});
+
 	//	Bind JS-based Ripple effect
 	forEvery(document, ".btn-ripple", function(el) {
 		el.onmousedown = function(e) {
