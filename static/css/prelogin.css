@@ -291,7 +291,8 @@ header .btn.icon {
     width: 65%;
     background: transparent;
     box-sizing: border-box;
-    vertical-align: middle; }
+    vertical-align: middle;
+    display: inline-block; }
   .fieldset-first {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }

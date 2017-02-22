@@ -56,3 +56,18 @@
 		}
 	}
 }
+
+
+//	Tabbed panels control
+
+.tabbed {
+	@include clearfix();
+
+	&__panel {
+		display: none;
+
+		&-active {
+			display: block;
+		}
+	}
+}

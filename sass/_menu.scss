@@ -13,12 +13,6 @@
 	overflow-y: auto;
 
 	&__mask {
-			// position: fixed;
-			// top: 0;
-			// bottom: 0;
-			// left: 0;
-			// right: 0;
-			// background: $menu-mask;
 		@include create-mask();
 		@include opacity(0);
 		display: none;

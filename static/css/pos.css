@@ -555,6 +555,13 @@ header .btn.icon {
       .tabs-flex .tabs__item:last-child {
         border-right-width: 0; }
 
+.tabbed {
+  overflow: hidden; }
+  .tabbed__panel {
+    display: none; }
+    .tabbed__panel-active {
+      display: block; }
+
 .toggle {
   position: relative;
   display: inline-block;
@@ -726,7 +733,8 @@ header .btn.icon {
     width: 65%;
     background: transparent;
     box-sizing: border-box;
-    vertical-align: middle; }
+    vertical-align: middle;
+    display: inline-block; }
   .fieldset-first {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px; }
