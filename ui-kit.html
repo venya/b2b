@@ -300,11 +300,10 @@
 					<li class="tabs__item" data-tab="3"><a class="tabs__item-link">Link-Tab</a></li>
 				</ul>
 				
-				<div class="tabbed__panel tabbed__panel-active" data-tab="1">
+				<div class="tabbed__panel" data-tab="1"><p>Different content. For the first tab</p></div>
+				<div class="tabbed__panel tabbed__panel-active" data-tab="2">
 					<p><code>.tabs</code> with multiple <code>.tabbed__panel</code> can be placed inside <code>.tabbed</code> container. Then each <code>.tabs__item</code> will unhide corresponding .tabbed__panel (linked via corresponding <code>data-tab=</code> value)</p>
 				</div>
-
-				<div class="tabbed__panel" data-tab="2"><p>Different content. For second tab</p></div>
 				<div class="tabbed__panel" data-tab="3"><p>Different content. For third (3) tab</p></div>
 				<div class="tabbed__panel" data-tab="4"><p>Different content. For tab #4</p></div>
 			</div>
@@ -325,7 +324,7 @@
 				<button class="btn btn-default" onclick="demoSnackbar()"><i class="icon icon-chat"></i>Emit message</button>
 				<button class="btn btn-default" onclick="demoSnackbar('success')"><i class="icon icon-check"></i>Success</button>
 				<button class="btn btn-default" onclick="demoSnackbar('danger')"><i class="icon icon-close"></i>Warning</button>
-				<button class="btn btn-default" onclick="demoSnackbar(undefined, 'Sample Action', function(){ alert('Message handler'); })">Wih Action<i class="icon icon-next"></i></button>
+				<button class="btn btn-default" onclick="demoSnackbar(undefined, 'Sample Action', function(){ alert('Message handler'); })">With Action<i class="icon icon-next"></i></button>
 			</p>
 
 			<h1>Table Grids</h1>
@@ -350,6 +349,8 @@
 				</tbody>
 			</table>
 
+			<hr>
+			<link rel="import" href="inc/uc.html" onload="demoTemplate(this)">
 
 		</section>
 
@@ -380,7 +381,7 @@
 
 
 	<div class="snackbar hide">
-		<div class="snackbar__actions"><button class="btn btn-default"></button></div>
+		<div class="snackbar__actions"><button class="btn btn-link text-uppercase"></button></div>
 		<div class="snackbar__message">Snackbar Message</div>
 	</div>
 

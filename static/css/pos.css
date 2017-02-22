@@ -1291,6 +1291,11 @@ article.pos main {
     position: absolute;
     bottom: 0; }
 
+article.pos main.disabled .header__icons,
+article.pos main.disabled .toolbar-payments,
+article.pos main.disabled .hmenu {
+  display: none; }
+
 article.pos aside {
   width: 60%; }
 

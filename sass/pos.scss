@@ -41,6 +41,14 @@ article.pos {
 		}
 	}
 
+	main.disabled {
+		.header__icons,
+		.toolbar-payments,
+		.hmenu {
+			display: none;
+		}
+	}
+
 	aside {
 		width: $pos-catalog-width;
 	}

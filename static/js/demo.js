@@ -43,6 +43,7 @@ function demoTemplate(inc) {
 
 function demoEditItem() {
 	toggleClass(document.querySelector('.pos-item'), 'hide');
+	toggleClass(document.querySelector('main.pos-order'), 'disabled');
 }
 
 
