@@ -124,11 +124,13 @@ $hmenu-disabled: $color-silver-superlight;
 $input-sm-height: 40px;
 $input-height: 50px;
 $input-lg-height: 60px;
+$input-xl-height: 80px;
 
 $input-font-family: $font-base-family;
 $input-font-size: 16px;
 $input-sm-font-size: 14px;
 $input-lg-font-size: 20px;
+$input-xl-font-size: 30px;
 $input-font-weight: $font-weight-normal;
 
 $input-valign: bottom;
@@ -138,6 +140,7 @@ $toolbar-height: $input-lg-height;
 $select-background: $toolbar-background;
 
 $fieldset-label-width: 35%;
+$fieldset-border-width: 2px;
 
 
 // Buttons
@@ -153,6 +156,10 @@ $btn-border-radius: $base-border-radius;
 $btn-lg-text-size: $input-font-size + 3px;
 $btn-lg-height: $toolbar-height;
 $btn-lg-min-width: $btn-lg-height;
+
+$btn-xl-text-size: $input-xl-font-size;
+$btn-xl-height: $input-xl-height;
+$btn-xl-min-width: $btn-xl-height;
 
 $btn-default-bg: $color-silver-light;
 $btn-default-text: $color-text;

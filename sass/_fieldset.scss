@@ -37,4 +37,23 @@
 		border-bottom-left-radius: $base-border-radius;
 		border-bottom-right-radius: $base-border-radius;
 	}
+
+	//	Modifications
+
+	&-lg {
+		// height: $input-xl-height;
+		// padding-top: ($input-xl-height - $input-lg-height) /2;
+	}
+
+	&-bordered {
+		border: solid $color-silver-light $fieldset-border-width;
+
+		&.fieldset-lg {
+			// padding-top: ($input-xl-height - $input-lg-height) /2 - 2px;
+		}
+	}
+
+	&-standalone {
+		margin-bottom: $base-double-spacing;
+	}
 }
