@@ -1110,13 +1110,13 @@ header .btn.icon {
       font-weight: 400; }
     .order__item-info {
       font-size: 13px;
-      color: #aaa; }
+      opacity: 0.5; }
     .order__item-qty {
       font-weight: 400;
       color: #2e99db; }
     .order__item-price {
       font-size: 13px;
-      color: #aaa; }
+      opacity: 0.5; }
     .order__item-total {
       color: #2e99db;
       font-weight: 400; }

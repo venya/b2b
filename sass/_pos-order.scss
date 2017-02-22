@@ -41,7 +41,8 @@
 		}
 		&-info {
 			font-size: $pos-order-font-small;
-			color: $color-text-muted;
+			opacity: $color-muted-visibility;
+			// color: $color-text-transparent;
 		}
 		&-qty {
 			font-weight: $font-weight-normal;
@@ -49,7 +50,8 @@
 		}
 		&-price {
 			font-size: $pos-order-font-small;
-			color: $color-text-muted;
+			opacity: $color-muted-visibility;
+			// color: $color-text-transparent;
 		}
 		&-total {
 			color: $color-link;

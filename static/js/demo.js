@@ -35,6 +35,11 @@ function forEvery(parent, selector, func) {
 	}
 }
 
+function demoTemplate(inc) {
+	// console.log(inc.import.body.innerHTML);
+	inc.outerHTML = inc.import.body.innerHTML;
+}
+
 
 function demoEditItem() {
 	toggleClass(document.querySelector('.pos-item'), 'hide');
@@ -220,18 +225,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	//	Bind .tabbed component
 	forEvery(document, ".tabbed .tabs__item", function(el) {
 		var group = el.parentElement.parentElement;	// TODO! remove hardcode
-		console.log(el);
+		// console.log(el);
 		el.onclick = function() {
-			//	copied from Tab control
+			function activateTab(tabId, state) {
+				var panel = group.querySelector('.tabbed__panel[data-tab="' + tabId +'"]');
+				// console.log(panel);
+				if (panel)
+					toggleClass(panel, 'tabbed__panel-active', state);
+			}
+
+			//	TODO: refactor - all copied from Tab control
 			var prevTab = this.parentElement.querySelector(".tabs__item-active");
-			if (prevTab)
+			if (prevTab) {
 				toggleClass(prevTab, "tabs__item-active", false);
+				activateTab(prevTab.dataset.tab, false);			//except this
+			}
 			toggleClass(this, "tabs__item-active", true);
 			//	Activate corresponding tabbed panel
-			console.log(this.dataset.tab);
-			var panel = group.querySelector('.tabbed__panel[data-tab="' + this.dataset.tab +'"]');
-			console.log(panel);
-			toggleClass(panel, 'tabbed__panel-active', true);
+			activateTab(this.dataset.tab, true);
 		}
 	});
 

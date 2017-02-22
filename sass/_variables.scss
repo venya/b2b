@@ -33,6 +33,7 @@ $color-menu-active-text: $color-white;
 
 $color-muted-visibility: .5;
 $color-text-muted: $color-silver;
+$color-text-transparent: rgba($color-text, $color-muted-visibility);
 
 $color-selection-bg: $color-blue;
 $color-selection-text: $color-white;

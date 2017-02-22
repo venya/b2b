@@ -58,7 +58,7 @@
 						</div>
 						<ul class="dropdown-menu">
 							<li class="dropdown-menu__item dropdown-menu__item-selected"><i class="icon icon-next"></i>Walk In</li>
-							<li class="dropdown-menu__item"><i class="icon icon-user"></i>Recent Customer</li>
+							<li class="dropdown-menu__item"><a class="icon icon-next pull-right" href="customer.html"></a>Recent Customer</li>
 							<li class="dropdown-menu__item"><i class="icon icon-user"></i>Recent Customer 2</li>
 							<li class="dropdown-menu__item"><i class="icon icon-user"></i>Another Customer</li>
 							<button class="btn btn-block btn-lg btn-primary" href="#"><i class="icon icon-plus"></i>New Customer</button>
@@ -293,13 +293,13 @@
 						<div class="tabs__item-label">Discount:</div>
 						<big class="tabs__item-value">15%</big>
 					</li>
-					<li class="tabs__item" data-tab="price">
+					<!-- <li class="tabs__item" data-tab="price">
 						<div class="tabs__item-label">Price:</div>
 						<big class="tabs__item-value muted">auto</big>
-					</li>
+					</li> -->
 					<li class="tabs__item" data-tab="tax">
 						<div class="tabs__item-label">Taxes:</div>
-						<big class="tabs__item-value muted">auto</big>
+						<big class="tabs__item-value">custom</big>
 					</li>
 					<li class="tabs__item" data-tab="note">
 						<div class="tabs__item-label">Notes:</div>
@@ -307,7 +307,7 @@
 					</li>
 				</ul>
 				<!-- Tab 1:  -->
-				<section class="tabbed__panel" data-tab="qty">
+				<section class="tabbed__panel tabbed__panel-active" data-tab="qty">
 					<form class="form-narrow">
 						<div class="fieldset fieldset-lg fieldset-bordered fieldset-standalone">
 							<label class="fieldset__label" for="amount">Quantity:</label>
@@ -377,7 +377,6 @@
 		</aside>
 
 	</article>
-
 
 	<nav class="menu">
 		<header>
