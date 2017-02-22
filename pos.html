@@ -295,11 +295,11 @@
 					</li>
 					<li class="tabs__item" data-tab="price">
 						<div class="tabs__item-label">Price:</div>
-						<big class="tabs__item-value">auto</big>
+						<big class="tabs__item-value muted">auto</big>
 					</li>
 					<li class="tabs__item" data-tab="tax">
 						<div class="tabs__item-label">Taxes:</div>
-						<big class="tabs__item-value">auto</big>
+						<big class="tabs__item-value muted">auto</big>
 					</li>
 					<li class="tabs__item" data-tab="note">
 						<div class="tabs__item-label">Notes:</div>
@@ -319,6 +319,17 @@
 							<textarea class="input fieldset__input" id="amount" placeholder="Click to add a Note"></textarea>
 						</div>
 
+						<button class="btn btn-lg btn-block btn-primary text-uppercase btn-ripple">Done</button>
+					</form>
+				</section>
+				
+				<!-- Tab 2:  -->
+				<section class="tabbed__panel" data-tab="discount">
+					<form class="form-narrow">
+						<div class="fieldset fieldset-lg fieldset-bordered fieldset-standalone">
+							<label class="fieldset__label" for="amount">Discount:</label>
+							<input class="input input-xl fieldset__input text-right" id="amount" value="15%" placeholder="Discount" required="required">
+						</div>
 						<button class="btn btn-lg btn-block btn-primary text-uppercase btn-ripple">Done</button>
 					</form>
 				</section>
