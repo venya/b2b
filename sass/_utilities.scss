@@ -22,3 +22,7 @@
 .baseline {
 	vertical-align: middle!important;
 }
+
+.clearfix {
+	@include clearfix();
+}

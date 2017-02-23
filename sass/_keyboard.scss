@@ -31,6 +31,18 @@
 			height: $height;
 			line-height: $height;
 		}
+
+		// Tripple height keys
+		&-colspan-3 {
+			$height: $btn-height * 3 + $keyboard-border-width * 2;
+			height: $height;
+			line-height: $height;
+		}
+		&-colspan-3.btn-lg {
+			$height: $btn-lg-height * 3 + $keyboard-border-width * 2;
+			height: $height;
+			line-height: $height;
+		}
 	}
 
 	&__row-last &__key-last {

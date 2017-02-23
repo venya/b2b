@@ -49,14 +49,33 @@ hr {
 }
 
 
-
+//	Text sizing
 .small {
 	font-size: 70%;
 }
+.big {
+	font-size: 120%;
+}
+.xl {
+	font-size: 150%;
+}
 
+
+//	Text colors
 .muted {
 	opacity: $color-muted-visibility;
 }
+
+.text-success {
+	color: $color-success;
+}
+
+.text-danger {
+	color: $color-danger;
+}
+
+
+
 
 .pull-right {
 	float: right !important;

@@ -52,6 +52,9 @@ table {
 .baseline {
   vertical-align: middle !important; }
 
+.clearfix {
+  overflow: hidden; }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: Roboto, Arial;
   font-weight: 500;
@@ -92,8 +95,20 @@ hr {
 .small {
   font-size: 70%; }
 
+.big {
+  font-size: 120%; }
+
+.xl {
+  font-size: 150%; }
+
 .muted {
   opacity: 0.5; }
+
+.text-success {
+  color: #66BB6A; }
+
+.text-danger {
+  color: #FF6431; }
 
 .pull-right {
   float: right !important; }
@@ -566,6 +581,12 @@ header .btn.icon {
     .keyboard__key-colspan-2.btn-lg {
       height: 121px;
       line-height: 121px; }
+    .keyboard__key-colspan-3 {
+      height: 122px;
+      line-height: 122px; }
+    .keyboard__key-colspan-3.btn-lg {
+      height: 182px;
+      line-height: 182px; }
   .keyboard__row-last .keyboard__key-last {
     border-bottom-right-radius: 3px; }
   .keyboard__row-last .keyboard__key-first {
