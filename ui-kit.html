@@ -276,7 +276,7 @@
 			<header>
 				<button class="btn icon icon-back"></button>
 				<div class="header__icons">
-					<button class="btn icon icon-search"></button>	
+					<button class="btn icon icon-help" title="Help" onclick="demoDialogOpen('help')"></button>
 					<button class="btn icon icon-offline" title="Sync"></button>				
 				</div>
 				<h1>Header title with very long text should not interfere with right icons and not wrap on the next line</h1>
@@ -318,6 +318,15 @@
 			</ul>
 
 			<h1>Dialogs, Popups and Messages</h1>
+			<h2>Dialogs</h2>
+			<p class="muted">Docs Under Construction</p>
+			<p>To show dialog call <code>demoDialogOpen(id)</code>, and apply id= to corresponding .dialog instance.</p>
+			<p><button class="btn btn-default" onclick="demoDialogOpen('dialog')"><i class="icon icon-next"></i>Launch Dialog</button></p>
+
+			<h3>Help Panel</h3>
+			<p>Help panel is a special case of using dialog. It used the same way, but only has an additional <code>.dialog-help</code> class.</p>
+			<p><button class="btn btn-default" onclick="demoDialogOpen('help')"><i class="icon icon-help"></i>Show help panel</button></p>
+
 			<h2>Snackbar</h2>
 			<p>Used to display short notification messages without interrupting user tasks. Only one message can be displayed at any moment.</p>
 			<p>
@@ -384,6 +393,23 @@
 		<div class="snackbar__actions"><button class="btn btn-link text-uppercase"></button></div>
 		<div class="snackbar__message">Snackbar Message</div>
 	</div>
+
+	<div class="dialog" id="dialog">
+		<div class="dialog__content">
+			<header class="header">
+			<div class="header__icons"><i class="btn icon icon-close dialog__close"></i></div>
+				<h1>Dialog Header</h1>
+			</header>
+			<section>
+				<p>This is Dialog content.</p>
+				<p>Assign <code>.dialog__close</code> class to any element(s) inside current .dialog scope to make it trigger dialog close. This class has no visual effects.</p>
+				<button class="btn btn-default dialog__close">Close</button>
+			</section>
+		</div>
+	</div>
+	<div class="dialog__mask"></div>
+
+	<link rel="import" href="inc/help.html" onload="demoTemplate(this)">
 
 </body>
 </html>
