@@ -556,13 +556,22 @@ header .btn.icon {
     white-space: nowrap; }
   .keyboard__key {
     width: calc((100% - 2px) / 3);
-    margin-left: 1px; }
+    margin-left: 1px;
+    vertical-align: top; }
     .keyboard__key:first-child {
       margin-left: 0; }
+    .keyboard__key-colspan-2 {
+      height: 81px;
+      line-height: 81px; }
+    .keyboard__key-colspan-2.btn-lg {
+      height: 121px;
+      line-height: 121px; }
   .keyboard__row-last .keyboard__key-last {
     border-bottom-right-radius: 3px; }
   .keyboard__row-last .keyboard__key-first {
     border-bottom-left-radius: 3px; }
+  .keyboard-4 .keyboard__key {
+    width: calc((100% - 3px) / 4); }
 
 .prelogin {
   background-color: #eeeeee;

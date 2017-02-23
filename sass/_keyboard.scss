@@ -12,11 +12,24 @@
 
 	&__key {
 		// display: table-cell;
-		width: calc((100% - #{$keyboard-border-width*2}) / 3);
+		width: calc((100% - #{ $keyboard-border-width*2 }) / 3);
 		margin-left: 1px;
+		vertical-align: top;
 
 		&:first-child {
 			margin-left: 0;
+		}
+
+		// Double height keys
+		&-colspan-2 {
+			$height: $btn-height * 2 + $keyboard-border-width;
+			height: $height;
+			line-height: $height;
+		}
+		&-colspan-2.btn-lg {
+			$height: $btn-lg-height * 2 + $keyboard-border-width;
+			height: $height;
+			line-height: $height;
 		}
 	}
 
@@ -25,5 +38,15 @@
 	}
 	&__row-last &__key-first {
 		border-bottom-left-radius: $base-border-radius;
+	}
+
+
+	//	Keyboard 4 buttons per row
+	&-4 {
+		$buttons: 4;
+
+		.keyboard__key {
+			width: calc((100% - #{ $keyboard-border-width * ($buttons - 1) }) / #{ $buttons });
+		}
 	}
 }
