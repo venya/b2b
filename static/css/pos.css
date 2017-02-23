@@ -750,6 +750,22 @@ header .btn.icon {
   .fieldset-standalone {
     margin-bottom: 20px; }
 
+.keyboard {
+  width: 100%; }
+  .keyboard__row {
+    margin-bottom: 1px;
+    font-size: 0;
+    white-space: nowrap; }
+  .keyboard__key {
+    width: calc((100% - 2px) / 3);
+    margin-left: 1px; }
+    .keyboard__key:first-child {
+      margin-left: 0; }
+  .keyboard__row-last .keyboard__key-last {
+    border-bottom-right-radius: 5px; }
+  .keyboard__row-last .keyboard__key-first {
+    border-bottom-left-radius: 5px; }
+
 .toolbar {
   display: block;
   background: #eeeeee;

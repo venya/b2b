@@ -548,6 +548,22 @@ header .btn.icon {
 .animated .dialog-help.dialog-open .dialog__content {
   transform: translate(0, 0); }
 
+.keyboard {
+  width: 100%; }
+  .keyboard__row {
+    margin-bottom: 1px;
+    font-size: 0;
+    white-space: nowrap; }
+  .keyboard__key {
+    width: calc((100% - 2px) / 3);
+    margin-left: 1px; }
+    .keyboard__key:first-child {
+      margin-left: 0; }
+  .keyboard__row-last .keyboard__key-last {
+    border-bottom-right-radius: 3px; }
+  .keyboard__row-last .keyboard__key-first {
+    border-bottom-left-radius: 3px; }
+
 .prelogin {
   background-color: #eeeeee;
   color: #333;
@@ -666,19 +682,3 @@ header .btn.icon {
       padding: 20px;
       overflow: hidden;
       font-size: 16px; }
-
-.keyboard {
-  width: 100%; }
-  .keyboard__row {
-    margin-bottom: 1px;
-    font-size: 0;
-    white-space: nowrap; }
-  .keyboard__key {
-    width: calc((100% - 2px) / 3);
-    margin-left: 1px; }
-    .keyboard__key:first-child {
-      margin-left: 0; }
-  .keyboard__row-last .keyboard__key-last {
-    border-bottom-right-radius: 3px; }
-  .keyboard__row-last .keyboard__key-first {
-    border-bottom-left-radius: 3px; }
