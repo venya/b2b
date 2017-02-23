@@ -84,13 +84,13 @@ function demoDialogOpen(id) {
 	forEvery(dialog, '.dialog__close', function(el) {
 		el.onclick = mask.onclick;
 	});
-	console.log(mask);
+	// console.log(mask);
 	toggleClass(dialog, 'dialog-open', true);
 	return false;
 }
 
 function demoDialogClose(dialog) {
-	console.log("close dialog?");
+	// console.log("close dialog?");
 	toggleClass(dialog, 'dialog-open', false);
 }
 
