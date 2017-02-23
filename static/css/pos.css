@@ -566,6 +566,8 @@ header .btn.icon {
       background: #f8f8f8; }
     .tabs__item-link {
       color: inherit; }
+    .tabs__item:active {
+      border-top: solid white 2px; }
   .tabs-lg .tabs__item {
     height: 80px; }
     .tabs-lg .tabs__item-value {

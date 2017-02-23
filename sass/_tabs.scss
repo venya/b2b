@@ -28,6 +28,11 @@
 		&-link {
 			color: inherit;
 		}
+
+		&:active {
+			border-top: solid white 2px;
+			// background: linear-gradient(white, transparent);
+		}
 	}
 
 	//	Larger tabs

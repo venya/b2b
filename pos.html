@@ -299,31 +299,68 @@
 						<big class="tabs__item-value muted">none</big>
 					</li>
 				</ul>
+				<br>
+
 				<!-- Tab 1:  -->
 				<section class="tabbed__panel tabbed__panel-active" data-tab="qty">
 					<form class="form-narrow">
-						<div class="fieldset fieldset-lg fieldset-bordered fieldset-standalone">
+						<div class="fieldset fieldset-lg fieldset-bordered">
 							<label class="fieldset__label" for="amount">Quantity:</label>
 							<input class="input input-xl fieldset__input text-right" id="amount" value="20" placeholder="Quantity" required="required">
 						</div>
 
-						<div class="fieldset fieldset-lg fieldset-bordered fieldset-standalone fieldset-note">
-							<i class="icon icon-chat"></i>
-							<textarea class="input fieldset__input" id="amount" placeholder="Click to add a Note"></textarea>
-						</div>
+						<link rel="import" href="inc/numpad.html" onload="demoTemplate(this)">
 
-						<button class="btn btn-lg btn-block btn-primary text-uppercase btn-ripple">Done</button>
 					</form>
 				</section>
 				
 				<!-- Tab 2:  -->
 				<section class="tabbed__panel" data-tab="discount">
 					<form class="form-narrow">
-						<div class="fieldset fieldset-lg fieldset-bordered fieldset-standalone">
-							<label class="fieldset__label" for="amount">Discount:</label>
-							<input class="input input-xl fieldset__input text-right" id="amount" value="15%" placeholder="Discount" required="required">
+						<div class="fieldset fieldset-lg fieldset-bordered layout" style="padding:0">
+							<div class="layout__column">
+								<label class="fieldset__label" for="amount">Discount:</label>
+							</div>
+							<div class="layout__column">
+								<input class="input input-xl fieldset__input text-right" id="amount" value="15%" placeholder="Discount" style="width:80%">
+							</div>
+							<div class="layout__column w50 text-center" style="border-left: solid #eeeeee 2px;">
+								<label class="fieldset__label" for="mode" style="width:auto">USD</label>
+								<input class="toggle" id="mode" type="checkbox" checked>
+								<label class="fieldset__label" for="mode" style="width:auto; padding-left:10px;">%</label>
+							</div>
 						</div>
-						<button class="btn btn-lg btn-block btn-primary text-uppercase btn-ripple">Done</button>
+						<div class="keyboard keyboard-4">
+							<div class="keyboard__row">
+								<span class="btn btn-lg btn-secondary btn-ripple keyboard__key">5%</span>
+								<span class="btn btn-lg btn-secondary btn-ripple keyboard__key">10%</span>
+								<span class="btn btn-lg btn-secondary btn-ripple keyboard__key">15%</span>
+								<span class="btn btn-lg btn-secondary btn-ripple keyboard__key">20%</span>
+							</div>
+							<div class="keyboard__row">
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key">1</span>
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key">2</span>
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key">3</span>
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key icon-text icon-backspace"></span>
+							</div>
+							<div class="keyboard__row">
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key">4</span>
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key">5</span>
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key">6</span>
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key icon-text icon-undo"></span>
+							</div>
+							<div class="keyboard__row keyboard__row-last">
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key">7</span>
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key">8</span>
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key">9</span>
+								<button class="btn btn-lg btn-primary btn-ripple keyboard__key keyboard__key-colspan-2 keyboard__key-last pull-right" type="submit">Done</button>
+							</div>
+							<div class="keyboard__row keyboard__row-last">
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key keyboard__key-first">0</span>
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key">00</span>
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key icon-text icon-clear"></span>
+							</div>
+						</div>
 					</form>
 				</section>
 				
