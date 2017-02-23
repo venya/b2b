@@ -12,7 +12,7 @@
 <body class="prelogin animated page-pin">
 
 	<header class="header">
-		<button class="btn icon icon-help"></button>
+		<button class="btn icon icon-help" onclick="demoDialogOpen('help')"></button>
 		<div class="header__company">Your Company Name Inc.</div>
 	</header>
 
@@ -63,6 +63,11 @@
 
 		<p class="footer">Attention: after multiple incorrect attempts terminal will be locked</p>
 	</main>
+
+
+	<!-- Dialog: Help Panel -->
+	<link rel="import" href="inc/help.html" onload="demoTemplate(this)">
+
 
 </body>
 </html>

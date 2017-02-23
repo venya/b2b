@@ -12,7 +12,7 @@
 <body class="prelogin animated page-activate">
 
 	<header class="header">
-		<button class="btn icon icon-help"></button>
+		<button class="btn icon icon-help" onclick="demoDialogOpen('help')"></button>
 		<div class="header__logo">
 			<img src="static/img/logo-white.svg" class="header__logo-img" alt="eHopper">
 		</div>
@@ -35,6 +35,9 @@
 
 		<p class="footer">Not yet registered? <a href="signup.html" class="shy">Create New Account</a></p>
 	</main>
+
+	<!-- Dialog: Help Panel -->
+	<link rel="import" href="inc/help.html" onload="demoTemplate(this)">
 
 </body>
 </html>
