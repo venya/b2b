@@ -23,68 +23,7 @@
 				<h1>Order</h1>
 			</header>
 
-			<div class="toolbar toolbar-delimiter">
-				<div class="toolbar__item w50">
-					<div class="dropdown dropdown-white dropdown-disabled w100">
-						<div class="dropdown__selected">
-							<div class="dropdown__selected-label">Order Type:</div>
-							<div class="dropdown__selected-value">Quick Sale</div>
-						</div>
-					</div>
-				</div>
-				<div class="toolbar__item w50">
-					<div class="dropdown dropdown-white dropdown-disabled w100">
-						<div class="dropdown__selected">
-							<i class="icon icon-next dropdown__selected-icon"></i>
-							<div class="dropdown__selected-label">Customer:</div>
-							<div class="dropdown__selected-value">Walk In</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<section class="order">
-
-				<ul class="order__items" id="demo_order_items">
-					<li class="order__item order__item-disabled">
-						<div class="order__item-data">
-							<div class="order__item-data1">
-								<div class="order__item-qty">1&times;</div>
-								<div class="order__item-price">3.00</div>
-							</div>
-							<div class="order__item-data2">
-								<div class="order__item-total">3.00</div>
-								<div class="order__item-discount"></div>
-							</div>
-						</div>
-						<div class="order__item-product">
-							<div class="order__item-title">Hot Dog XL</div>
-							<div class="order__item-info">Click to duplicate in cart</div>
-						</div>
-					</li>
-					<li class="order__item order__item-disabled">
-						<div class="order__item-data">
-							<div class="order__item-data1">
-								<div class="order__item-qty">2&times;</div>
-								<div class="order__item-price">100.00</div>
-							</div>
-							<div class="order__item-data2">
-								<div class="order__item-total">200.00</div>
-								<div class="order__item-discount">-5.10</div>
-							</div>
-						</div>
-						<div class="order__item-product">
-							<div class="order__item-title">T-Shirt with Print 23</div>
-							<div class="order__item-info">Long Sleeves, XL size, Black color</div>
-						</div>
-					</li>
-				</ul>
-			</section>
-
-			<div class="order-totals">
-				Order totals
-			</div>
-
+			<link rel="import" href="inc/order.html" onload="demoTemplate(this)">
 		</main>
 
 
@@ -98,15 +37,19 @@
 			<section class="methods">
 
 				<a class="products__item btn-ripple" href="payment-cash.html" style="background: darkseagreen">
+					<i class="icon icon-cash"></i>
 					<div class="products__item-title">Cash</div>
 				</a>
 				<a class="products__item btn-ripple" href="payment-credit.html" style="background: khaki">
+					<i class="icon icon-cc"></i>
 					<div class="products__item-title">Credit Card</div>
 				</a>
 				<a class="products__item btn-ripple" href="payment-debit.html" style="background: khaki">
+					<i class="icon icon-cc"></i>
 					<div class="products__item-title">Debit Card</div>
 				</a>
-				<div class="products__item btn-ripple" onclick="emitMessage('External Payment System is not yet configured on this device', undefined, 'Setup')">
+				<div class="products__item btn-ripple" onclick="emitMessage('External Payment System is not yet configured on this device', undefined, 'Setup Now')">
+					<i class="icon icon-device"></i>
 					<div class="products__item-title">External Payment System</div>
 				</div>
 				<a class="products__item btn-ripple" href="payment-split.html" style="background: khaki">
@@ -128,22 +71,7 @@
 
 
 	<!-- Dialog: Help Panel -->
-	<div class="dialog dialog-help" id="help">
-		<div class="dialog__content">
-			<div class="dialog__header">
-				<header class="header">
-					<div class="header__icons">
-						<i class="btn icon icon-close dialog__close"></i>
-					</div>
-					<h1>Help</h1>
-				</header>
-			</div>
-			<div class="dialog__body">
-				<p>Help content about differenet Payment Methods</p>
-			</div>
-		</div>
-	</div>
-	<div class="dialog__mask"></div>
+	<link rel="import" href="inc/help.html" onload="demoTemplate(this)">
 
 
 </body>
