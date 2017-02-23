@@ -540,6 +540,10 @@ header .btn.icon {
     left: 0;
     min-width: 100%;
     top: 100%; }
+  .dropdown-disabled {
+    pointer-events: none; }
+    .dropdown-disabled .dropdown__selected:after {
+      content: none; }
 
 .tabs {
   display: block;
