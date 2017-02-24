@@ -14,6 +14,8 @@
 	border-radius: $pos-catalog-border-radius;
 	overflow: hidden;
 	background: $card-background;
+	color: $card-text;
+	text-decoration: none;
 
 	&-interactive {
 		&:hover {

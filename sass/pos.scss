@@ -112,6 +112,23 @@ article.pos {
 	}
 }
 
+article.pos-payments {
+	.methods {
+		padding: 50px;
+
+		.card {
+			width: 29%;
+			float: left;
+			margin: 0 2% $base-double-spacing;
+
+			&__content {
+				text-align: center;
+				line-height: $input-xl-height;
+				font-size: $icon-font-size * 2;
+			}
+		}
+	}
+}
 
 
 // Editing Order Item (in the right panel)

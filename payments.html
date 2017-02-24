@@ -34,27 +34,27 @@
 			</header>
 
 			<!-- MD Cards with Payment Methods -->
-			<section class="methods" style="padding:50px;">
+			<section class="methods">
 
-				<a class="products__item btn-ripple" href="payment-cash.html" style="background: darkseagreen">
-					<i class="icon icon-cash"></i>
-					<div class="products__item-title">Cash</div>
+				<a class="card card-interactive btn-ripple" href="payment-cash.html" style="background: darkseagreen">
+					<div class="card__content icon-text icon-cash"></div>
+					<div class="card__footer">Cash</div>
 				</a>
-				<a class="products__item btn-ripple" href="payment-credit.html" style="background: khaki">
-					<i class="icon icon-cc"></i>
-					<div class="products__item-title">Credit Card</div>
+				<a class="card card-interactive btn-ripple" href="payment-credit.html" style="background: khaki">
+					<div class="card__content icon-text icon-cc"></div>
+					<div class="card__footer">Credit Card</div>
 				</a>
-				<a class="products__item btn-ripple" href="payment-debit.html" style="background: khaki">
-					<i class="icon icon-cc"></i>
-					<div class="products__item-title">Debit Card</div>
+				<a class="card card-interactive btn-ripple" href="payment-debit.html" style="background: khaki">
+					<div class="card__content icon-text icon-cc"></div>
+					<div class="card__footer">Debit Card</div>
 				</a>
-				<div class="products__item btn-ripple" onclick="emitMessage('External Payment System is not yet configured on this device', undefined, 'Setup Now')">
-					<i class="icon icon-device"></i>
-					<div class="products__item-title">External Payment System</div>
+				<div class="card btn-ripple" onclick="emitMessage('External Payment System is not yet configured on this device', undefined, 'Setup Now')">
+					<div class="card__content icon-text icon-device"></div>
+					<div class="card__footer">External Payment</div>
 				</div>
-				<a class="products__item btn-ripple" href="payment-split.html" style="background: khaki">
-					<i class="icon icon-split"></i>
-					<div class="products__item-title">Split Payment</div>
+				<a class="card card-interactive btn-ripple" href="payment-split.html" style="background: lightblue">
+					<div class="card__content icon-text icon-split"></div>
+					<div class="card__footer">Split Payment</div>
 				</a>
 
 			</section>
