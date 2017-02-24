@@ -363,6 +363,9 @@ header .btn.icon {
 .icon-time:before {
   content: "\e8b5"; }
 
+.icon-cash:before {
+  content: "\e850"; }
+
 .icon-plus:before {
   content: "\e145"; }
 
@@ -378,8 +381,14 @@ header .btn.icon {
 .icon-next:before {
   content: "\e5c8"; }
 
+.icon-note:before {
+  content: "\e85d"; }
+
 .icon-backspace:before {
   content: "\e14a"; }
+
+.icon-split:before {
+  content: "\e0b6"; }
 
 .icon-chat:before {
   content: "\e0b7"; }
@@ -408,6 +417,9 @@ header .btn.icon {
 .icon-delete:before {
   content: "\e872"; }
 
+.icon-walkin:before {
+  content: "\e566"; }
+
 .icon-exit:before {
   content: "\e879"; }
 
@@ -428,6 +440,12 @@ header .btn.icon {
 
 .icon-pos:before {
   content: "\e8cc"; }
+
+.icon-print:before {
+  content: "\e8ad"; }
+
+.icon-delivery:before {
+  content: "\e558"; }
 
 .icon-lock-open:before {
   content: "\e898"; }
