@@ -105,10 +105,24 @@ article {
 	display: table;
 	width: 100%;
 
-	&__column {
-		display: table-cell;
+	//	Options
+	&-fixed {
+		table-layout: fixed;
 	}
 
+
+	//	Horizontal layout (columns)
+	&__column {
+		display: table-cell;
+		vertical-align: top;
+	}
+
+	&__column-gap {
+		display: table-cell;
+		width: $base-double-spacing;
+	}
+
+	//	Vertical layout (rows)
 	&__row {
 		display: block;
 	}

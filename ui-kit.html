@@ -51,6 +51,38 @@
 			</svg>
 
 			<h1>POS Catalog</h1>
+			<h2>Cards</h2>
+			<p><code>.card</code> is generic Material Design inspired component used to represend content items in prominent way.</p>
+
+			<div class="card">
+				<div class="card__content">This is Card</div>
+				<div class="card__footer">This is block-level element, takes all available horizontal space. To make them smaller - put them in another container, layout columns columns or grids.</div>
+			</div>
+			<br>
+
+			<div class="layout layout-fixed">
+				<div class="layout__column">
+					<div class="card">
+						<div class="card__content">Card in layout cell</div>
+						<div class="card__footer card__footer-oneline">Only one line of footer text can be limited when it too long</div>
+					</div>
+				</div>
+				<div class="layout__column-gap"></div>
+				<div class="layout__column">
+					<div class="card" style="background: khaki">
+						<div class="card__content">Background color is set<br>No footer this time</div>
+					</div>
+				</div>
+				<div class="layout__column-gap"></div>
+				<div class="layout__column">
+					<div class="card card-interactive">
+						<div class="card__content">Interactive</div>
+						<div class="card__footer">With mouse Hover and Pressed states. Text spans multiple lines when needed.</div>
+					</div>
+				</div>
+			</div>
+
+
 			<h2>Products</h2>
 			<ul class="catalog-demo">
 				<li class="products__item btn-ripple">

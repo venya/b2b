@@ -107,8 +107,14 @@ article {
 .layout {
   display: table;
   width: 100%; }
+  .layout-fixed {
+    table-layout: fixed; }
   .layout__column {
-    display: table-cell; }
+    display: table-cell;
+    vertical-align: top; }
+  .layout__column-gap {
+    display: table-cell;
+    width: 20px; }
   .layout__row {
     display: block; }
 
@@ -1116,6 +1122,94 @@ header .btn.icon {
 .animated .dialog-help.dialog-open .dialog__content {
   transform: translate(0, 0); }
 
+.card {
+  display: block;
+  text-align: left;
+  vertical-align: top;
+  cursor: default;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  box-shadow: 0 0px 1px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+  background: #eeeeee; }
+  .card-interactive:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); }
+  .card-interactive:active {
+    box-shadow: none;
+    transition-duration: 0ms;
+    transform: scale(0.97); }
+  .card__content {
+    padding: 20px 20px; }
+  .card__footer {
+    background: #fff;
+    padding: 10px 20px; }
+    .card__footer-oneline {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+
+.categories2,
+.products2 {
+  display: block;
+  font-size: 0; }
+  .categories2__item,
+  .products2__item {
+    background: #eeeeee;
+    white-space: nowrap;
+    width: calc(25% - 10px); }
+  .categories2 .categories2__item,
+  .products2 .categories2__item, .categories2
+  .products2__item,
+  .products2
+  .products2__item {
+    margin: 5px;
+    user-select: none;
+    cursor: pointer; }
+
+.product2 {
+  min-height: 95px;
+  height: calc((100% - 30px)/ 3);
+  position: relative;
+  background-color: #eeeeee;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-origin: content-box;
+  padding: 0 0 30px; }
+  .product2-title {
+    position: absolute;
+    bottom: 0;
+    background: #fff;
+    padding: 5px 5px 5px 10px;
+    left: 0;
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .product2-code {
+    font-size: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    line-height: 100%;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 0;
+    margin-top: -25px; }
+  .product2-price {
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2px 5px;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: rgba(255, 255, 255, 0.7); }
+
 .pagination {
   list-style: none;
   text-align: center;
@@ -1226,7 +1320,7 @@ header .btn.icon {
   .products__item {
     display: inline-block;
     padding: 10px;
-    background: #fff;
+    background: #eeeeee;
     text-align: left;
     white-space: nowrap;
     vertical-align: top;

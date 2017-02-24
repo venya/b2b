@@ -1,0 +1,132 @@
+
+//	Generic cards (like in Material Design)
+
+.card {
+	display: block;
+	text-align: left;
+	vertical-align: top;
+	cursor: default;
+	@include ios-no-highlight();
+	user-select: none;
+	box-shadow:
+		0 0px 1px rgba(black, .2),
+		0 2px 4px rgba(black, .1);
+	border-radius: $pos-catalog-border-radius;
+	overflow: hidden;
+	background: $card-background;
+
+	&-interactive {
+		&:hover {
+			box-shadow: 0 2px 5px rgba(black, .3);
+		}
+
+		&:active {
+			box-shadow: none;
+			transition-duration: 0ms;
+			// transform: translate(0, 2px);
+			transform: scale(.97);
+		}
+	}
+
+
+	&__content {
+		padding: $card-vpadding $card-hpadding;
+	}
+
+	&__footer {
+		background: $card-footer-background;
+		padding: $card-footer-vpadding $card-footer-hpadding;
+
+		&-oneline {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+	}
+}
+
+
+
+
+
+
+.categories2,
+.products2 {
+	display: block;
+	font-size: 0;
+
+	&__item {
+		background: $pos-catalog-item-bg;
+		white-space: nowrap;
+		width: calc(25% - #{$pos-catalog-spacing});
+	}
+
+	// when in list (or wrapper?)
+	& &__item {
+		margin: $pos-catalog-spacing/2;
+		user-select: none;
+		cursor: pointer;
+
+	}
+}
+
+
+
+
+//	Products specific
+
+.product2 {
+		$title-line-height: $base-small-spacing*2 + $pos-products-title-lineheight;
+		min-height: 95px;
+
+		height: calc((100% - #{ $pos-catalog-spacing * $pos-products-rows })/ #{$pos-products-rows});
+		position: relative;
+		// background-color: lighten($color-blue, 25);
+		background-color: $color-silver-light;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		background-origin: content-box;
+		padding: 0 0 $title-line-height;
+
+		&-title {
+			position: absolute;
+			bottom: 0;
+			background: $color-white;
+			padding: $base-small-spacing $base-small-spacing $base-small-spacing $base-spacing;
+			left: 0;
+			width: 100%;
+			font-size: $pos-products-title-font;
+			line-height: $pos-products-title-lineheight;
+			@include text-overflow;
+		}
+		&-code {
+			font-size: $pos-products-code-font;
+			@include text-overflow;
+			text-align: center;
+			line-height: 100%;
+			position: absolute;
+			top: 50%;
+			width: 100%;
+			left: 0;
+			margin-top: -($pos-products-code-font + $pos-products-title-lineheight)/2;
+		}
+		&-price {
+			font-size: $pos-products-price-font;
+			position: absolute;
+			top: 0; //$base-small-spacing;
+			right: 0; //$base-small-spacing;
+			padding: 2px $base-small-spacing;
+			// border-radius: 20px;
+			text-align: right;
+			@include text-overflow;
+			background: rgba($color-white, .7);
+			// box-shadow: 0px 1px 2px rgba(black, .3);
+		}
+
+
+}
+
+
+
+

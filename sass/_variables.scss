@@ -272,6 +272,15 @@ $help-vpadding: 30px;
 $help-hpadding: $help-vpadding;
 $help-panel-shadow: $dialog-shadow;
 
+//	Cards
+$card-background: $color-silver-light;
+$card-hpadding: $base-double-spacing;
+$card-vpadding: $base-double-spacing;
+
+$card-footer-background: $color-white;
+$card-footer-hpadding: $card-hpadding;
+$card-footer-vpadding: $base-spacing;
+
 
 //	Snackbar messages
 
@@ -314,7 +323,7 @@ $pos-order-font-small: 13px;
 //	product catalog
 $pos-catalog-border-width: $base-delimiter-width;
 $pos-catalog-border-color: $color-delimiter;
-$pos-catalog-item-bg: $color-white;
+$pos-catalog-item-bg: $card-background;
 $pos-catalog-spacing: $base-spacing;	// smaller?
 $pos-catalog-border-radius: 2px;
 
