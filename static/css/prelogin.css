@@ -55,6 +55,15 @@ table {
 .clearfix {
   overflow: hidden; }
 
+.valign-middle {
+  vertical-align: middle !important; }
+
+.valign-top {
+  vertical-align: top !important; }
+
+.valign-bottom {
+  vertical-align: bottom !important; }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: Roboto, Arial;
   font-weight: 500;

@@ -26,3 +26,17 @@
 .clearfix {
 	@include clearfix();
 }
+
+
+//	Vertical align options
+
+.valign-middle {
+	vertical-align: middle !important;
+}
+.valign-top {
+	vertical-align: top !important;
+}
+.valign-bottom {
+	vertical-align: bottom !important;
+}
+

@@ -1042,6 +1042,15 @@ header .btn.icon {
 .clearfix {
   overflow: hidden; }
 
+.valign-middle {
+  vertical-align: middle !important; }
+
+.valign-top {
+  vertical-align: top !important; }
+
+.valign-bottom {
+  vertical-align: bottom !important; }
+
 .snackbar {
   position: fixed;
   bottom: 0;
