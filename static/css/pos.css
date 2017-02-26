@@ -74,6 +74,14 @@ header {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; }
+  header h2 {
+    font-size: 14px;
+    margin: 0 20px;
+    font-weight: 400;
+    opacity: 0.5;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
 
 .header__icons {
   float: right;

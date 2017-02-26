@@ -5,52 +5,44 @@
 	<title>UI Kit &bull; eHopper POS</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
-	<link rel="stylesheet" type="text/css" href="static/css/pos.css">
-	<link rel="stylesheet" type="text/css" href="static/css/docs.css">
-	<script src="static/js/demo.js"></script>
-	<link rel="icon" href="https://ehopper.com/wp-content/uploads/2016/03/favicon-01.png" type="image/png">
-	<style>
-		
-		p {margin: 20px 0;}
-		.catalog-demo .categories__item,
-		.catalog-demo .products__item
-			{margin-right: 10px;max-width: 150px;}
-		.catalog-demo .products__item
-			{height: 130px;}
-	</style>
+	<link rel="stylesheet" type="text/css" href="../static/css/pos.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/docs.css">
+	<script src="../static/js/demo.js"></script>
 </head>
 
 
 <body class="animated">
 
-	<article class="pos">
-
-		<header>
+<article class="docs">
+	<aside class="left cutout-right">
+		<header class="cutout-right">
 			<button class="btn icon icon-menu" title="Menu"></button>
-			<div class="header__icons"><a href="pos.html" class="btn icon icon-delete" title="Close"></a></div>
-			<h1>UI Kit</h1>
+			<h1>UI Docs</h1>
 		</header>
+		<link rel="import" href="../inc/docs-menu.html" onload="demoTemplate(this)">
+	</aside>
+
+	<main class="right">
+		<header class="docs-header">
+			<h1>Kitchen Sink</h1>
+			<h2>All UI elements on single page</h2>
+		</header>
+
 
 		<section>
 			<h1>GUI Components Showcase</h1>
 			<p>This page contain as many GUI components in all different states as possible.</p>
+		</section>
 
 
+		<section>
 			<h1>Loading</h1>
-			<p>Throbber: Work in progress</p>
-			<svg viewBox="0 0 64 64" style="width: 60px">
-				<g fill="none" fill-rule="evenodd" stroke-width="3">
-					<circle cx="32" cy="32" r="19.5982" fill="rgba(0,0,0,.2)">
-						<animate attributeName="r" begin="0s" dur="2s" values="0;24" keyTimes="0;1" keySplines="0.1,0.2,0.3,1" calcMode="spline" repeatCount="indefinite"></animate>
-						<animate attributeName="fill-opacity" begin="0s" dur="2s" values=".2;1;.2;0" repeatCount="indefinite"></animate>
-					</circle>
-					<circle cx="32" cy="32" r="23.9972" fill="rgba(0,0,0,.2)">
-						<animate attributeName="r" begin="-1s" dur="2s" values="0;24" keyTimes="0;1" keySplines="0.1,0.2,0.3,1" calcMode="spline" repeatCount="indefinite"></animate>
-						<animate attributeName="fill-opacity" begin="-1s" dur="2s" values=".2;1;.2;0" repeatCount="indefinite"></animate>
-					</circle>
-				</g>
-			</svg>
+			<p>This element is called <em>Throbber</em>. Use <code>loading.svg</code> as image with desired size.</p>
+			<img src="../static/img/loading.svg" style="width: 60px">
+		</section>
 
+
+		<section>
 			<h1>POS Catalog</h1>
 			<h2>Cards</h2>
 			<p><code>.card</code> is generic Material Design inspired component used to represend content items in prominent way.</p>
@@ -95,7 +87,7 @@
 					<div class="products__item-code">KHA</div>
 					<div class="products__item-title">Colored</div>
 				</li>
-				<li class="products__item btn-ripple" style="background-image: url(static/img/products/sushi.jpg)">
+				<li class="products__item btn-ripple" style="background-image: url(../static/img/products/sushi.jpg)">
 					<div class="products__item-price">2.50</div>
 					<div class="products__item-title">Sushi</div>
 				</li>
@@ -122,9 +114,10 @@
 				<li class="pagination__item" title="2"><a href="#" class="pagination__item-link"></a></li>
 				<li class="pagination__item" title="3"><a href="#" class="pagination__item-link"></a></li>
 			</ul>
+		</section>
 
 
-
+		<section>
 			<h1>Input Controls</h1>
 
 			<h2>Buttons</h2>
@@ -190,8 +183,10 @@
 				<label><input type="checkbox" class="toggle toggle-success" checked>Success</label>
 				<label><input type="checkbox" class="toggle" disabled>Disabled</label>
 			</p>
+		</section>
 
 
+		<section>
 			<h2>Dropowns</h2>
 
 			<div class="dropdown">
@@ -265,7 +260,10 @@
 					<button class="btn btn-lg btn-default">Button</button>
 				</div>
 			</div>
+		</section>
 
+
+		<section>
 			<h1>Icons</h1>
 			<p>Base class <code>.icon</code>, optional <code>.icon-sm</code>. Then apply <code>.icon-*</code> to inject specific glyph.</p>
 			<div>
@@ -290,8 +288,10 @@
 				<i class="icon icon-help"></i>
 				<i class="icon icon-exit"></i>
 			</div>
+		</section>
 
 
+		<section>
 			<h1>Headers</h1>
 			<p>Regular header. Without any buttons</p>
 			<header><h1>Title</h1></header>
@@ -314,7 +314,10 @@
 				</div>
 				<h1>Header title with very long text should not interfere with right icons and not wrap on the next line</h1>
 			</header>
+		</section>
 
+
+		<section>
 			<h1>Tabs</h1>
 			<p class="muted">(Not implemented)</p>
 			<ul class="tabs">
@@ -340,7 +343,10 @@
 				<div class="tabbed__panel" data-tab="3"><p>Different content. For third (3) tab</p></div>
 				<div class="tabbed__panel" data-tab="4"><p>Different content. For tab #4</p></div>
 			</div>
+		</section>
 
+
+		<section>
 			<h1>Horizontal Menu</h1>
 			<p>Used in POS under order payment button. <code>.hmenu</code> containing multiple <code>.hmenu__item</code>.</p>
 			<ul class="hmenu">
@@ -349,7 +355,10 @@
 				<li class="hmenu__item hmenu__item-disabled">Disabled Item</li>
 				<li class="hmenu__item">Item with Icon<i class="icon icon-more-v"></i></li>
 			</ul>
+		</section>
 
+
+		<section>
 			<h1>Dialogs, Popups and Messages</h1>
 			<h2>Dialogs</h2>
 			<p class="muted">Docs Under Construction</p>
@@ -359,7 +368,10 @@
 			<h3>Help Panel</h3>
 			<p>Help panel is a special case of using dialog. It used the same way, but only has an additional <code>.dialog-help</code> class.</p>
 			<p><button class="btn btn-default" onclick="demoDialogOpen('help')"><i class="icon icon-help"></i>Show help panel</button></p>
+		</section>
 
+
+		<section>
 			<h2>Snackbar</h2>
 			<p>Used to display short notification messages without interrupting user tasks. Only one message can be displayed at any moment.</p>
 			<p>
@@ -368,7 +380,10 @@
 				<button class="btn btn-default" onclick="demoSnackbar('danger')"><i class="icon icon-close"></i>Warning</button>
 				<button class="btn btn-default" onclick="demoSnackbar(undefined, 'Sample Action', function(){ alert('Message handler'); })">With Action<i class="icon icon-next"></i></button>
 			</p>
+		</section>
 
+
+		<section>
 			<h1>Table Grids</h1>
 			<p>Unified Table grid design when applied <code>.table</code> class to any table. Add <code>.table-striped</code> to interleave row colors.</p>
 			<table class="table table-striped">
@@ -392,11 +407,12 @@
 			</table>
 
 			<hr>
-			<link rel="import" href="inc/uc.html" onload="demoTemplate(this)">
+			<link rel="import" href="../inc/uc.html" onload="demoTemplate(this)">
 
 		</section>
+	</main>
 
-	</article>
+</article>
 
 
 	<nav class="menu">
@@ -442,7 +458,7 @@
 	</div>
 	<div class="dialog__mask"></div>
 
-	<link rel="import" href="inc/help.html" onload="demoTemplate(this)">
+	<link rel="import" href="../inc/help.html" onload="demoTemplate(this)">
 
 </body>
 </html>

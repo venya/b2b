@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>Layout &bull; eHopper UI-Kit</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+	<link rel="stylesheet" type="text/css" href="../static/css/pos.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/docs.css">
+	<script src="../static/js/demo.js"></script>
+</head>
+
+
+<body class="animated">
+
+<article class="docs">
+	<aside class="left cutout-right">
+		<header class="cutout-right">
+			<a class="btn icon icon-back" href="./" title="Back to UI Docs Index"></a>
+			<h1>UI Docs</h1>
+		</header>
+		<link rel="import" href="../inc/docs-menu.html" onload="demoTemplate(this)">
+	</aside>
+
+	<main class="right">
+		<header class="docs-header">
+			<h1>Layout</h1>
+			<h2>Building different page structure</h2>
+		</header>
+
+
+		<section>
+			<h1>Generic HTML structure</h1>
+			<p>Use following recommended structure for new pages:</p>
+<pre>
+<s>&lt;body</s> class=<u>"animated"</u>>
+	<s>&lt;article</s> class=<u>"pos pos-payment"</u>>
+		Main content
+	<s>&lt;/article></s>
+<s>&lt;/body></s>
+</pre>
+
+			<p>Body have no margins and configured to takes up entire available screen. Its colors can be configured through variables.</p>
+			<p><code>.animated</code> class should be used on top-most (body) element to allow animations and some heavy UI effects (menu slide-in, animated semi-transparent shadows and masks, dialogs slide-in appearence, dropdown effects, button ripple effects, etc.).<br>
+			When effects are too slow for some devices, you remove this class programmatically or implement user-accessible per-device settings.</p>
+		</section>
+
+		<section>
+			<h1>Single Page Applications (SPA)</h1>
+			<p>When building SPA, there should be multiple screens defined in DOM, while only one is currently visible on screen.</p>
+			<p>Use <code>article</code> container to define each screen. It also takes entire screen, so you can used freely to define any full-screen interfaces with one or multiple columns.</p>
+			<p>If you need to change background color for some pages, please add new class and make changes athached to it. In the example above we have <code>class="pos pos-payment"</code> to apply both page-group-wide <kbd>"pos"</kbd> styles and page-specific <kbd>"pos-payment"</kbd> styling.</p>
+		</section>
+
+		<section>
+			<h1>Multiple Columns</h1>
+			<p>Screen can be presented in multi-column layout. Just place <code>main</code> and <code>aside</code> containers inside <code>article</code>.</p>
+<pre>
+<s>&lt;article></s>
+	<s>&lt;main></s>Main content<s>&lt;/main></s>
+	<s>&lt;aside></s>Additional info<s>&lt;/aside></s>
+<s>&lt;/article></s>
+</pre>
+			<p>Default application-wide columns distribution is 60/40% (configured in _variables.scss) with main content on the left.</p>
+			<p><code>.left</code> and <code>.right</code> classes can be assigned to <code>main</code> and <code>aside</code> to change its position:</p>
+<pre>
+<s>&lt;article></s>
+	<s>&lt;main</s> class=<u>"right"</u>>Main content<s>&lt;/main></s>
+	<s>&lt;aside</s> class=<u>"left"</u>>Additional info<s>&lt;/aside></s>
+<s>&lt;/article></s>
+</pre>
+			<p>When <b>custom</b> column width or other layouts needed, assign group/page specific class to <code>article</code> and redefine corresponding main/aside properties in SCSS. Note: multple aside's can be used to make 3-column layouts.</p>
+		</section>
+
+	</main>
+
+</article>
+</body>
+</html>

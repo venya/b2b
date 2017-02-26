@@ -1,0 +1,77 @@
+//	Additional .css files used for UI-index and Docs
+//	and NOT needed for prodution use (eHopper platform)
+@import "variables";
+
+$docs-layout-aside: 25%;
+$docs-layout-main: 100% - $docs-layout-aside;
+$docs-font-mono: "Sourc__e Code Pro", "Anonymous Pro", Courier, monospace;
+$docs-font-mono-size: 90%;
+
+
+.docs-menu {
+	&__link {
+		display: block;
+		padding: $base-spacing $base-double-spacing;
+		border-bottom: solid $color-delimiter 1px;
+		text-decoration: none;
+		color: inherit;
+
+		&:hover {
+			background-color: $color-silver-light;
+		}
+	}
+}
+
+
+
+code {
+	background: #d7f3ff;
+	color: #65b1d0;
+	padding: 0 7px 0 5px;
+	border-radius: 3px;
+}
+
+pre {
+	background: $color-white;
+	font-family: $docs-font-mono;
+	font-weight: $font-weight-light;
+	font-size: $docs-font-mono-size;
+	line-height: 120%;
+	padding: $base-double-spacing;
+	margin: $base-double-spacing 0;
+	color: $color-gray;
+	border-radius: $base-border-radius;
+	box-shadow: inset 1px 1px 6px rgba(black, .2);
+
+	u { // strings and values, eg: 124, "right"
+		color: $color-blue;
+		text-decoration: none;
+	}
+	s { // tags: <main>,
+		font-weight: $font-weight-bold;
+		text-decoration: none;
+		color: $color-black;
+	}
+}
+
+
+.docs-header {
+	height: auto;
+}
+
+article.docs {
+
+	aside {
+		width: $docs-layout-aside;
+		position: fixed;
+	}
+
+	main {
+		width: $docs-layout-main;
+
+
+		section {
+			border-bottom: solid $color-delimiter $base-delimiter-width;
+		}
+	}
+}
