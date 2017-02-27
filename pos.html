@@ -304,11 +304,16 @@
 				<!-- Tab: Quantity  -->
 				<section class="tabbed__panel tabbed__panel-active" data-tab="qty">
 					<form class="form-narrow">
-						<div class="fieldset fieldset-lg fieldset-bordered fieldset-keyboard active">
-							<label class="fieldset__label" for="amount">Quantity:</label>
-							<input class="input input-xl fieldset__input text-right" id="amount" value="20" placeholder="Quantity" required="required">
+						<div class="fieldset-bordered fieldset-keyboard active">
+							
+							<div class="fieldset fieldset-lg">
+								<label class="fieldset__label" for="amount">Quantity:</label>
+								<input class="input input-xl fieldset__input text-right" id="amount" value="20" placeholder="Quantity" required="required">
+							</div>
 
-							<link rel="import" href="inc/numpad.html" onload="demoTemplate(this)">
+							<div class="fieldset-border-top">
+								<link rel="import" href="inc/numpad.html" onload="demoTemplate(this)">
+							</div>
 						</div>
 
 
@@ -318,21 +323,25 @@
 				<!-- Tab: Discount  -->
 				<section class="tabbed__panel" data-tab="discount">
 					<form class="form-narrow">
-						<div class="fieldset fieldset-lg fieldset-bordered" style="padding:0">
-							<div class="layout">
-								<div class="layout__column valign-middle">
-									<label class="fieldset__label" for="amount">Discount:</label>
-								</div>
-								<div class="layout__column valign-middle">
-									<input class="input input-xl fieldset__input text-right" id="amount" value="15%" placeholder="none" style="width:80%">
-								</div>
-								<div class="layout__column valign-middle w50 text-center" style="border-left: solid #eeeeee 2px;">
-									<label class="fieldset__label" for="mode" style="width:auto">USD</label>
-									<input class="toggle" id="mode" type="checkbox" checked>
-									<label class="fieldset__label" for="mode" style="width:auto; padding-left:10px;">%</label>
-								</div>
-							</div>
+						<div class="fieldset-bordered fieldset-keyboard active">
 							
+							<div class="fieldset fieldset-lg" style="padding:0">
+								<div class="layout">
+									<div class="layout__column valign-middle">
+										<label class="fieldset__label" for="amount">Discount:</label>
+									</div>
+									<div class="layout__column valign-middle">
+										<input class="input input-xl fieldset__input text-right" id="amount" value="15%" placeholder="none" style="width:80%">
+									</div>
+									<div class="layout__column valign-middle w50 text-center" style="border-left: solid #eeeeee 2px;">
+										<label class="fieldset__label" for="mode" style="width:auto">USD</label>
+										<input class="toggle" id="mode" type="checkbox" checked>
+										<label class="fieldset__label" for="mode" style="width:auto; padding-left:10px;">%</label>
+									</div>
+								</div>
+								
+							</div>
+
 							<div class="keyboard keyboard-4">
 								<div class="keyboard__row">
 									<span class="btn btn-lg btn-secondary btn-ripple keyboard__key">5%</span>
@@ -355,8 +364,8 @@
 								<div class="keyboard__row keyboard__row-last">
 									<span class="btn btn-lg btn-white btn-ripple keyboard__key">7</span>
 									<span class="btn btn-lg btn-white btn-ripple keyboard__key">8</span>
-									<span class="btn btn-lg btn-white btn-ripple keyboard__key">9</span>
 									<button class="btn btn-lg btn-primary btn-ripple keyboard__key keyboard__key-colspan-2 keyboard__key-last pull-right" type="submit">Done</button>
+									<span class="btn btn-lg btn-white btn-ripple keyboard__key">9</span>
 								</div>
 								<div class="keyboard__row keyboard__row-last">
 									<span class="btn btn-lg btn-white btn-ripple keyboard__key keyboard__key-first">0</span>

@@ -328,6 +328,10 @@ header .btn.icon {
     border-bottom-right-radius: 3px; }
   .fieldset-bordered {
     border: solid #eeeeee 2px; }
+  .fieldset-border-top {
+    border-top: solid #eeeeee 2px; }
+  .fieldset-border-left {
+    border-left: solid #eeeeee 2px; }
   .fieldset-checkbox {
     padding-top: 13px;
     padding-bottom: 13px; }
@@ -339,11 +343,15 @@ header .btn.icon {
   .fieldset-standalone {
     margin-bottom: 20px; }
   .fieldset-keyboard .keyboard {
+    background: #eeeeee; }
+  .fieldset-keyboard.fieldset .keyboard {
     display: none;
-    width: auto;
-    margin-right: -20px; }
-  .fieldset-keyboard.active .keyboard {
-    display: block; }
+    margin-right: -20px;
+    width: auto; }
+  .fieldset-keyboard.active {
+    border-radius: 0 0 4px 4px; }
+    .fieldset-keyboard.active .keyboard {
+      display: block; }
 
 .icon,
 .icon-text {

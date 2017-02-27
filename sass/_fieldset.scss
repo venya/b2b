@@ -47,11 +47,17 @@
 	}
 
 	&-bordered {
-		border: solid $color-silver-light $fieldset-border-width;
+		border: solid $fieldset-border-color $fieldset-border-width;
 
 		&.fieldset-lg {
 			// padding-top: ($input-xl-height - $input-lg-height) /2 - 2px;
 		}
+	}
+	&-border-top {
+		border-top: solid $fieldset-border-color $fieldset-border-width;
+	}
+	&-border-left {
+		border-left: solid $fieldset-border-color $fieldset-border-width;
 	}
 
 	&-checkbox {
@@ -74,12 +80,18 @@
 
 	&-keyboard {
 		.keyboard {
+			background: $fieldset-border-color;
+		}
+		&.fieldset .keyboard {
 			display: none;	// Unhide only when fielset has .active
-			width: auto;
 			margin-right: -$base-double-spacing;
+			width: auto;
 		}
 
 		&.active {
+			$radius: $base-border-radius + $keyboard-border-width;
+			border-radius: 0 0 $radius $radius;
+
 			.keyboard {
 				display: block;
 			}
