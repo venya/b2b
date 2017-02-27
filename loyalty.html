@@ -63,7 +63,7 @@
 
 
 					<div class="fieldset fieldset-checkbox fieldset-bordered fieldset-standalone">
-						<label class="fieldset__label no-wrap" for="print">I agree with <a href="terms.html">Terms and Conditions</a></label>
+						<label class="fieldset__label no-wrap" for="print">I agree with <a href="terms.html" onclick="return demoDialogOpen('terms')">Terms and Conditions</a></label>
 						<div class="fieldset__input text-right"><input class="toggle toggle-success" id="print" type="checkbox" required></div>
 					</div>
 
@@ -84,6 +84,25 @@
 	<!-- Dialog: Help Panel -->
 	<link rel="import" href="inc/help.html" onload="demoTemplate(this)">
 
+	<div class="dialog" id="terms">
+		<div class="dialog__content">
+			<header class="header">
+			<div class="header__icons"><i class="btn icon icon-close dialog__close"></i></div>
+				<h1>Terms and Conditions</h1>
+			</header>
+			<section>
+				<p>Terms and Conditions text should be placed here.</p>
+				<button class="btn btn-default dialog__close">Close</button>
+			</section>
+		</div>
+	</div>
+	<div class="dialog__mask"></div>
+
+	<script>
+		forEvery(document, ".btn-ripple", function(el) {
+			emitMessage('Marketing & Loyalty key is not configured!');
+		});
+	</script>
 
 </body>
 </html>
