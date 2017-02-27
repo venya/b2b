@@ -64,6 +64,9 @@ table {
 .valign-bottom {
   vertical-align: bottom !important; }
 
+.no-wrap {
+  white-space: nowrap; }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: Roboto, Arial;
   font-weight: 500;
@@ -328,6 +331,11 @@ header .btn.icon {
   .fieldset-checkbox {
     padding-top: 13px;
     padding-bottom: 13px; }
+  .fieldset-radio {
+    padding-top: 13px;
+    padding-bottom: 13px; }
+    .fieldset-radio .fieldset__label {
+      width: 33%; }
   .fieldset-standalone {
     margin-bottom: 20px; }
 

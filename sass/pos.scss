@@ -121,12 +121,16 @@ article.pos-payments {
 			float: left;
 			margin: 0 2% $base-double-spacing;
 
-			&__content {
-				text-align: center;
-				line-height: $input-xl-height;
-				font-size: $icon-font-size * 2;
-			}
 		}
+	}
+}
+
+//	Payment-method cards
+.card-payment-method {
+	.card__content {
+		text-align: center;
+		line-height: $input-xl-height;
+		font-size: $icon-font-size * 2;
 	}
 }
 
