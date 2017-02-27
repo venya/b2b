@@ -99,7 +99,7 @@
 								<span class="btn btn-lg btn-white btn-ripple keyboard__key">7</span>
 								<span class="btn btn-lg btn-white btn-ripple keyboard__key">8</span>
 								<span class="btn btn-lg btn-white btn-ripple keyboard__key">9</span>
-								<button class="btn btn-lg btn-primary btn-ripple keyboard__key keyboard__key-colspan-2 keyboard__key-last pull-right" type="submit">Process</button>
+								<button class="btn btn-lg btn-primary btn-ripple keyboard__key keyboard__key-colspan-2 keyboard__key-last pull-right" type="submit" onclick="demoDialogOpen('terminal'); return false;">Process</button>
 							</div>
 							<div class="keyboard__row keyboard__row-last">
 								<span class="btn btn-lg btn-white btn-ripple keyboard__key keyboard__key-first">0</span>
@@ -125,6 +125,8 @@
 		<div class="snackbar__message"></div>
 	</div>
 
+	<!-- Dialog: Terminal Active -->
+	<link rel="import" href="inc/dialog-terminal.html" onload="demoTemplate(this)">
 
 	<!-- Dialog: Help Panel -->
 	<link rel="import" href="inc/help.html" onload="demoTemplate(this)">

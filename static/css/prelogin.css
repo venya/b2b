@@ -585,6 +585,12 @@ header .btn.icon {
   background: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); }
 
+.dialog-terminal .dialog__body {
+  padding: 80px 20px;
+  text-align: center; }
+  .dialog-terminal .dialog__body img {
+    width: 100px; }
+
 .animated .dialog__mask {
   transition: opacity 0.3s ease-out;
   display: block;

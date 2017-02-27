@@ -49,7 +49,23 @@
 		@include box-shadow($help-panel-shadow);
 	}
 
+	//	Terminal payment
+	&-terminal {
+		.dialog__body {
+			padding: 80px $dialog-hpadding;
+			text-align: center;
+
+			img {
+				width: 100px;
+			}
+		}
+	}
 }
+
+
+
+
+
 
 .animated {
 	.dialog__mask {
