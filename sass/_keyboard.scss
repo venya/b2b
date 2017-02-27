@@ -44,6 +44,9 @@
 			line-height: $height;
 		}
 	}
+	&__row-last:last-child {
+		margin-bottom: 0;
+	}
 
 	&__row-last &__key-last {
 		border-bottom-right-radius: $base-border-radius;

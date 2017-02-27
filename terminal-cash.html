@@ -55,47 +55,76 @@
 
 					<p><br></p>
 
-					<div class="fieldset fieldset-lg fieldset-bordered fieldset-standalone">
+					<div class="fieldset fieldset-lg fieldset-bordered fieldset-standalone fieldset-keyboard active" id="demoAmount">
 						<label class="fieldset__label" for="amount">Amount Due:</label>
-						<input class="input input-xl fieldset__input text-right" id="amount" value="212.00" required="required" placeholder="0.00">
+						<input class="input input-xl fieldset__input text-right" id="amount" value="212.00" required="required" placeholder="0.00"
+							onfocus="toggleClass(demoAmount,'active',true);toggleClass(demoTendered,'active',false);">
+
+						<div class="keyboard keyboard-4">
+							<div class="keyboard__row">
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key">1</span>
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key">2</span>
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key">3</span>
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key icon-text icon-backspace"></span>
+							</div>
+							<div class="keyboard__row">
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key">4</span>
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key">5</span>
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key">6</span>
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key icon-text icon-undo"></span>
+							</div>
+							<div class="keyboard__row keyboard__row-last">
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key">7</span>
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key">8</span>
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key">9</span>
+								<button class="btn btn-lg btn-primary btn-ripple keyboard__key keyboard__key-colspan-2 keyboard__key-last pull-right" type="submit">Done</button>
+							</div>
+							<div class="keyboard__row keyboard__row-last">
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key keyboard__key-first">0</span>
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key">00</span>
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key icon-text icon-clear"></span>
+							</div>
+						</div>
 					</div>
 
-					<div class="fieldset fieldset-lg fieldset-bordered">
-						<label class="fieldset__label" for="amount">Amount Tendered:</label>
-						<input class="input input-xl fieldset__input text-right" id="amount" required="required" placeholder="0.00">
+					<div class="fieldset fieldset-lg fieldset-bordered fieldset-standalone fieldset-keyboard" id="demoTendered">
+						<label class="fieldset__label" for="tendered">Amount Tendered:</label>
+						<input class="input input-xl fieldset__input text-right" id="tendered" required="required" placeholder="0.00"
+							onfocus="toggleClass(demoAmount,'active',false);toggleClass(demoTendered,'active',true);">
+
+						<div class="keyboard keyboard-4">
+							<div class="keyboard__row">
+								<span class="btn btn-lg btn-secondary btn-ripple keyboard__key">220</span>
+								<span class="btn btn-lg btn-secondary btn-ripple keyboard__key">250</span>
+								<span class="btn btn-lg btn-secondary btn-ripple keyboard__key">300</span>
+								<span class="btn btn-lg btn-success btn-ripple keyboard__key keyboard__key-last">Exact</span>
+							</div>
+							<div class="keyboard__row">
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key">1</span>
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key">2</span>
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key">3</span>
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key icon-text icon-backspace"></span>
+							</div>
+							<div class="keyboard__row">
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key">4</span>
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key">5</span>
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key">6</span>
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key icon-text icon-undo"></span>
+							</div>
+							<div class="keyboard__row keyboard__row-last">
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key">7</span>
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key">8</span>
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key">9</span>
+								<button class="btn btn-lg btn-primary btn-ripple keyboard__key keyboard__key-colspan-2 keyboard__key-last pull-right" type="submit">Process</button>
+							</div>
+							<div class="keyboard__row keyboard__row-last">
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key keyboard__key-first">0</span>
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key">00</span>
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key icon-text icon-clear"></span>
+							</div>
+						</div>
 					</div>
 
-					<div class="keyboard keyboard-4">
-						<div class="keyboard__row">
-							<span class="btn btn-lg btn-secondary btn-ripple keyboard__key">220</span>
-							<span class="btn btn-lg btn-secondary btn-ripple keyboard__key">250</span>
-							<span class="btn btn-lg btn-secondary btn-ripple keyboard__key">300</span>
-							<span class="btn btn-lg btn-success btn-ripple keyboard__key keyboard__key-last">Exact</span>
-						</div>
-						<div class="keyboard__row">
-							<span class="btn btn-lg btn-white btn-ripple keyboard__key">1</span>
-							<span class="btn btn-lg btn-white btn-ripple keyboard__key">2</span>
-							<span class="btn btn-lg btn-white btn-ripple keyboard__key">3</span>
-							<span class="btn btn-lg btn-white btn-ripple keyboard__key icon-text icon-backspace"></span>
-						</div>
-						<div class="keyboard__row">
-							<span class="btn btn-lg btn-white btn-ripple keyboard__key">4</span>
-							<span class="btn btn-lg btn-white btn-ripple keyboard__key">5</span>
-							<span class="btn btn-lg btn-white btn-ripple keyboard__key">6</span>
-							<span class="btn btn-lg btn-white btn-ripple keyboard__key icon-text icon-undo"></span>
-						</div>
-						<div class="keyboard__row keyboard__row-last">
-							<span class="btn btn-lg btn-white btn-ripple keyboard__key">7</span>
-							<span class="btn btn-lg btn-white btn-ripple keyboard__key">8</span>
-							<span class="btn btn-lg btn-white btn-ripple keyboard__key">9</span>
-							<button class="btn btn-lg btn-primary btn-ripple keyboard__key keyboard__key-colspan-2 keyboard__key-last pull-right" type="submit">Process</button>
-						</div>
-						<div class="keyboard__row keyboard__row-last">
-							<span class="btn btn-lg btn-white btn-ripple keyboard__key keyboard__key-first">0</span>
-							<span class="btn btn-lg btn-white btn-ripple keyboard__key">00</span>
-							<span class="btn btn-lg btn-white btn-ripple keyboard__key icon-text icon-clear"></span>
-						</div>
-					</div>
 
 
 				</form>

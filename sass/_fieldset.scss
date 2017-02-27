@@ -71,4 +71,18 @@
 	&-standalone {
 		margin-bottom: $base-double-spacing;
 	}
+
+	&-keyboard {
+		.keyboard {
+			display: none;	// Unhide only when fielset has .active
+			width: auto;
+			margin-right: -$base-double-spacing;
+		}
+
+		&.active {
+			.keyboard {
+				display: block;
+			}
+		}
+	}
 }

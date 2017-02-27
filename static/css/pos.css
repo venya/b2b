@@ -797,6 +797,12 @@ header .btn.icon {
       width: 33%; }
   .fieldset-standalone {
     margin-bottom: 20px; }
+  .fieldset-keyboard .keyboard {
+    display: none;
+    width: auto;
+    margin-right: -20px; }
+  .fieldset-keyboard.active .keyboard {
+    display: block; }
 
 .keyboard {
   width: 100%; }
@@ -822,6 +828,8 @@ header .btn.icon {
     .keyboard__key-colspan-3.btn-lg {
       height: 182px;
       line-height: 182px; }
+  .keyboard__row-last:last-child {
+    margin-bottom: 0; }
   .keyboard__row-last .keyboard__key-last {
     border-bottom-right-radius: 5px; }
   .keyboard__row-last .keyboard__key-first {
