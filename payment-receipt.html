@@ -60,9 +60,16 @@
 						</select>
 					</div>
 
-					<div class="fieldset fieldset-checkbox fieldset-bordered fieldset-standalone">
-						<label class="fieldset__label" for="email">Email Receipt</label>
-						<div class="fieldset__input text-right"><input class="toggle" id="email" type="checkbox"></div>
+					<div class="fieldset-bordered fieldset-standalone">
+						<div class="fieldset fieldset-checkbox">
+							<label class="fieldset__label" for="email">Email Receipt</label>
+							<div class="fieldset__input text-right"><input class="toggle" id="email" type="checkbox" onchange="toggleClass(demoEmailTo, 'hide', !this.checked)"></div>
+						</div>
+						
+						<div class="fieldset fieldset-lg fieldset-border-top hide" id="demoEmailTo">
+							<label class="fieldset__label" for="email_to">Email address:</label>
+							<input class="input input-lg fieldset__input text-right" id="email_to" type="email" placeholder="user@domain.com" required>
+						</div>
 					</div>
 
 					<div class="fieldset fieldset-checkbox fieldset-bordered fieldset-standalone">
@@ -77,13 +84,10 @@
 
 					<button class="btn btn-primary btn-lg btn-block text-uppercase">Done</button>
 
-
 				</form>
 			</section>
 
-
 		</aside>
-
 
 	</article>
 
