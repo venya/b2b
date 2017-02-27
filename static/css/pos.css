@@ -972,6 +972,9 @@ header .btn.icon {
 .icon-offline:before {
   content: "\e2c1"; }
 
+.icon-loyalty:before {
+  content: "\e89a"; }
+
 .icon-cc:before {
   content: "\e8a1"; }
 
