@@ -11,15 +11,37 @@
 		overflow-y: auto;
 
 		@include auto-height(0px);	// Refactor !?
+
+		&-interactive {
+			.order__item {
+				cursor: pointer;
+
+				&-qty,
+				&-total {
+					color: $color-link;
+				}
+
+				&:active {
+					background: $color-selection-bg;
+					color: $color-selection-text;
+
+					.order__item-qty,
+					.order__item-total {
+						color: $color-white;
+					}
+				}
+
+			}
+		}
 	}
 
 	&__item {
 		padding: $pos-order-vspacing $pos-order-hspacing;
 		border-bottom: solid $color-delimiter 1px;
 		font-size: $pos-order-font-size;
-		cursor: pointer;
 		user-select: none;
 		position: relative;
+		cursor: default;
 
 		// groups
 		&-product {
@@ -46,7 +68,6 @@
 		}
 		&-qty {
 			font-weight: $font-weight-normal;
-			color: $color-link;
 		}
 		&-price {
 			font-size: $pos-order-font-small;
@@ -54,7 +75,6 @@
 			// color: $color-text-transparent;
 		}
 		&-total {
-			color: $color-link;
 			font-weight: $font-weight-normal;
 		}
 		&-discount {
@@ -62,13 +82,13 @@
 			color: $pos-order-discount-color;
 		}
 
+		// interactive (clickable) version
+		&-interactive {
+		}
+
 		// states
 		&-active {
 			background: $color-blue-superlight;
-		}
-		&:active {
-			background: $color-selection-bg;
-			color: $color-selection-text;
 		}
 
 		.animated & {

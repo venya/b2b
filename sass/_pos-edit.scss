@@ -1,0 +1,29 @@
+
+// Editing Order Item (in the right panel)
+
+.pos-edit {
+	background: $body-background;
+
+	.icon-close {
+		float: right;
+	}
+
+	&__info {
+		background: white;
+		@include clearfix();
+
+		&-product {
+			float: left;
+			margin-right: $base-double-spacing;
+			width: 20%;
+			height: 120px;
+		}
+		&-data {
+			overflow: hidden;
+		}
+	}
+
+	.tabs {
+		border-top: 0;
+	}
+}

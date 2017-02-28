@@ -42,8 +42,9 @@ function demoTemplate(inc) {
 
 
 function demoEditItem() {
-	toggleClass(document.querySelector('.pos-item'), 'hide');
+	toggleClass(document.querySelector('.pos-edit'), 'hide');
 	toggleClass(document.querySelector('main.pos-order'), 'disabled');
+	toggleClass(document.querySelector('#demo_order_items'), 'order__items-interactive');
 }
 
 

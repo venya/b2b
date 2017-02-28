@@ -1318,13 +1318,23 @@ header .btn.icon {
     position: absolute;
     width: 100%;
     height: calc(100% - 0px); }
+    .order__items-interactive .order__item {
+      cursor: pointer; }
+      .order__items-interactive .order__item-qty, .order__items-interactive .order__item-total {
+        color: #2e99db; }
+      .order__items-interactive .order__item:active {
+        background: #2e99db;
+        color: #fff; }
+        .order__items-interactive .order__item:active .order__item-qty,
+        .order__items-interactive .order__item:active .order__item-total {
+          color: #fff; }
   .order__item {
     padding: 13px 20px;
     border-bottom: solid rgba(0, 0, 0, 0.1) 1px;
     font-size: 16px;
-    cursor: pointer;
     user-select: none;
-    position: relative; }
+    position: relative;
+    cursor: default; }
     .order__item-product {
       overflow: hidden; }
     .order__item-data {
@@ -1340,22 +1350,17 @@ header .btn.icon {
       font-size: 13px;
       opacity: 0.5; }
     .order__item-qty {
-      font-weight: 400;
-      color: #2e99db; }
+      font-weight: 400; }
     .order__item-price {
       font-size: 13px;
       opacity: 0.5; }
     .order__item-total {
-      color: #2e99db;
       font-weight: 400; }
     .order__item-discount {
       font-size: 13px;
       color: #FF6431; }
     .order__item-active {
       background: #ecf7fd; }
-    .order__item:active {
-      background: #2e99db;
-      color: #fff; }
     .animated .order__item {
       transition: background-color 0.3s; }
       .animated .order__item-active:after {
@@ -1502,6 +1507,23 @@ header .btn.icon {
       background: #fff;
       border: dotted #cfcfcf 2px; }
 
+.pos-edit {
+  background: #f8f8f8; }
+  .pos-edit .icon-close {
+    float: right; }
+  .pos-edit__info {
+    background: white;
+    overflow: hidden; }
+    .pos-edit__info-product {
+      float: left;
+      margin-right: 20px;
+      width: 20%;
+      height: 120px; }
+    .pos-edit__info-data {
+      overflow: hidden; }
+  .pos-edit .tabs {
+    border-top: 0; }
+
 article.order-details aside {
   width: 300px;
   left: 0;
@@ -1576,18 +1598,3 @@ article.pos-payments .methods {
   text-align: center;
   line-height: 80px;
   font-size: 48px; }
-
-.pos-item {
-  background: #f8f8f8; }
-  .pos-item .icon-close {
-    float: right; }
-  .pos-item__info {
-    background: white;
-    overflow: hidden; }
-    .pos-item__info-product {
-      float: left;
-      margin-right: 20px;
-      width: 20%;
-      height: 120px; }
-    .pos-item__info-data {
-      overflow: hidden; }

@@ -23,6 +23,7 @@
 @import "pagination";
 @import "pos-order";
 @import "pos-catalog-cards";
+@import "pos-edit";
 
 //	Orders
 @import "orders";
@@ -135,31 +136,4 @@ article.pos-payments {
 }
 
 
-// Editing Order Item (in the right panel)
-
-.pos-item {
-	background: $body-background;
-
-	.icon-close {
-		float: right;
-	}
-
-	&__info {
-		background: white;
-		@include clearfix();
-
-		&-product {
-			float: left;
-			margin-right: $base-double-spacing;
-			width: 20%;
-			height: 120px;
-		}
-		&-data {
-			overflow: hidden;
-		}
-	}
-
-	.tabs {
-	}
-}
 
