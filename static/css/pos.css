@@ -845,12 +845,18 @@ textarea.input {
     .keyboard__key-colspan-2.btn-lg {
       height: 121px;
       line-height: 121px; }
+    .keyboard__key-colspan-2.btn-xl {
+      height: 161px;
+      line-height: 161px; }
     .keyboard__key-colspan-3 {
       height: 122px;
       line-height: 122px; }
     .keyboard__key-colspan-3.btn-lg {
       height: 182px;
       line-height: 182px; }
+    .keyboard__key-colspan-3.btn-xl {
+      height: 242px;
+      line-height: 242px; }
   .keyboard__row-last:last-child {
     margin-bottom: 0; }
   .keyboard__row-last .keyboard__key-last {
