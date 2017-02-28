@@ -313,6 +313,9 @@ header .btn.icon {
     box-sizing: border-box;
     font-size: 14px;
     vertical-align: middle; }
+  .fieldset__text {
+    font-size: 14px;
+    vertical-align: middle; }
   .fieldset__input {
     border: none;
     width: 65%;

@@ -19,6 +19,11 @@
 		vertical-align: middle;
 	}
 
+	&__text {
+		font-size: $font-base-size;
+		vertical-align: middle;
+	}
+
 	&__input {
 		border: none;
 		width: 100% - $fieldset-label-width;

@@ -26,12 +26,17 @@
 					color: $color-selection-text;
 
 					.order__item-qty,
+					.order__item-discount,
 					.order__item-total {
 						color: $color-white;
 					}
 				}
 
 			}
+		}
+
+		&:empty {
+			display: none;
 		}
 	}
 

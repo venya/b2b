@@ -311,9 +311,15 @@
 					<form class="form-narrow">
 						<div class="fieldset-bordered fieldset-keyboard active">
 							
-							<div class="fieldset fieldset-lg">
-								<label class="fieldset__label" for="amount">Quantity:</label>
-								<input class="input input-xl fieldset__input text-right" id="amount" value="20" placeholder="Quantity" required="required">
+							<div class="fieldset fieldset-lg layout">
+								<div class="layout__column">
+									<label class="fieldset__label" for="amount">Quantity:</label>
+									<input class="input input-xl fieldset__input text-right" id="amount" value="20" placeholder="Quantity" required="required">
+								</div>
+								<div class="layout__column-gap"></div>
+								<div class="layout__column valign-middle muted">
+									<label class="fieldset__text"><big>items</big></label>
+								</div>
 							</div>
 
 							<div class="fieldset-border-top">
@@ -338,10 +344,10 @@
 									<div class="layout__column valign-middle">
 										<input class="input input-xl fieldset__input text-right" id="amount" value="15%" placeholder="none" style="width:80%">
 									</div>
-									<div class="layout__column valign-middle w50 text-center" style="border-left: solid #eeeeee 2px;">
-										<label class="fieldset__label" for="mode" style="width:auto">USD</label>
+									<div class="layout__column valign-middle w50 fieldset-border-left text-center">
+										<label class="fieldset__text" for="mode" style="padding-right:10px;">USD</label>
 										<input class="toggle" id="mode" type="checkbox" checked>
-										<label class="fieldset__label" for="mode" style="width:auto; padding-left:10px;">%</label>
+										<label class="fieldset__text" for="mode" style="padding-left:10px;">%</label>
 									</div>
 								</div>
 								

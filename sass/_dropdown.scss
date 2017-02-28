@@ -20,7 +20,8 @@
 		text-align: left;
 
 		&-selected {
-			background: $dropdown-menu-item-current;
+			// background: $dropdown-menu-item-current;
+			color: $color-link;
 		}
 
 		&:hover {
