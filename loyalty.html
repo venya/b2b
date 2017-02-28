@@ -26,6 +26,7 @@
 			</header>
 
 			<section>
+				<p><br></p>
 				<form class="form-narrow" method="get" action="pos.html">
 
 
@@ -40,34 +41,29 @@
 								<span class="btn btn-lg btn-white btn-ripple keyboard__key">3</span>
 								<span class="btn btn-lg btn-white btn-ripple keyboard__key icon-text icon-backspace"></span>
 							</div>
-							<div class="keyboard__row">
+							<div class="keyboard__row keyboard__row-last">
 								<span class="btn btn-lg btn-white btn-ripple keyboard__key">4</span>
 								<span class="btn btn-lg btn-white btn-ripple keyboard__key">5</span>
 								<span class="btn btn-lg btn-white btn-ripple keyboard__key">6</span>
-								<span class="btn btn-lg btn-white btn-ripple keyboard__key">&ndash;</span>
+								<button class="btn btn-lg btn-primary btn-ripple keyboard__key keyboard__key-colspan-3 keyboard__key-last pull-right" type="submit">OK</button>
 							</div>
-							<div class="keyboard__row keyboard__row-last">
+							<div class="keyboard__row">
 								<span class="btn btn-lg btn-white btn-ripple keyboard__key">7</span>
 								<span class="btn btn-lg btn-white btn-ripple keyboard__key">8</span>
 								<span class="btn btn-lg btn-white btn-ripple keyboard__key">9</span>
-								<button class="btn btn-lg btn-primary btn-ripple keyboard__key keyboard__key-colspan-2 keyboard__key-last pull-right" type="submit">OK</button>
 							</div>
 							<div class="keyboard__row keyboard__row-last">
-								<span class="btn btn-lg btn-white btn-ripple keyboard__key keyboard__key-first">0</span>
-								<span class="btn btn-lg btn-white btn-ripple keyboard__key">00</span>
-								<span class="btn btn-lg btn-white btn-ripple keyboard__key icon-text icon-clear"></span>
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key icon-text icon-clear keyboard__key-first"></span>
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key">0</span>
+								<span class="btn btn-lg btn-white btn-ripple keyboard__key">&ndash;</span>
 							</div>
 						</div>
 					
 					</div>
 
-
-					<div class="fieldset fieldset-checkbox fieldset-bordered fieldset-standalone">
-						<label class="fieldset__label no-wrap" for="print">I agree with <a href="terms.html" onclick="return demoDialogOpen('terms')">Terms and Conditions</a></label>
-						<div class="fieldset__input text-right"><input class="toggle toggle-success" id="print" type="checkbox" required></div>
-					</div>
-
-					<!-- <button class="btn btn-primary btn-lg btn-block text-uppercase">Done</button> -->
+					<p class="fieldset-standalone">
+						<label class="checkbox checkbox-success"><input class="checkbox__input" type="checkbox" required><i class="icon"></i>I agree with</label> <a href="terms.html" onclick="return demoDialogOpen('terms')">Terms and Conditions</a>
+					</p>
 
 				</form>
 			</section>
@@ -99,9 +95,7 @@
 	<div class="dialog__mask"></div>
 
 	<script>
-		forEvery(document, ".btn-ripple", function(el) {
-			emitMessage('Marketing & Loyalty key is not configured!');
-		});
+		emitMessage('Marketing & Loyalty key is not configured!');
 	</script>
 
 </body>

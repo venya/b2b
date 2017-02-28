@@ -677,7 +677,7 @@ header .btn.icon {
     vertical-align: middle;
     margin-right: 6px; }
     .checkbox .icon:before {
-      content: "\e5ca"; }
+      content: "v"; }
   .checkbox input:checked + .icon {
     background-color: #2e99db;
     color: #fff; }
