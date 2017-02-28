@@ -33,6 +33,14 @@
 		display: inline-block;
 	}
 
+	&__textarea {
+		border: none;
+		display: block;
+		resize: vertical;
+		width: 100%;
+		padding: $base-double-spacing;
+	}
+
 	//	Rounded first and last items
 
 	&-first {
@@ -77,6 +85,10 @@
 		.fieldset__label {
 			width: 33%;
 		}
+	}
+
+	&-textarea {
+		padding-right: 0;
 	}
 
 	&-standalone {

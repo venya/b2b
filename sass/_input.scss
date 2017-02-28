@@ -10,6 +10,7 @@
 	padding: 0;
 	margin: 0;
 	outline: none;
+	box-sizing: border-box;
 
 	//	Size options
 	&-sm {
@@ -37,6 +38,10 @@
 	&-white {
 		background: $color-white;
 	}
+}
+
+textarea.input {
+	line-height: normal;
 }
 
 // select.input {
