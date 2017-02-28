@@ -69,7 +69,9 @@
 
 .animated {
 	.dialog__mask {
-		transition: opacity $base-animation-in ease-out;
+		transition:
+			opacity $base-animation-in ease-out,
+			z-index $base-animation-in step-end;
 		display: block;
 		z-index: -1 !important;
 	}
@@ -87,6 +89,9 @@
 	//	Open state
 	.dialog-open + .dialog__mask {
 		z-index: 1 !important;
+		transition:
+			opacity $base-animation-out ease-in,
+			z-index 0s;
 	}
 
 	.dialog-open .dialog__content {
