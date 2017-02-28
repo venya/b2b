@@ -494,7 +494,7 @@ header .btn.icon {
 
 .animated .dropdown-menu {
   display: block;
-  top: 0 !important;
+  top: -100% !important;
   transition: transform 0.3s ease-out;
   transform: scaleY(0) translate(0, -100%); }
   .animated .dropdown-menu-open {

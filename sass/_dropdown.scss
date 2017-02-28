@@ -78,7 +78,8 @@
 .animated {
 	.dropdown-menu {
 		display: block;
-		top: 0 !important;
+		// top: 0 !important; // under dropdown
+		top: -100% !important; // over dropdown
 		transition: transform $dropdown-menu-animation-in ease-out;
 		transform: scaleY(0) translate(0, -100%);
 
