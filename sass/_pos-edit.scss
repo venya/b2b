@@ -27,3 +27,14 @@
 		border-top: 0;
 	}
 }
+
+.animated .pos-edit {
+	transition: transform $base-animation-fast ease-out;
+	transform: scaleX(1);
+	transform-origin: left;
+
+	&.hide {
+		display: block !important;
+		transform: scale(0);
+	}
+}

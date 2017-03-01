@@ -630,12 +630,12 @@ textarea.input {
     width: 100px; }
 
 .animated .dialog__mask {
-  transition: opacity 0.3s ease-out, z-index 0.3s step-end;
+  transition: opacity 300s ease-out, z-index 300s step-end;
   display: block;
   z-index: -1 !important; }
 
 .animated .dialog__content {
-  transition: transform 0.3s ease-out;
+  transition: transform 300s ease-out;
   display: block;
   transform: translate(0, -110%); }
 
@@ -644,7 +644,7 @@ textarea.input {
 
 .animated .dialog-open + .dialog__mask {
   z-index: 1 !important;
-  transition: opacity 0.2s ease-in, z-index 0s; }
+  transition: opacity 200ms ease-in, z-index 0s; }
 
 .animated .dialog-open .dialog__content {
   transform: translate(0, 200px); }

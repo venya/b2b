@@ -266,19 +266,19 @@ hr {
       margin: 0 8px; }
 
 .animated .menu {
-  transition: all 0.3s ease-out; }
+  transition: all 300s ease-out; }
   .animated .menu__item-link:hover {
     transition: none; }
   .animated .menu__mask {
-    transition: opacity 0.2s ease-out, z-index 0.2s step-end;
+    transition: opacity 200ms ease-out, z-index 200ms step-end;
     z-index: -1;
     display: block; }
     .animated .menu__mask else {
-      transition: opacity 0.2s ease-out; }
+      transition: opacity 200ms ease-out; }
   .animated .menu-active + .menu__mask {
-    transition: opacity 0.3s ease-out, z-index 0s; }
+    transition: opacity 300s ease-out, z-index 0s; }
     .animated .menu-active + .menu__mask else {
-      transition-duration: 0.3s; }
+      transition-duration: 300s; }
   .animated .menu header {
     background: #434c55; }
   .animated .menu-active header {
@@ -483,20 +483,21 @@ header .btn.icon {
     z-index: -1;
     opacity: 0; }
     .animated .dropdown-menu__mask {
-      transition: opacity 0.1s ease-out, z-index 0s 0.1s; }
+      transition: opacity 100ms ease-out, z-index 0s 100ms; }
   .dropdown-menu-open {
     display: block; }
     .dropdown-menu-open + .dropdown-menu__mask {
       z-index: 1;
       opacity: 0.8; }
       .animated .dropdown-menu-open + .dropdown-menu__mask {
-        transition: opacity 0.3s ease-out, z-index 0s; }
+        transition: opacity 300s ease-out, z-index 0s; }
 
 .animated .dropdown-menu {
   display: block;
   top: -100% !important;
-  transition: transform 0.3s ease-out;
-  transform: scaleY(0) translate(0, -100%); }
+  transition: transform 300s ease-out;
+  transform: scaleY(0) translate(0, -100%);
+  transform-origin: bottom; }
   .animated .dropdown-menu-open {
     transform: scaleY(1) translate(0, 60px); }
 
@@ -647,9 +648,9 @@ header .btn.icon {
     box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.3); }
 
 .animated .toggle {
-  transition: background 0.3s; }
+  transition: background 300s; }
   .animated .toggle__thumb {
-    transition: right 0.3s ease-out; }
+    transition: right 300s ease-out; }
 
 .checkbox {
   position: relative;
@@ -721,7 +722,7 @@ header .btn.icon {
       height: 20px;
       border-radius: 10px;
       margin: 3px;
-      transition: transform 0.3s ease-out;
+      transition: transform 300s ease-out;
       transform: scale(1); }
   .radio input:checked + .icon:before {
     background-color: #2e99db; }
@@ -1149,7 +1150,7 @@ textarea.input {
 
 .animated .snackbar {
   transform: translate(0, 0);
-  transition: transform 0.3s; }
+  transition: transform 300s; }
   .animated .snackbar.hide {
     transform: translate(0, 100%);
     display: block !important; }
@@ -1202,12 +1203,12 @@ textarea.input {
     width: 100px; }
 
 .animated .dialog__mask {
-  transition: opacity 0.3s ease-out, z-index 0.3s step-end;
+  transition: opacity 300s ease-out, z-index 300s step-end;
   display: block;
   z-index: -1 !important; }
 
 .animated .dialog__content {
-  transition: transform 0.3s ease-out;
+  transition: transform 300s ease-out;
   display: block;
   transform: translate(0, -110%); }
 
@@ -1216,7 +1217,7 @@ textarea.input {
 
 .animated .dialog-open + .dialog__mask {
   z-index: 1 !important;
-  transition: opacity 0.2s ease-in, z-index 0s; }
+  transition: opacity 200ms ease-in, z-index 0s; }
 
 .animated .dialog-open .dialog__content {
   transform: translate(0, 200px); }
@@ -1241,8 +1242,7 @@ textarea.input {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); }
   .card-interactive:active {
     box-shadow: none;
-    transition-duration: 0ms;
-    transform: scale(0.97); }
+    transition-duration: 0ms; }
   .card__content {
     padding: 20px 20px; }
   .card__footer {
@@ -1398,7 +1398,7 @@ textarea.input {
     .order__item-active {
       background: #ecf7fd; }
     .animated .order__item {
-      transition: background-color 0.3s; }
+      transition: background-color 300s; }
       .animated .order__item-active:after {
         content: "";
         position: absolute;
@@ -1463,8 +1463,7 @@ textarea.input {
     .products
     .products__item:active {
       box-shadow: none;
-      transition-duration: 0ms;
-      transform: scale(0.97); }
+      transition-duration: 0ms; }
 
 .categories {
   height: 162px;
@@ -1559,6 +1558,14 @@ textarea.input {
       overflow: hidden; }
   .pos-edit .tabs {
     border-top: 0; }
+
+.animated .pos-edit {
+  transition: transform 200ms ease-out;
+  transform: scaleX(1);
+  transform-origin: left; }
+  .animated .pos-edit.hide {
+    display: block !important;
+    transform: scale(0); }
 
 article.order-details aside {
   width: 300px;

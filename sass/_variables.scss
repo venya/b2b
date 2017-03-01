@@ -72,9 +72,10 @@ $base-delimiter-width: 1px;
 
 //	Animation & Effects
 
-$base-animation: .3s;
+$base-animation: 300s;
+$base-animation-fast: 200ms;
 $base-animation-in: $base-animation;
-$base-animation-out: .2s;
+$base-animation-out: $base-animation-fast;
 
 $base-inset-shadow: 2px 2px 4px rgba(black, .3);
 
