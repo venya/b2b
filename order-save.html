@@ -49,18 +49,18 @@
 						</select>
 					</div>
 
-					<div class="fieldset fieldset-lg fieldset-bordered fieldset-standalone">
-						<label class="fieldset__label" for="language">Bill Language:</label>
-						<select class="input input-lg fieldset__input text-right" id="language">
-							<option>English</option>
-							<option>French</option>
-							<option>Russian</option>
-						</select>
-					</div>
-
 					<div class="fieldset-bordered fieldset-standalone">
-						<div class="fieldset fieldset-checkbox">
-							<label class="fieldset__label" for="email">Email Receipt</label>
+						<div class="fieldset fieldset-lg">
+							<label class="fieldset__label" for="language">Bill Language:</label>
+							<select class="input input-lg fieldset__input text-right" id="language">
+								<option>English</option>
+								<option>French</option>
+								<option>Russian</option>
+							</select>
+						</div>
+
+						<div class="fieldset fieldset-checkbox fieldset-border-top">
+							<label class="fieldset__label" for="email">Email Bill</label>
 							<div class="fieldset__input text-right"><input class="toggle" id="email" type="checkbox" onchange="toggleClass(demoEmailTo, 'hide', !this.checked)"></div>
 						</div>
 						
@@ -68,11 +68,12 @@
 							<label class="fieldset__label" for="email_to">Email address:</label>
 							<input class="input input-lg fieldset__input text-right" id="email_to" type="email" placeholder="user@domain.com">
 						</div>
-					</div>
 
-					<div class="fieldset fieldset-checkbox fieldset-bordered fieldset-standalone">
-						<label class="fieldset__label" for="print">Print Receipt</label>
-						<div class="fieldset__input text-right"><input class="toggle" id="print" type="checkbox" checked></div>
+						<div class="fieldset fieldset-checkbox fieldset-border-top">
+							<label class="fieldset__label" for="print">Print Bill</label>
+							<div class="fieldset__input text-right"><input class="toggle" id="print" type="checkbox" checked></div>
+						</div>
+
 					</div>
 
 					<button class="btn btn-primary btn-lg btn-block text-uppercase">Save Order</button>
