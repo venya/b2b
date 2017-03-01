@@ -22,8 +22,8 @@
 		<div class="pin">
 			<ul class="pin__display">
 				<li class="pin__display-item pin__display-item-active"></li>
-				<li class="pin__display-item pin__display-item-active"></li>
-				<li class="pin__display-item"></li>
+				<li class="pin__display-item pin__display-item-active" onclick="toggleClass(demoChar2, 'pin__display-item-active')" id="demoChar2"></li>
+				<li class="pin__display-item" onclick="toggleClass(this, 'pin__display-item-active')"></li>
 				<li class="pin__display-item"></li>
 				<li class="pin__display-item"></li>
 			</ul>
@@ -40,7 +40,7 @@
 				<a class="btn btn-lg btn-success btn-ripple keyboard__key" href="sync.html">Login<i class="icon icon-next icon-narrow"></i></a>
 			</div>
 			<div class="keyboard__row">
-				<button class="btn btn-lg btn-white btn-ripple keyboard__key keyboard__key-first">1</button>
+				<button class="btn btn-lg btn-white btn-ripple keyboard__key keyboard__key-first" onclick="toggleClass(demoChar2, 'pin__display-item-active')">1</button>
 				<button class="btn btn-lg btn-white btn-ripple keyboard__key">2</button>
 				<button class="btn btn-lg btn-white btn-ripple keyboard__key keyboard__key-last">3</button>
 			</div>

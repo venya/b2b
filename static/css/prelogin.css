@@ -775,12 +775,12 @@ textarea.input {
 
 .pin {
   background: #fff;
-  min-height: 60px;
+  min-height: 80px;
   position: relative;
   margin-bottom: 1px; }
   .pin__display {
-    min-height: 60px;
-    line-height: 60px;
+    min-height: 80px;
+    line-height: 80px;
     text-align: center;
     font-size: 0; }
     .pin__display-item {
@@ -804,8 +804,13 @@ textarea.input {
     height: 100%; }
     .pin__error-icon {
       float: right;
-      margin: 10px; }
+      margin: 20px; }
     .pin__error-text {
       padding: 20px;
       overflow: hidden;
       font-size: 16px; }
+
+.animated .pin__display-item {
+  transition: transform 300ms; }
+  .animated .pin__display-item-active {
+    transform: scaleX(-1); }

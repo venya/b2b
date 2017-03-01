@@ -26,7 +26,8 @@ $prelogin-icon-loading-size: 150px;
 
 //	PIN keyboard
 
-$pin-display-height: $btn-lg-height;
+$pin-display-animation: 300ms;
+$pin-display-height: $btn-xl-height;
 $pin-display-background: $color-white;
 $pin-display-item-size: 24px;
 $pin-display-item-border: 2px;

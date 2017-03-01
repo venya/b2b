@@ -192,4 +192,12 @@
 	}
 }
 
+.animated .pin__display-item {
+	transition: transform $pin-display-animation;
+
+	&-active {
+		transform: scaleX(-1);
+	}
+}
+
 
