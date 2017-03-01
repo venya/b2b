@@ -330,20 +330,16 @@
 					</form>
 				</section>
 
+
 				<!-- Tab: Price  -->
 				<section class="tabbed__panel" data-tab="price">
 					<form class="form-narrow">
-						<div class="fieldset fieldset-checkbox fieldset-bordered fieldset-standalone">
-							<label class="fieldset__label" for="set_price">Set Custom Price</label>
-							<div class="fieldset__input text-right"><input class="toggle" id="set_price" type="checkbox" onchange="toggleClass(demoItemPrice, 'hide', !this.checked)"></div>
-						</div>
-
-						<div class="fieldset-bordered fieldset-keyboard active hide" id="demoItemPrice">
+						<div class="fieldset-bordered fieldset-keyboard active">
 							
 							<div class="fieldset fieldset-lg layout">
 								<div class="layout__column">
-									<label class="fieldset__label" for="amount">Custom Price:</label>
-									<input class="input input-xl fieldset__input text-right" id="amount" value="49.95" placeholder="0.00" required="required">
+									<label class="fieldset__label" for="price">Custom Price:</label>
+									<input class="input input-xl fieldset__input text-right" id="price" value="49.95" placeholder="10.00" required="required">
 								</div>
 								<div class="layout__column valign-middle padding-left">
 									<label class="fieldset__text muted"><big>USD</big></label>
@@ -354,10 +350,9 @@
 								<link rel="import" href="inc/numpad-xl.html" onload="demoTemplate(this)">
 							</div>
 						</div>
-
-
 					</form>
 				</section>
+
 				
 				<!-- Tab: Discount  -->
 				<section class="tabbed__panel" data-tab="discount">
