@@ -266,7 +266,7 @@ hr {
       margin: 0 8px; }
 
 .animated .menu {
-  transition: all 300s ease-out; }
+  transition: all 300ms ease-out; }
   .animated .menu__item-link:hover {
     transition: none; }
   .animated .menu__mask {
@@ -276,9 +276,9 @@ hr {
     .animated .menu__mask else {
       transition: opacity 200ms ease-out; }
   .animated .menu-active + .menu__mask {
-    transition: opacity 300s ease-out, z-index 0s; }
+    transition: opacity 300ms ease-out, z-index 0s; }
     .animated .menu-active + .menu__mask else {
-      transition-duration: 300s; }
+      transition-duration: 300ms; }
   .animated .menu header {
     background: #434c55; }
   .animated .menu-active header {
@@ -490,12 +490,12 @@ header .btn.icon {
       z-index: 1;
       opacity: 0.8; }
       .animated .dropdown-menu-open + .dropdown-menu__mask {
-        transition: opacity 300s ease-out, z-index 0s; }
+        transition: opacity 300ms ease-out, z-index 0s; }
 
 .animated .dropdown-menu {
   display: block;
   top: -100% !important;
-  transition: transform 300s ease-out;
+  transition: transform 300ms ease-out;
   transform: scaleY(0) translate(0, -100%);
   transform-origin: bottom; }
   .animated .dropdown-menu-open {
@@ -648,9 +648,9 @@ header .btn.icon {
     box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.3); }
 
 .animated .toggle {
-  transition: background 300s; }
+  transition: background 300ms; }
   .animated .toggle__thumb {
-    transition: right 300s ease-out; }
+    transition: right 300ms ease-out; }
 
 .checkbox {
   position: relative;
@@ -722,7 +722,7 @@ header .btn.icon {
       height: 20px;
       border-radius: 10px;
       margin: 3px;
-      transition: transform 300s ease-out;
+      transition: transform 300ms ease-out;
       transform: scale(1); }
   .radio input:checked + .icon:before {
     background-color: #2e99db; }
@@ -1150,7 +1150,7 @@ textarea.input {
 
 .animated .snackbar {
   transform: translate(0, 0);
-  transition: transform 300s; }
+  transition: transform 300ms; }
   .animated .snackbar.hide {
     transform: translate(0, 100%);
     display: block !important; }
@@ -1203,12 +1203,12 @@ textarea.input {
     width: 100px; }
 
 .animated .dialog__mask {
-  transition: opacity 300s ease-out, z-index 300s step-end;
+  transition: opacity 300ms ease-out, z-index 300ms step-end;
   display: block;
   z-index: -1 !important; }
 
 .animated .dialog__content {
-  transition: transform 300s ease-out;
+  transition: transform 300ms ease-out;
   display: block;
   transform: translate(0, -110%); }
 
@@ -1398,7 +1398,7 @@ textarea.input {
     .order__item-active {
       background: #ecf7fd; }
     .animated .order__item {
-      transition: background-color 300s; }
+      transition: background-color 300ms; }
       .animated .order__item-active:after {
         content: "";
         position: absolute;

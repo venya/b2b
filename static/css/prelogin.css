@@ -630,12 +630,12 @@ textarea.input {
     width: 100px; }
 
 .animated .dialog__mask {
-  transition: opacity 300s ease-out, z-index 300s step-end;
+  transition: opacity 300ms ease-out, z-index 300ms step-end;
   display: block;
   z-index: -1 !important; }
 
 .animated .dialog__content {
-  transition: transform 300s ease-out;
+  transition: transform 300ms ease-out;
   display: block;
   transform: translate(0, -110%); }
 
