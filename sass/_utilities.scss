@@ -27,6 +27,21 @@
 	@include clearfix();
 }
 
+//	Margin and Padding options
+.no-margin {
+	margin: 0;
+}
+
+.no-padding {
+	padding: 0;
+}
+.padding-left {
+	padding-left: $base-spacing;
+}
+.padding-right {
+	padding-right: $base-spacing;
+}
+
 
 //	Vertical align options
 

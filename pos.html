@@ -291,10 +291,10 @@
 						<div class="tabs__item-label">Discount:</div>
 						<big class="tabs__item-value">15%</big>
 					</li>
-					<!-- <li class="tabs__item" data-tab="price">
+					<li class="tabs__item" data-tab="price">
 						<div class="tabs__item-label">Price:</div>
-						<big class="tabs__item-value muted">auto</big>
-					</li> -->
+						<big class="tabs__item-value muted">standard</big>
+					</li>
 					<li class="tabs__item" data-tab="tax">
 						<div class="tabs__item-label">Taxes:</div>
 						<big class="tabs__item-value">custom</big>
@@ -316,9 +316,37 @@
 									<label class="fieldset__label" for="amount">Quantity:</label>
 									<input class="input input-xl fieldset__input text-right" id="amount" value="20" placeholder="Quantity" required="required">
 								</div>
-								<div class="layout__column-gap"></div>
-								<div class="layout__column valign-middle muted">
-									<label class="fieldset__text"><big>items</big></label>
+								<div class="layout__column valign-middle padding-left">
+									<label class="fieldset__text muted"><big>items</big></label>
+								</div>
+							</div>
+
+							<div class="fieldset-border-top">
+								<link rel="import" href="inc/numpad-xl.html" onload="demoTemplate(this)">
+							</div>
+						</div>
+
+
+					</form>
+				</section>
+
+				<!-- Tab: Price  -->
+				<section class="tabbed__panel" data-tab="price">
+					<form class="form-narrow">
+						<div class="fieldset fieldset-checkbox fieldset-bordered fieldset-standalone">
+							<label class="fieldset__label" for="set_price">Set Custom Price</label>
+							<div class="fieldset__input text-right"><input class="toggle" id="set_price" type="checkbox" onchange="toggleClass(demoItemPrice, 'hide', !this.checked)"></div>
+						</div>
+
+						<div class="fieldset-bordered fieldset-keyboard active hide" id="demoItemPrice">
+							
+							<div class="fieldset fieldset-lg layout">
+								<div class="layout__column">
+									<label class="fieldset__label" for="amount">Custom Price:</label>
+									<input class="input input-xl fieldset__input text-right" id="amount" value="49.95" placeholder="0.00" required="required">
+								</div>
+								<div class="layout__column valign-middle padding-left">
+									<label class="fieldset__text muted"><big>USD</big></label>
 								</div>
 							</div>
 
@@ -336,7 +364,7 @@
 					<form class="form-narrow">
 						<div class="fieldset-bordered fieldset-keyboard active">
 							
-							<div class="fieldset fieldset-lg" style="padding:0">
+							<div class="fieldset fieldset-lg no-padding">
 								<div class="layout">
 									<div class="layout__column valign-middle">
 										<label class="fieldset__label" for="amount">Discount:</label>
@@ -345,12 +373,11 @@
 										<input class="input input-xl fieldset__input text-right" id="amount" value="15%" placeholder="none" style="width:80%">
 									</div>
 									<div class="layout__column valign-middle w50 fieldset-border-left text-center">
-										<label class="fieldset__text" for="mode" style="padding-right:10px;">USD</label>
+										<label class="fieldset__text padding-right" for="mode">USD</label>
 										<input class="toggle" id="mode" type="checkbox" checked>
-										<label class="fieldset__text" for="mode" style="padding-left:10px;">%</label>
+										<label class="fieldset__text padding-left" for="mode">%</label>
 									</div>
 								</div>
-								
 							</div>
 
 							<div class="keyboard keyboard-4">

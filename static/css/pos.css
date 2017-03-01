@@ -1095,6 +1095,18 @@ textarea.input {
 .clearfix {
   overflow: hidden; }
 
+.no-margin {
+  margin: 0; }
+
+.no-padding {
+  padding: 0; }
+
+.padding-left {
+  padding-left: 10px; }
+
+.padding-right {
+  padding-right: 10px; }
+
 .valign-middle {
   vertical-align: middle !important; }
 
