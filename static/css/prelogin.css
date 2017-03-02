@@ -716,6 +716,7 @@ textarea.input {
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
+      white-space: nowrap;
       background: rgba(255, 255, 255, 0.1);
       width: 60%;
       margin: 90px auto 0;

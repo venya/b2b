@@ -572,7 +572,10 @@ header .btn.icon {
     padding: 5px 10px;
     border-right: solid rgba(0, 0, 0, 0.1) 2px;
     cursor: pointer;
-    user-select: none; }
+    user-select: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
     .tabs__item-right {
       float: right;
       border-left: solid rgba(0, 0, 0, 0.1) 2px;
@@ -1249,9 +1252,9 @@ textarea.input {
     background: #fff;
     padding: 10px 20px; }
     .card__footer-oneline {
-      white-space: nowrap;
       overflow: hidden;
-      text-overflow: ellipsis; }
+      text-overflow: ellipsis;
+      white-space: nowrap; }
 
 .categories2,
 .products2 {
@@ -1291,11 +1294,13 @@ textarea.input {
     font-size: 16px;
     line-height: 20px;
     overflow: hidden;
-    text-overflow: ellipsis; }
+    text-overflow: ellipsis;
+    white-space: nowrap; }
   .product2-code {
     font-size: 30px;
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
     text-align: center;
     line-height: 100%;
     position: absolute;
@@ -1312,6 +1317,7 @@ textarea.input {
     text-align: right;
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
     background: rgba(255, 255, 255, 0.7); }
 
 .pagination {
@@ -1474,6 +1480,7 @@ textarea.input {
       font-size: 13px;
       overflow: hidden;
       text-overflow: ellipsis;
+      white-space: nowrap;
       opacity: 0.5; }
     .categories__item-code {
       font-size: 20px; }
@@ -1508,11 +1515,13 @@ textarea.input {
       font-size: 16px;
       line-height: 20px;
       overflow: hidden;
-      text-overflow: ellipsis; }
+      text-overflow: ellipsis;
+      white-space: nowrap; }
     .products__item-code {
       font-size: 30px;
       overflow: hidden;
       text-overflow: ellipsis;
+      white-space: nowrap;
       text-align: center;
       line-height: 100%;
       position: absolute;
@@ -1529,6 +1538,7 @@ textarea.input {
       text-align: right;
       overflow: hidden;
       text-overflow: ellipsis;
+      white-space: nowrap;
       background: rgba(255, 255, 255, 0.7); }
   .products__empty {
     text-align: center;

@@ -99,7 +99,7 @@
 							<div class="order__item-info">Click to duplicate in cart</div>
 						</div>
 					</li>
-					<li class="order__item order__item-active" onclick="demoEditItem()">
+					<li class="order__item order__item-active btn-ripple" onclick="demoEditItem()">
 						<div class="order__item-data">
 							<div class="order__item-data1">
 								<div class="order__item-qty">2&times;</div>
@@ -262,8 +262,9 @@
 		<!-- Edit Item: quantity, discount, etc -->
 		<aside class="pos-edit cutout-left hide" style="transform-origin: -20% 200px">
 			<header class="cutout-left">
-				<div class="header__icons"><button class="btn icon icon-close" onclick="demoEditItem()"></button></div>
-				<h1>Hot Dog XL</h1>
+				<!-- <div class="header__icons"><button class="btn icon icon-close" onclick="demoEditItem()"></button></div> -->
+				<i class="btn icon icon-back" onclick="demoEditItem()"></i>
+				<h1>Back</h1>
 			</header>
 			<!--
 			<section class="pos-edit__info cutout-left">
@@ -287,17 +288,21 @@
 						<div class="tabs__item-label">Quantity:</div>
 						<big class="tabs__item-value">20</big>
 					</li>
+					<li class="tabs__item" data-tab="price">
+						<div class="tabs__item-label">Price:</div>
+						<big class="tabs__item-value">1.20</big>
+					</li>
 					<li class="tabs__item" data-tab="discount">
 						<div class="tabs__item-label">Discount:</div>
 						<big class="tabs__item-value">15%</big>
 					</li>
-					<li class="tabs__item" data-tab="price">
-						<div class="tabs__item-label">Price:</div>
-						<big class="tabs__item-value muted">standard</big>
+					<li class="tabs__item" data-tab="tax">
+						<div class="tabs__item-label">Modifiers:</div>
+						<big class="tabs__item-value">or Matrix</big>
 					</li>
 					<li class="tabs__item" data-tab="tax">
-						<div class="tabs__item-label">Taxes:</div>
-						<big class="tabs__item-value">custom</big>
+						<div class="tabs__item-label">Serials:</div>
+						<big class="tabs__item-value">SAMP0012345</big>
 					</li>
 					<li class="tabs__item" data-tab="note">
 						<div class="tabs__item-label">Notes:</div>

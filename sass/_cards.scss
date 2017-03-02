@@ -40,9 +40,7 @@
 		padding: $card-footer-vpadding $card-footer-hpadding;
 
 		&-oneline {
-			white-space: nowrap;
-			overflow: hidden;
-			text-overflow: ellipsis;
+			@include text-overflow();
 		}
 	}
 }
