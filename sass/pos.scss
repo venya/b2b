@@ -17,6 +17,7 @@
 @import "snackbar";
 @import "dialog";
 @import "cards";
+@import "grid";
 
 //	Screen specific components
 //	POS
@@ -116,13 +117,6 @@ article.pos {
 article.pos-payments {
 	.methods {
 		padding: 50px;
-
-		.card {
-			width: 29%;
-			float: left;
-			margin: 0 2% $base-double-spacing;
-
-		}
 	}
 }
 

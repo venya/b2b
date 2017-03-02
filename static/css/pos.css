@@ -545,8 +545,6 @@ header .btn.icon {
       color: #aaa; }
   .dropdown:hover {
     background: #fff; }
-  .dropdown:active {
-    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.3); }
   .dropdown-white {
     background: white; }
     .dropdown-white:hover {
@@ -1320,6 +1318,29 @@ textarea.input {
     white-space: nowrap;
     background: rgba(255, 255, 255, 0.7); }
 
+.grid {
+  overflow: hidden; }
+  .grid-2-col .grid__item {
+    float: left;
+    width: 50%;
+    box-sizing: border-box; }
+  .grid-3-col .grid__item {
+    float: left;
+    width: 33.33333%;
+    box-sizing: border-box; }
+  .grid-4-col .grid__item {
+    float: left;
+    width: 25%;
+    box-sizing: border-box; }
+  .grid-normal-spacing {
+    margin-right: -10px; }
+    .grid-normal-spacing .grid__item {
+      padding: 0 10px 10px 0; }
+  .grid-double-spacing {
+    margin-right: -20px; }
+    .grid-double-spacing .grid__item {
+      padding: 0 20px 20px 0; }
+
 .pagination {
   list-style: none;
   text-align: center;
@@ -1642,10 +1663,6 @@ article.pos .toolbar-payments {
 
 article.pos-payments .methods {
   padding: 50px; }
-  article.pos-payments .methods .card {
-    width: 29%;
-    float: left;
-    margin: 0 2% 20px; }
 
 .card-payment-method .card__content {
   text-align: center;
