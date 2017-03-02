@@ -1,0 +1,52 @@
+
+
+@mixin generate-grid-cell($columns) {
+	float: left;
+	width: 100% / $columns;
+	box-sizing: border-box;
+}
+
+
+
+.grid {
+	@include clearfix();
+
+
+
+	&-2-col &__item {
+		@include generate-grid-cell(2);
+	}
+
+
+	&-3-col &__item {
+		@include generate-grid-cell(3);
+
+	}
+
+	&-4-col &__item {
+		@include generate-grid-cell(4);
+	}
+
+
+	&-normal-spacing {
+		$spacing: $base-spacing;
+		margin-right: -$spacing;
+
+		.grid__item {
+			padding: 0 $spacing $spacing 0;
+		}
+	}
+
+
+	&-double-spacing {
+		$spacing: $base-double-spacing;
+		margin-right: -$spacing;
+
+		.grid__item {
+			padding: 0 $spacing $spacing 0;
+		}
+	}
+
+
+}
+
