@@ -18,7 +18,12 @@
 
 				&-qty,
 				&-total {
-					color: $color-link;
+					// color: $color-link;
+				}
+
+				&-info,
+				&-price {
+					opacity: $color-muted-visibility;
 				}
 
 				&:active {
@@ -68,7 +73,7 @@
 		}
 		&-info {
 			font-size: $pos-order-font-small;
-			opacity: $color-muted-visibility;
+			// opacity: $color-muted-visibility;
 			// color: $color-text-transparent;
 		}
 		&-qty {
@@ -76,7 +81,7 @@
 		}
 		&-price {
 			font-size: $pos-order-font-small;
-			opacity: $color-muted-visibility;
+			// opacity: $color-muted-visibility;
 			// color: $color-text-transparent;
 		}
 		&-total {

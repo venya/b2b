@@ -1383,8 +1383,8 @@ textarea.input {
     height: calc(100% - 0px); }
     .order__items-interactive .order__item {
       cursor: pointer; }
-      .order__items-interactive .order__item-qty, .order__items-interactive .order__item-total {
-        color: #2e99db; }
+      .order__items-interactive .order__item-info, .order__items-interactive .order__item-price {
+        opacity: 0.5; }
       .order__items-interactive .order__item:active {
         background: #c6e9ff; }
     .order__items:empty {
@@ -1408,13 +1408,11 @@ textarea.input {
     .order__item-title {
       font-weight: 400; }
     .order__item-info {
-      font-size: 13px;
-      opacity: 0.5; }
+      font-size: 13px; }
     .order__item-qty {
       font-weight: 400; }
     .order__item-price {
-      font-size: 13px;
-      opacity: 0.5; }
+      font-size: 13px; }
     .order__item-total {
       font-weight: 400; }
     .order__item-discount {
