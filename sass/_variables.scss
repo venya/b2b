@@ -2,6 +2,7 @@
 //	Global Color Palette
 
 $color-blue: #2e99db;
+$color-blue-light: #c6e9ff;
 $color-blue-superlight: #ecf7fd;
 $color-white: #fff;
 $color-green: #66BB6A;
@@ -322,6 +323,8 @@ $pos-order-hspacing: $base-double-spacing;
 $pos-order-discount-color: $color-red;
 $pos-order-font-size: 16px;
 $pos-order-font-small: 13px;
+$pos-order-current-bg: $color-blue-superlight;
+$pos-order-active-bg: $color-blue-light;
 
 //	product catalog
 $pos-catalog-border-width: $base-delimiter-width;

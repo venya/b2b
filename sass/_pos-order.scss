@@ -22,13 +22,13 @@
 				}
 
 				&:active {
-					background: $color-selection-bg;
-					color: $color-selection-text;
+					background: $pos-order-active-bg;
+					// color: $color-selection-text;
 
 					.order__item-qty,
 					.order__item-discount,
 					.order__item-total {
-						color: $color-white;
+						// color: $color-white;
 					}
 				}
 
@@ -93,7 +93,7 @@
 
 		// states
 		&-active {
-			background: $color-blue-superlight;
+			background: $pos-order-current-bg;
 		}
 
 		.animated & {

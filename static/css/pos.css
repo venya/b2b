@@ -1386,12 +1386,7 @@ textarea.input {
       .order__items-interactive .order__item-qty, .order__items-interactive .order__item-total {
         color: #2e99db; }
       .order__items-interactive .order__item:active {
-        background: #2e99db;
-        color: #fff; }
-        .order__items-interactive .order__item:active .order__item-qty,
-        .order__items-interactive .order__item:active .order__item-discount,
-        .order__items-interactive .order__item:active .order__item-total {
-          color: #fff; }
+        background: #c6e9ff; }
     .order__items:empty {
       display: none; }
   .order__item {
