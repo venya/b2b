@@ -36,11 +36,19 @@
 			<section>
 				<form class="form-narrow" method="get" action="payment-done.html">
 
-					<table class="table">
-						<!-- <tr>
-							<td>Order ID:</td>
-							<td class="text-right big">#00011233</span></td>
-						</tr> -->
+					<div class="layout fieldset-standalone">
+						<!-- <p class="layout__column labeled-info">
+							<label>Amount Due:</label>
+							<span class="big muted">$<span class="xl">102.00</span></span></p> -->
+						<p class="layout__column labeled-info text-left">
+							<label>Amount Tendered:</label>
+							<span class="big text-primary">$<span class="xl">200.00</span></span></p>
+						<p class="layout__column labeled-info text-right">
+							<label>Change Due:</label>
+							<span class="big text-danger">$<span class="xl">98.00</span></span>
+						</p>
+					</div>
+					<!-- <table class="table">
 						<tr>
 							<td>Amount Tendered</td>
 							<td class="text-right big">$<span class="xl">102.00</span></td>
@@ -49,32 +57,34 @@
 							<td>Change Due</td>
 							<td class="text-right big text-danger">$<span class="xl">98.00</span></td>
 						</tr>
-					</table>
-
-					<div class="fieldset fieldset-lg fieldset-bordered fieldset-standalone">
-						<label class="fieldset__label" for="language">Receipt Language:</label>
-						<select class="input input-lg fieldset__input text-right" id="language">
-							<option>English</option>
-							<option>French</option>
-							<option>Russian</option>
-						</select>
-					</div>
+					</table> -->
 
 					<div class="fieldset-bordered fieldset-standalone">
-						<div class="fieldset fieldset-checkbox">
+
+						<div class="fieldset fieldset-lg">
+							<label class="fieldset__label" for="language">Receipt Language:</label>
+							<select class="input input-lg fieldset__input text-right" id="language">
+								<option>English</option>
+								<option>French</option>
+								<option>Russian</option>
+							</select>
+						</div>
+
+						<div class="fieldset fieldset-checkbox fieldset-border-top">
 							<label class="fieldset__label" for="email">Email Receipt</label>
 							<div class="fieldset__input text-right"><input class="toggle" id="email" type="checkbox" onchange="toggleClass(demoEmailTo, 'hide', !this.checked)"></div>
 						</div>
 						
-						<div class="fieldset fieldset-lg fieldset-border-top hide" id="demoEmailTo">
+						<div class="fieldset fieldset-lg hide" id="demoEmailTo">
 							<label class="fieldset__label" for="email_to">Email address:</label>
 							<input class="input input-lg fieldset__input text-right" id="email_to" type="email" placeholder="user@domain.com" required>
 						</div>
-					</div>
 
-					<div class="fieldset fieldset-checkbox fieldset-bordered fieldset-standalone">
-						<label class="fieldset__label" for="print">Print Receipt</label>
-						<div class="fieldset__input text-right"><input class="toggle" id="print" type="checkbox" checked></div>
+						<div class="fieldset fieldset-checkbox fieldset-border-top">
+							<label class="fieldset__label" for="print">Print Receipt</label>
+							<div class="fieldset__input text-right"><input class="toggle" id="print" type="checkbox" checked></div>
+						</div>
+						
 					</div>
 
 					<div class="fieldset fieldset-checkbox fieldset-bordered fieldset-standalone">
