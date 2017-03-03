@@ -83,7 +83,7 @@
 				</script>
 
 				<ul class="order__items order__items-interactive" id="demo_order_items">
-					<li class="order__item" onclick="demoEditItem()">
+					<li class="order__item" onclick="demoSetOrigin(this,'-20%','12%');demoEditItem()">
 						<div class="order__item-data">
 							<div class="order__item-data1">
 								<div class="order__item-qty">1&times;</div>
@@ -99,7 +99,7 @@
 							<div class="order__item-info">Click to duplicate in cart</div>
 						</div>
 					</li>
-					<li class="order__item order__item-active btn-ripple" onclick="demoEditItem()">
+					<li class="order__item order__item-active btn-ripple" onclick="demoSetOrigin(this,'-20%','20%');demoEditItem()">
 						<div class="order__item-data">
 							<div class="order__item-data1">
 								<div class="order__item-qty">2&times;</div>
@@ -212,15 +212,15 @@
 						<div class="products__item-code">HDXL</div>
 						<div class="products__item-price">4.00</div>
 					</li>
-					<li class="products__item btn-ripple" style="background-color: khaki" onclick="demoSetOrigin(this,'37%','40%');demoAddToCart('serials')">
+					<li class="products__item btn-ripple" style="background-color: khaki" onclick="demoSetOrigin(this,'37%','35%');demoAddToCart('serials')">
 						<div class="products__item-title">Colored Item</div>
 						<div class="products__item-price">4,853.00</div>
 					</li>
-					<li class="products__item btn-ripple" style="background-image: url(static/img/products/sushi.jpg)" onclick="demoSetOrigin(this,'40%','60%');demoAddToCart('note')">
+					<li class="products__item btn-ripple" style="background-image: url(static/img/products/sushi.jpg)" onclick="demoSetOrigin(this,'60%','35%');demoAddToCart('note')">
 						<div class="products__item-title">Sail Sushi</div>
 						<div class="products__item-price">1.50</div>
 					</li>
-					<li class="products__item btn-ripple" style="background-image: url(static/img/products/jack-daniels.jpg)">
+					<li class="products__item btn-ripple" style="background-image: url(static/img/products/jack-daniels.jpg)" onclick="demoSetOrigin(this,'90%','30%');">
 						<div class="products__item-title">Jack Daniels</div>
 						<div class="products__item-price">37.99</div>
 					</li>
@@ -499,7 +499,7 @@
 				<section class="tabbed__panel pos-edit__serials" data-tab="serials">
 					<form onsubmit="demoEditItem(); return false;">
 						<p>Select serial number of product you're selling:</p>
-						<div class="grid grid-2-col grid-normal-spacing fieldset-standalone">
+						<div class="grid grid-3-col grid-normal-spacing fieldset-standalone">
 							<div class="grid__item"><a class="card card-selected card-interactive"><div class="card__content text-overflow">79049XXXA4S</div></a></div>
 							<div class="grid__item"><a class="card card-interactive"><div class="card__content text-overflow">30384XXX991</div></a></div>
 							<div class="grid__item"><a class="card card-interactive"><div class="card__content text-overflow">ULTRALONG-003233XX991-003233XX991</div></a></div>

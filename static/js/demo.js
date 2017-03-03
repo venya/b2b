@@ -52,7 +52,7 @@ function demoEditItem(tab) {
 }
 function demoSetOrigin(card, x, y) {
 	var box = demoPosEditor;
-	box.style.transformOrigin = x + "" + y;
+	box.style.transformOrigin = x + " " + y;
 	console.log(card.style);
 	console.log(box.style.transformOrigin);
 }
