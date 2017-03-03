@@ -212,11 +212,11 @@
 						<div class="products__item-code">HDXL</div>
 						<div class="products__item-price">4.00</div>
 					</li>
-					<li class="products__item btn-ripple" style="background-color: khaki" onclick="demoAddToCart('serials')" ontouchstart="demoAddToCart()">
+					<li class="products__item btn-ripple" style="background-color: khaki" onclick="demoSetOrigin(this,'37%','40%');demoAddToCart('serials')">
 						<div class="products__item-title">Colored Item</div>
 						<div class="products__item-price">4,853.00</div>
 					</li>
-					<li class="products__item btn-ripple" style="background-image: url(static/img/products/sushi.jpg)" onclick="demoAddToCart('note')">
+					<li class="products__item btn-ripple" style="background-image: url(static/img/products/sushi.jpg)" onclick="demoSetOrigin(this,'40%','60%');demoAddToCart('note')">
 						<div class="products__item-title">Sail Sushi</div>
 						<div class="products__item-price">1.50</div>
 					</li>
@@ -228,7 +228,7 @@
 						<div class="products__item-title">Tennessee Honey Whiskey</div>
 						<div class="products__item-price">25.95</div>
 					</li>
-					<li class="products__item btn-ripple" style="background-image: url(static/img/products/pizza.jpg)" onclick="demoAddToCart('mods')">
+					<li class="products__item btn-ripple" style="background-image: url(static/img/products/pizza.jpg)" onclick="demoSetOrigin(this,'40%','60%');demoAddToCart('mods')">
 						<div class="products__item-title">Pizza Salami</div>
 						<div class="products__item-price">15.00</div>
 					</li>
@@ -261,7 +261,7 @@
 
 
 		<!-- Edit Item: quantity, discount, etc -->
-		<aside class="pos-edit cutout-left hide" style="transform-origin: -20% 200px">
+		<aside class="pos-edit cutout-left hide" style="transform-origin: -20% 200px" id="demoPosEditor">
 			<header class="cutout-left">
 				<!-- <div class="header__icons"><button class="btn icon icon-close" onclick="demoEditItem()"></button></div> -->
 				<i class="btn icon icon-back" onclick="demoEditItem()"></i>

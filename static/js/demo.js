@@ -50,6 +50,12 @@ function demoEditItem(tab) {
 		console.log("Swith to tab:", tab);
 	}
 }
+function demoSetOrigin(card, x, y) {
+	var box = demoPosEditor;
+	box.style.transformOrigin = x + "" + y;
+	console.log(card.style);
+	console.log(box.style.transformOrigin);
+}
 
 
 function demoDuplicateItem(item) {
