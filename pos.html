@@ -267,20 +267,7 @@
 				<i class="btn icon icon-back" onclick="demoEditItem()"></i>
 				<h1>Cancel</h1>
 			</header>
-			<!--
-			<section class="pos-edit__info cutout-left">
-				<button class="btn icon icon-close" onclick="demoEditItem()"></button>
 
-				<div class="products__item pos-edit__info-product" style="background-color: khaki">
-					<div class="products__item-title">Hot Dog XL</div>
-					<div class="products__item-code">HDXL</div>
-					<div class="products__item-price">$4.00</div>
-				</div>
-				<div class="pos-edit__info-data">
-					<div class="pos-edit__info-description"><p class="muted">Description:</p>If product have description we can show it here.<br>In vertically limited space to allow scrolling of big text fragments.</div>
-				</div>
-			</section>
-			-->
 
 			<div class="tabbed">
 				<!-- Tabs -->
@@ -365,20 +352,13 @@
 					<form class="form-narrow" onsubmit="demoEditItem(); return false;">
 						<div class="fieldset-bordered fieldset-keyboard active">
 							
-							<div class="fieldset fieldset-lg no-padding">
-								<div class="layout">
-									<div class="layout__column valign-middle">
-										<label class="fieldset__label" for="amount">Discount:</label>
-									</div>
-									<div class="layout__column valign-middle">
-										<input class="input input-xl fieldset__input text-right" id="amount" value="15%" placeholder="none" style="width:80%">
-									</div>
-									<div class="layout__column valign-middle w50 fieldset-border-left text-center">
-										<label class="fieldset__text padding-right" for="mode">USD</label>
-										<input class="toggle" id="mode" type="checkbox" checked>
-										<label class="fieldset__text padding-left" for="mode">%</label>
-									</div>
+							<div class="fieldset fieldset-lg">
+								<div class="fieldset__label">
+									<label class="fieldset__text padding-right" for="mode">USD</label>
+									<input class="toggle" id="mode" type="checkbox" checked>
+									<label class="fieldset__text padding-left" for="mode">%</label>
 								</div>
+								<input class="input input-xl fieldset__input text-right" id="amount" value="15%" placeholder="none">
 							</div>
 
 							<div class="keyboard keyboard-4">
