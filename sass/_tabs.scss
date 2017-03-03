@@ -5,7 +5,7 @@
 	width: 100%;
 	background: $tabs-background;
 	border-top: solid $color-delimiter $tabs-border-width;
-	@include clearfix();
+	// @include clearfix();
 
 	&__item {
 		float: left;

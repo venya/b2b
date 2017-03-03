@@ -41,10 +41,14 @@ function demoTemplate(inc) {
 }
 
 
-function demoEditItem() {
+function demoEditItem(tab) {
 	toggleClass(document.querySelector('.pos-edit'), 'hide');
 	toggleClass(document.querySelector('main.pos-order'), 'disabled');
 	toggleClass(document.querySelector('#demo_order_items'), 'order__items-interactive');
+	console.log(tab);
+	if (tab != undefined) {
+		console.log("Swith to tab:", tab);
+	}
 }
 
 
@@ -141,7 +145,7 @@ function emitMessage(message, style, action, handler) {
 }
 
 
-function demoAddToCart() {
+function demoAddToCart(tabToShow) {
 	var cart = demo_order_items;
 	// hide "empty order"
 	toggleClass(demo_order_empty, 'hide', true);
@@ -159,6 +163,10 @@ function demoAddToCart() {
 	console.log(item);
 	cart.appendChild(item);
 	cart.scrollTop = 9000;
+	// Activate edit mode if tab specified
+	if (tabToShow != undefined) {
+		demoEditItem(tabToShow);
+	}
 }
 
 

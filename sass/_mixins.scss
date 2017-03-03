@@ -20,7 +20,15 @@
 
 
 @mixin clearfix() {
-	overflow: hidden;
+	// overflow: hidden;
+	&:before,
+	&:after {
+		display: table;
+		content: " ";
+	}
+	&:after {
+		clear: both;
+	}
 }
 
 @mixin ios-no-highlight() {

@@ -61,6 +61,9 @@
 .force-wrap {
 
 }
+.text-overflow {
+	@include text-overflow();
+}
 .no-wrap {
 	white-space: nowrap;
 }

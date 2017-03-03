@@ -52,8 +52,12 @@ table {
 .baseline {
   vertical-align: middle !important; }
 
-.clearfix {
-  overflow: hidden; }
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: " "; }
+
+.clearfix:after {
+  clear: both; }
 
 .no-margin {
   margin: 0; }
@@ -75,6 +79,11 @@ table {
 
 .valign-bottom {
   vertical-align: bottom !important; }
+
+.text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
 
 .no-wrap {
   white-space: nowrap; }
@@ -136,6 +145,15 @@ hr {
 
 .text-danger {
   color: #FF6431; }
+
+.bg-success {
+  background: #66BB6A !important; }
+
+.bg-primary {
+  background: #2e99db !important; }
+
+.bg-danger {
+  background: #FF6431 !important; }
 
 .pull-right {
   float: right !important; }
@@ -730,8 +748,12 @@ textarea.input {
   .prelogin main {
     width: 60%;
     margin: 0 auto;
-    overflow: hidden;
     max-width: 450px; }
+    .prelogin main:before, .prelogin main:after {
+      display: table;
+      content: " "; }
+    .prelogin main:after {
+      clear: both; }
   .prelogin .footer {
     margin-top: 30px;
     text-align: center;

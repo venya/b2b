@@ -30,6 +30,10 @@
 		}
 	}
 
+	&-selected {
+		background: $card-selected-background;
+	}
+
 
 	&__content {
 		padding: $card-vpadding $card-hpadding;

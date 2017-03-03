@@ -83,7 +83,7 @@
 				</script>
 
 				<ul class="order__items order__items-interactive" id="demo_order_items">
-					<li class="order__item" onclick="demoDuplicateItem(this)">
+					<li class="order__item" onclick="demoEditItem()">
 						<div class="order__item-data">
 							<div class="order__item-data1">
 								<div class="order__item-qty">1&times;</div>
@@ -212,11 +212,11 @@
 						<div class="products__item-code">HDXL</div>
 						<div class="products__item-price">4.00</div>
 					</li>
-					<li class="products__item btn-ripple" style="background-color: khaki" onc_lick="demoAddToCart()" ontouchstart="demoAddToCart()">
+					<li class="products__item btn-ripple" style="background-color: khaki" onclick="demoAddToCart('serials')" ontouchstart="demoAddToCart()">
 						<div class="products__item-title">Colored Item</div>
 						<div class="products__item-price">4,853.00</div>
 					</li>
-					<li class="products__item btn-ripple" style="background-image: url(static/img/products/sushi.jpg)">
+					<li class="products__item btn-ripple" style="background-image: url(static/img/products/sushi.jpg)" onclick="demoAddToCart('note')">
 						<div class="products__item-title">Sail Sushi</div>
 						<div class="products__item-price">1.50</div>
 					</li>
@@ -228,7 +228,7 @@
 						<div class="products__item-title">Tennessee Honey Whiskey</div>
 						<div class="products__item-price">25.95</div>
 					</li>
-					<li class="products__item btn-ripple" style="background-image: url(static/img/products/pizza.jpg)">
+					<li class="products__item btn-ripple" style="background-image: url(static/img/products/pizza.jpg)" onclick="demoAddToCart('mods')">
 						<div class="products__item-title">Pizza Salami</div>
 						<div class="products__item-price">15.00</div>
 					</li>
@@ -416,33 +416,35 @@
 						</div>
 					</form>
 				</section>
-				
-				<!-- Tab 4: Taxes  -->
-				<section class="tabbed__panel" data-tab="tax">
+
+
+				<!-- Tab: Modifiers  -->
+				<section class="tabbed__panel" data-tab="mods">
 					<form class="form-narrow" onsubmit="demoEditItem(); return false;">
-						<div class="fieldset-standalone text-right">
-							<label>Exclude All Taxes <input class="toggle" type="checkbox"></label>
-						</div>
+						<h1>Modifiers</h1>
+						<p>NOT IMPLEMENTED</p>
 
-						<div class="fieldset-standalone text-right">
-							<label>Include in Price <input class="toggle" type="checkbox"></label>
-						</div>
+						<button class="btn btn-lg btn-block btn-primary text-uppercase btn-ripple">Done</button>
+					</form>
+				</section>
 
-						<div class="fieldset fieldset-checkbox fieldset-bordered fieldset-standalone">
-							<label class="fieldset__label" for="tax1">Federal Tax (5%)</label>
-							<div class="fieldset__input text-right"><input class="toggle" id="tax1" type="checkbox" checked></div>
-						</div>
 
-						<div class="fieldset fieldset-checkbox fieldset-bordered fieldset-standalone">
-							<label class="fieldset__label" for="tax2">State Tax (10%)</label>
-							<div class="fieldset__input text-right"><input class="toggle" id="tax2" type="checkbox"></div>
+				<!-- Tab: Serials  -->
+				<section class="tabbed__panel" data-tab="serials">
+					<form class="form-narrow" onsubmit="demoEditItem(); return false;">
+						<p>Select serial number of product you're selling:</p>
+						<div class="grid grid-2-col grid-normal-spacing fieldset-standalone">
+							<div class="grid__item"><a class="card card-selected card-interactive"><div class="card__content text-overflow">79049XXXA4S</div></a></div>
+							<div class="grid__item"><a class="card card-interactive"><div class="card__content text-overflow">30384XXX991</div></a></div>
+							<div class="grid__item"><a class="card card-interactive"><div class="card__content text-overflow">ULTRALONG-003233XX991-003233XX991</div></a></div>
 						</div>
 
 						<button class="btn btn-lg btn-block btn-primary text-uppercase btn-ripple">Done</button>
 					</form>
 				</section>
-				
-				<!-- Tab 4: Notes  -->
+
+
+				<!-- Tab: Notes  -->
 				<section class="tabbed__panel" data-tab="note">
 					<form class="form-narrow" onsubmit="demoEditItem(); return false;">
 						<div class="fieldset fieldset-lg fieldset-bordered fieldset-standalone fieldset-textarea">
