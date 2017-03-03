@@ -66,6 +66,9 @@ function demoDuplicateItem(item) {
 	cart.scrollTop = 9000;
 }
 
+function demoToggleModifier(card) {
+	toggleClass(card, 'card-selected');
+}
 
 
 function demoEmptyOrder() {
