@@ -963,6 +963,9 @@ textarea.input {
 .icon:before {
   content: "\e421"; }
 
+.icon-none:before {
+  content: none; }
+
 .icon-time:before {
   content: "\e8b5"; }
 
@@ -998,6 +1001,9 @@ textarea.input {
 
 .icon-check:before {
   content: "\76"; }
+
+.icon-checked:before {
+  content: "\e86c"; }
 
 .icon-nav-before:before {
   content: "\3c"; }
@@ -1270,7 +1276,7 @@ textarea.input {
     box-shadow: none;
     transition-duration: 0ms; }
   .card-selected {
-    background: #fff; }
+    background: khaki; }
   .card__content {
     padding: 20px 20px; }
   .card__footer {
@@ -1622,6 +1628,18 @@ textarea.input {
       overflow: hidden; }
   .pos-edit .tabs {
     border-top: 0; }
+  .pos-edit__mods {
+    padding: 0 40px; }
+    .pos-edit__mods h2 {
+      margin: 10px 0 10px;
+      clear: both; }
+    .pos-edit__mods .card__content {
+      text-align: right; }
+      .pos-edit__mods .card__content .icon {
+        float: left;
+        margin: -10px; }
+  .pos-edit__serials {
+    padding: 0 40px; }
 
 .animated .pos-edit {
   transition: transform 200ms ease-out;

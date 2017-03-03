@@ -291,7 +291,7 @@
 					</li>
 					<li class="tabs__item" data-tab="price">
 						<div class="tabs__item-label">Price:</div>
-						<big class="tabs__item-value">1.20</big>
+						<big class="tabs__item-value">100.00</big>
 					</li>
 					<li class="tabs__item" data-tab="discount">
 						<div class="tabs__item-label">Discount:</div>
@@ -299,11 +299,11 @@
 					</li>
 					<li class="tabs__item" data-tab="mods">
 						<div class="tabs__item-label">Modifiers:</div>
-						<big class="tabs__item-value">or Matrix</big>
+						<big class="tabs__item-value">Small, Salami</big>
 					</li>
 					<li class="tabs__item" data-tab="serials">
 						<div class="tabs__item-label">Serials:</div>
-						<big class="tabs__item-value">SAMP0012345</big>
+						<big class="tabs__item-value">TST012345</big>
 					</li>
 					<li class="tabs__item" data-tab="note">
 						<div class="tabs__item-label">Notes:</div>
@@ -419,10 +419,76 @@
 
 
 				<!-- Tab: Modifiers  -->
-				<section class="tabbed__panel" data-tab="mods">
-					<form class="form-narrow" onsubmit="demoEditItem(); return false;">
-						<h1>Modifiers</h1>
-						<p>NOT IMPLEMENTED</p>
+				<section class="tabbed__panel pos-edit__mods" data-tab="mods">
+					<form onsubmit="demoEditItem(); return false;">
+						<h2>Size</h2>
+
+						<div class="grid grid-4-col grid-normal-spacing">
+							<div class="grid__item">
+								<div class="card card-interactive btn-ripple">
+									<div class="card__content big">$10.00</div>
+									<div class="card__footer card__footer-oneline">Small</div>
+								</div>
+							</div>
+							<div class="grid__item">
+								<div class="card card-selected card-interactive btn-ripple">
+									<div class="card__content big">$15.00</div>
+									<div class="card__footer card__footer-oneline">Medium</div>
+								</div>
+							</div>
+							<div class="grid__item">
+								<div class="card card-interactive btn-ripple">
+									<div class="card__content big">$19.00</div>
+									<div class="card__footer card__footer-oneline">Large</div>
+								</div>
+							</div>
+							<div class="grid__item">
+								<div class="card card-interactive btn-ripple">
+									<div class="card__content big">$25.00</div>
+									<div class="card__footer card__footer-oneline">Extra Large</div>
+								</div>
+							</div>
+						</div>
+
+						<h2>Add-Ons</h2>
+
+						<div class="grid grid-4-col grid-normal-spacing">
+							<div class="grid__item">
+								<div class="card card-interactive btn-ripple">
+									<div class="card__content big">+$2.00</div>
+									<div class="card__footer card__footer-oneline">Double Cheese Topping</div>
+								</div>
+							</div>
+							<div class="grid__item">
+								<div class="card card-selected card-interactive btn-ripple">
+									<div class="card__content">
+										<i class="icon icon-checked pull-left" style="margin-top: -10px;"></i>
+										<big>+$3.00</big>
+									</div>
+									<div class="card__footer card__footer-oneline">Salami</div>
+								</div>
+							</div>
+							<div class="grid__item">
+								<div class="card card-selected card-interactive btn-ripple">
+									<div class="card__content">
+										<i class="icon icon-checked pull-left" style="margin-top: -10px;"></i>
+										<big>+$3.00</big>
+									</div>
+									<div class="card__footer card__footer-oneline">Tomatos</div>
+								</div>
+							</div>
+						</div>
+
+						<h2>Exceptions</h2>
+
+						<div class="grid grid-4-col grid-normal-spacing fieldset-standalone">
+							<div class="grid__item">
+								<div class="card card-interactive btn-ripple">
+									<div class="card__content big">&minus;$1.00</div>
+									<div class="card__footer card__footer-oneline">No Box Packaging</div>
+								</div>
+							</div>
+						</div>
 
 						<button class="btn btn-lg btn-block btn-primary text-uppercase btn-ripple">Done</button>
 					</form>
@@ -430,8 +496,8 @@
 
 
 				<!-- Tab: Serials  -->
-				<section class="tabbed__panel" data-tab="serials">
-					<form class="form-narrow" onsubmit="demoEditItem(); return false;">
+				<section class="tabbed__panel pos-edit__serials" data-tab="serials">
+					<form onsubmit="demoEditItem(); return false;">
 						<p>Select serial number of product you're selling:</p>
 						<div class="grid grid-2-col grid-normal-spacing fieldset-standalone">
 							<div class="grid__item"><a class="card card-selected card-interactive"><div class="card__content text-overflow">79049XXXA4S</div></a></div>

@@ -439,6 +439,9 @@ textarea.input {
 .icon:before {
   content: "\e421"; }
 
+.icon-none:before {
+  content: none; }
+
 .icon-time:before {
   content: "\e8b5"; }
 
@@ -474,6 +477,9 @@ textarea.input {
 
 .icon-check:before {
   content: "\76"; }
+
+.icon-checked:before {
+  content: "\e86c"; }
 
 .icon-nav-before:before {
   content: "\3c"; }

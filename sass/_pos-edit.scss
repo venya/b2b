@@ -26,6 +26,29 @@
 	.tabs {
 		border-top: 0;
 	}
+
+	// Specific tabs
+
+	&__mods {
+		padding: 0 $base-double-spacing * 2;
+
+		h2 {
+			margin: $base-spacing 0 $base-spacing;
+			clear: both;
+		}
+		.card__content {
+			text-align: right;
+
+			.icon {
+				float: left;
+				margin: -10px;
+			}
+		}
+	}
+
+	&__serials{
+		padding: 0 $base-double-spacing * 2;
+	}
 }
 
 .animated .pos-edit {

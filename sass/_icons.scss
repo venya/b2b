@@ -47,6 +47,9 @@
 	// unknown icon
 	content: "\e421";
 }
+.icon-none:before {
+  content: none;
+}
 
 
 
@@ -86,6 +89,9 @@
 }
 .icon-check:before {
   content: "\76";
+}
+.icon-checked:before {
+  content: "\e86c";
 }
 .icon-nav-before:before {
   content: "\3c";
