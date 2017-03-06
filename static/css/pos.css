@@ -783,6 +783,9 @@ header .btn.icon, header .pos-edit__mods .btn.card-selected.card-selected-marked
     background: #eeeeee; }
   .input-white {
     background: #fff; }
+  .input-focus-highlight:focus {
+    outline: solid #2e99db 2px;
+    outline-offset: 0; }
 
 textarea.input {
   line-height: normal; }
@@ -1140,6 +1143,12 @@ textarea.input {
 
 .padding-right {
   padding-right: 10px; }
+
+.padding2-left {
+  padding-left: 20px; }
+
+.padding2-right {
+  padding-right: 20px; }
 
 .valign-middle {
   vertical-align: middle !important; }

@@ -36,7 +36,7 @@
 			<section>
 				<form class="form-narrow" method="get" action="payment-receipt.html">
 
-					<div class="layout fieldset-standalone">
+					<div class="layout fieldset-standalone padding2-right">
 						<p class="layout__column labeled-info text-right">
 							<label>Total Due:</label>
 							<span class="big">$<span class="xl">102.00</span></span>
@@ -46,29 +46,30 @@
 					<!-- manual CC entry -->
 					<div class=" fieldset-bordered fieldset-standalone fieldset-keyboard">
 
-						<div class="fieldset fieldset-checkbox">
+						<div class="fieldset fieldset-lg fieldset-checkbox">
 							<label class="fieldset__label no-wrap" for="manual_card">Enter Card Manually</label>
-							<div class="fieldset__input text-right"><input class="toggle" id="manual_card" type="checkbox" onchange="toggleClass(demoCC, 'hide', !this.checked)"></div>
+							<div class="fieldset__input text-right"><input class="toggle" id="manual_card" type="checkbox" onchange="toggleClass(demoCC, 'hide', !this.checked); cc_number.focus()"></div>
 						</div>
 						
-						<div class="layout fieldset-border-top" id="demoCC">
-							<div class="layout__column w50">
-								<div class="fieldset fieldset-lg">
-									<input class="input input-lg fieldset__input fieldset__input-w100" id="cc_number" placeholder="Card Number" required="required">
+						<div class="fieldset fieldset-border-top no-padding hide" id="demoCC">
+							<div class="layout">
+								<div class="layout__column w50">
+									<input class="input input-lg input-focus-highlight fieldset__input w100 padding2-left"
+										id="cc_number" placeholder="Card Number" required="required" onfocus="toggleClass(demoCCkeyboard, 'hide', false)" onblur="toggleClass(demoCCkeyboard, 'hide', true)">
+								</div>
+								<div class="layout__column w50 fieldset-border-left">
+									<input class="input input-lg input-focus-highlight fieldset__input w100 padding2-left"
+										id="cc_expire" placeholder="Expiration" required="required" onfocus="toggleClass(demoCCkeyboard, 'hide', false)" onblur="toggleClass(demoCCkeyboard, 'hide', true)">
 								</div>
 							</div>
 
-							<div class="layout__column w50 fieldset-border-left">
-								<div class="fieldset fieldset-lg">
-									<input class="input input-lg fieldset__input fieldset__input-w100" id="cc_expire" placeholder="Expiration" required="required">
-								</div>
+							<div class="fieldset-border-top" id="demoCCkeyboard">
+								<!-- Numpad -->
+								<link rel="import" href="inc/numpad.html" onload="demoTemplate(this)">
 							</div>
-
-							<div class="layout__row">1</div>
 						</div>
 
-						<!-- Numpad -->
-						<link rel="import" href="inc/numpad.html" onload="demoTemplate(this)">
+
 					</div>
 
 					<div class="fieldset fieldset-radio fieldset-bordered fieldset-standalone">

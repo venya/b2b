@@ -44,6 +44,11 @@
 	&-white {
 		background: $color-white;
 	}
+
+	&-focus-highlight:focus {
+		outline: solid $input-outline-color $input-outline-border;
+		outline-offset: 0;
+	}
 }
 
 
