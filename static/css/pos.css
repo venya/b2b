@@ -1271,7 +1271,8 @@ textarea.input {
   overflow: hidden;
   background: #eeeeee;
   color: #333;
-  text-decoration: none; }
+  text-decoration: none;
+  position: relative; }
   .card-interactive:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); }
   .card-interactive:active {

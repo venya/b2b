@@ -16,6 +16,7 @@
 	background: $card-background;
 	color: $card-text;
 	text-decoration: none;
+	position: relative;
 
 	&-interactive {
 		&:hover {
