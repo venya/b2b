@@ -47,6 +47,19 @@
 			@include text-overflow();
 		}
 	}
+
+	&__corner {
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 0 $base-spacing $base-spacing;
+		@include text-overflow;
+
+		max-width: 100%;
+		background: rgba($color-white, $card-corner-opacity);
+		padding: $base-small-spacing;
+		padding-left: $base-spacing;
+	}
 }
 
 

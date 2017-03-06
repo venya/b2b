@@ -65,8 +65,10 @@ header {
     width: 50px;
     border-radius: 0 !important;
     margin-right: 5px; }
-  header .icon.pull-left,
-  header .icon.pull-right {
+  header .icon.pull-left, header .pos-edit__mods .pull-left.card-selected:after, .pos-edit__mods header .pull-left.card-selected:after,
+  header .icon.pull-right,
+  header .pos-edit__mods .pull-right.card-selected:after, .pos-edit__mods
+  header .pull-right.card-selected:after {
     margin: 5px 10px; }
   header h1 {
     font-size: 20px;
@@ -87,7 +89,7 @@ header {
   float: right;
   margin: 0;
   font-size: 0; }
-  .header__icons .icon {
+  .header__icons .icon, .header__icons .pos-edit__mods .card-selected:after, .pos-edit__mods .header__icons .card-selected:after {
     vertical-align: top;
     margin: 5px 5px 0 0; }
 
@@ -324,7 +326,7 @@ hr {
       color: inherit;
       text-decoration: none;
       line-height: 60px; }
-    .hmenu__item .icon {
+    .hmenu__item .icon, .hmenu__item .pos-edit__mods .card-selected:after, .pos-edit__mods .hmenu__item .card-selected:after {
       width: 16px;
       line-height: 60px;
       vertical-align: top;
@@ -357,7 +359,7 @@ hr {
   -webkit-tap-highlight-color: transparent; }
   .btn:active {
     box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.2); }
-  .btn .icon {
+  .btn .icon, .btn .pos-edit__mods .card-selected:after, .pos-edit__mods .btn .card-selected:after {
     vertical-align: middle; }
   .btn-link {
     background: none;
@@ -447,15 +449,15 @@ input.btn {
   .animated .btn-ripple:active {
     box-shadow: none; }
 
-.btn.icon {
+.btn.icon, .pos-edit__mods .btn.card-selected:after {
   color: inherit;
   padding: 0;
   min-width: 0;
   background: transparent; }
 
-header .btn.icon {
+header .btn.icon, header .pos-edit__mods .btn.card-selected:after, .pos-edit__mods header .btn.card-selected:after {
   border-radius: 40px; }
-  header .btn.icon:active {
+  header .btn.icon:active, header .pos-edit__mods .btn.card-selected:active:after, .pos-edit__mods header .btn.card-selected:active:after {
     background: rgba(0, 0, 0, 0.1);
     box-shadow: none; }
 
@@ -481,7 +483,7 @@ header .btn.icon {
     .dropdown-menu__item:active {
       background: #2e99db;
       color: #fff; }
-    .dropdown-menu__item .icon {
+    .dropdown-menu__item .icon, .dropdown-menu__item .pos-edit__mods .card-selected:after, .pos-edit__mods .dropdown-menu__item .card-selected:after {
       position: relative;
       vertical-align: top;
       margin: 5px 5px 0 -10px; }
@@ -683,7 +685,7 @@ header .btn.icon {
     width: 100%;
     height: 100%;
     cursor: pointer; }
-  .checkbox .icon {
+  .checkbox .icon, .checkbox .pos-edit__mods .card-selected:after, .pos-edit__mods .checkbox .card-selected:after {
     display: inline-block;
     width: 30px;
     height: 30px;
@@ -696,12 +698,12 @@ header .btn.icon {
     margin-right: 6px; }
     .checkbox .icon:before {
       content: "v"; }
-  .checkbox input:checked + .icon {
+  .checkbox input:checked + .icon, .checkbox .pos-edit__mods input:checked + .card-selected:after, .pos-edit__mods .checkbox input:checked + .card-selected:after {
     background-color: #2e99db;
     color: #fff; }
-  .checkbox-success input:checked + .icon {
+  .checkbox-success input:checked + .icon, .checkbox-success .pos-edit__mods input:checked + .card-selected:after, .pos-edit__mods .checkbox-success input:checked + .card-selected:after {
     background-color: #66BB6A; }
-  .checkbox:active .icon {
+  .checkbox:active .icon, .checkbox:active .pos-edit__mods .card-selected:after, .pos-edit__mods .checkbox:active .card-selected:after {
     box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.3); }
 
 .radio {
@@ -720,7 +722,7 @@ header .btn.icon {
     height: 100%;
     cursor: pointer;
     z-index: 1; }
-  .radio .icon {
+  .radio .icon, .radio .pos-edit__mods .card-selected:after, .pos-edit__mods .radio .card-selected:after {
     display: inline-block;
     width: 30px;
     height: 30px;
@@ -745,7 +747,7 @@ header .btn.icon {
     background-color: #2e99db; }
   .radio-success input:checked + .icon:before {
     background-color: #66BB6A; }
-  .radio:active .icon {
+  .radio:active .icon, .radio:active .pos-edit__mods .card-selected:after, .pos-edit__mods .radio:active .card-selected:after {
     background-color: #eeeeee; }
     .radio:active .icon:before {
       transform: scale(0); }
@@ -925,7 +927,7 @@ textarea.input {
   .table-striped tbody tr:nth-child(even) th {
     background-color: #fff; }
 
-.icon,
+.icon, .pos-edit__mods .card-selected:after,
 .icon-text {
   font-style: normal;
   font-weight: normal;
@@ -937,7 +939,7 @@ textarea.input {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.icon {
+.icon, .pos-edit__mods .card-selected:after {
   display: inline-block;
   width: 40px;
   height: 40px;
@@ -1286,6 +1288,18 @@ textarea.input {
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap; }
+  .card__corner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 10px 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    padding-left: 10px; }
 
 .categories2,
 .products2 {
@@ -1634,10 +1648,15 @@ textarea.input {
       margin: 10px 0 10px;
       clear: both; }
     .pos-edit__mods .card__content {
-      text-align: right; }
-      .pos-edit__mods .card__content .icon {
+      margin-top: 20px; }
+      .pos-edit__mods .card__content .icon, .pos-edit__mods .card__content .card-selected:after {
         float: left;
         margin: -10px; }
+    .pos-edit__mods .card-selected:after {
+      content: "\e86c";
+      position: absolute;
+      top: 0;
+      left: 10px; }
   .pos-edit__serials {
     padding: 0 40px; }
 
@@ -1683,7 +1702,7 @@ article.pos .toolbar-payments {
     article.pos .toolbar-payments__secondary .btn {
       text-align: left;
       padding-left: 20px; }
-    article.pos .toolbar-payments__secondary .icon {
+    article.pos .toolbar-payments__secondary .icon, article.pos .toolbar-payments__secondary .pos-edit__mods .card-selected:after, .pos-edit__mods article.pos .toolbar-payments__secondary .card-selected:after {
       float: right;
       margin: 10px -10px; }
   article.pos .toolbar-payments__primary {

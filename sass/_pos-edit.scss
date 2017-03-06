@@ -37,12 +37,20 @@
 			clear: both;
 		}
 		.card__content {
-			text-align: right;
+			// text-align: right;
+			margin-top: $base-double-spacing;
 
 			.icon {
 				float: left;
 				margin: -10px;
 			}
+		}
+		.card-selected:after {
+			@extend .icon;
+			content: "\e86c";
+			position: absolute;
+			top: 0;
+			left: $base-spacing;
 		}
 	}
 
