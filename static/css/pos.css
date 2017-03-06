@@ -777,6 +777,8 @@ header .btn.icon, header .pos-edit__mods .btn.card-selected.card-selected-marked
     height: 80px;
     line-height: 80px;
     font-size: 30px; }
+  .input-text {
+    display: inline-block; }
   .input-default {
     background: #eeeeee; }
   .input-white {
@@ -1736,6 +1738,9 @@ article.pos .toolbar-payments {
 
 article.pos-payments .methods {
   padding: 50px; }
+
+.split-payment .btn-split-action {
+  min-width: 90px; }
 
 .card-payment-method .card__content {
   text-align: center;

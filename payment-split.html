@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>Split Payment &bull; eHopper POS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+	<link rel="stylesheet" type="text/css" href="static/css/pos.css">
+	<script src="static/js/demo.js"></script>
+	<link rel="icon" href="https://ehopper.com/wp-content/uploads/2016/03/favicon-01.png" type="image/png">
+</head>
+
+
+<body class="animated">
+
+	<article class="pos pos-payments">
+
+
+		<main class="pos-order disabled">
+			<header>
+				<a class="btn icon icon-back" href="pos.html"></a>
+				<h1>Order</h1>
+			</header>
+			<link rel="import" href="inc/order.html" onload="demoTemplate(this)">
+		</main>
+
+
+		<aside class="split-payment cutout-left">
+
+			<header class="cutout-left">
+				<div class="header__icons"><button class="btn icon icon-help" title="Help" onclick="demoDialogOpen('help')"></button></div>
+				<h1>Split Payment</h1>
+			</header>
+
+			<section>
+				<form class="form-narrow" method="get" action="payment-cash.html">
+					
+
+					<div class="layout fieldset-bordered fieldset-standalone">
+						<div class="layout__column">
+							<span class="btn btn-xl btn-secondary btn-ripple">&minus;</span>
+						</div>
+						<div class="layout__column w100">
+							<div class="fieldset fieldset-lg">
+								<label class="fieldset__label">Payments</label>
+								<span class="input input-xl fieldset__input text-right">3</span>
+							</div>
+						</div>
+						<div class="layout__column">
+							<span class="btn btn-xl btn-secondary btn-ripple">&plus;</span>
+						</div>
+					</div>
+
+
+					<div class="fieldset fieldset-bordered fieldset-standalone layout no-padding">
+						<div class="layout__column valign-middle"><label class="fieldset__label" for="amount_1">1</label></div>
+						<div class="layout__column w50">
+							<select class="input input-lg fieldset__input w100">
+								<option>Cash</option>
+								<option>Credit Card</option>
+								<option>Debit Card</option>
+								<option>External Payment</option>
+							</select>
+						</div>
+						<div class="layout__column w50 padding-right">
+							<input class="input input-lg fieldset__input text-right w100" value="100.00" id="amount_1">
+						</div>
+						<div class="layout__column"><button class="btn btn-lg btn-default btn-ripple btn-split-action">Charge</button></div>
+					</div>
+
+
+					<div class="fieldset fieldset-bordered fieldset-standalone layout no-padding">
+						<div class="layout__column valign-middle"><label class="fieldset__label" for="amount_1">1</label></div>
+						<div class="layout__column w50">
+							<select class="input input-lg fieldset__input w100">
+								<option>Cash</option>
+								<option selected>Credit Card</option>
+								<option>Debit Card</option>
+								<option>External Payment</option>
+							</select>
+						</div>
+						<div class="layout__column w50 padding-right">
+							<input class="input input-lg fieldset__input text-right w100" value="100.00" id="amount_1">
+						</div>
+						<div class="layout__column"><button class="btn btn-lg btn-default btn-ripple btn-split-action">Charge</button></div>
+					</div>
+
+
+
+					<div class="fieldset fieldset-bordered fieldset-standalone layout no-padding">
+						<div class="layout__column valign-middle"><label class="fieldset__label" for="amount_2">2</label></div>
+						<div class="layout__column w50">
+							<i class="icon icon-checked text-success"></i>
+							<span class="input input-lg input-text muted">Cash</span>
+						</div>
+						<div class="layout__column w50 padding-right text-right">
+							<span class="input input-lg input-text muted">100.00</span>
+						</div>
+						<div class="layout__column"></div>
+						<div class="layout__column"><button class="btn btn-lg btn-default btn-ripple btn-split-action">Void</button></div>
+					</div>
+
+
+
+
+					<button class="btn btn-lg btn-block btn-primary">Done</button>
+
+				</form>
+			</section>
+
+
+		</aside>
+
+
+	</article>
+
+
+	<!-- Dialog: Help Panel -->
+	<link rel="import" href="inc/help.html" onload="demoTemplate(this)">
+
+
+</body>
+</html>

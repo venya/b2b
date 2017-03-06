@@ -120,6 +120,12 @@ article.pos-payments {
 	}
 }
 
+.split-payment {
+	.btn-split-action {
+		min-width: 90px;
+	}
+}
+
 //	Payment-method cards
 .card-payment-method {
 	.card__content {

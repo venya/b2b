@@ -329,6 +329,8 @@ header .btn.icon {
     height: 80px;
     line-height: 80px;
     font-size: 30px; }
+  .input-text {
+    display: inline-block; }
   .input-default {
     background: #eeeeee; }
   .input-white {

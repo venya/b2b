@@ -29,6 +29,12 @@
 		font-size: $input-xl-font-size;
 	}
 
+	//	Static text looks like input
+
+	&-text {
+		display: inline-block;
+	}
+
 	//	Styling options
 
 	&-default {
@@ -40,9 +46,12 @@
 	}
 }
 
+
 textarea.input {
 	line-height: normal;
 }
+
+
 
 // select.input {
 // 	background: red;
