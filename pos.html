@@ -300,7 +300,7 @@
 				<br>
 
 				<!-- Tab: Quantity  -->
-				<section class="tabbed__panel tabbed__panel-active" data-tab="qty">
+				<section class="tabbed__panel" data-tab="qty">
 					<form class="form-narrow" onsubmit="demoEditItem(); return false;">
 						<div class="fieldset-bordered fieldset-keyboard active">
 							
@@ -405,25 +405,25 @@
 
 						<div class="grid grid-4-col grid-normal-spacing">
 							<div class="grid__item">
-								<div class="card card-interactive btn-ripple big" onclick="demoToggleModifier(this)">
+								<div class="card card-interactive card-selected-marked btn-ripple big" onclick="demoToggleModifier(this)">
 									<div class="card__corner">$10.00</div>
 									<div class="card__content text-overflow">Small</div>
 								</div>
 							</div>
 							<div class="grid__item">
-								<div class="card card-selected card-interactive btn-ripple big" onclick="demoToggleModifier(this)">
+								<div class="card card-selected card-interactive card-selected-marked btn-ripple big" onclick="demoToggleModifier(this)">
 									<div class="card__corner">$15.00</div>
 									<div class="card__content text-overflow">Medium</div>
 								</div>
 							</div>
 							<div class="grid__item">
-								<div class="card card-interactive btn-ripple big" onclick="demoToggleModifier(this)">
+								<div class="card card-interactive card-selected-marked btn-ripple big" onclick="demoToggleModifier(this)">
 									<div class="card__corner">$19.00</div>
 									<div class="card__content text-overflow">Large</div>
 								</div>
 							</div>
 							<div class="grid__item">
-								<div class="card card-interactive btn-ripple big" onclick="demoToggleModifier(this)">
+								<div class="card card-interactive card-selected-marked btn-ripple big" onclick="demoToggleModifier(this)">
 									<div class="card__corner">$25,000.00</div>
 									<div class="card__content text-overflow">Extra Large XXXXL with long description</div>
 								</div>
@@ -434,19 +434,19 @@
 
 						<div class="grid grid-4-col grid-normal-spacing">
 							<div class="grid__item">
-								<div class="card card-interactive btn-ripple" onclick="demoToggleModifier(this)">
+								<div class="card card-interactive card-selected-marked btn-ripple" onclick="demoToggleModifier(this)">
 									<div class="card__corner">+$2.00</div>
 									<div class="card__content text-overflow">Double Cheese Topping</div>
 								</div>
 							</div>
 							<div class="grid__item">
-								<div class="card card-selected card-interactive btn-ripple" onclick="demoToggleModifier(this)">
+								<div class="card card-selected card-interactive card-selected-marked btn-ripple" onclick="demoToggleModifier(this)">
 									<div class="card__corner">+$3.00</div>
 									<div class="card__content text-overflow">Salami</div>
 								</div>
 							</div>
 							<div class="grid__item">
-								<div class="card card-selected card-interactive btn-ripple" onclick="demoToggleModifier(this)">
+								<div class="card card-selected card-interactive card-selected-marked btn-ripple" onclick="demoToggleModifier(this)">
 									<div class="card__corner">+$3.00</div>
 									<div class="card__content text-overflow">Tomatos</div>
 								</div>
@@ -457,9 +457,70 @@
 
 						<div class="grid grid-4-col grid-normal-spacing fieldset-standalone">
 							<div class="grid__item">
-								<div class="card card-interactive btn-ripple" onclick="demoToggleModifier(this)">
+								<div class="card card-interactive card-selected-marked btn-ripple" onclick="demoToggleModifier(this)">
 									<div class="card__corner">&minus;$1.00</div>
 									<div class="card__content text-overflow">No Box Packaging</div>
+								</div>
+							</div>
+						</div>
+
+						<button class="btn btn-lg btn-block btn-primary text-uppercase btn-ripple">Done</button>
+					</form>
+				</section>
+
+
+				<!-- Tab: Matrixed Product  -->
+				<section class="tabbed__panel tabbed__panel-active pos-edit__matrix" data-tab="matrix">
+					<form onsubmit="demoEditItem(); return false;">
+
+						<div class="grid grid-4-col grid-normal-spacing">
+							<div class="grid__item">
+								<div class="card card-interactive btn-ripple" onclick="demoToggleModifier(this)">
+									<div class="card__content text-overflow big">Product Model</div>
+									<div class="card__footer">Long Sleeves</div>
+								</div>
+							</div>
+							<div class="grid__item">
+								<div class="card card-selected card-interactive btn-ripple" onclick="demoToggleModifier(this)">
+									<div class="card__content text-overflow big">Size</div>
+									<div class="card__footer">M (Medium)</div>
+								</div>
+							</div>
+							<div class="grid__item">
+								<div class="card card-interactive btn-ripple" onclick="demoToggleModifier(this)">
+									<div class="card__content text-overflow big">Color</div>
+									<div class="card__footer">&nbsp;</div>
+								</div>
+							</div>
+						</div>
+
+						<h2>Size</h2>
+
+						<div class="grid grid-4-col grid-normal-spacing fieldset-standalone">
+							<div class="grid__item">
+								<div class="card card-interactive card-selected-marked btn-ripple big" onclick="demoToggleModifier(this)">
+									<div class="card__content text-overflow">XS (Extra Small)</div>
+								</div>
+							</div>
+							<div class="grid__item">
+								<div class="card card-interactive card-selected-marked btn-ripple big" onclick="demoToggleModifier(this)">
+									<div class="card__content text-overflow">S (Small)</div>
+								</div>
+							</div>
+							<div class="grid__item">
+								<div class="card card-selected card-interactive card-selected-marked btn-ripple big" onclick="demoToggleModifier(this)">
+									<div class="card__content text-overflow">M (Medium)</div>
+								</div>
+							</div>
+							<div class="grid__item">
+								<div class="card card-interactive card-selected-marked btn-ripple big" onclick="demoToggleModifier(this)">
+									<div class="card__content text-overflow">L (Large)</div>
+								</div>
+							</div>
+							<div class="grid__item">
+								<div class="card card-interactive card-selected-marked btn-ripple big" onclick="demoToggleModifier(this)">
+									<div class="card__corner">$23.00</div>
+									<div class="card__content text-overflow">XL (Extra Large)</div>
 								</div>
 							</div>
 						</div>

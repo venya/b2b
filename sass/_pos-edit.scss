@@ -29,7 +29,8 @@
 
 	// Specific tabs
 
-	&__mods {
+	&__mods,
+	&__matrix {
 		padding: 0 $base-double-spacing * 2;
 
 		h2 {
@@ -45,7 +46,7 @@
 				margin: -10px;
 			}
 		}
-		.card-selected:after {
+		.card-selected.card-selected-marked:after {
 			@extend .icon;
 			content: "\e86c";
 			position: absolute;
