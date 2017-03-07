@@ -864,8 +864,13 @@ textarea.input {
   .fieldset-last {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px; }
+  .fieldset-focus {
+    outline: solid #2e99db 2px;
+    outline-offset: 0; }
   .fieldset-bordered {
     border: solid #eeeeee 2px; }
+    .fieldset-bordered.fieldset-focus {
+      outline-offset: -2px; }
   .fieldset-border-top {
     border-top: solid #eeeeee 2px; }
   .fieldset-border-left {
@@ -1782,6 +1787,7 @@ article.pos .toolbar-payments {
   article.pos .toolbar-payments__secondary {
     width: 40%; }
     article.pos .toolbar-payments__secondary .btn {
+      white-space: normal;
       text-align: left;
       padding-left: 20px; }
     article.pos .toolbar-payments__secondary .icon, article.pos .toolbar-payments__secondary .alert__close, article.pos .toolbar-payments__secondary .pos-edit__mods .card-selected.card-selected-marked:after, .pos-edit__mods article.pos .toolbar-payments__secondary .card-selected.card-selected-marked:after, article.pos .toolbar-payments__secondary .pos-edit__matrix .card-selected.card-selected-marked:after, .pos-edit__matrix article.pos .toolbar-payments__secondary .card-selected.card-selected-marked:after {
@@ -1790,6 +1796,7 @@ article.pos .toolbar-payments {
   article.pos .toolbar-payments__primary {
     width: 60%; }
     article.pos .toolbar-payments__primary .btn {
+      white-space: normal;
       text-align: left;
       padding-right: 20px; }
     article.pos .toolbar-payments__primary-amount {

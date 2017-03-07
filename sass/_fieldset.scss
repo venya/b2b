@@ -59,11 +59,19 @@
 		// padding-top: ($input-xl-height - $input-lg-height) /2;
 	}
 
+	&-focus {
+		outline: solid $color-primary 2px;
+		outline-offset: 0;
+	}
+
 	&-bordered {
 		border: solid $fieldset-border-color $fieldset-border-width;
 
 		&.fieldset-lg {
 			// padding-top: ($input-xl-height - $input-lg-height) /2 - 2px;
+		}
+		&.fieldset-focus {
+			outline-offset: -$fieldset-border-width;
 		}
 	}
 	&-border-top {

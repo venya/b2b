@@ -66,6 +66,7 @@ article.pos {
 			width: 100% - $pos-payment-primary-width;
 
 			.btn {
+				white-space: normal;
 				text-align: left;
 				padding-left: $base-double-spacing;
 			}
@@ -79,6 +80,7 @@ article.pos {
 			width: $pos-payment-primary-width;
 
 			.btn {
+				white-space: normal;
 				text-align: left;
 				padding-right: $base-double-spacing;
 			}
