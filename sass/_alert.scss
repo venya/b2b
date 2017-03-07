@@ -1,0 +1,56 @@
+
+.alert {
+	display: block;
+	padding: $alert-vpadding $alert-hpadding;
+	font-size: $alert-font-size;
+	margin-bottom: $alert-margin-bottom;
+	background: $alert-default-bg;
+	color: $alert-default-color;
+	position: relative;
+	@include clearfix();
+
+	// Optional icon
+	&__icon {
+		// float: left;
+		vertical-align: middle;
+	}
+
+	//	Text next to icon
+	&__text {
+		overflow: hidden;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	//	Close icon
+	&__close {
+		@extend .icon;
+		@extend .icon-close;
+		position: absolute;
+		top: 0;
+		right: 0;
+		opacity: .5;
+		cursor: pointer;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+
+	// Color variations
+	&-danger {
+		background: $alert-danger-bg;
+		color: $color-white;
+	}
+
+	&-success {
+		background: $alert-success-bg;
+		color: $color-white;
+	}
+
+	&-info {
+		background: $alert-info-bg;
+		color: $color-blue;
+	}
+}

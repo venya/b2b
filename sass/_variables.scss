@@ -251,6 +251,18 @@ $icon-width: $icon-size;
 $icon-height: $icon-size;
 $icon-font-size: 24px;
 
+//	Alerts
+$alert-vpadding: $base-double-spacing;
+$alert-hpadding: $base-double-spacing;
+$alert-font-size: $font-lg-size;
+$alert-margin-bottom: $base-double-spacing;
+
+$alert-default-bg: khaki;
+$alert-default-color: $color-text;
+$alert-danger-bg: $color-danger;
+$alert-success-bg: $color-success;
+$alert-info-bg: $color-blue-light;
+
 //	Pagination
 
 $pagination-item-size: 12px;

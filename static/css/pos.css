@@ -65,8 +65,9 @@ header {
     width: 50px;
     border-radius: 0 !important;
     margin-right: 5px; }
-  header .icon.pull-left, header .pos-edit__mods .pull-left.card-selected.card-selected-marked:after, .pos-edit__mods header .pull-left.card-selected.card-selected-marked:after, header .pos-edit__matrix .pull-left.card-selected.card-selected-marked:after, .pos-edit__matrix header .pull-left.card-selected.card-selected-marked:after,
+  header .icon.pull-left, header .pull-left.alert__close, header .pos-edit__mods .pull-left.card-selected.card-selected-marked:after, .pos-edit__mods header .pull-left.card-selected.card-selected-marked:after, header .pos-edit__matrix .pull-left.card-selected.card-selected-marked:after, .pos-edit__matrix header .pull-left.card-selected.card-selected-marked:after,
   header .icon.pull-right,
+  header .pull-right.alert__close,
   header .pos-edit__mods .pull-right.card-selected.card-selected-marked:after, .pos-edit__mods
   header .pull-right.card-selected.card-selected-marked:after,
   header .pos-edit__matrix .pull-right.card-selected.card-selected-marked:after, .pos-edit__matrix
@@ -91,7 +92,7 @@ header {
   float: right;
   margin: 0;
   font-size: 0; }
-  .header__icons .icon, .header__icons .pos-edit__mods .card-selected.card-selected-marked:after, .pos-edit__mods .header__icons .card-selected.card-selected-marked:after, .header__icons .pos-edit__matrix .card-selected.card-selected-marked:after, .pos-edit__matrix .header__icons .card-selected.card-selected-marked:after {
+  .header__icons .icon, .header__icons .alert__close, .header__icons .pos-edit__mods .card-selected.card-selected-marked:after, .pos-edit__mods .header__icons .card-selected.card-selected-marked:after, .header__icons .pos-edit__matrix .card-selected.card-selected-marked:after, .pos-edit__matrix .header__icons .card-selected.card-selected-marked:after {
     vertical-align: top;
     margin: 5px 5px 0 0; }
 
@@ -225,6 +226,43 @@ hr {
     display: block;
     color: #aaa; }
 
+.alert {
+  display: block;
+  padding: 20px 20px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  background: khaki;
+  color: #333;
+  position: relative; }
+  .alert:before, .alert:after {
+    display: table;
+    content: " "; }
+  .alert:after {
+    clear: both; }
+  .alert__icon {
+    vertical-align: middle; }
+  .alert__text {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle; }
+  .alert__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: .5;
+    cursor: pointer; }
+    .alert__close:hover {
+      opacity: 1; }
+  .alert-danger {
+    background: #FF6431;
+    color: #fff; }
+  .alert-success {
+    background: #66BB6A;
+    color: #fff; }
+  .alert-info {
+    background: #c6e9ff;
+    color: #2e99db; }
+
 .menu {
   display: block;
   position: fixed;
@@ -328,7 +366,7 @@ hr {
       color: inherit;
       text-decoration: none;
       line-height: 60px; }
-    .hmenu__item .icon, .hmenu__item .pos-edit__mods .card-selected.card-selected-marked:after, .pos-edit__mods .hmenu__item .card-selected.card-selected-marked:after, .hmenu__item .pos-edit__matrix .card-selected.card-selected-marked:after, .pos-edit__matrix .hmenu__item .card-selected.card-selected-marked:after {
+    .hmenu__item .icon, .hmenu__item .alert__close, .hmenu__item .pos-edit__mods .card-selected.card-selected-marked:after, .pos-edit__mods .hmenu__item .card-selected.card-selected-marked:after, .hmenu__item .pos-edit__matrix .card-selected.card-selected-marked:after, .pos-edit__matrix .hmenu__item .card-selected.card-selected-marked:after {
       width: 16px;
       line-height: 60px;
       vertical-align: top;
@@ -361,7 +399,7 @@ hr {
   -webkit-tap-highlight-color: transparent; }
   .btn:active {
     box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.2); }
-  .btn .icon, .btn .pos-edit__mods .card-selected.card-selected-marked:after, .pos-edit__mods .btn .card-selected.card-selected-marked:after, .btn .pos-edit__matrix .card-selected.card-selected-marked:after, .pos-edit__matrix .btn .card-selected.card-selected-marked:after {
+  .btn .icon, .btn .alert__close, .btn .pos-edit__mods .card-selected.card-selected-marked:after, .pos-edit__mods .btn .card-selected.card-selected-marked:after, .btn .pos-edit__matrix .card-selected.card-selected-marked:after, .pos-edit__matrix .btn .card-selected.card-selected-marked:after {
     vertical-align: middle; }
   .btn-link {
     background: none;
@@ -451,15 +489,15 @@ input.btn {
   .animated .btn-ripple:active {
     box-shadow: none; }
 
-.btn.icon, .pos-edit__mods .btn.card-selected.card-selected-marked:after, .pos-edit__matrix .btn.card-selected.card-selected-marked:after {
+.btn.icon, .btn.alert__close, .pos-edit__mods .btn.card-selected.card-selected-marked:after, .pos-edit__matrix .btn.card-selected.card-selected-marked:after {
   color: inherit;
   padding: 0;
   min-width: 0;
   background: transparent; }
 
-header .btn.icon, header .pos-edit__mods .btn.card-selected.card-selected-marked:after, .pos-edit__mods header .btn.card-selected.card-selected-marked:after, header .pos-edit__matrix .btn.card-selected.card-selected-marked:after, .pos-edit__matrix header .btn.card-selected.card-selected-marked:after {
+header .btn.icon, header .btn.alert__close, header .pos-edit__mods .btn.card-selected.card-selected-marked:after, .pos-edit__mods header .btn.card-selected.card-selected-marked:after, header .pos-edit__matrix .btn.card-selected.card-selected-marked:after, .pos-edit__matrix header .btn.card-selected.card-selected-marked:after {
   border-radius: 40px; }
-  header .btn.icon:active, header .pos-edit__mods .btn.card-selected.card-selected-marked:active:after, .pos-edit__mods header .btn.card-selected.card-selected-marked:active:after, header .pos-edit__matrix .btn.card-selected.card-selected-marked:active:after, .pos-edit__matrix header .btn.card-selected.card-selected-marked:active:after {
+  header .btn.icon:active, header .btn.alert__close:active, header .pos-edit__mods .btn.card-selected.card-selected-marked:active:after, .pos-edit__mods header .btn.card-selected.card-selected-marked:active:after, header .pos-edit__matrix .btn.card-selected.card-selected-marked:active:after, .pos-edit__matrix header .btn.card-selected.card-selected-marked:active:after {
     background: rgba(0, 0, 0, 0.1);
     box-shadow: none; }
 
@@ -485,7 +523,7 @@ header .btn.icon, header .pos-edit__mods .btn.card-selected.card-selected-marked
     .dropdown-menu__item:active {
       background: #2e99db;
       color: #fff; }
-    .dropdown-menu__item .icon, .dropdown-menu__item .pos-edit__mods .card-selected.card-selected-marked:after, .pos-edit__mods .dropdown-menu__item .card-selected.card-selected-marked:after, .dropdown-menu__item .pos-edit__matrix .card-selected.card-selected-marked:after, .pos-edit__matrix .dropdown-menu__item .card-selected.card-selected-marked:after {
+    .dropdown-menu__item .icon, .dropdown-menu__item .alert__close, .dropdown-menu__item .pos-edit__mods .card-selected.card-selected-marked:after, .pos-edit__mods .dropdown-menu__item .card-selected.card-selected-marked:after, .dropdown-menu__item .pos-edit__matrix .card-selected.card-selected-marked:after, .pos-edit__matrix .dropdown-menu__item .card-selected.card-selected-marked:after {
       position: relative;
       vertical-align: top;
       margin: 5px 5px 0 -10px; }
@@ -687,7 +725,7 @@ header .btn.icon, header .pos-edit__mods .btn.card-selected.card-selected-marked
     width: 100%;
     height: 100%;
     cursor: pointer; }
-  .checkbox .icon, .checkbox .pos-edit__mods .card-selected.card-selected-marked:after, .pos-edit__mods .checkbox .card-selected.card-selected-marked:after, .checkbox .pos-edit__matrix .card-selected.card-selected-marked:after, .pos-edit__matrix .checkbox .card-selected.card-selected-marked:after {
+  .checkbox .icon, .checkbox .alert__close, .checkbox .pos-edit__mods .card-selected.card-selected-marked:after, .pos-edit__mods .checkbox .card-selected.card-selected-marked:after, .checkbox .pos-edit__matrix .card-selected.card-selected-marked:after, .pos-edit__matrix .checkbox .card-selected.card-selected-marked:after {
     display: inline-block;
     width: 30px;
     height: 30px;
@@ -698,14 +736,14 @@ header .btn.icon, header .pos-edit__mods .btn.card-selected.card-selected-marked
     color: #eeeeee;
     vertical-align: middle;
     margin-right: 6px; }
-    .checkbox .icon:before {
+    .checkbox .icon:before, .checkbox .alert__close:before {
       content: "v"; }
-  .checkbox input:checked + .icon, .checkbox .pos-edit__mods input:checked + .card-selected.card-selected-marked:after, .pos-edit__mods .checkbox input:checked + .card-selected.card-selected-marked:after, .checkbox .pos-edit__matrix input:checked + .card-selected.card-selected-marked:after, .pos-edit__matrix .checkbox input:checked + .card-selected.card-selected-marked:after {
+  .checkbox input:checked + .icon, .checkbox input:checked + .alert__close, .checkbox .pos-edit__mods input:checked + .card-selected.card-selected-marked:after, .pos-edit__mods .checkbox input:checked + .card-selected.card-selected-marked:after, .checkbox .pos-edit__matrix input:checked + .card-selected.card-selected-marked:after, .pos-edit__matrix .checkbox input:checked + .card-selected.card-selected-marked:after {
     background-color: #2e99db;
     color: #fff; }
-  .checkbox-success input:checked + .icon, .checkbox-success .pos-edit__mods input:checked + .card-selected.card-selected-marked:after, .pos-edit__mods .checkbox-success input:checked + .card-selected.card-selected-marked:after, .checkbox-success .pos-edit__matrix input:checked + .card-selected.card-selected-marked:after, .pos-edit__matrix .checkbox-success input:checked + .card-selected.card-selected-marked:after {
+  .checkbox-success input:checked + .icon, .checkbox-success input:checked + .alert__close, .checkbox-success .pos-edit__mods input:checked + .card-selected.card-selected-marked:after, .pos-edit__mods .checkbox-success input:checked + .card-selected.card-selected-marked:after, .checkbox-success .pos-edit__matrix input:checked + .card-selected.card-selected-marked:after, .pos-edit__matrix .checkbox-success input:checked + .card-selected.card-selected-marked:after {
     background-color: #66BB6A; }
-  .checkbox:active .icon, .checkbox:active .pos-edit__mods .card-selected.card-selected-marked:after, .pos-edit__mods .checkbox:active .card-selected.card-selected-marked:after, .checkbox:active .pos-edit__matrix .card-selected.card-selected-marked:after, .pos-edit__matrix .checkbox:active .card-selected.card-selected-marked:after {
+  .checkbox:active .icon, .checkbox:active .alert__close, .checkbox:active .pos-edit__mods .card-selected.card-selected-marked:after, .pos-edit__mods .checkbox:active .card-selected.card-selected-marked:after, .checkbox:active .pos-edit__matrix .card-selected.card-selected-marked:after, .pos-edit__matrix .checkbox:active .card-selected.card-selected-marked:after {
     box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.3); }
 
 .radio {
@@ -724,7 +762,7 @@ header .btn.icon, header .pos-edit__mods .btn.card-selected.card-selected-marked
     height: 100%;
     cursor: pointer;
     z-index: 1; }
-  .radio .icon, .radio .pos-edit__mods .card-selected.card-selected-marked:after, .pos-edit__mods .radio .card-selected.card-selected-marked:after, .radio .pos-edit__matrix .card-selected.card-selected-marked:after, .pos-edit__matrix .radio .card-selected.card-selected-marked:after {
+  .radio .icon, .radio .alert__close, .radio .pos-edit__mods .card-selected.card-selected-marked:after, .pos-edit__mods .radio .card-selected.card-selected-marked:after, .radio .pos-edit__matrix .card-selected.card-selected-marked:after, .pos-edit__matrix .radio .card-selected.card-selected-marked:after {
     display: inline-block;
     width: 30px;
     height: 30px;
@@ -736,7 +774,7 @@ header .btn.icon, header .pos-edit__mods .btn.card-selected.card-selected-marked
     padding: 0;
     vertical-align: middle;
     margin-right: 6px; }
-    .radio .icon:before {
+    .radio .icon:before, .radio .alert__close:before {
       content: "";
       display: block;
       width: 20px;
@@ -745,13 +783,13 @@ header .btn.icon, header .pos-edit__mods .btn.card-selected.card-selected-marked
       margin: 3px;
       transition: transform 300ms ease-out;
       transform: scale(1); }
-  .radio input:checked + .icon:before {
+  .radio input:checked + .icon:before, .radio input:checked + .alert__close:before {
     background-color: #2e99db; }
-  .radio-success input:checked + .icon:before {
+  .radio-success input:checked + .icon:before, .radio-success input:checked + .alert__close:before {
     background-color: #66BB6A; }
-  .radio:active .icon, .radio:active .pos-edit__mods .card-selected.card-selected-marked:after, .pos-edit__mods .radio:active .card-selected.card-selected-marked:after, .radio:active .pos-edit__matrix .card-selected.card-selected-marked:after, .pos-edit__matrix .radio:active .card-selected.card-selected-marked:after {
+  .radio:active .icon, .radio:active .alert__close, .radio:active .pos-edit__mods .card-selected.card-selected-marked:after, .pos-edit__mods .radio:active .card-selected.card-selected-marked:after, .radio:active .pos-edit__matrix .card-selected.card-selected-marked:after, .pos-edit__matrix .radio:active .card-selected.card-selected-marked:after {
     background-color: #eeeeee; }
-    .radio:active .icon:before {
+    .radio:active .icon:before, .radio:active .alert__close:before {
       transform: scale(0); }
 
 .input {
@@ -934,7 +972,7 @@ textarea.input {
   .table-striped tbody tr:nth-child(even) th {
     background-color: #fff; }
 
-.icon, .pos-edit__mods .card-selected.card-selected-marked:after, .pos-edit__matrix .card-selected.card-selected-marked:after,
+.icon, .alert__close, .pos-edit__mods .card-selected.card-selected-marked:after, .pos-edit__matrix .card-selected.card-selected-marked:after,
 .icon-text {
   font-style: normal;
   font-weight: normal;
@@ -946,7 +984,7 @@ textarea.input {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.icon, .pos-edit__mods .card-selected.card-selected-marked:after, .pos-edit__matrix .card-selected.card-selected-marked:after {
+.icon, .alert__close, .pos-edit__mods .card-selected.card-selected-marked:after, .pos-edit__matrix .card-selected.card-selected-marked:after {
   display: inline-block;
   width: 40px;
   height: 40px;
@@ -969,7 +1007,7 @@ textarea.input {
   font-weight: normal;
   font-style: normal; }
 
-.icon:before {
+.icon:before, .alert__close:before {
   content: "\e421"; }
 
 .icon-none:before {
@@ -1020,7 +1058,7 @@ textarea.input {
 .icon-nav-next:before {
   content: "\3e"; }
 
-.icon-close:before {
+.icon-close:before, .alert__close:before {
   content: "\78"; }
 
 .icon-offline:before {
@@ -1638,7 +1676,7 @@ textarea.input {
 
 .pos-edit {
   background: #f8f8f8; }
-  .pos-edit .icon-close {
+  .pos-edit .icon-close, .pos-edit .alert__close {
     float: right; }
   .pos-edit__info {
     background: white; }
@@ -1663,7 +1701,7 @@ textarea.input {
       clear: both; }
     .pos-edit__mods .card__content, .pos-edit__matrix .card__content {
       margin-top: 20px; }
-      .pos-edit__mods .card__content .icon, .pos-edit__mods .card__content .card-selected.card-selected-marked:after, .pos-edit__matrix .card__content .icon, .pos-edit__matrix .card__content .card-selected.card-selected-marked:after {
+      .pos-edit__mods .card__content .icon, .pos-edit__mods .card__content .alert__close, .pos-edit__mods .card__content .card-selected.card-selected-marked:after, .pos-edit__matrix .card__content .icon, .pos-edit__matrix .card__content .alert__close, .pos-edit__matrix .card__content .card-selected.card-selected-marked:after {
         float: left;
         margin: -10px; }
     .pos-edit__mods .card-selected.card-selected-marked:after, .pos-edit__matrix .card-selected.card-selected-marked:after {
@@ -1716,7 +1754,7 @@ article.pos .toolbar-payments {
     article.pos .toolbar-payments__secondary .btn {
       text-align: left;
       padding-left: 20px; }
-    article.pos .toolbar-payments__secondary .icon, article.pos .toolbar-payments__secondary .pos-edit__mods .card-selected.card-selected-marked:after, .pos-edit__mods article.pos .toolbar-payments__secondary .card-selected.card-selected-marked:after, article.pos .toolbar-payments__secondary .pos-edit__matrix .card-selected.card-selected-marked:after, .pos-edit__matrix article.pos .toolbar-payments__secondary .card-selected.card-selected-marked:after {
+    article.pos .toolbar-payments__secondary .icon, article.pos .toolbar-payments__secondary .alert__close, article.pos .toolbar-payments__secondary .pos-edit__mods .card-selected.card-selected-marked:after, .pos-edit__mods article.pos .toolbar-payments__secondary .card-selected.card-selected-marked:after, article.pos .toolbar-payments__secondary .pos-edit__matrix .card-selected.card-selected-marked:after, .pos-edit__matrix article.pos .toolbar-payments__secondary .card-selected.card-selected-marked:after {
       float: right;
       margin: 10px -10px; }
   article.pos .toolbar-payments__primary {

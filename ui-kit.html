@@ -362,6 +362,42 @@
 				<button class="btn btn-default" onclick="demoSnackbar(undefined, 'Sample Action', function(){ alert('Message handler'); })">With Action<i class="icon icon-next"></i></button>
 			</p>
 
+			<h2>Alerts</h2>
+			<p>Div container with <code>.alert</code> class.</p>
+			<div class="alert">
+				<i class="icon alert__icon icon-note"></i>
+				<div class="alert__text">Alert text message (with optional icon in the left, and close icon on the right).</div>
+				<i class="alert__close"></i>
+			</div>
+
+			<p>Additional styling options: <code>.alert-danger</code>, <code>.alert-success</code>, <code>.alert-info</code></p>
+
+			<div class="layout">
+				<div class="layout__column">
+					<div class="alert">
+						<div class="alert__text">Alert text message (regular).</div>
+					</div>
+				</div>
+				<div class="layout__column-gap"></div>
+				<div class="layout__column">
+					<div class="alert alert-danger">
+						<div class="alert__text">Alert text message (danger).</div>
+					</div>
+				</div>
+				<div class="layout__column-gap"></div>
+				<div class="layout__column">
+					<div class="alert alert-success">
+						<div class="alert__text">Alert text message (success).</div>
+					</div>
+				</div>
+				<div class="layout__column-gap"></div>
+				<div class="layout__column">
+					<div class="alert alert-info">
+						<div class="alert__text">Alert text message (info).</div>
+					</div>
+				</div>
+			</div>
+
 			<h1>Table Grids</h1>
 			<p>Unified Table grid design when applied <code>.table</code> class to any table. Add <code>.table-striped</code> to interleave row colors.</p>
 			<table class="table table-striped">
