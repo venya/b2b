@@ -18,103 +18,93 @@
 		<header>
 			<button class="btn icon icon-menu" title="Menu"></button>
 			<div class="header__icons">
-				<a href="help.html" class="btn icon icon-help" title="Help"></a>
+				<button class="btn icon icon-help" title="Help" onclick="demoDialogOpen('help')"></button>
 				<a href="search.html" class="btn icon icon-search" title="Search"></a>
 			</div>
 			<h1>Orders</h1>
 		</header>
 
-		<div class="toolbar toolbar-white">
+		<div class="toolbar toolbar-flex toolbar-white">
 			<div class="toolbar__item">
-				<div class="toolbar__item">
-					<div class="dropdown dropdown-white">
-						<div class="dropdown__selected">
-							<div class="dropdown__selected-label">Stor(e):</div>
-							<div class="dropdown__selected-value">Show all</div>
-						</div>
-						<ul class="dropdown-menu">
-							<li class="dropdown-menu__item dropdown-menu__item-selected">Show all</li>
-							<li class="dropdown-menu__item">Main Store</li>
-							<li class="dropdown-menu__item">Second Store</li>
-						</ul>
-						<div class="dropdown-menu__mask"></div>
+				<div class="dropdown dropdown-white w100">
+					<div class="dropdown__selected">
+						<div class="dropdown__selected-label">Stor(e):</div>
+						<div class="dropdown__selected-value">Show all</div>
 					</div>
+					<ul class="dropdown-menu">
+						<li class="dropdown-menu__item dropdown-menu__item-selected">Show all</li>
+						<li class="dropdown-menu__item">Main Store</li>
+						<li class="dropdown-menu__item">Second Store</li>
+					</ul>
+					<div class="dropdown-menu__mask"></div>
 				</div>
 			</div>
 
 			<div class="toolbar__item">
-				<div class="toolbar__item">
-					<div class="dropdown dropdown-white">
-						<div class="dropdown__selected">
-							<div class="dropdown__selected-label">Register:</div>
-							<div class="dropdown__selected-value">(2 selected)</div>
-						</div>
-						<ul class="dropdown-menu">
-							<li class="dropdown-menu__item">Show all</li>
-							<li class="dropdown-menu__item dropdown-menu__item-selected"><i class="icon icon-check"></i>John's Notebook 1</li>
-							<li class="dropdown-menu__item dropdown-menu__item-selected"><i class="icon icon-check"></i>Register 2: iPad mini</li>
-							<li class="dropdown-menu__item">Register 3: Poynt</li>
-						</ul>
-						<div class="dropdown-menu__mask"></div>
+				<div class="dropdown dropdown-white w100">
+					<div class="dropdown__selected">
+						<div class="dropdown__selected-label">Register:</div>
+						<div class="dropdown__selected-value">(2 selected)</div>
 					</div>
+					<ul class="dropdown-menu">
+						<li class="dropdown-menu__item">Show all</li>
+						<li class="dropdown-menu__item dropdown-menu__item-selected"><i class="icon icon-check"></i>John's Notebook 1</li>
+						<li class="dropdown-menu__item dropdown-menu__item-selected"><i class="icon icon-check"></i>Register 2: iPad mini</li>
+						<li class="dropdown-menu__item">Register 3: Poynt</li>
+					</ul>
+					<div class="dropdown-menu__mask"></div>
 				</div>
 			</div>
 
 			<div class="toolbar__item">
-				<div class="toolbar__item">
-					<div class="dropdown dropdown-white">
-						<div class="dropdown__selected">
-							<div class="dropdown__selected-label">Order Type:</div>
-							<div class="dropdown__selected-value">Quick Sale</div>
-						</div>
-						<ul class="dropdown-menu">
-							<li class="dropdown-menu__item">Show all</li>
-							<li class="dropdown-menu__item dropdown-menu__item-selected">Quick Sale</li>
-							<li class="dropdown-menu__item">Delivery</li>
-							<li class="dropdown-menu__item">Dine In</li>
-						</ul>
-						<div class="dropdown-menu__mask"></div>
+				<div class="dropdown dropdown-white w100">
+					<div class="dropdown__selected">
+						<div class="dropdown__selected-label">Order Type:</div>
+						<div class="dropdown__selected-value">Quick Sale</div>
 					</div>
+					<ul class="dropdown-menu">
+						<li class="dropdown-menu__item">Show all</li>
+						<li class="dropdown-menu__item dropdown-menu__item-selected">Quick Sale</li>
+						<li class="dropdown-menu__item">Delivery</li>
+						<li class="dropdown-menu__item">Dine In</li>
+					</ul>
+					<div class="dropdown-menu__mask"></div>
 				</div>
 			</div>
 
 			<div class="toolbar__item">
-				<div class="toolbar__item">
-					<div class="dropdown dropdown-white">
-						<div class="dropdown__selected">
-							<div class="dropdown__selected-label">Status:</div>
-							<div class="dropdown__selected-value">Any</div>
-						</div>
-						<ul class="dropdown-menu">
-							<li class="dropdown-menu__item dropdown-menu__item-selected">Any</li>
-							<li class="dropdown-menu__item">Not Paid</li>
-							<li class="dropdown-menu__item">Pending Payment</li>
-							<li class="dropdown-menu__item">Paid</li>
-							<li class="dropdown-menu__item">Refunded</li>
-							<li class="dropdown-menu__item">Voided</li>
-						</ul>
-						<div class="dropdown-menu__mask"></div>
+				<div class="dropdown dropdown-white w100">
+					<div class="dropdown__selected">
+						<div class="dropdown__selected-label">Status:</div>
+						<div class="dropdown__selected-value">Any</div>
 					</div>
+					<ul class="dropdown-menu">
+						<li class="dropdown-menu__item dropdown-menu__item-selected">Any</li>
+						<li class="dropdown-menu__item">Not Paid</li>
+						<li class="dropdown-menu__item">Pending Payment</li>
+						<li class="dropdown-menu__item">Paid</li>
+						<li class="dropdown-menu__item">Refunded</li>
+						<li class="dropdown-menu__item">Voided</li>
+					</ul>
+					<div class="dropdown-menu__mask"></div>
 				</div>
 			</div>
 
 			<div class="toolbar__item">
-				<div class="toolbar__item">
-					<div class="dropdown dropdown-white">
-						<div class="dropdown__selected">
-							<div class="dropdown__selected-label">Fulfillment:</div>
-							<div class="dropdown__selected-value">Any</div>
-						</div>
-						<ul class="dropdown-menu">
-							<li class="dropdown-menu__item dropdown-menu__item-selected">Any</li>
-							<li class="dropdown-menu__item">New</li>
-							<li class="dropdown-menu__item">In Preparation</li>
-							<li class="dropdown-menu__item">Prepared</li>
-							<li class="dropdown-menu__item">In Fulfillment</li>
-							<li class="dropdown-menu__item">Fulfilled</li>
-						</ul>
-						<div class="dropdown-menu__mask"></div>
+				<div class="dropdown dropdown-white w100">
+					<div class="dropdown__selected">
+						<div class="dropdown__selected-label">Fulfillment:</div>
+						<div class="dropdown__selected-value">Any</div>
 					</div>
+					<ul class="dropdown-menu">
+						<li class="dropdown-menu__item dropdown-menu__item-selected">Any</li>
+						<li class="dropdown-menu__item">New</li>
+						<li class="dropdown-menu__item">In Preparation</li>
+						<li class="dropdown-menu__item">Prepared</li>
+						<li class="dropdown-menu__item">In Fulfillment</li>
+						<li class="dropdown-menu__item">Fulfilled</li>
+					</ul>
+					<div class="dropdown-menu__mask"></div>
 				</div>
 			</div>
 
@@ -141,7 +131,7 @@
 			<tbody>
 				<tr>
 					<td class="no-vpadding"><i class="icon icon-check"></i></td>
-					<td><a href="order.html">040660174749</a></td>
+					<td>040660174749</td>
 					<td>Main Store</td>
 					<td>1</td>
 					<td>Quick Sale</td>
@@ -220,6 +210,10 @@
 		</ul>
 	</nav>
 	<div class="menu__mask"></div>
+
+
+	<!-- Dialog: Help Panel -->
+	<link rel="import" href="inc/help.html" onload="demoTemplate(this)">
 
 
 </body>

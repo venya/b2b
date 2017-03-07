@@ -946,6 +946,14 @@ textarea.input {
         border-left: none; }
   .toolbar-white {
     background: #fff; }
+  .toolbar-flex {
+    display: table;
+    width: 100%; }
+    .toolbar-flex .toolbar__item {
+      display: table-cell;
+      float: none; }
+      .toolbar-flex .toolbar__item-right {
+        text-align: right; }
   .toolbar-delimiter {
     height: 61px;
     border-bottom: solid rgba(0, 0, 0, 0.1) 1px; }

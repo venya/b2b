@@ -37,6 +37,22 @@
 		background: $color-white;
 	}
 
+	//	Autosize items
+	&-flex {
+		display: table;
+		width: 100%;
+
+		.toolbar__item {
+			display: table-cell;
+			float: none;
+
+			&-right {
+				text-align: right;
+			}
+		}
+	}
+
+	//	Bottom delimiter line
 	&-delimiter {
 		height: $toolbar-height + $base-delimiter-width;
 		border-bottom: solid $color-delimiter $base-delimiter-width;
