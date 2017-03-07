@@ -49,6 +49,11 @@
 			&-right {
 				text-align: right;
 			}
+
+			//	Minimize column space (to give more space to other columns)
+			&-minimize {
+				width: 1%;
+			}
 		}
 	}
 

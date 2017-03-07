@@ -38,15 +38,23 @@
 
 	//	Cell modifiers
 	&__cell {
+		//	Additional left padding for first cell in the row
 		&-first {
 			padding-left: $base-double-spacing !important;
 		}
+		//	Additional right padding for last cell
 		&-last {
 			padding-right: $base-double-spacing !important;
 		}
+
+		//	Minimize column space (to give more space to other columns)
+		&-minimize {
+			width: 1%;
+		}
 	}
 
-	//	Larger size
+
+	//	Larger table size
 	&-lg {
 		font-size: $font-lg-size;
 
@@ -70,6 +78,17 @@
 		tbody tr:nth-child(even) td,
 		tbody tr:nth-child(even) th {
 			background-color: $table-td-even-background;
+		}
+	}
+
+	//	Table hover (highlight row on mouse over)
+	&-hover {
+		tbody tr:hover td {
+			background: $table-td-hover-background;
+			cursor: pointer;
+		}
+		tbody tr:active td {
+			background: $table-td-active-background;
 		}
 	}
 
