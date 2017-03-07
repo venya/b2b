@@ -39,6 +39,7 @@
 		resize: vertical;
 		width: 100%;
 		padding: $base-double-spacing;
+		transition: height $base-animation ease-out;
 	}
 
 	//	Rounded first and last items
@@ -62,6 +63,10 @@
 	&-focus {
 		outline: solid $color-primary 2px;
 		outline-offset: 0;
+
+		& .fieldset__textarea {
+			height: 200px;
+		}
 	}
 
 	&-bordered {
