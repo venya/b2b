@@ -2,6 +2,8 @@
 // to bring to life some GUI components, while no
 // JavaScript framework is defined in this project.
 
+// TODO:
+// 1. Should be refactored for use with Knockout and Durandal
 
 
 function toggleClass(element, className, newState) {
@@ -26,7 +28,6 @@ function newNode(tag, className, content) {
 	return node;
 }
 
-//	Replacement for ES5 .forEach()
 function forEvery(parent, selector, func) {
 	// console.log("For every "+selector);
 	var items = parent.querySelectorAll(selector);
@@ -35,6 +36,9 @@ function forEvery(parent, selector, func) {
 	}
 }
 
+// Replaces HTML5 import with loaded HTML content
+// used only temporarily, as no server-side templates used
+// nor client-side engine available
 function demoTemplate(inc) {
 	// console.log(inc.import.body.innerHTML);
 	inc.outerHTML = inc.import.body.innerHTML;
@@ -50,6 +54,9 @@ function demoEditItem(tab) {
 		console.log("Swith to tab:", tab);
 	}
 }
+//	Sets X,Y point (relative to right-panel)
+//	from which edit-panel animation expands.
+//	Should be center of clicked object, or mouse poiner position
 function demoSetOrigin(card, x, y) {
 	var box = demoPosEditor;
 	box.style.transformOrigin = x + " " + y;
