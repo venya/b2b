@@ -36,6 +36,36 @@
 		}
 	}
 
+	//	Cell modifiers
+	&__cell {
+		&-first {
+			padding-left: $base-double-spacing !important;
+		}
+		&-last {
+			padding-right: $base-double-spacing !important;
+		}
+	}
+
+	//	Larger size
+	&-lg {
+		font-size: $font-lg-size;
+
+		thead {
+			th {
+
+			}
+		}
+
+		tbody {
+			td {
+				padding: $base-double-spacing $base-spacing;
+			}
+		}
+	}
+
+
+	// Interleave odd/even line backgrounds
+
 	&-striped {
 		tbody tr:nth-child(even) td,
 		tbody tr:nth-child(even) th {

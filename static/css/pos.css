@@ -968,6 +968,14 @@ textarea.input {
   .table tbody tr:first-child td,
   .table tbody tr:first-child th {
     border-top: none; }
+  .table__cell-first {
+    padding-left: 20px !important; }
+  .table__cell-last {
+    padding-right: 20px !important; }
+  .table-lg {
+    font-size: 16px; }
+    .table-lg tbody td {
+      padding: 20px 10px; }
   .table-striped tbody tr:nth-child(even) td,
   .table-striped tbody tr:nth-child(even) th {
     background-color: #fff; }
@@ -1171,10 +1179,14 @@ textarea.input {
   clear: both; }
 
 .no-margin {
-  margin: 0; }
+  margin: 0 !important; }
 
 .no-padding {
-  padding: 0; }
+  padding: 0 !important; }
+
+.no-vpadding {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important; }
 
 .padding-left {
   padding-left: 10px; }

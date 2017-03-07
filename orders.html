@@ -34,8 +34,8 @@
 						</div>
 						<ul class="dropdown-menu">
 							<li class="dropdown-menu__item dropdown-menu__item-selected">Show all</li>
-							<li class="dropdown-menu__item">Primary Store</li>
-							<li class="dropdown-menu__item">Secondary Store</li>
+							<li class="dropdown-menu__item">Main Store</li>
+							<li class="dropdown-menu__item">Second Store</li>
 						</ul>
 						<div class="dropdown-menu__mask"></div>
 					</div>
@@ -67,6 +67,13 @@
 							<div class="dropdown__selected-label">Order Type:</div>
 							<div class="dropdown__selected-value">Quick Sale</div>
 						</div>
+						<ul class="dropdown-menu">
+							<li class="dropdown-menu__item">Show all</li>
+							<li class="dropdown-menu__item dropdown-menu__item-selected">Quick Sale</li>
+							<li class="dropdown-menu__item">Delivery</li>
+							<li class="dropdown-menu__item">Dine In</li>
+						</ul>
+						<div class="dropdown-menu__mask"></div>
 					</div>
 				</div>
 			</div>
@@ -78,6 +85,15 @@
 							<div class="dropdown__selected-label">Status:</div>
 							<div class="dropdown__selected-value">Any</div>
 						</div>
+						<ul class="dropdown-menu">
+							<li class="dropdown-menu__item dropdown-menu__item-selected">Any</li>
+							<li class="dropdown-menu__item">Not Paid</li>
+							<li class="dropdown-menu__item">Pending Payment</li>
+							<li class="dropdown-menu__item">Paid</li>
+							<li class="dropdown-menu__item">Refunded</li>
+							<li class="dropdown-menu__item">Voided</li>
+						</ul>
+						<div class="dropdown-menu__mask"></div>
 					</div>
 				</div>
 			</div>
@@ -89,6 +105,15 @@
 							<div class="dropdown__selected-label">Fulfillment:</div>
 							<div class="dropdown__selected-value">Any</div>
 						</div>
+						<ul class="dropdown-menu">
+							<li class="dropdown-menu__item dropdown-menu__item-selected">Any</li>
+							<li class="dropdown-menu__item">New</li>
+							<li class="dropdown-menu__item">In Preparation</li>
+							<li class="dropdown-menu__item">Prepared</li>
+							<li class="dropdown-menu__item">In Fulfillment</li>
+							<li class="dropdown-menu__item">Fulfilled</li>
+						</ul>
+						<div class="dropdown-menu__mask"></div>
 					</div>
 				</div>
 			</div>
@@ -98,10 +123,10 @@
 			</div>
 		</div>
 
-		<table class="table table-striped">
+		<table class="table table-striped table-hover">
 			<thead>
 				<tr>
-					<th>Status</th>
+					<th class="table__cell-first">Status</th>
 					<th class="table__sortable table__sorted-asc">Order</th>
 					<th>Store</th>
 					<th>Register</th>
@@ -110,24 +135,64 @@
 					<th class="table__sortable">Date</th>
 					<th>Employee</th>
 					<th>Customer</th>
-					<th class="text-right">Action</th>
+					<th class="table__cell-last text-right">Action</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
-					<td><i class="icon icon-sm icon-check"></i></td>
-					<td><a href="order.html">1200933</a></td>
-					<td>Col1</td>
-					<td>Col2</td>
+					<td class="no-vpadding"><i class="icon icon-check"></i></td>
+					<td><a href="order.html">040660174749</a></td>
+					<td>Main Store</td>
+					<td>1</td>
+					<td>Quick Sale</td>
+					<td>Done</td>
+					<td>03/07/2017<div class="small muted">12:59:00</div></td>
+					<td>Mr. John Snow</td>
+					<td>Walk In</td>
+					<td class="no-vpadding no-wrap text-right"><a href="order.html" class="icon icon-next btn"></a></td>
 				</tr>
 				<tr>
-					<td><i class="icon icon-sm icon-close"></i></td>
-					<td><a href="order.html">1200801</a></td>
-					<td>Col1</td>
-					<td>Col2</td>
+					<td class="no-vpadding"><i class="icon icon-checked text-success"></i></td>
+					<td>040660174750<div class="muted">Saved order name</div></td>
+					<td>Second Store</td>
+					<td>4</td>
+					<td>Quick Sale</td>
+					<td>Done</td>
+					<td>03/07/2017<div class="small muted">12:59:00</div></td>
+					<td>Mr. John Snow</td>
+					<td>Walk In</td>
+					<td class="no-vpadding no-wrap text-right"><a href="pos.html" class="icon icon-pos btn"></a><a href="order.html" class="icon icon-next btn"></a></td>
+				</tr>
+				<tr>
+					<td class="no-vpadding"><i class="icon icon-close"></i></td>
+					<td>040660174000</td>
+					<td>Main Store</td>
+					<td>2</td>
+					<td>Delivery</td>
+					<td>Done</td>
+					<td>03/07/2017<div class="small muted">12:59:00</div></td>
+					<td>Mr. John Snow</td>
+					<td>VIP Mr. Donald Trump</td>
+					<td class="no-vpadding no-wrap text-right"><a href="order.html" class="icon icon-next btn"></a></td>
+				</tr>
+				<tr>
+					<td class="no-vpadding"><i class="icon icon-clear text-danger"></i></td>
+					<td>040660174001</td>
+					<td>Main Store</td>
+					<td>1</td>
+					<td>Quick Sale</td>
+					<td>Voided</td>
+					<td>12/12/2016<div class="small muted">9:00:00</div></td>
+					<td>Samantha Fox</td>
+					<td>Walk In</td>
+					<td class="no-vpadding no-wrap text-right"><a href="order.html" class="icon icon-next btn"></a></td>
 				</tr>
 			</tbody>
 		</table>
+
+		<p class="text-center">
+			<button class="btn btn-default"><i class="icon icon-expand"></i>Show more</button>
+		</p>
 
 
 	</article>
