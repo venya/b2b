@@ -156,6 +156,9 @@ hr {
 .text-danger {
   color: #FF6431; }
 
+.bg-silver {
+  background: #eeeeee; }
+
 .bg-success {
   background: #66BB6A !important; }
 

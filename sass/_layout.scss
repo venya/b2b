@@ -111,29 +111,46 @@ article {
 
 
 .layout {
-	display: table;
-	width: 100%;
+	display: flex;
+	flex-flow: row;
 
-	//	Options
-	&-fixed {
-		table-layout: fixed;
+
+	// Vertical layout (contains rows instead of columns)
+	&-rows {
+		flex-flow: column;
+	}
+	&-columns {
+		flex-flow: row;
 	}
 
 
 	//	Horizontal layout (columns)
 	&__column {
-		display: table-cell;
-		vertical-align: top;
+		flex: 1;
+		// display: flex;
+		// flex-flow: column;
+
+		border-right: dashed silver 1px;
 	}
 
 	&__column-gap {
-		display: table-cell;
 		width: $base-double-spacing;
+		flex: 0;	// TODO ?
 	}
 
 	//	Vertical layout (rows)
 	&__row {
-		display: table-row;
+		flex: content;	// How to define 0 ???
+		// display: flex;
+		// flex-flow: row;
+
+		border-bottom: dotted silver 1px;
+
+		//	This row should take more space than others
+		&-grow {
+			flex: 2;
+			overflow-y: auto;
+		}
 	}
 }
 

@@ -118,18 +118,24 @@ article {
       width: 40%; }
 
 .layout {
-  display: table;
-  width: 100%; }
-  .layout-fixed {
-    table-layout: fixed; }
+  display: flex;
+  flex-flow: row; }
+  .layout-rows {
+    flex-flow: column; }
+  .layout-columns {
+    flex-flow: row; }
   .layout__column {
-    display: table-cell;
-    vertical-align: top; }
+    flex: 1;
+    border-right: dashed silver 1px; }
   .layout__column-gap {
-    display: table-cell;
-    width: 20px; }
+    width: 20px;
+    flex: 0; }
   .layout__row {
-    display: table-row; }
+    flex: content;
+    border-bottom: dotted silver 1px; }
+    .layout__row-grow {
+      flex: 2;
+      overflow-y: auto; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Roboto, Arial;
@@ -188,6 +194,9 @@ hr {
 
 .text-danger {
   color: #FF6431; }
+
+.bg-silver {
+  background: #eeeeee; }
 
 .bg-success {
   background: #66BB6A !important; }
