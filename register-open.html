@@ -15,60 +15,65 @@
 
 	<article class="register">
 
-		<aside class="left bg-white cutout-right">
-			<header class="cutout-right">
+		<aside class="left bg-white cutout-right layout layout-rows">
+			<header class="cutout-right layout__row">
 				<a href="pos.html" class="btn icon icon-back"></a>
 				<h1>Back</h1>
 			</header>
 
-			<section class="w50 pull-left">
-				<p class="labeled-info"><label>Opened:</label>12/21/2016 14:19:28</p>
-				<p class="labeled-info"><label>By Employee:</label>Mr. John Snow</p>
-			</section>
-			<section class="w50 pull-left">
-				<p class="labeled-info"><label>Closed:</label>12/21/2016 14:19:28</p>
-				<p class="labeled-info"><label>By Employee:</label>Mr. John Snow</p>
-			</section>
-			<hr>
+			<div class="layout__row layout__row-grow">
+				<section class="w50 pull-left">
+					<p class="labeled-info"><label>Opened:</label>12/21/2016 14:19:28</p>
+					<p class="labeled-info"><label>By Employee:</label>Mr. John Snow</p>
+				</section>
+				<section class="w50 pull-left">
+					<p class="labeled-info"><label>Closed:</label>12/21/2016 14:19:28</p>
+					<p class="labeled-info"><label>By Employee:</label>Mr. John Snow</p>
+				</section>
+				<hr>
 
-			<section>
-				<table class="table">
-					<tbody>
-						<tr><td>Opening Amount</td>
-							<td class="text-right muted">$0.00</td></tr>
-						<tr><td>Cash Sale</td>
-							<td class="text-right">$12,344.00</td></tr>
-						<tr><td>Refunds</td>
-							<td class="text-right">$44.20</td></tr>
-						<tr><td>Payins</td>
-							<td class="text-right">$10,000.00</td></tr>
-						<tr><td>Payouts</td>
-							<td class="text-right">$20,000.00</td></tr>
-						<tr><td>Closing Amount</td>
-							<td class="text-right">$8,200.00</td></tr>
-						<tr><td><strong class="text-uppercase">Variance</strong></td>
-							<td class="text-right"><big><strong>$44.20</strong></big></td></tr>
-					</tbody>
-				</table>
+				<section>
+					<table class="table">
+						<tbody>
+							<tr><td>Opening Amount</td>
+								<td class="text-right muted">$0.00</td></tr>
+							<tr><td>Cash Sale</td>
+								<td class="text-right">$12,344.00</td></tr>
+							<tr><td>Refunds</td>
+								<td class="text-right">$44.20</td></tr>
+							<tr><td>Payins</td>
+								<td class="text-right">$10,000.00</td></tr>
+							<tr><td>Payouts</td>
+								<td class="text-right">$20,000.00</td></tr>
+							<tr><td>Closing Amount</td>
+								<td class="text-right">$8,200.00</td></tr>
+							<tr><td><strong class="text-uppercase">Variance</strong></td>
+								<td class="text-right"><big><strong>$44.20</strong></big></td></tr>
+						</tbody>
+					</table>
 
+
+				</section>
+			</div>
+
+			<!-- Bottom Button -->
+			<section class="layout__row">
 				<button class="btn btn-secondary btn-lg btn-block btn-ripple text-uppercase">Print Z-Report</button>
-
 			</section>
-
 
 		</aside>
 
 
 
-		<main class="right">
-			<header>
+		<main class="right layout layout-rows">
+			<header class="layout__row">
 				<div class="header__icons">
 					<div href="help.html" class="btn icon icon-help" title="Help" onclick="demoDialogOpen('help')"></div>
 				</div>
 				<h1>Open Register</h1>
 			</header>
 
-			<section>
+			<section class="layout__row layout__row-grow">
 				<form class="form-narrow" method="get" action="register-close.html">
 					<div class="fieldset fieldset-lg fieldset-bordered fieldset-standalone">
 						<label class="fieldset__label" for="amount">Opening Amount:</label>
@@ -80,9 +85,15 @@
 						<textarea class="input fieldset__input" id="amount" placeholder="Click to add a Note"></textarea>
 					</div>
 
-					<button class="btn btn-lg btn-block btn-primary text-uppercase btn-ripple">Open Register</button>
 				</form>
 
+			</section>
+
+			<!-- Bottom Button -->
+			<section class="layout__row">
+				<div class="form-narrow">
+					<button class="btn btn-lg btn-block btn-primary text-uppercase btn-ripple">Open Register</button>
+				</div>
 			</section>
 
 		</main>
