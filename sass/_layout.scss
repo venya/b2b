@@ -130,7 +130,8 @@ article {
 		// display: flex;
 		// flex-flow: column;
 
-		border-right: dashed silver 1px;
+		// DEBUG:
+		// border-right: dashed silver 1px;
 
 		&-grow {
 			flex: 10;	// TODO: ???
@@ -148,7 +149,8 @@ article {
 		// display: flex;
 		// flex-flow: row;
 
-		border-bottom: dotted silver 1px;
+		// DEBUG:
+		// border-bottom: dotted silver 1px;
 
 		//	This row should take more space than others
 		&-grow {

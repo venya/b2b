@@ -38,11 +38,6 @@ article.pos {
 
 	main {
 		width: 100% - $pos-catalog-width;
-
-		.hmenu {
-			position: absolute;
-			bottom: 0;
-		}
 	}
 
 	main.disabled {
@@ -58,10 +53,6 @@ article.pos {
 	}
 
 	.toolbar-payments {
-		position: absolute;
-		width: 100%;
-		bottom: $hmenu-height;
-
 		&__secondary {
 			width: 100% - $pos-payment-primary-width;
 

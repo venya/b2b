@@ -16,7 +16,26 @@
 
 	<article class="pos">
 
-		<main class="pos-order">
+		<!-- Order-item template -->
+		<script type="text/html" id="demoOrderItemTemplate" class="order__item">
+			<div class="order__item-data">
+				<div class="order__item-data1">
+					<div class="order__item-qty">3&times;</div>
+					<div class="order__item-price">100.00</div>
+				</div>
+				<div class="order__item-data2">
+					<div class="order__item-total">300.00</div>
+					<div class="order__item-discount"></div>
+				</div>
+			</div>
+			<div class="order__item-product">
+				<div class="order__item-title">Sample Order Item</div>
+				<div class="order__item-info">No description</div>
+			</div>
+		</script>
+
+
+		<main class="pos-order layout layout-rows">
 			<header>
 				<button class="btn icon icon-menu" title="Menu"></button>
 				<div class="header__icons"><button class="btn icon icon-delete" title="Empty Order" onclick="demoEmptyOrder()"></button></div>
@@ -59,68 +78,54 @@
 				</div>
 			</div>
 
-			<section class="order">
-				<div class="order__empty hide" id="demo_order_empty">
-					<h5>Order is empty</h5>
-					<p>Add items from catalog</p>
-				</div>
+			<div class="order__empty layout__row layout__row-grow hide" id="demo_order_empty">
+				<h5>Order is empty</h5>
+				<p>Add items from catalog</p>
+			</div>
 
-				<script type="text/html" id="demoOrderItemTemplate" class="order__item">
+
+			<ul class="order__items order__items-interactive layout__row layout__row-grow" id="demo_order_items">
+				<li class="order__item" onclick="demoSetOrigin(this,'-20%','12%');demoEditItem()">
 					<div class="order__item-data">
 						<div class="order__item-data1">
-							<div class="order__item-qty">3&times;</div>
-							<div class="order__item-price">100.00</div>
+							<div class="order__item-qty">1&times;</div>
+							<div class="order__item-price">3.00</div>
 						</div>
 						<div class="order__item-data2">
-							<div class="order__item-total">300.00</div>
+							<div class="order__item-total">3.00</div>
 							<div class="order__item-discount"></div>
 						</div>
 					</div>
 					<div class="order__item-product">
-						<div class="order__item-title">Sample Order Item</div>
-						<div class="order__item-info">No description</div>
+						<div class="order__item-title">Hot Dog XL</div>
+						<div class="order__item-info">Click to duplicate in cart</div>
 					</div>
-				</script>
+				</li>
+				<li class="order__item order__item-active btn-ripple" onclick="demoSetOrigin(this,'-20%','20%');demoEditItem()">
+					<div class="order__item-data">
+						<div class="order__item-data1">
+							<div class="order__item-qty">2&times;</div>
+							<div class="order__item-price">100.00</div>
+						</div>
+						<div class="order__item-data2">
+							<div class="order__item-total">200.00</div>
+							<div class="order__item-discount">-5.10</div>
+						</div>
+					</div>
+					<div class="order__item-product">
+						<div class="order__item-title">T-Shirt with Print 23</div>
+						<div class="order__item-info">Long Sleeves, XL size, Black color</div>
+					</div>
+				</li>
+			</ul>
 
-				<ul class="order__items order__items-interactive" id="demo_order_items">
-					<li class="order__item" onclick="demoSetOrigin(this,'-20%','12%');demoEditItem()">
-						<div class="order__item-data">
-							<div class="order__item-data1">
-								<div class="order__item-qty">1&times;</div>
-								<div class="order__item-price">3.00</div>
-							</div>
-							<div class="order__item-data2">
-								<div class="order__item-total">3.00</div>
-								<div class="order__item-discount"></div>
-							</div>
-						</div>
-						<div class="order__item-product">
-							<div class="order__item-title">Hot Dog XL</div>
-							<div class="order__item-info">Click to duplicate in cart</div>
-						</div>
-					</li>
-					<li class="order__item order__item-active btn-ripple" onclick="demoSetOrigin(this,'-20%','20%');demoEditItem()">
-						<div class="order__item-data">
-							<div class="order__item-data1">
-								<div class="order__item-qty">2&times;</div>
-								<div class="order__item-price">100.00</div>
-							</div>
-							<div class="order__item-data2">
-								<div class="order__item-total">200.00</div>
-								<div class="order__item-discount">-5.10</div>
-							</div>
-						</div>
-						<div class="order__item-product">
-							<div class="order__item-title">T-Shirt with Print 23</div>
-							<div class="order__item-info">Long Sleeves, XL size, Black color</div>
-						</div>
-					</li>
-				</ul>
-			</section>
 
-			<div class="order-totals hide">
-				Order totals
+			<div class="order__totals">
+				Order totals<br>
+				Tax totals<br>
+				Discount totals
 			</div>
+
 
 			<div class="toolbar toolbar-payments">
 				<div class="toolbar__item toolbar-payments__secondary">

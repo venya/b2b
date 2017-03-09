@@ -1,16 +1,11 @@
 
 
 .order {
-	padding: 0;
-	@include auto-height($header-height + $toolbar-height+$base-delimiter-width + $hmenu-height + $btn-lg-height);
+	//	Meta-group for component naming only.
+	//	There is no element with this className
 
 	&__items {
 		background: $color-white;
-		// min-height: 200px;
-		// max-height: 400px;
-		overflow-y: auto;
-
-		@include auto-height(0px);	// Refactor !?
 
 		&-interactive {
 			.order__item {
@@ -42,6 +37,10 @@
 
 		&:empty {
 			display: none;
+
+			&+.order__totals {
+				display: none;
+			}
 		}
 	}
 
@@ -126,6 +125,8 @@
 	}
 
 
+	// Empty order message
+
 	&__empty {
 		text-align: center;
 		color: $color-text-muted;
@@ -139,6 +140,15 @@
 			background: $color-white;
 			border: dotted #cfcfcf 2px;
 		}
+	}
+
+
+	//	Subtotals
+
+	&__totals {
+		padding: $base-spacing $base-double-spacing;
+		background: $color-silver-light;
+		color: $color-gray;
 	}
 }
 
