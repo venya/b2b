@@ -416,7 +416,8 @@ textarea.input {
     padding-bottom: 13px; }
   .fieldset-radio {
     padding-top: 13px;
-    padding-bottom: 13px; }
+    padding-bottom: 13px;
+    padding-right: 0; }
     .fieldset-radio .fieldset__label {
       width: 33%; }
   .fieldset-textarea {
