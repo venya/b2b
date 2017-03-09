@@ -284,6 +284,8 @@ hr {
   background: #434c55;
   z-index: 2;
   overflow-y: auto; }
+  .menu::-webkit-scrollbar {
+    display: none; }
   .menu__mask {
     position: fixed;
     top: 0;
@@ -1241,6 +1243,9 @@ textarea.input {
 
 .padding2-right {
   padding-right: 20px; }
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; }
 
 .valign-middle {
   vertical-align: middle !important; }

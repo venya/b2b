@@ -58,6 +58,11 @@
 	padding-right: $base-double-spacing;
 }
 
+//	Disable scrollbar (but scrolling works)
+
+.no-scrollbar {
+	@include hide-scrollbar();
+}
 
 //	Vertical align options
 

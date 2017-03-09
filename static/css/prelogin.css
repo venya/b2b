@@ -87,6 +87,9 @@ table {
 .padding2-right {
   padding-right: 20px; }
 
+.no-scrollbar::-webkit-scrollbar {
+  display: none; }
+
 .valign-middle {
   vertical-align: middle !important; }
 
