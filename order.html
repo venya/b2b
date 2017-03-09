@@ -48,71 +48,75 @@
 
 
 
-		<main>
-			<header>
+		<main class="layout layout-rows">
+			<header class="layout__row">
 				<div class="header__icons">
 					<button class="btn icon icon-help" title="Help" onclick="demoDialogOpen('help')"></button>
 				</div>
 				<h1>Order #0123</h1>
 			</header>
 
-			<table class="table table-striped">
-				<thead>
-					<tr>
-						<th class="table__cell-first valign-middle">Order Item</th>
-						<th class="text-right valign-middle">Quantity</th>
-						<th class="text-right valign-middle">Item Price</th>
-						<th class="text-right valign-middle">Discount</th>
-						<th class="text-right valign-middle">Total</th>
-						<th class="text-right"><label class="checkbox"><input type="checkbox"><i class="icon"></i></label></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td class="table__cell-first">Hot-Dog</td>
-						<td class="text-right">2</td>
-						<td class="text-right">$5.00</td>
-						<td class="text-right"></td>
-						<td class="text-right">$10.00</td>
-						<td class="text-right"><label class="checkbox"><input type="checkbox"><i class="icon"></i></label></td>
-					</tr>
-					<tr>
-						<td class="table__cell-first">Hot-Dog XL<div class="muted">+Additional Ketchup</div></td>
-						<td class="text-right">1</td>
-						<td class="text-right">$8.00</td>
-						<td class="text-right">$1.00</td>
-						<td class="text-right">$7.00</td>
-						<td class="text-right"><label class="checkbox"><input type="checkbox" checked><i class="icon"></i></label></td>
-					</tr>
-					<tr>
-						<td class="table__cell-first">Whiskey</td>
-						<td class="text-right">200 <span class="muted">ml</span></td>
-						<td class="text-right">$8.00</td>
-						<td class="text-right">$1.00</td>
-						<td class="text-right">$7.00</td>
-						<td class="text-right"><label class="checkbox"><input type="checkbox"><i class="icon"></i></label></td>
-					</tr>
-					<tr>
-						<td class="table__cell-first">Very Good Wine<div class="muted">France, Glass Bottle, 700 ml</div></td>
-						<td class="text-right">11</td>
-						<td class="text-right">$1,048.90</td>
-						<td class="text-right">$48.90</td>
-						<td class="text-right">$11,480.00</td>
-						<td class="text-right"><label class="checkbox"><input type="checkbox"><i class="icon"></i></label></td>
-					</tr>
-				</tbody>
-			</table>
+			<div class="layout__row layout__row-grow">
+				<!-- Scrollable table -->
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th class="table__cell-first valign-middle">Order Item</th>
+							<th class="text-right valign-middle">Quantity</th>
+							<th class="text-right valign-middle">Item Price</th>
+							<th class="text-right valign-middle">Discount</th>
+							<th class="text-right valign-middle">Total</th>
+							<th class="text-right"><label class="checkbox"><input type="checkbox"><i class="icon"></i></label></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="table__cell-first">Hot-Dog</td>
+							<td class="text-right">2</td>
+							<td class="text-right">$5.00</td>
+							<td class="text-right"></td>
+							<td class="text-right">$10.00</td>
+							<td class="text-right"><label class="checkbox"><input type="checkbox"><i class="icon"></i></label></td>
+						</tr>
+						<tr>
+							<td class="table__cell-first">Hot-Dog XL<div class="muted">+Additional Ketchup</div></td>
+							<td class="text-right">1</td>
+							<td class="text-right">$8.00</td>
+							<td class="text-right">$1.00</td>
+							<td class="text-right">$7.00</td>
+							<td class="text-right"><label class="checkbox"><input type="checkbox" checked><i class="icon"></i></label></td>
+						</tr>
+						<tr>
+							<td class="table__cell-first">Whiskey</td>
+							<td class="text-right">200 <span class="muted">ml</span></td>
+							<td class="text-right">$8.00</td>
+							<td class="text-right">$1.00</td>
+							<td class="text-right">$7.00</td>
+							<td class="text-right"><label class="checkbox"><input type="checkbox"><i class="icon"></i></label></td>
+						</tr>
+						<tr>
+							<td class="table__cell-first">Very Good Wine<div class="muted">France, Glass Bottle, 700 ml</div></td>
+							<td class="text-right">11</td>
+							<td class="text-right">$1,048.90</td>
+							<td class="text-right">$48.90</td>
+							<td class="text-right">$11,480.00</td>
+							<td class="text-right"><label class="checkbox"><input type="checkbox"><i class="icon"></i></label></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 
-			<div class="layout">
-				<div class="layout__column padding2-left">
+
+			<section class="layout__row layout">
+				<div class="layout__column">
 					<button class="btn btn-lg btn-primary">Print Receipt</button>
 					<button class="btn btn-lg btn-default">Email Receipt</button>
 					<button class="btn btn-lg btn-default">Void</button>
 				</div>
-				<div class="layout__column padding2-right text-right">
+				<div class="layout__column text-right">
 					<button class="btn btn-lg btn-default">Refund</button>
 				</div>
-			</div>
+			</section>
 		</main>
 
 	</article>

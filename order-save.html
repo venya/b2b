@@ -26,15 +26,15 @@
 		</main>
 
 
-		<aside class="pos-paymentmethods cutout-left">
+		<aside class="pos-paymentmethods cutout-left layout layout-rows">
 
-			<header class="cutout-left">
+			<header class="cutout-left layout__row">
 				<div class="header__icons"><button class="btn icon icon-help" title="Help" onclick="demoDialogOpen('help')"></button></div>
 				<h1>Save Order</h1>
 			</header>
 
-			<section>
-				<form class="form-narrow" method="get" action="pos.html">
+			<section class="layout__row layout__row-grow">
+				<div class="form-narrow" method="get" action="pos.html">
 
 					<div class="layout fieldset-standalone text-right">
 						<p class="layout__column labeled-info">
@@ -82,10 +82,17 @@
 
 					</div>
 
-					<button class="btn btn-primary btn-lg btn-block text-uppercase">Save Order</button>
 
-				</form>
+				</div>
 			</section>
+
+
+			<section class="layout__row">
+				<div class="form-narrow">
+					<button class="btn btn-primary btn-lg btn-block text-uppercase">Save Order</button>
+				</div>
+			</section>
+
 
 		</aside>
 

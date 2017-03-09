@@ -26,14 +26,14 @@
 		</main>
 
 
-		<aside class="pos-paymentmethods cutout-left">
+		<aside class="layout layout-rows cutout-left">
 
 			<header class="cutout-left">
 				<div class="header__icons"><button class="btn icon icon-help" title="Help" onclick="demoDialogOpen('help')"></button></div>
 				<h1>Order Taxes</h1>
 			</header>
 
-			<section>
+			<section class="layout__row layout__row-grow">
 				<p><br></p>
 				<form class="form-narrow" method="get" action="pos.html">
 
@@ -60,11 +60,14 @@
 						
 					</div>
 
-
-					<button class="btn btn-lg btn-block btn-primary text-uppercase btn-ripple">Done</button>
-
-
 				</form>
+			</section>
+
+
+			<section class="layout__row">
+				<div class="form-narrow">
+					<button class="btn btn-lg btn-block btn-primary text-uppercase btn-ripple">Done</button>
+				</div>
 			</section>
 
 
