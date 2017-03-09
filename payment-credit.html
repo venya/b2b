@@ -26,14 +26,14 @@
 		</main>
 
 
-		<aside class="pos-paymentmethods cutout-left">
+		<aside class="pos-paymentmethods cutout-left layout layout-rows">
 
-			<header class="cutout-left">
+			<header class="cutout-left layout__row">
 				<div class="header__icons"><button class="btn icon icon-help" title="Help" onclick="demoDialogOpen('help')"></button></div>
 				<h1>Credit Card Payment</h1>
 			</header>
 
-			<section>
+			<section class="layout__row layout__row-grow">
 				<form class="form-narrow" method="get" action="payment-receipt.html">
 
 					<div class="layout fieldset-standalone padding2-right">
@@ -72,7 +72,7 @@
 
 					</div>
 
-					<div class="fieldset fieldset-radio fieldset-bordered fieldset-standalone">
+					<div class="fieldset fieldset-radio fieldset-bordered">
 						<label class="fieldset__label no-wrap">Tips and Signature</label>
 						<div class="fieldset__control">
 							<label class="radio fieldset__label">
@@ -90,12 +90,15 @@
 						</div>
 					</div>
 
-					<button class="btn btn-primary btn-lg btn-block" onclick="return demoDialogOpen('terminal')">Continue</button>
-
-
 				</form>
 			</section>
 
+			<!-- Bottom aligned button -->
+			<section class="layout__row">
+				<div class="form-narrow">
+					<button class="btn btn-primary btn-lg btn-block" onclick="return demoDialogOpen('terminal')">Continue</button>
+				</div>
+			</section>
 
 		</aside>
 

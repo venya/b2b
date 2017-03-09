@@ -131,11 +131,15 @@ article {
 		// flex-flow: column;
 
 		border-right: dashed silver 1px;
+
+		&-grow {
+			flex: 10;	// TODO: ???
+		}
 	}
 
 	&__column-gap {
 		width: $base-double-spacing;
-		flex: 0;	// TODO ?
+		flex: 0 0 $base-double-spacing;	// TODO ?
 	}
 
 	//	Vertical layout (rows)

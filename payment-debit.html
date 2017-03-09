@@ -26,14 +26,14 @@
 		</main>
 
 
-		<aside class="pos-paymentmethods cutout-left">
+		<aside class="pos-paymentmethods cutout-left layout layout-rows">
 
-			<header class="cutout-left">
+			<header class="cutout-left layout__row">
 				<div class="header__icons"><button class="btn icon icon-help" title="Help" onclick="demoDialogOpen('help')"></button></div>
 				<h1>Debit Card Payment</h1>
 			</header>
 
-			<section>
+			<section class="layout__row layout__row-grow">
 				<form class="form-narrow" method="get" action="payment-receipt.html">
 
 					<div class="layout fieldset-standalone">
@@ -57,10 +57,14 @@
 						</div>
 					</div>
 
-					<button class="btn btn-primary btn-lg btn-block" onclick="demoDialogOpen('terminal'); return false;">Continue</button>
-
 
 				</form>
+			</section>
+
+			<section class="layout__row">
+				<div class="form-narrow">
+					<button class="btn btn-primary btn-lg btn-block" onclick="demoDialogOpen('terminal'); return false;">Continue</button>
+				</div>
 			</section>
 
 

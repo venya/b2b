@@ -26,14 +26,14 @@
 		</main>
 
 
-		<aside class="pos-paymentmethods cutout-left">
+		<aside class="pos-paymentmethods cutout-left layout layout-rows">
 
-			<header class="cutout-left">
+			<header class="cutout-left layout__row">
 				<div class="header__icons"><button class="btn icon icon-help" title="Help" onclick="demoDialogOpen('help')"></button></div>
 				<h1>Receipt #001234</h1>
 			</header>
 
-			<section>
+			<section class="layout__row layout__row-grow">
 				<form class="form-narrow" method="get" action="pos.html">
 
 					<div class="layout fieldset-standalone">
@@ -95,9 +95,15 @@
 						<div class="fieldset__input text-right"><input class="toggle toggle-success" id="loyalty" type="checkbox"></div>
 					</div>
 
-					<button class="btn btn-primary btn-lg btn-block text-uppercase">Done</button>
 
 				</form>
+			</section>
+
+			<!-- Bottom aligned button -->
+			<section class="layout__row">
+				<div class="form-narrow">
+					<button class="btn btn-primary btn-lg btn-block text-uppercase">Done</button>
+				</div>
 			</section>
 
 		</aside>
