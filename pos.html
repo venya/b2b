@@ -4,7 +4,6 @@
 	<meta charset=utf-8>
 	<title>eHopper POS</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 	<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
 	<link rel="stylesheet" type="text/css" href="static/css/pos.css">
 	<script src="static/js/demo.js"></script>
@@ -98,7 +97,7 @@
 					</div>
 					<div class="order__item-product">
 						<div class="order__item-title">Hot Dog XL</div>
-						<div class="order__item-info">Click to duplicate in cart</div>
+						<div class="order__item-info"><span class="order__item-note">Note</span>Click to duplicate in cart</div>
 					</div>
 				</li>
 				<li class="order__item order__item-active btn-ripple" onclick="demoSetOrigin(this,'-20%','20%');demoEditItem()">
@@ -121,7 +120,7 @@
 
 
 			<div class="order__totals">
-				Order totals<br>
+				Order totals<br><big class="muted pull-right">TBD</big>
 				Tax totals<br>
 				Discount totals
 			</div>
@@ -266,7 +265,7 @@
 
 
 		<!-- Edit Item: quantity, discount, etc -->
-		<aside class="pos-edit cutout-left hide" style="transform-origin: -20% 200px" id="demoPosEditor">
+		<aside class="pos-edit cutout-left layout layout-rows hide" style="transform-origin: -20% 200px" id="demoPosEditor">
 			<header class="cutout-left">
 				<!-- <div class="header__icons"><button class="btn icon icon-close" onclick="demoEditItem()"></button></div> -->
 				<i class="btn icon icon-back" onclick="demoEditItem()"></i>
@@ -274,35 +273,40 @@
 			</header>
 
 
-			<div class="tabbed">
-				<!-- Tabs -->
-				<ul class="tabs tabs-lg tabs-flex pos-edit__tabs">
-					<li class="tabs__item tabs__item-active cutout-left" data-tab="qty">
-						<div class="tabs__item-label">Quantity:</div>
-						<big class="tabs__item-value">20</big>
-					</li>
-					<li class="tabs__item" data-tab="price">
-						<div class="tabs__item-label">Price:</div>
-						<big class="tabs__item-value">100.00</big>
-					</li>
-					<li class="tabs__item" data-tab="discount">
-						<div class="tabs__item-label">Discount:</div>
-						<big class="tabs__item-value">15%</big>
-					</li>
-					<li class="tabs__item" data-tab="mods">
-						<div class="tabs__item-label">Modifiers:</div>
-						<big class="tabs__item-value">Small, Salami</big>
-					</li>
-					<li class="tabs__item" data-tab="serials">
-						<div class="tabs__item-label">Serials:</div>
-						<big class="tabs__item-value">TST012345</big>
-					</li>
-					<li class="tabs__item" data-tab="note">
-						<div class="tabs__item-label">Notes:</div>
-						<big class="tabs__item-value muted">none</big>
-					</li>
-				</ul>
-				<br>
+			<!-- Tabs -->
+			<ul class="tabs tabs-lg tabs-flex pos-edit__tabs">
+				<li class="tabs__item tabs__item-active cutout-left padding2-left" data-tab="qty">
+					<div class="tabs__item-label">Quantity</div>
+					<big class="tabs__item-value">20</big>
+				</li>
+				<li class="tabs__item" data-tab="price">
+					<div class="tabs__item-label">Price</div>
+					<big class="tabs__item-value">100.00</big>
+				</li>
+				<li class="tabs__item" data-tab="discount">
+					<div class="tabs__item-label">Discount</div>
+					<big class="tabs__item-value">15%</big>
+				</li>
+				<li class="tabs__item" data-tab="mods">
+					<div class="tabs__item-label">Modifiers</div>
+					<big class="tabs__item-value">Small, Salami</big>
+				</li>
+				<li class="tabs__item" data-tab="matrix">
+					<div class="tabs__item-label">Matrix</div>
+					<big class="tabs__item-value">&hellip;</big>
+				</li>
+				<li class="tabs__item" data-tab="serials">
+					<div class="tabs__item-label">Serials</div>
+					<big class="tabs__item-value">TST012345</big>
+				</li>
+				<li class="tabs__item" data-tab="note">
+					<div class="tabs__item-label">Notes</div>
+					<big class="tabs__item-value muted">none</big>
+				</li>
+			</ul>
+
+
+			<div class="tabbed layout__row layout__row-grow">
 
 				<!-- Tab: Quantity  -->
 				<section class="tabbed__panel tabbed__panel-active" data-tab="qty">
@@ -404,149 +408,165 @@
 
 
 				<!-- Tab: Modifiers  -->
-				<section class="tabbed__panel pos-edit__mods" data-tab="mods">
-					<form onsubmit="demoEditItem(); return false;">
-						<h2>Size</h2>
+				<section class="tabbed__panel" data-tab="mods">
+					<form class="layout layout-rows h100" onsubmit="demoEditItem(); return false;">
+						<div class="layout__row layout__row-grow pos-edit__mods">
+							
+							<h2>Size</h2>
 
-						<div class="grid grid-4-col grid-normal-spacing">
-							<div class="grid__item">
-								<div class="card card-interactive card-selected-marked btn-ripple big" onclick="demoToggleModifier(this)">
-									<div class="card__corner">$10.00</div>
-									<div class="card__content text-overflow">Small</div>
+							<div class="grid grid-4-col grid-normal-spacing">
+								<div class="grid__item">
+									<div class="card card-interactive card-selected-marked btn-ripple big" onclick="demoToggleModifier(this)">
+										<div class="card__corner">$10.00</div>
+										<div class="card__content text-overflow">Small</div>
+									</div>
+								</div>
+								<div class="grid__item">
+									<div class="card card-selected card-interactive card-selected-marked btn-ripple big" onclick="demoToggleModifier(this)">
+										<div class="card__corner">$15.00</div>
+										<div class="card__content text-overflow">Medium</div>
+									</div>
+								</div>
+								<div class="grid__item">
+									<div class="card card-interactive card-selected-marked btn-ripple big" onclick="demoToggleModifier(this)">
+										<div class="card__corner">$19.00</div>
+										<div class="card__content text-overflow">Large</div>
+									</div>
+								</div>
+								<div class="grid__item">
+									<div class="card card-interactive card-selected-marked btn-ripple big" onclick="demoToggleModifier(this)">
+										<div class="card__corner">$25,000.00</div>
+										<div class="card__content text-overflow">Extra Large XXXXL with long description</div>
+									</div>
 								</div>
 							</div>
-							<div class="grid__item">
-								<div class="card card-selected card-interactive card-selected-marked btn-ripple big" onclick="demoToggleModifier(this)">
-									<div class="card__corner">$15.00</div>
-									<div class="card__content text-overflow">Medium</div>
+
+							<h2>Add-Ons</h2>
+
+							<div class="grid grid-4-col grid-normal-spacing">
+								<div class="grid__item">
+									<div class="card card-interactive card-selected-marked btn-ripple" onclick="demoToggleModifier(this)">
+										<div class="card__corner">+$2.00</div>
+										<div class="card__content text-overflow">Double Cheese Topping</div>
+									</div>
+								</div>
+								<div class="grid__item">
+									<div class="card card-selected card-interactive card-selected-marked btn-ripple" onclick="demoToggleModifier(this)">
+										<div class="card__corner">+$3.00</div>
+										<div class="card__content text-overflow">Salami</div>
+									</div>
+								</div>
+								<div class="grid__item">
+									<div class="card card-selected card-interactive card-selected-marked btn-ripple" onclick="demoToggleModifier(this)">
+										<div class="card__corner">+$3.00</div>
+										<div class="card__content text-overflow">Tomatos</div>
+									</div>
 								</div>
 							</div>
-							<div class="grid__item">
-								<div class="card card-interactive card-selected-marked btn-ripple big" onclick="demoToggleModifier(this)">
-									<div class="card__corner">$19.00</div>
-									<div class="card__content text-overflow">Large</div>
+
+							<h2>Exceptions</h2>
+
+							<div class="grid grid-4-col grid-normal-spacing fieldset-standalone">
+								<div class="grid__item">
+									<div class="card card-interactive card-selected-marked btn-ripple" onclick="demoToggleModifier(this)">
+										<div class="card__corner">&minus;$1.00</div>
+										<div class="card__content text-overflow">No Box Packaging</div>
+									</div>
 								</div>
 							</div>
-							<div class="grid__item">
-								<div class="card card-interactive card-selected-marked btn-ripple big" onclick="demoToggleModifier(this)">
-									<div class="card__corner">$25,000.00</div>
-									<div class="card__content text-overflow">Extra Large XXXXL with long description</div>
-								</div>
-							</div>
+
 						</div>
 
-						<h2>Add-Ons</h2>
-
-						<div class="grid grid-4-col grid-normal-spacing">
-							<div class="grid__item">
-								<div class="card card-interactive card-selected-marked btn-ripple" onclick="demoToggleModifier(this)">
-									<div class="card__corner">+$2.00</div>
-									<div class="card__content text-overflow">Double Cheese Topping</div>
-								</div>
-							</div>
-							<div class="grid__item">
-								<div class="card card-selected card-interactive card-selected-marked btn-ripple" onclick="demoToggleModifier(this)">
-									<div class="card__corner">+$3.00</div>
-									<div class="card__content text-overflow">Salami</div>
-								</div>
-							</div>
-							<div class="grid__item">
-								<div class="card card-selected card-interactive card-selected-marked btn-ripple" onclick="demoToggleModifier(this)">
-									<div class="card__corner">+$3.00</div>
-									<div class="card__content text-overflow">Tomatos</div>
-								</div>
-							</div>
+						<div class="pos-edit__mods padding-top">
+							<button class="btn btn-lg btn-block btn-primary text-uppercase btn-ripple">Done</button>
 						</div>
-
-						<h2>Exceptions</h2>
-
-						<div class="grid grid-4-col grid-normal-spacing fieldset-standalone">
-							<div class="grid__item">
-								<div class="card card-interactive card-selected-marked btn-ripple" onclick="demoToggleModifier(this)">
-									<div class="card__corner">&minus;$1.00</div>
-									<div class="card__content text-overflow">No Box Packaging</div>
-								</div>
-							</div>
-						</div>
-
-						<button class="btn btn-lg btn-block btn-primary text-uppercase btn-ripple">Done</button>
 					</form>
 				</section>
 
 
 				<!-- Tab: Matrixed Product  -->
-				<section class="tabbed__panel pos-edit__matrix" data-tab="matrix">
-					<form onsubmit="demoEditItem(); return false;">
+				<section class="tabbed__panel" data-tab="matrix">
+					<form class="layout layout-rows h100" onsubmit="demoEditItem(); return false;">
 
-						<div class="grid grid-4-col grid-normal-spacing">
-							<div class="grid__item">
-								<div class="card card-interactive btn-ripple" onclick="demoToggleModifier(this)">
-									<div class="card__content text-overflow big">Product Model</div>
-									<div class="card__footer">Long Sleeves</div>
+						<div class="layout__row layout__row-grow pos-edit__matrix">
+							<div class="grid grid-4-col grid-normal-spacing">
+								<div class="grid__item">
+									<div class="card card-interactive btn-ripple" onclick="demoToggleModifier(this)">
+										<div class="card__content text-overflow big">Product Model</div>
+										<div class="card__footer">Long Sleeves</div>
+									</div>
+								</div>
+								<div class="grid__item">
+									<div class="card card-selected card-interactive btn-ripple" onclick="demoToggleModifier(this)">
+										<div class="card__content text-overflow big">Size</div>
+										<div class="card__footer">M (Medium)</div>
+									</div>
+								</div>
+								<div class="grid__item">
+									<div class="card card-interactive btn-ripple" onclick="demoToggleModifier(this)">
+										<div class="card__content text-overflow big">Color</div>
+										<div class="card__footer">&nbsp;</div>
+									</div>
 								</div>
 							</div>
-							<div class="grid__item">
-								<div class="card card-selected card-interactive btn-ripple" onclick="demoToggleModifier(this)">
-									<div class="card__content text-overflow big">Size</div>
-									<div class="card__footer">M (Medium)</div>
+
+							<h2>Size</h2>
+
+							<div class="grid grid-4-col grid-normal-spacing fieldset-standalone">
+								<div class="grid__item">
+									<div class="card card-interactive card-selected-marked btn-ripple big" onclick="demoToggleModifier(this)">
+										<div class="card__content text-overflow">XS (Extra Small)</div>
+									</div>
 								</div>
-							</div>
-							<div class="grid__item">
-								<div class="card card-interactive btn-ripple" onclick="demoToggleModifier(this)">
-									<div class="card__content text-overflow big">Color</div>
-									<div class="card__footer">&nbsp;</div>
+								<div class="grid__item">
+									<div class="card card-interactive card-selected-marked btn-ripple big" onclick="demoToggleModifier(this)">
+										<div class="card__content text-overflow">S (Small)</div>
+									</div>
+								</div>
+								<div class="grid__item">
+									<div class="card card-selected card-interactive card-selected-marked btn-ripple big" onclick="demoToggleModifier(this)">
+										<div class="card__content text-overflow">M (Medium)</div>
+									</div>
+								</div>
+								<div class="grid__item">
+									<div class="card card-interactive card-selected-marked btn-ripple big" onclick="demoToggleModifier(this)">
+										<div class="card__content text-overflow">L (Large)</div>
+									</div>
+								</div>
+								<div class="grid__item">
+									<div class="card card-interactive card-selected-marked btn-ripple big" onclick="demoToggleModifier(this)">
+										<div class="card__corner">$23.00</div>
+										<div class="card__content text-overflow">XL (Extra Large)</div>
+									</div>
 								</div>
 							</div>
 						</div>
 
-						<h2>Size</h2>
-
-						<div class="grid grid-4-col grid-normal-spacing fieldset-standalone">
-							<div class="grid__item">
-								<div class="card card-interactive card-selected-marked btn-ripple big" onclick="demoToggleModifier(this)">
-									<div class="card__content text-overflow">XS (Extra Small)</div>
-								</div>
-							</div>
-							<div class="grid__item">
-								<div class="card card-interactive card-selected-marked btn-ripple big" onclick="demoToggleModifier(this)">
-									<div class="card__content text-overflow">S (Small)</div>
-								</div>
-							</div>
-							<div class="grid__item">
-								<div class="card card-selected card-interactive card-selected-marked btn-ripple big" onclick="demoToggleModifier(this)">
-									<div class="card__content text-overflow">M (Medium)</div>
-								</div>
-							</div>
-							<div class="grid__item">
-								<div class="card card-interactive card-selected-marked btn-ripple big" onclick="demoToggleModifier(this)">
-									<div class="card__content text-overflow">L (Large)</div>
-								</div>
-							</div>
-							<div class="grid__item">
-								<div class="card card-interactive card-selected-marked btn-ripple big" onclick="demoToggleModifier(this)">
-									<div class="card__corner">$23.00</div>
-									<div class="card__content text-overflow">XL (Extra Large)</div>
-								</div>
-							</div>
+						<div class="layout__row pos-edit__matrix">
+							<button class="btn btn-lg btn-block btn-primary text-uppercase btn-ripple">Done</button>
 						</div>
-
-						<button class="btn btn-lg btn-block btn-primary text-uppercase btn-ripple">Done</button>
 					</form>
 				</section>
 
 
 				<!-- Tab: Serials  -->
-				<section class="tabbed__panel pos-edit__serials" data-tab="serials">
-					<form onsubmit="demoEditItem(); return false;">
-						<p>Select serial number of product you're selling:</p>
-						<div class="grid grid-3-col grid-normal-spacing fieldset-standalone">
-							<div class="grid__item"><a class="card card-selected card-interactive" onclick="demoToggleModifier(this)"><div class="card__content big text-overflow">79049XXXA4S</div></a></div>
-							<div class="grid__item"><a class="card card-interactive" onclick="demoToggleModifier(this)"><div class="card__content big text-overflow">30384XXX991</div></a></div>
-							<div class="grid__item"><a class="card card-interactive" onclick="demoToggleModifier(this)"><div class="card__content big text-overflow">ULTRALONG-003233XX991-003233XX991</div></a></div>
-							<div class="grid__item"><a class="card card-interactive" onclick="demoToggleModifier(this)"><div class="card__content big text-overflow">TST0012345</div></a></div>
+				<section class="tabbed__panel" data-tab="serials">
+					<form class="layout layout-rows h100" onsubmit="demoEditItem(); return false;">
+
+						<div class="layout__row layout__row-grow pos-edit__serials">
+							<p>Select serial number of product you're selling:</p>
+							<div class="grid grid-3-col grid-normal-spacing">
+								<div class="grid__item"><a class="card card-selected card-interactive" onclick="demoToggleModifier(this)"><div class="card__content big text-overflow">79049XXXA4S</div></a></div>
+								<div class="grid__item"><a class="card card-interactive" onclick="demoToggleModifier(this)"><div class="card__content big text-overflow">30384XXX991</div></a></div>
+								<div class="grid__item"><a class="card card-interactive" onclick="demoToggleModifier(this)"><div class="card__content big text-overflow">ULTRALONG-003233XX991-003233XX991</div></a></div>
+								<div class="grid__item"><a class="card card-interactive" onclick="demoToggleModifier(this)"><div class="card__content big text-overflow">TST0012345</div></a></div>
+							</div>							
 						</div>
 
-						<button class="btn btn-lg btn-block btn-primary text-uppercase btn-ripple">Done</button>
+						<div class="layout__row pos-edit__serials">
+							<button class="btn btn-lg btn-block btn-primary text-uppercase btn-ripple">Done</button>
+						</div>
+
 					</form>
 				</section>
 

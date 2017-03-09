@@ -10,6 +10,9 @@
 .w50 {
 	width: 50%;
 }
+.h100 {
+	height: 100%;
+}
 
 
 .cutout-left {
@@ -38,6 +41,9 @@
 .no-vpadding {
 	padding-top: 0 !important;
 	padding-bottom: 0 !important;
+}
+.padding-top {
+	padding-top: $base-spacing;
 }
 .padding-left {
 	padding-left: $base-spacing;

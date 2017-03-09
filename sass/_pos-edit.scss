@@ -26,12 +26,19 @@
 	.tabs {
 		border-top: 0;
 	}
+	.tabbed {
+		&__panel {
+			padding-top: 2 * $base-double-spacing;
+			box-sizing: border-box;
+			height: 100%;
+		}
+	}
 
 	// Specific tabs
 
 	&__mods,
 	&__matrix {
-		padding: 0 $base-double-spacing * 2;
+		padding: 0 $base-double-spacing;
 
 		h2 {
 			margin: $base-spacing 0 $base-spacing;
@@ -56,7 +63,8 @@
 	}
 
 	&__serials{
-		padding: 0 $base-double-spacing * 2;
+		padding-left: $base-double-spacing;
+		padding-right: $base-double-spacing;
 	}
 }
 

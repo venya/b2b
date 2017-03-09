@@ -249,7 +249,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	});
 
 	//	Bind .tabbed component
-	forEvery(document, ".tabbed .tabs__item", function(el) {
+	forEvery(document, ".tabs .tabs__item", function(el) {
 		var group = el.parentElement.parentElement;	// TODO! remove hardcode
 		// console.log(el);
 		el.onclick = function() {

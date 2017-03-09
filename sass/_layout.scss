@@ -127,11 +127,6 @@ article {
 	//	Horizontal layout (columns)
 	&__column {
 		flex: 1;
-		// display: flex;
-		// flex-flow: column;
-
-		// DEBUG:
-		// border-right: dashed silver 1px;
 
 		&-grow {
 			flex: 10;	// TODO: ???
@@ -146,11 +141,6 @@ article {
 	//	Vertical layout (rows)
 	&__row {
 		flex: content;	// How to define 0 ???
-		// display: flex;
-		// flex-flow: row;
-
-		// DEBUG:
-		// border-bottom: dotted silver 1px;
 
 		//	This row should take more space than others
 		&-grow {

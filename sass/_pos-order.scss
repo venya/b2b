@@ -147,7 +147,8 @@
 
 	&__totals {
 		padding: $base-spacing $base-double-spacing;
-		background: $color-silver-light;
+		background: $color-silver-superlight;
+		border-top: solid $color-delimiter $base-delimiter-width;
 		color: $color-gray;
 	}
 }

@@ -1197,6 +1197,9 @@ textarea.input {
 .w50 {
   width: 50%; }
 
+.h100 {
+  height: 100%; }
+
 .cutout-left {
   box-shadow: inset 6px 0 4px -5px rgba(0, 0, 0, 0.2); }
 
@@ -1222,6 +1225,9 @@ textarea.input {
 .no-vpadding {
   padding-top: 0 !important;
   padding-bottom: 0 !important; }
+
+.padding-top {
+  padding-top: 10px; }
 
 .padding-left {
   padding-left: 10px; }
@@ -1596,7 +1602,8 @@ textarea.input {
 
 .order__totals {
   padding: 10px 20px;
-  background: #eeeeee;
+  background: #f8f8f8;
+  border-top: solid rgba(0, 0, 0, 0.1) 1px;
   color: #434c55; }
 
 .categories,
@@ -1741,8 +1748,12 @@ textarea.input {
       overflow: hidden; }
   .pos-edit .tabs {
     border-top: 0; }
+  .pos-edit .tabbed__panel {
+    padding-top: 40px;
+    box-sizing: border-box;
+    height: 100%; }
   .pos-edit__mods, .pos-edit__matrix {
-    padding: 0 40px; }
+    padding: 0 20px; }
     .pos-edit__mods h2, .pos-edit__matrix h2 {
       margin: 10px 0 10px;
       clear: both; }
@@ -1757,7 +1768,8 @@ textarea.input {
       top: 0;
       left: 10px; }
   .pos-edit__serials {
-    padding: 0 40px; }
+    padding-left: 20px;
+    padding-right: 20px; }
 
 .animated .pos-edit {
   transition: transform 200ms ease-out;
