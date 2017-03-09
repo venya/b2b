@@ -127,9 +127,11 @@ article {
   .layout__column {
     flex: 1;
     border-right: dashed silver 1px; }
+    .layout__column-grow {
+      flex: 10; }
   .layout__column-gap {
     width: 20px;
-    flex: 0; }
+    flex: 0 0 20px; }
   .layout__row {
     flex: content;
     border-bottom: dotted silver 1px; }

@@ -26,14 +26,14 @@
 		</main>
 
 
-		<aside class="split-payment cutout-left">
+		<aside class="split-payment cutout-left layout layout-rows">
 
-			<header class="cutout-left">
+			<header class="cutout-left layout__row">
 				<div class="header__icons"><button class="btn icon icon-help" title="Help" onclick="demoDialogOpen('help')"></button></div>
 				<h1>Split Payment</h1>
 			</header>
 
-			<section>
+			<section class="layout__row layout__row-grow">
 				<form class="form-narrow" method="get" action="payment-cash.html">
 					
 
@@ -41,7 +41,7 @@
 						<div class="layout__column">
 							<span class="btn btn-xl btn-secondary btn-ripple">&minus;</span>
 						</div>
-						<div class="layout__column w100">
+						<div class="layout__column layout__column-grow">
 							<div class="fieldset fieldset-lg">
 								<label class="fieldset__label">Payments</label>
 								<span class="input input-xl fieldset__input text-right">3</span>
@@ -55,7 +55,7 @@
 
 					<div class="fieldset fieldset-bordered fieldset-standalone layout no-padding">
 						<div class="layout__column valign-middle"><label class="fieldset__label" for="amount_1">1</label></div>
-						<div class="layout__column w50">
+						<div class="layout__column layout__column-grow">
 							<select class="input input-lg fieldset__input w100">
 								<option>Cash</option>
 								<option>Credit Card</option>
@@ -63,7 +63,7 @@
 								<option>External Payment</option>
 							</select>
 						</div>
-						<div class="layout__column w50 padding-right">
+						<div class="layout__column layout__column-grow padding-right">
 							<input class="input input-lg fieldset__input text-right w100" value="100.00" id="amount_1">
 						</div>
 						<div class="layout__column"><button class="btn btn-lg btn-default btn-ripple btn-split-action">Charge</button></div>
@@ -72,7 +72,7 @@
 
 					<div class="fieldset fieldset-bordered fieldset-standalone layout no-padding">
 						<div class="layout__column valign-middle"><label class="fieldset__label" for="amount_1">1</label></div>
-						<div class="layout__column w50">
+						<div class="layout__column layout__column-grow">
 							<select class="input input-lg fieldset__input w100">
 								<option>Cash</option>
 								<option selected>Credit Card</option>
@@ -80,35 +80,35 @@
 								<option>External Payment</option>
 							</select>
 						</div>
-						<div class="layout__column w50 padding-right">
+						<div class="layout__column layout__column-grow padding-right">
 							<input class="input input-lg fieldset__input text-right w100" value="100.00" id="amount_1">
 						</div>
 						<div class="layout__column"><button class="btn btn-lg btn-default btn-ripple btn-split-action">Charge</button></div>
 					</div>
 
 
-
-					<div class="fieldset fieldset-bordered fieldset-standalone layout no-padding">
+					<div class="fieldset fieldset-bordered layout no-padding">
 						<div class="layout__column valign-middle"><label class="fieldset__label" for="amount_2">2</label></div>
-						<div class="layout__column w50">
+						<div class="layout__column layout__column-grow">
 							<i class="icon icon-checked text-success"></i>
 							<span class="input input-lg input-text muted">Cash</span>
 						</div>
-						<div class="layout__column w50 padding-right text-right">
+						<div class="layout__column layout__column-grow padding-right text-right">
 							<span class="input input-lg input-text muted">100.00</span>
 						</div>
-						<div class="layout__column"></div>
 						<div class="layout__column"><span class="btn btn-lg btn-default btn-ripple btn-split-action">Void</span></div>
 					</div>
-
-
-
-
-					<button class="btn btn-lg btn-block btn-primary">Done</button>
 
 				</form>
 			</section>
 
+
+			<!-- Bottom button -->
+			<section class="layout__row">
+				<div class="form-narrow">
+					<button class="btn btn-lg btn-block btn-primary">Done</button>
+				</div>
+			</section>
 
 		</aside>
 
