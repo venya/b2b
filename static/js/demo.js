@@ -49,9 +49,9 @@ function demoEditItem(tab) {
 	toggleClass(document.querySelector('.pos-edit'), 'hide');
 	toggleClass(document.querySelector('main.pos-order'), 'disabled');
 	toggleClass(document.querySelector('#demo_order_items'), 'order__items-interactive');
-	console.log(tab);
+	// console.log(tab);
 	if (tab != undefined) {
-		console.log("Swith to tab:", tab);
+		console.log("Switch to tab:", tab);
 	}
 }
 //	Sets X,Y point (relative to right-panel)
@@ -60,12 +60,11 @@ function demoEditItem(tab) {
 function demoSetOrigin(card, x, y) {
 	var box = demoPosEditor;
 	box.style.transformOrigin = x + " " + y;
-	console.log(card.style);
-	console.log(box.style.transformOrigin);
+	// console.log(card.style);
+	// console.log(box.style.transformOrigin);
 }
 
 function demoManualRefund() {
-	console.log("Manual refund mode");
 	toggleClass(demoOrderPanel, 'refund-mode');
 	
 	//	Hide menu, leaving on this page
