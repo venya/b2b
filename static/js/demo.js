@@ -64,6 +64,15 @@ function demoSetOrigin(card, x, y) {
 	console.log(box.style.transformOrigin);
 }
 
+function demoManualRefund() {
+	console.log("Manual refund mode");
+	toggleClass(demoOrderPanel, 'refund-mode');
+	
+	//	Hide menu, leaving on this page
+	toggleClass(document.querySelector(".menu"), 'menu-active', false);
+	return false;
+}
+
 
 function demoDuplicateItem(item) {
 	// var html = item.outerHTML;

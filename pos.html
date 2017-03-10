@@ -34,7 +34,7 @@
 		</script>
 
 
-		<main class="pos-order layout layout-rows">
+		<main class="pos-order layout layout-rows" id="demoOrderPanel">
 			<header>
 				<button class="btn icon icon-menu" title="Menu"></button>
 				<div class="header__icons"><button class="btn icon icon-delete" title="Empty Order" onclick="demoEmptyOrder()"></button></div>
@@ -97,7 +97,7 @@
 					</div>
 					<div class="order__item-product">
 						<div class="order__item-title">Hot Dog XL</div>
-						<div class="order__item-info"><span class="order__item-note">Note</span>Click to duplicate in cart</div>
+						<div class="order__item-info"><b class="order__item-note">Note</b> Click to duplicate in cart</div>
 					</div>
 				</li>
 				<li class="order__item order__item-active btn-ripple" onclick="demoSetOrigin(this,'-20%','20%');demoEditItem()">
@@ -119,11 +119,11 @@
 			</ul>
 
 
-			<div class="order__totals">
+			<a class="order__totals" href="order-taxes">
 				Order totals<br><big class="muted pull-right">TBD</big>
 				Tax totals<br>
 				Discount totals
-			</div>
+			</a>
 
 
 			<div class="toolbar toolbar-payments">
@@ -236,13 +236,13 @@
 						<div class="products__item-title">Pizza Salami</div>
 						<div class="products__item-price">15.00</div>
 					</li>
+					<li class="products__item btn-ripple" style="background-image: url(static/img/products/shrimps.png)">
+						<div class="products__item-title">Shrimps Toriaki</div>
+						<div class="products__item-price">6.99</div>
+					</li>
 					<li class="products__item btn-ripple" style="background-color: #f9887c" onclick="emitMessage('Unable to initiate sell until register is closed', undefined, 'Open Register', function(){ window.location = 'register-open.html'; })">
 						<div class="products__item-title">Another colored</div>
 						<div class="products__item-code">RED</div>
-						<div class="products__item-price">6.99</div>
-					</li>
-					<li class="products__item btn-ripple" style="background-image: url(static/img/products/shrimps.png)">
-						<div class="products__item-title">Shrimps Toriaki</div>
 						<div class="products__item-price">6.99</div>
 					</li>
 					<li class="products__item" style="background-image: url(static/img/products/sushi2.jpg)">
@@ -252,7 +252,7 @@
 						<div class="products__item-code">NO</div>
 						<div class="products__item-title">No Ripple, No Price</div>
 					</li>
-					<li class="products__item text-center" onclick="demoToggleAnimation()"><i class="icon icon-check" id="demoAnimated"></i><div class="products__item-title">Toggle<br>Animations</div></li>
+					<!-- <li class="products__item text-center" onclick="demoToggleAnimation()"><i class="icon icon-check" id="demoAnimated"></i><div class="products__item-title">Toggle<br>Animations</div></li> -->
 				</ul>
 
 				<ul class="pagination">
@@ -347,7 +347,7 @@
 							
 							<div class="fieldset fieldset-lg">
 								<div class="fieldset__label">
-									<label class="fieldset__text padding-right" for="mode">USD</label>
+									<label class="fieldset__text padding-right" for="mode">$</label>
 									<input class="toggle" id="mode" type="checkbox" checked>
 									<label class="fieldset__text padding-left" for="mode">%</label>
 								</div>
@@ -461,8 +461,8 @@
 
 						</div>
 
-						<div class="pos-edit__mods padding-top">
-							<button class="btn btn-lg btn-block btn-primary text-uppercase btn-ripple">Done</button>
+						<div class="pos-edit__mods padding-top text-center">
+							<button class="btn btn-lg btn-go btn-primary text-uppercase btn-ripple">Done</button>
 						</div>
 					</form>
 				</section>
@@ -526,8 +526,8 @@
 							</div>
 						</div>
 
-						<div class="layout__row pos-edit__matrix">
-							<button class="btn btn-lg btn-block btn-primary text-uppercase btn-ripple">Done</button>
+						<div class="layout__row pos-edit__matrix text-center">
+							<button class="btn btn-lg btn-go btn-primary text-uppercase btn-ripple">Done</button>
 						</div>
 					</form>
 				</section>
@@ -547,8 +547,8 @@
 							</div>							
 						</div>
 
-						<div class="layout__row pos-edit__serials">
-							<button class="btn btn-lg btn-block btn-primary text-uppercase btn-ripple">Done</button>
+						<div class="layout__row pos-edit__serials text-center">
+							<button class="btn btn-lg btn-go btn-primary text-uppercase btn-ripple">Done</button>
 						</div>
 
 					</form>
@@ -582,12 +582,12 @@
 		<ul class="menu__items">
 			<li class="menu__item menu__item-active"><a href="pos.html" class="menu__item-link"><i class="icon icon-pos menu__item-icon"></i>Point of Sale</a></li>
 			<li class="menu__item"><a href="orders.html" class="menu__item-link"><i class="icon icon-orders menu__item-icon"></i>Orders</a></li>
-			<li class="menu__item"><a href="pos.html" class="menu__item-link"><i class="icon icon-undo menu__item-icon"></i>Manual Refund</a></li>
+			<li class="menu__item"><a href="pos.html" class="menu__item-link" onclick="return demoManualRefund();"><i class="icon icon-undo menu__item-icon"></i>Manual Refund</a></li>
 			<li class="menu__item"><a href="register-close.html" class="menu__item-link"><i class="icon icon-close menu__item-icon"></i>Close Register</a></li>
 			<li class="menu__item"><a href="payin.html" class="menu__item-link"><i class="icon icon-cc menu__item-icon"></i>Payins / Payouts</a></li>
 			<li class="menu__item"><a href="pos.html" class="menu__item-link"><i class="icon icon-tips menu__item-icon"></i>Tips</a></li>
 			<li class="menu__item"><a href="loyalty.html" class="menu__item-link"><i class="icon icon-loyalty menu__item-icon"></i>Loyalty</a></li>
-			<li class="menu__item"><a href="pos.html" class="menu__item-link"><i class="icon icon-cog menu__item-icon"></i>Settings</a></li>
+			<li class="menu__item"><a href="settings.html" class="menu__item-link"><i class="icon icon-cog menu__item-icon"></i>Settings</a></li>
 			<li class="menu__item"><a href="sync.html" class="menu__item-link"><i class="icon icon-sync menu__item-icon"></i>Synchronize</a></li>
 			<li class="menu__item"><a href="ui-kit.html" class="menu__item-link"><i class="icon icon-bo menu__item-icon"></i>Back Office &bull; UI-Kit</a></li>
 			<li class="menu__item"><a href="pos.html" class="menu__item-link"><i class="icon icon-help menu__item-icon"></i>Help</a></li>

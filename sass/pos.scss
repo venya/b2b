@@ -48,6 +48,24 @@ article.pos {
 		}
 	}
 
+	main.refund-mode {
+		.toolbar-payments {
+			&__secondary {
+				display: none;
+			}
+			&__primary {
+				width: 100%;
+				.btn {
+					background: $color-red;
+					padding-left: $base-double-spacing;
+				}
+			}
+		}
+		.order__item-active {
+			background: $color-red-light;
+		}
+	}
+
 	aside {
 		width: $pos-catalog-width;
 	}
@@ -129,5 +147,16 @@ article.pos-payments {
 	}
 }
 
+//	Settings
+article.settings {
+	aside {
+		width: $menu-width;
+		background: $menu-background;
+	}
+
+	main {
+		width: calc(100% - #{$menu-width});
+	}
+}
 
 

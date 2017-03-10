@@ -7,6 +7,7 @@ $color-blue-superlight: #ecf7fd;
 $color-white: #fff;
 $color-green: #66BB6A;
 $color-red: #FF6431;
+$color-red-light: #ffe5dc;
 $color-silver: #aaa;
 $color-silver-light: #eeeeee;		//#eeeeee is too light | #e8e8e8
 $color-silver-superlight: #f8f8f8;	//#f8f8f8 is too light | #f6f6f6
@@ -169,6 +170,8 @@ $btn-xl-height: $input-xl-height;
 $btn-xl-min-width: $btn-xl-height;
 $btn-xl-padding: $base-double-spacing;
 
+$btn-go-width: 300px;
+
 $btn-default-bg: $color-silver-light;
 $btn-default-text: $color-text;
 $btn-primary-bg: $color-primary;
@@ -231,7 +234,7 @@ $dropdown-label-height: 16px;
 //	Tabs
 $tabs-height: $input-height;
 $tabs-font: $font-base-size;
-$tabs-lg-height: 80px;
+$tabs-lg-height: 60px;
 $tabs-lg-font: $font-lg-size;
 $tabs-background: $color-silver-light;
 $tabs-active-background: $body-background;

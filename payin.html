@@ -28,7 +28,7 @@
 		<section>
 			<form class="form-narrow" method="get" action="payment-receipt.html">
 
-				<div class="labeled-info text-right fieldset-standalone">
+				<div class="labeled-info text-right fieldset-standalone padding2-right">
 					<label>Cash in Drawer:</label>
 					<span class="big">$<span class="xl">102.00</span></span>
 				</div>
@@ -49,15 +49,12 @@
 
 
 				<div class="fieldset fieldset-lg fieldset-bordered fieldset-standalone fieldset-textarea" id="demoNote">
-					<textarea class="input fieldset__textarea" placeholder="Add Notes here"
-						onfocus="toggleClass(demoNote, 'fieldset-focus', true); toggleClass(demoAmount, 'active', false); toggleClass(demoAmount, 'fieldset-focus', false)"
-						onblur="toggleClass(demoNote, 'fieldset-focus', false); toggleClass(demoAmount, 'active', false); toggleClass(demoAmount, 'fieldset-focus', false)"></textarea>
+					<textarea class="input fieldset__textarea" placeholder="Add Notes here"></textarea>
 				</div>
 
-				<div class="fieldset fieldset-lg fieldset-focus fieldset-bordered fieldset-standalone active fieldset-keyboard" id="demoAmount">
+				<div class="fieldset fieldset-lg fieldset-bordered fieldset-standalone active fieldset-keyboard" id="demoAmount">
 					<label class="fieldset__label" for="tendered">Amount Tendered:</label>
-					<input class="input input-xl fieldset__input text-right" id="tendered" required="required" placeholder="0.00"
-						onfocus="toggleClass(demoAmount, 'active', true); toggleClass(demoAmount, 'fieldset-focus', true)">
+					<input class="input input-lg fieldset__input text-right" id="tendered" required="required" placeholder="0.00">
 
 					<div class="keyboard keyboard-4 fieldset-border-top">
 						<div class="keyboard__row">

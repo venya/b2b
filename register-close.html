@@ -56,8 +56,8 @@
 			</section>
 			</div>
 
-			<section class="layout__row">
-				<button class="btn btn-secondary btn-lg btn-block btn-ripple text-uppercase">Print Z-Report</button>
+			<section class="layout__row text-center">
+				<button class="btn btn-secondary btn-lg btn-go btn-ripple">Print Z-Report</button>
 			</section>
 
 
@@ -75,14 +75,18 @@
 
 			<section class="layout__row layout__row-grow">
 				<form class="form-narrow" method="get" action="register-open.html">
-					<div class="fieldset fieldset-lg fieldset-bordered fieldset-standalone">
-						<label class="fieldset__label" for="amount">Closing Amount:</label>
-						<input class="input input-xl fieldset__input text-right" id="amount" value="200.00" placeholder="required" required="required">
+					<div class="fieldset-bordered fieldset-standalone">
+						<div class="fieldset fieldset-lg">
+							<label class="fieldset__label" for="amount">Closing Amount:</label>
+							<input class="input input-xl fieldset__input text-right" id="amount" value="200.00" placeholder="required" required="required">
+						</div>
+						<div class="fieldset-border-top">
+							<link rel="import" href="inc/numpad-xl.html" onload="demoTemplate(this)">
+						</div>						
 					</div>
 
-					<div class="fieldset fieldset-lg fieldset-bordered fieldset-standalone fieldset-note">
-						<i class="icon icon-chat"></i>
-						<textarea class="input fieldset__input" id="amount" placeholder="Click to add a Note"></textarea>
+					<div class="fieldset fieldset-lg fieldset-bordered fieldset-textarea fieldset-standalone fieldset-note">
+						<textarea class="input fieldset__textarea" id="note" placeholder="Register Closing Note"></textarea>
 					</div>
 
 				</form>
@@ -90,8 +94,8 @@
 			</section>
 
 			<section class="layout__row">
-				<div class="form-narrow">
-					<button class="btn btn-lg btn-block btn-primary text-uppercase btn-ripple">Close Register</button>
+				<div class="form-narrow text-center">
+					<button class="btn btn-lg btn-go btn-primary text-uppercase btn-ripple">Close Register</button>
 				</div>
 			</section>
 

@@ -60,6 +60,9 @@
 	&-rounded {
 		@include border-radius($btn-border-radius);
 	}
+	&-go {
+		width: $btn-go-width;
+	}
 
 }
 

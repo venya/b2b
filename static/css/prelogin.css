@@ -252,6 +252,8 @@ hr {
     width: 100%; }
   .btn-rounded {
     border-radius: 5px; }
+  .btn-go {
+    width: 300px; }
 
 input.btn {
   -webkit-appearance: none;
@@ -395,8 +397,7 @@ textarea.input {
     display: block;
     resize: vertical;
     width: 100%;
-    padding: 20px;
-    transition: height 300ms ease-out; }
+    padding: 15px 20px; }
   .fieldset-first {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
