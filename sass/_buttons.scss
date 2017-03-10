@@ -44,12 +44,14 @@
 		height: $btn-lg-height;
 		line-height: $btn-lg-height;
 		min-width: $btn-lg-min-width;
+		padding: 0 $btn-lg-padding;
 	}
 	&-xl {
 		font-size: $btn-xl-text-size;
 		height: $btn-xl-height;
 		line-height: $btn-xl-height;
 		min-width: $btn-xl-min-width;
+		padding: 0 $btn-xl-padding;
 	}
 	&-block {
 		display: block;

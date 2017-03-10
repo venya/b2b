@@ -423,12 +423,14 @@ hr {
     font-size: 19px;
     height: 60px;
     line-height: 60px;
-    min-width: 60px; }
+    min-width: 60px;
+    padding: 0 15px; }
   .btn-xl {
     font-size: 30px;
     height: 80px;
     line-height: 80px;
-    min-width: 80px; }
+    min-width: 80px;
+    padding: 0 20px; }
   .btn-block {
     display: block;
     width: 100%; }
@@ -636,6 +638,7 @@ header .btn.icon, header .btn.alert__close, header .pos-edit__mods .btn.card-sel
     border-right: solid rgba(0, 0, 0, 0.1) 2px;
     cursor: pointer;
     user-select: none;
+    font-size: 14px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap; }
@@ -650,7 +653,8 @@ header .btn.icon, header .btn.alert__close, header .pos-edit__mods .btn.card-sel
     .tabs__item:active {
       border-top: solid white 2px; }
   .tabs-lg .tabs__item {
-    height: 80px; }
+    height: 80px;
+    font-size: 16px; }
     .tabs-lg .tabs__item-value {
       font-size: 24px; }
   .tabs-flex {
@@ -1754,6 +1758,8 @@ textarea.input {
       overflow: hidden; }
   .pos-edit .tabs {
     border-top: 0; }
+    .pos-edit .tabs .tabs__item {
+      text-align: center; }
   .pos-edit .tabbed__panel {
     padding-top: 40px;
     box-sizing: border-box;

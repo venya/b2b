@@ -25,6 +25,10 @@
 
 	.tabs {
 		border-top: 0;
+
+		.tabs__item {
+			text-align: center;
+		}
 	}
 	.tabbed {
 		&__panel {

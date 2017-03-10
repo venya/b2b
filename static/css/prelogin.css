@@ -239,12 +239,14 @@ hr {
     font-size: 19px;
     height: 60px;
     line-height: 60px;
-    min-width: 60px; }
+    min-width: 60px;
+    padding: 0 15px; }
   .btn-xl {
     font-size: 30px;
     height: 80px;
     line-height: 80px;
-    min-width: 80px; }
+    min-width: 80px;
+    padding: 0 20px; }
   .btn-block {
     display: block;
     width: 100%; }
