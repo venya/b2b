@@ -1820,6 +1820,20 @@ textarea.input {
       position: absolute;
       top: 0;
       left: 10px; }
+  .pos-edit__matrix .grid__item {
+    position: relative; }
+  .pos-edit__matrix .grid__icon {
+    position: absolute;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    left: -25px;
+    top: 50%;
+    margin-top: -25px;
+    border-radius: 30px;
+    background: #eeeeee;
+    border: solid #fff 1px; }
   .pos-edit__serials {
     padding-left: 20px;
     padding-right: 20px; }

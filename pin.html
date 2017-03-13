@@ -21,11 +21,11 @@
 
 		<div class="pin">
 			<ul class="pin__display">
-				<li class="pin__display-item pin__display-item-active"></li>
+				<li class="pin__display-item pin__display-item-active" onclick="toggleClass(this, 'pin__display-item-active')"></li>
 				<li class="pin__display-item pin__display-item-active" onclick="toggleClass(demoChar2, 'pin__display-item-active')" id="demoChar2"></li>
 				<li class="pin__display-item" onclick="toggleClass(this, 'pin__display-item-active')"></li>
-				<li class="pin__display-item"></li>
-				<li class="pin__display-item"></li>
+				<li class="pin__display-item" onclick="toggleClass(this, 'pin__display-item-active')"></li>
+				<li class="pin__display-item" onclick="toggleClass(this, 'pin__display-item-active')"></li>
 			</ul>
 			<div class="pin__error hide"id="demoError">
 				<i class="icon icon-clear pin__error-icon" onclick="this.parentElement.className += ' hide'" ></i>

@@ -65,6 +65,25 @@
 			left: $base-spacing;
 		}
 	}
+	&__matrix {
+		.grid__item {
+			position: relative;
+		}
+		.grid__icon {
+			$size: 30px;
+			position: absolute;
+			z-index: 1;
+			width: $size;
+			height: $size;
+			line-height: $size;
+			left: -($base-double-spacing + $size)/2;
+			top: 50%;
+			margin-top: -($base-double-spacing + $size)/2;
+			border-radius: $size;
+			background: $card-background;
+			border: solid $color-white $base-delimiter-width;
+		}
+	}
 
 	&__serials{
 		padding-left: $base-double-spacing;
