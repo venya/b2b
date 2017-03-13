@@ -12,6 +12,12 @@ body {
 
 section {
 	padding: $base-double-spacing;
+
+	// Remove section paddings for child elements:
+	.clear-hmargins {
+		margin-left: -$base-double-spacing;
+		margin-right: -$base-double-spacing;
+	}
 }
 
 .form-narrow {

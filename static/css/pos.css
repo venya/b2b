@@ -42,6 +42,9 @@ body {
 
 section {
   padding: 20px; }
+  section .clear-hmargins {
+    margin-left: -20px;
+    margin-right: -20px; }
 
 .form-narrow {
   margin-left: auto;
