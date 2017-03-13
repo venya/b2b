@@ -57,6 +57,12 @@
 			</section>
 			<hr>
 
+			<section>
+				<p class="labeled-info"><label>Employee:</label>Mr. Seller Name</p>
+				<p class="labeled-info"><label>Store:</label>Main Store</p>
+				<p class="labeled-info"><label>Register:</label>#2 (John's iPad)</p>
+			</section>
+
 		</aside>
 
 
@@ -79,7 +85,7 @@
 							<th class="text-right valign-middle">Item Price</th>
 							<th class="text-right valign-middle">Discount</th>
 							<th class="text-right valign-middle">Total</th>
-							<th class="text-right"><label class="checkbox"><input type="checkbox"><i class="icon"></i></label></th>
+							<th class="text-right" width="7%"><label class="checkbox"><input type="checkbox"><i class="icon"></i></label></th>
 						</tr>
 					</thead>
 					<tbody>
@@ -120,12 +126,27 @@
 			</div>
 
 
-			<section class="layout__row text-center">
-				<button class="btn btn-lg btn-primary">Print Receipt</button>
-				<button class="btn btn-lg btn-default" onclick="demoDialogOpen('email')">Email Receipt</button>
-				<button class="btn btn-lg btn-default">Void</button>
-				<button class="btn btn-lg btn-default">Refund</button>
-			</section>
+			<div class="layout__row cutout-top">
+				<table class="table no-margin">
+					<tbody>
+						<tr><td class="valign-top" rowspan="5"><i class="icon icon-note baseline"></i><span>Order Note text goes here (if present)</span></td>
+							<td class="text-right muted">Subtotal:</td>
+							<td class="text-right">$11,540.54</td>
+							<td width="7%"></td>
+						</tr>
+						<tr><td class="text-right muted">Tax:</td>
+							<td class="text-right">$140.00</td></tr>
+						<tr><td class="text-right muted">Total:</td>
+							<td class="text-right"><b>$12,540.54</b></td></tr>
+					</tbody>
+				</table>
+				<section class="text-center">
+					<button class="btn btn-lg btn-primary">Print Receipt</button>
+					<button class="btn btn-lg btn-default" onclick="demoDialogOpen('email')">Email Receipt</button>
+					<button class="btn btn-lg btn-default">Void</button>
+					<button class="btn btn-lg btn-default">Refund</button>					
+				</section>
+			</div>
 		</main>
 
 	</article>
