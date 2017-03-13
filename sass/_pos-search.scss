@@ -1,0 +1,50 @@
+
+.search {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+
+	//	Disappear animation
+	transition:
+		z-index $base-animation-out step-end,
+		transform $base-animation-out ease-out;
+	transform: translateY(-100%);
+
+	&__input {
+		display: block;
+		padding-left: $base-double-spacing;
+	}
+
+	&__input-wrapper {
+		overflow: hidden;
+	}
+
+
+	&__mask {
+		@include create-mask();
+		@include opacity(0);
+		transition:
+			z-index 0s,
+			opacity $base-animation-in;
+		z-index: -1;
+	}
+
+	// Open Search panel
+
+	&-open {
+		z-index: $Zindex-search;
+		transform: translateY(0);
+		//	Appear animation
+		transition:
+			z-index 0s,
+			transform $base-animation ease-out;
+
+		& + .search__mask {
+			@include opacity($color-mask-opacity);
+			z-index: $Zindex-search - 1;
+		}
+	}
+
+}

@@ -165,7 +165,7 @@
 
 		<aside class="pos-catalog cutout-left">
 			<header class="cutout-left">
-				<div class="header__icons"><button class="btn icon icon-search" title="Search"></button></div>
+				<div class="header__icons"><button class="btn icon icon-search" title="Search" onclick="toggleClass(demoSearch, 'search-open', true)"></button></div>
 				<h1>Category</h1>
 			</header>
 
@@ -265,6 +265,20 @@
 					<li class="pagination__item" title="3"><a href="#" class="pagination__item-link"></a></li>
 				</ul>
 			</section>
+
+			<!-- SEARCH -->
+			<div class="search" id="demoSearch">
+				<header class="search__form">
+					<div class="header__icons">
+						<button class="btn icon icon-search"></button>
+						<button class="btn icon icon-close" onclick="toggleClass(demoSearch, 'search-open', false)"></button>						
+					</div>
+					<div class="search__input-wrapper">
+						<input class="input search__input btn-block" id="demoSearchInput" placeholder="Quick Search">
+					</div>
+				</header>
+			</div>
+			<div class="search__mask" onclick="toggleClass(demoSearch, 'search-open')"></div>
 		</aside>
 
 

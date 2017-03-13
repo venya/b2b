@@ -1346,13 +1346,16 @@ textarea.input {
 .dialog__content {
   display: none;
   width: 500px;
-  position: fixed;
+  position: absolute;
   z-index: 2;
   background: #fff;
   top: 0;
   left: 50%;
   margin-left: -250px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); }
+
+.dialog-fixed .dialog__content {
+  position: fixed; }
 
 .dialog__mask {
   position: fixed;
@@ -1366,7 +1369,8 @@ textarea.input {
   z-index: 1; }
 
 .dialog__body {
-  padding: 20px 20px; }
+  padding: 20px 20px;
+  overflow-y: auto; }
 
 .dialog-open .dialog__content {
   display: block; }
@@ -1383,6 +1387,9 @@ textarea.input {
   left: auto;
   background: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); }
+
+.dialog-help .dialog__body {
+  max-height: calc(100% - 50px); }
 
 .dialog-terminal .dialog__body {
   padding: 80px 20px;
@@ -1845,6 +1852,37 @@ textarea.input {
   .animated .pos-edit.hide {
     display: block !important;
     transform: scale(0); }
+
+.search {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  transition: z-index 200ms step-end, transform 200ms ease-out;
+  transform: translateY(-100%); }
+  .search__input {
+    display: block;
+    padding-left: 20px; }
+  .search__input-wrapper {
+    overflow: hidden; }
+  .search__mask {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #434c55;
+    opacity: 0;
+    transition: z-index 0s, opacity 300ms;
+    z-index: -1; }
+  .search-open {
+    z-index: 10;
+    transform: translateY(0);
+    transition: z-index 0s, transform 300ms ease-out; }
+    .search-open + .search__mask {
+      opacity: 0.8;
+      z-index: 9; }
 
 article.order-details aside {
   width: 300px;

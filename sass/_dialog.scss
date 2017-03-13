@@ -7,13 +7,17 @@
 
 		display: none;
 		width: $dialog-width;
-		position: fixed;
+		position: absolute;
 		z-index: 2;
 		background: $help-panel-background;
 		top: 0;
 		left: 50%;
 		margin-left: $dialog-width/-2;
 		@include box-shadow($dialog-shadow);
+	}
+
+	&-fixed &__content {
+		position: fixed;
 	}
 
 	&__mask {
@@ -24,6 +28,7 @@
 	}
 	&__body {
 		padding: $dialog-vpadding $dialog-hpadding;
+		overflow-y: auto;
 	}
 
 	//	Open Dialog
@@ -47,6 +52,9 @@
 		left: auto;
 		background: $help-panel-background;
 		@include box-shadow($help-panel-shadow);
+	}
+	&-help &__body {
+		max-height: calc(100% - #{$header-height});
 	}
 
 	//	Terminal payment

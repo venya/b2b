@@ -667,13 +667,16 @@ textarea.input {
 .dialog__content {
   display: none;
   width: 500px;
-  position: fixed;
+  position: absolute;
   z-index: 2;
   background: #fff;
   top: 0;
   left: 50%;
   margin-left: -250px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); }
+
+.dialog-fixed .dialog__content {
+  position: fixed; }
 
 .dialog__mask {
   position: fixed;
@@ -687,7 +690,8 @@ textarea.input {
   z-index: 1; }
 
 .dialog__body {
-  padding: 20px 20px; }
+  padding: 20px 20px;
+  overflow-y: auto; }
 
 .dialog-open .dialog__content {
   display: block; }
@@ -704,6 +708,9 @@ textarea.input {
   left: auto;
   background: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); }
+
+.dialog-help .dialog__body {
+  max-height: calc(100% - 150px); }
 
 .dialog-terminal .dialog__body {
   padding: 80px 20px;
