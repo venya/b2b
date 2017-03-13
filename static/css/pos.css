@@ -549,6 +549,23 @@ header .btn.icon, header .btn.alert__close, header .pos-edit__mods .btn.card-sel
       .dropdown-menu__item .icon.pull-right, .dropdown-menu__item .pull-right.alert__close, .dropdown-menu__item .pos-edit__mods .pull-right.card-selected.card-selected-marked:after, .pos-edit__mods .dropdown-menu__item .pull-right.card-selected.card-selected-marked:after, .dropdown-menu__item .pos-edit__matrix .pull-right.card-selected.card-selected-marked:after, .pos-edit__matrix .dropdown-menu__item .pull-right.card-selected.card-selected-marked:after {
         margin-left: 0;
         margin-right: -10px; }
+  .dropdown-menu__search {
+    background: yellow;
+    padding: 0 0;
+    font-size: 0;
+    list-style: none;
+    line-height: 50px; }
+    .dropdown-menu__search-input {
+      border: none;
+      padding-left: 20px !important;
+      vertical-align: top;
+      background: #f8f8f8;
+      width: calc(100% - 50px); }
+    .dropdown-menu__search-btn {
+      vertical-align: top;
+      height: 50px;
+      width: 50px;
+      line-height: 50px; }
   .dropdown-menu__mask {
     position: fixed;
     top: 0;
@@ -1030,7 +1047,8 @@ textarea.input {
     background: #c6e9ff; }
 
 .icon, .alert__close, .pos-edit__mods .card-selected.card-selected-marked:after, .pos-edit__matrix .card-selected.card-selected-marked:after,
-.icon-text {
+.icon-text,
+.dropdown-menu__search-btn {
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -1223,7 +1241,7 @@ textarea.input {
 .cutout-bottom {
   box-shadow: inset 0 -6px 4px -5px rgba(0, 0, 0, 0.2); }
 
-.cutout-top {
+.cutout-top, .dropdown-menu__search-input {
   box-shadow: inset 0 6px 4px -5px rgba(0, 0, 0, 0.2); }
 
 .baseline {

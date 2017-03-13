@@ -44,6 +44,31 @@
 		}
 	}
 
+	&__search {
+		$height: $dropdown-menu-item-height;
+		background: yellow;
+		padding: 0 0;//$base-double-spacing;
+		font-size: 0;
+		list-style: none;
+		line-height: $height;
+
+		&-input {
+			border: none;
+			padding-left: $base-double-spacing !important;
+			vertical-align: top;
+			background: $color-silver-superlight;
+			width: calc(100% - #{$height});
+			@extend .cutout-top;
+		}
+		&-btn {
+			@extend .icon-text;
+			vertical-align: top;
+			height: $height;
+			width: $height;
+			line-height: $height;
+		}
+	}
+
 	&__mask {
 		// z-index: $Zindex-dropdown-mask;
 			// position: fixed;
