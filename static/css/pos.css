@@ -843,7 +843,12 @@ header .btn.icon, header .btn.alert__close, header .pos-edit__mods .btn.card-sel
   padding: 0;
   margin: 0;
   outline: none;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  border: none; }
+  .input-xs {
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px; }
   .input-sm {
     height: 40px;
     line-height: 40px;
@@ -862,6 +867,10 @@ header .btn.icon, header .btn.alert__close, header .pos-edit__mods .btn.card-sel
     background: #eeeeee; }
   .input-white {
     background: #fff; }
+  .input-silver {
+    background: #eeeeee; }
+  .input-transparent {
+    background: transparent; }
   .input-focus-highlight:focus {
     outline: solid #2e99db 2px;
     outline-offset: 0; }

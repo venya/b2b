@@ -11,8 +11,14 @@
 	margin: 0;
 	outline: none;
 	box-sizing: border-box;
+	border: none;
 
 	//	Size options
+	&-xs {
+		height: $input-xs-height;
+		line-height: $input-xs-height;
+		font-size: $input-xs-font-size;
+	}
 	&-sm {
 		height: $input-sm-height;
 		line-height: $input-sm-height;
@@ -43,6 +49,14 @@
 
 	&-white {
 		background: $color-white;
+	}
+
+	&-silver {
+		background: $color-silver-light;
+	}
+
+	&-transparent {
+		background: transparent;
 	}
 
 	&-focus-highlight:focus {
