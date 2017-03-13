@@ -546,6 +546,9 @@ header .btn.icon, header .btn.alert__close, header .pos-edit__mods .btn.card-sel
       position: relative;
       vertical-align: top;
       margin: 5px 5px 0 -10px; }
+      .dropdown-menu__item .icon.pull-right, .dropdown-menu__item .pull-right.alert__close, .dropdown-menu__item .pos-edit__mods .pull-right.card-selected.card-selected-marked:after, .pos-edit__mods .dropdown-menu__item .pull-right.card-selected.card-selected-marked:after, .dropdown-menu__item .pos-edit__matrix .pull-right.card-selected.card-selected-marked:after, .pos-edit__matrix .dropdown-menu__item .pull-right.card-selected.card-selected-marked:after {
+        margin-left: 0;
+        margin-right: -10px; }
   .dropdown-menu__mask {
     position: fixed;
     top: 0;

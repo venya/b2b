@@ -36,6 +36,11 @@
 			position: relative;
 			vertical-align: top;
 			margin: ($dropdown-menu-item-height - $icon-height)/2 $base-small-spacing 0 (-$base-spacing);
+
+			&.pull-right {
+				margin-left: 0;
+				margin-right: -$base-spacing;
+			}
 		}
 	}
 
