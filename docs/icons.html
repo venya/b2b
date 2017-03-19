@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>Icons &bull; eHopper UI-Kit</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+	<link rel="stylesheet" type="text/css" href="../static/css/pos.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/docs.css">
+	<script src="../static/js/demo.js"></script>
+</head>
+
+
+<body class="animated">
+
+<article class="docs">
+	<aside class="left cutout-right">
+		<header class="cutout-right">
+			<a class="btn icon icon-back" href="./" title="Back to UI Docs Index"></a>
+			<h1>UI Docs</h1>
+		</header>
+		<link rel="import" href="../inc/docs-menu.html" onload="demoTemplate(this)">
+	</aside>
+
+	<main class="right">
+		<header class="docs-header">
+			<h1>Icons</h1>
+			<h2>High resolution Icons via Font-based glyphs</h2>
+		</header>
+
+
+		<section>
+			<h1>Icon font</h1>
+			<p>Vector-based icons graphics implemented via custom web-font, which allows to reduce download footprint while maintaining higher possible quality on every resolution (inclung Mac/iOS Retina displays and HiDPI Android devices)</p>
+			<p>Web font loaded automatically inside <code>_icons.scss</code> and loaded locally from following files:</p>
+<pre>
+/static/fonts/<u>icomoon.woff</u>
+/static/fonts/<u>icomoon.ttf</u>
+/static/fonts/<u>icomoon.eot</u>
+/static/fonts/<u>icomoon.svg</u>
+</pre>
+
+			<h2>Icomoon.io</h2>
+			<p>Free online service <a href="http://icomoon.io/app">IcoMoon.io</a> used to generate this files from public icons gallery. Mostly used Google Material Design Icons.</p>
+
+			<h2>Adding New Icons</h2>
+			<ol>
+				<li>Goto <a href="https://icomoon.io/app/#/projects">IcoMoon.io</a> application</li>
+				<li>Import project saved in XML file in project TFS folder</li>
+				<li>Add/Replace glyphs</li>
+				<li>Set unique IDs for new icons</li>
+				<li>Generate Font -> Download</li>
+				<li>Replace static font files (woff, ttf, eot, svg)</li>
+				<li>Insert list of glyphs definitions (looking like <code>.icon-*:before</code>) into <code>_icons.scss</code></li>
+				<li>Recompile SASS sources</li>
+			</ol>
+		</section>
+
+		<section>
+			<h1>How to use icons</h1>
+			<p>Assign <code>.icon</code> class to any inline, block or inline-block element to apply icon font (along with some special syling)</p>
+			<p>Assign additional class, like <code>.icon-<i>pos</i></code> to insert specific icon glyph from available library.</p>
+			<pre><s>&lt;i class="<u>icon icon-pos</u>"></s><s>&lt;/i></s></pre>
+			<p><i class="icon icon-pos"></i></p>
+
+			<p>Icons displayed as inline-block elements with default size of 40&times;40 pixels.</p>
+
+			<h2>Modifiers</h2>
+			<p><code>.icon-sm</code> can be used to make icon smaller (20&times;20 pixels): <i class="icon icon-sm icon-pos"></i></p>
+			<p><code>.baseline</code> to align icon inline with other text (vertical-align: middle)</p>
+			<p>Alternatively you can assign <code>.icon-text</code> instead of <code>.icon</code> to other elements without turning them into inline-blocks, just apply icon font and some rendering optimizations.</p>
+		</section>
+
+		<section>
+			<h1>Available Icons</h1>
+			<p>Applying <code>.icon-<i>name</i></code> result in appending specific glyph via :before content.</p>
+			<p>Where <i>name</i> is one of the ids from table below.</p>
+			<p>When <b>unknown</b> ID spcified, icon will be displayed as following placeholder: <i class="icon baseline"></i> expecially to quickly notice and fix.</p>
+
+			<table class="table">
+				<tr>
+					<td class="table__cell-minimize"></td><td></td>
+					<td class="table__cell-minimize"></td><td></td>
+					<td class="table__cell-minimize"></td><td></td>
+					</tr>
+				<tr><td class="no-vpadding"><i class="icon"></i></td><td>.icon (or unknown ID)</td></tr>
+				<tr>
+					<td class="no-vpadding"><i class="icon icon-time"></i></td><td>.icon-time</td>
+					<td class="no-vpadding"><i class="icon icon-cash"></i></td><td>.icon-cash</td>
+					<td class="no-vpadding"><i class="icon icon-plus"></i></td><td>.icon-plus</td>
+				<tr>
+					<td class="no-vpadding"><i class="icon icon-back"></i></td><td>.icon-back</td>
+					<td class="no-vpadding"><i class="icon icon-caret"></i></td><td>.icon-caret</td>
+					<td class="no-vpadding"><i class="icon icon-caret-up"></i></td><td>.icon-caret-up</td>
+				<tr>
+					<td class="no-vpadding"><i class="icon icon-next"></i></td><td>.icon-next</td>
+					<td class="no-vpadding"><i class="icon icon-note"></i></td><td>.icon-note</td>
+					<td class="no-vpadding"><i class="icon icon-backspace"></i></td><td>.icon-backspace</td>
+				<tr>
+					<td class="no-vpadding"><i class="icon icon-split"></i></td><td>.icon-split</td>
+					<td class="no-vpadding"><i class="icon icon-chat"></i></td><td>.icon-chat</td>
+					<td class="no-vpadding"><i class="icon icon-check"></i></td><td>.icon-check</td>
+				<tr>
+					<td class="no-vpadding"><i class="icon icon-checked"></i></td><td>.icon-checked</td>
+					<td class="no-vpadding"><i class="icon icon-nav-before"></i></td><td>.icon-nav-before</td>
+					<td class="no-vpadding"><i class="icon icon-nav-next"></i></td><td>.icon-nav-next</td>
+				<tr>
+					<td class="no-vpadding"><i class="icon icon-close"></i></td><td>.icon-close</td>
+					<td class="no-vpadding"><i class="icon icon-offline"></i></td><td>.icon-offline</td>
+					<td class="no-vpadding"><i class="icon icon-cc"></i></td><td>.icon-cc</td>
+				<tr>
+					<td class="no-vpadding"><i class="icon icon-bo"></i></td><td>.icon-bo</td>
+					<td class="no-vpadding"><i class="icon icon-delete"></i></td><td>.icon-delete</td>
+					<td class="no-vpadding"><i class="icon icon-walkin"></i></td><td>.icon-walkin</td>
+				<tr>
+					<td class="no-vpadding"><i class="icon icon-exit"></i></td><td>.icon-exit</td>
+					<td class="no-vpadding"><i class="icon icon-collapse"></i></td><td>.icon-collapse</td>
+					<td class="no-vpadding"><i class="icon icon-expand"></i></td><td>.icon-expand</td>
+				<tr>
+					<td class="no-vpadding"><i class="icon icon-help"></i></td><td>.icon-help</td>
+					<td class="no-vpadding"><i class="icon icon-clear"></i></td><td>.icon-clear</td>
+					<td class="no-vpadding"><i class="icon icon-lock"></i></td><td>.icon-lock</td>
+				<tr>
+					<td class="no-vpadding"><i class="icon icon-pos"></i></td><td>.icon-pos</td>
+					<td class="no-vpadding"><i class="icon icon-print"></i></td><td>.icon-print</td>
+					<td class="no-vpadding"><i class="icon icon-delivery"></i></td><td>.icon-delivery</td>
+				<tr>
+					<td class="no-vpadding"><i class="icon icon-lock-open"></i></td><td>.icon-lock-open</td>
+					<td class="no-vpadding"><i class="icon icon-sync"></i></td><td>.icon-sync</td>
+					<td class="no-vpadding"><i class="icon icon-loyalty"></i></td><td>.icon-loyalty</td>
+				<tr>
+					<td class="no-vpadding"><i class="icon icon-menu"></i></td><td>.icon-menu</td>
+					<td class="no-vpadding"><i class="icon icon-more"></i></td><td>.icon-more</td>
+					<td class="no-vpadding"><i class="icon icon-more-v"></i></td><td>.icon-more-v</td>
+				<tr>
+					<td class="no-vpadding"><i class="icon icon-user"></i></td><td>.icon-user</td>
+					<td class="no-vpadding"><i class="icon icon-undo"></i></td><td>.icon-undo</td>
+					<td class="no-vpadding"><i class="icon icon-search"></i></td><td>.icon-search</td>
+				<tr>
+					<td class="no-vpadding"><i class="icon icon-cog"></i></td><td>.icon-cog</td>
+					<td class="no-vpadding"><i class="icon icon-orders"></i></td><td>.icon-orders</td>
+					<td class="no-vpadding"><i class="icon icon-users"></i></td><td>.icon-users</td>
+				<tr>
+					<td class="no-vpadding"><i class="icon icon-texture"></i></td><td>.icon-texture</td>
+					<td class="no-vpadding"><i class="icon icon-tips"></i></td><td>.icon-tips</td>
+					
+			</table>
+
+
+		</section>
+
+	</main>
+
+</article>
+</body>
+</html>
