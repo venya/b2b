@@ -1380,6 +1380,7 @@ textarea.input {
   opacity: 0.8; }
 
 .dialog-help .dialog__content {
+  position: fixed;
   width: 300px;
   right: 0;
   top: 0;

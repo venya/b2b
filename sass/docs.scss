@@ -75,3 +75,15 @@ article.docs {
 		}
 	}
 }
+
+.docs main {
+	ol {
+		list-style: decimal;
+	}
+	ul {
+		list-style: disc;
+	}
+	ol, ul {
+		padding-left: 30px;
+	}
+}

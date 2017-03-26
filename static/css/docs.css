@@ -43,3 +43,12 @@ article.docs main {
   width: 75%; }
   article.docs main section {
     border-bottom: solid rgba(0, 0, 0, 0.1) 1px; }
+
+.docs main ol {
+  list-style: decimal; }
+
+.docs main ul {
+  list-style: disc; }
+
+.docs main ol, .docs main ul {
+  padding-left: 30px; }

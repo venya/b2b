@@ -45,6 +45,7 @@
 
 	//	Help Sidebar
 	&-help &__content {
+		position: fixed;
 		width: $help-panel-width;
 		#{$help-panel-position}: 0;
 		top: 0;

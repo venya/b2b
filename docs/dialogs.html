@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>Dialogs &bull; eHopper UI-Kit</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+	<link rel="stylesheet" type="text/css" href="../static/css/pos.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/docs.css">
+	<script src="../static/js/demo.js"></script>
+</head>
+
+
+<body class="animated">
+
+<article class="docs">
+	<aside class="left cutout-right">
+		<header class="cutout-right">
+			<a class="btn icon icon-back" href="./" title="Back to UI Docs Index"></a>
+			<h1>UI Docs</h1>
+		</header>
+		<link rel="import" href="../inc/docs-menu.html" onload="demoTemplate(this)">
+	</aside>
+
+	<main class="right">
+		<header class="docs-header">
+			<h1>Dialogs</h1>
+			<h2>Modal windows</h2>
+		</header>
+
+
+		<section>
+			<h1>Dialogs as Modal windows</h1>
+			<p>Modals used to represent information in focuses context. User should complete working with dialog content and close it to proceed with rest of the application. That is why semitransparent mask displayed under dialog to dim out screen content.</p>
+			<p>There are no way to display more than one active dialogs to work with. But dialogs can be nested (dialog can be sown above another dialog, and so on).</p>
+<pre>
+&lt;<s>div</s> class=<u>"dialog"</u>>
+	&lt;<s>div</s> class=<u>"dialog__content"</u>>
+		&lt;<s>header</s> class=<u>"header"</u>>
+			&lt;<s>div</s> class=<u>"header__icons"</u>>&lt;<s>i</s> class=<u>"btn icon icon-close dialog__close"</u>>&lt;<s>/i</s>>&lt;<s>/div</s>>
+			&lt;<s>h1</s>>Dialog Header&lt;<s>/h1</s>>
+		&lt;<s>/header</s>>
+		&lt;<s>section</s>>
+			This is Dialog content
+		&lt;<s>/section</s>>
+	&lt;<s>/div</s>>
+&lt;<s>/div</s>>
+&lt;<s>div</s> class=<u>"dialog__mask"</u>>&lt;<s>/div</s>>
+</pre>
+
+			<p><button class="btn btn-primary" onclick="demoDialogOpen('dialog')"><i class="icon icon-next"></i>Show Example</button></p>
+
+			<h3>How to Open?</h3>
+			<p>When dialog HTML structure already presented in DOM, the only thing one should to &mdash; add <code>.dialog-open</code> class to corresponding <code>.dialog</code> element.</p>
+			<p>Transparent backdrop (aka Mask) will be automatically animated when any element having <code>.dialog__mask</code> exists in DOM directly after <code>.dialog</code>.</p>
+			<p>To <b>close</b> dialog - just remove <code>.dialog-open</code> class.</p>
+
+			<h3>Prevent scrolling</h3>
+			<p>When page content allows scrolling of content (like this one, but not regular POS screens) dialog will scroll with content (this allows to see large dialog content).</p>
+			<p>To alter this behaviour just put additional <code>.dialog-fixed</code> class to <code>.dialog</code> element.</p>
+			<pre>&lt;<s>div</s> class=<u>"dialog dialog-fixed"</u>></pre>
+			<p><button class="btn btn-default" onclick="demoDialogOpen('fixed')"><i class="icon icon-next"></i>Fixed Example</button></p>
+		</section>
+
+
+
+		<section>
+			<h1>Help Panel</h1>
+
+			<h3>Help Panel</h3>
+			<p>Help panel is a special case of using dialog. It implemented the same way, but only has an additional <code>.dialog-help</code> class.</p>
+			<p><button class="btn btn-primary" onclick="demoDialogOpen('help')"><i class="icon icon-help"></i>Show help panel</button></p>
+		</section>
+
+
+
+		<section>
+			<h1>Snackbar</h1>
+			<p>Used to display short notification messages without interrupting user tasks. Example: action completed message, some unobtrusive error messages, not-critical notifications.</p>
+			<p><em>Only one</em> message can be displayed at any moment. New message should replace previous one.</p>
+			<p>Snackbar messages should automatically disappear after specified time period, and can be dismitted by user via clicking or tapping.</p>
+
+			<p>
+				<button class="btn btn-primary" onclick="demoSnackbar()">Show message</button>
+				<button class="btn btn-success" onclick="demoSnackbar('success')"><i class="icon icon-check"></i>Success</button>
+				<button class="btn btn-danger" onclick="demoSnackbar('danger')"><i class="icon icon-close"></i>Warning</button>
+				<button class="btn btn-default" onclick="demoSnackbar(undefined, 'Sample Action', function(){ alert('Message handler'); })">With Action<i class="icon icon-next"></i></button>
+			</p>
+
+			<p>See Snackbar component in Google Material Design guidelines.</p>
+<pre>
+&lt;<s>div</s> class=<u>"snackbar"</u>>
+    &lt;<s>div</s> class=<u>"snackbar__message"</u>>Message Text.&lt;<s>/div</s>>
+&lt;<s>/div</s>>
+</pre>
+
+			<p>Optional classes <code>.snackbar-success</code> or <code>.snackbar-danger</code> can be assigned to main element to change appearence.</p>
+			<p>Snackbar message can optionally contain one (and only one!) associated action, as button on the right:</p>
+<pre>
+&lt;<s>div</s> class=<u>"snackbar"</u>>
+    &lt;<s>div</s> class=<u>"snackbar__actions"</u>>&lt;<s>button</s> class=<u>"btn btn-link text-uppercase"</u>>Action&lt;<s>/button</s>>&lt;<s>/div</s>>
+    &lt;<s>div</s> class=<u>"snackbar__message"</u>>Message with action.&lt;<s>/div</s>>
+&lt;<s>/div</s>>
+</pre>
+
+			<p>Note: scripting for snackbar implementation is not part of this library and should be implemented from scratch using chosen framework.</p>
+		</section>
+
+	</main>
+
+</article>
+
+
+	<div class="dialog" id="dialog">
+		<div class="dialog__content">
+			<header class="header">
+			<div class="header__icons"><i class="btn icon icon-close dialog__close"></i></div>
+				<h1>Dialog Header</h1>
+			</header>
+			<section>
+				<p>This is Dialog content.</p>
+				<p>Assign <code>.dialog__close</code> class to any element(s) inside current .dialog scope to make it trigger dialog close. This class has no visual effects.</p>
+				<button class="btn btn-default dialog__close">Close</button>
+			</section>
+		</div>
+	</div>
+	<div class="dialog__mask"></div>
+
+
+
+	<!-- fixed dialog example -->
+	<div class="dialog dialog-fixed" id="fixed">
+		<div class="dialog__content">
+			<header class="header">
+			<div class="header__icons"><i class="btn icon icon-close dialog__close"></i></div>
+				<h1>Fixed Dialog</h1>
+			</header>
+			<section>
+				<p>This is Dialog content.</p>
+				<p>Please note - it will not scroll with page content.</p>
+				<button class="btn btn-default dialog__close">Close</button>
+			</section>
+		</div>
+	</div>
+	<div class="dialog__mask"></div>
+
+	<!-- Help panel -->
+	<div class="dialog dialog-help" id="help">
+		<div class="dialog__content">
+			<div class="dialog__header">
+				<header class="header">
+					<div class="header__icons">
+						<i class="btn icon icon-close dialog__close"></i>
+					</div>
+					<h1>Help</h1>
+				</header>
+			</div>
+			<div class="dialog__body">
+				<p>Help content.</p>
+			</div>
+		</div>
+	</div>
+	<div class="dialog__mask"></div>
+
+
+	<!-- snackbar placeholder -->
+	<div class="snackbar hide">
+		<div class="snackbar__actions"><button class="btn btn-link text-uppercase"></button></div>
+		<div class="snackbar__message">Snackbar Message</div>
+	</div>
+
+
+
+
+</body>
+</html>
