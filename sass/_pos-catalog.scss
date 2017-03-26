@@ -14,6 +14,7 @@
 	font-size: 0;
 
 	&__item {
+		list-style: none;
 		display: inline-block;
 		padding: $base-spacing;
 		border: solid $pos-catalog-border-color $pos-catalog-border-width;

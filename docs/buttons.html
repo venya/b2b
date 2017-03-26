@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>Buttons &bull; eHopper UI-Kit</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+	<link rel="stylesheet" type="text/css" href="../static/css/pos.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/docs.css">
+	<script src="../static/js/demo.js"></script>
+</head>
+
+
+<body class="animated">
+
+<article class="docs">
+	<aside class="left cutout-right">
+		<header class="cutout-right">
+			<a class="btn icon icon-back" href="./" title="Back to UI Docs Index"></a>
+			<h1>UI Docs</h1>
+		</header>
+		<link rel="import" href="./docs-menu.html" onload="demoTemplate(this)">
+	</aside>
+
+	<main class="right">
+		<header class="docs-header">
+			<h1>Buttons</h1>
+			<h2>Building different page structure</h2>
+		</header>
+
+
+		<section>
+			<h2>Basics</h2>
+			<p>Different implementations. Almost any element including link, button, input, div or span can be turned to button by adding <code>.btn</code> class. They will looks the same way:</p>
+
+			<div>
+				<a href="?" class="btn btn-default">Link Button</a>
+				<span href="?" class="btn btn-default">Span</span>
+				<div href="?" class="btn btn-default">Div</div>
+				<button class="btn btn-default">Button</button>
+				<input type="button" class="btn btn-default" value="Input.Button">
+			</div>
+
+<pre>
+&lt;<s>a</s> class=<u>"btn"</u>>Link Button&lt;<s>/a</s>>
+&lt;<s>span</s> class=<u>"btn"</u>>Span&lt;<s>/span</s>>
+&lt;<s>div</s> class=<u>"btn"</u>>Div&lt;<s>/div</s>>
+&lt;<s>button</s> class=<u>"btn"</u>>Button&lt;<s>/button</s>>
+&lt;<s>input</s> type="button" class=<u>"btn btn-default"</u> value="Input Button">
+</pre>
+
+			<p><b>Tip:</b> You can combine basic styling with all of the following options:</p>
+		</section>
+
+		<section>
+			<h2>Size options</h2>
+			<p>There are 3 size options available to choose from: normal, large, extra-large:</p>
+			<p>
+				<button class="btn btn-default">Normal</button>
+				<button class="btn btn-lg btn-default">Large</button>
+				<button class="btn btn-xl btn-default">Extra Large</button>
+			</p>
+
+			<p>Large Variations attained via additional <code>.btn-lg</code> class.</p>
+			<a href="?" class="btn btn-lg btn-default">Link Button</a>
+			<span class="btn btn-lg btn-default">Span</span>
+			<div class="btn btn-lg btn-default">Div</div>
+			<button class="btn btn-lg btn-default">Button</button>
+			<input type="button" class="btn btn-lg btn-default" value="Input.Button">
+			<p>Extra large: with class <code>.btn-xl</code></p>
+
+		</section>
+
+		<section>
+			<h2>Color Options</h2>
+
+			<p>When only <code>.btn</code> class specified we're not setting any color to button, so you can base your own customized buttons on this skeleton.</p>
+
+			<p>Use default color (<code>.btn-default</code>) to make button color persistent and not browser-dependable:</p>
+			<p>
+				<button class="btn">Unstyled</button>
+				<button class="btn btn-default">Default Color</button>
+			</p>
+
+
+			<p>Styling via additional <code>.btn-default</code>, <code>.btn-primary</code>, <code>.btn-secondary</code>, <code>.btn-success</code>, <code>.btn-white</code> and <code>.btn-link</code> (for trasparent text-like appearence)</p>
+			<p>
+				<button class="btn btn-default">Default</button>
+				<button class="btn btn-primary">Primary</button>
+				<button class="btn btn-secondary">Secondary</button>
+				<button class="btn btn-success">Success</button>
+				<button class="btn btn-danger">Danger</button>
+				<button class="btn btn-white">White</button>
+				<button class="btn btn-link">Link</button>
+			</p>
+			</section>
+
+
+			<section>
+			<h2>Additional Styling</h2>
+			<p>Styling options: <code>.btn-rounded</code>, with <code>.icon</code> inside, <code>.btn.icon</code></p>
+			<p>
+				<button class="btn btn-default btn-rounded">Rounded</button>
+				<button class="btn btn-default btn-ripple">With Ripple effect</button>
+			</p>
+
+			<p>Icons can be placed inside button (except <code>&lt;input type=button/submit/cancel></code> where no child elements allowed)</p>
+			<p>
+				<button class="btn btn-default"><i class="icon"></i>With Icon</button>
+			</p>
+
+			<p>Or you can combine <code>.btn</code> and <code>.icon</code> styles on single element, when button contain only icon without text:</p>
+			<p>
+				<a class="btn icon" title="Icon button"></a>
+			</p>
+
+			<p><code>.btn-block</code> used to turn button into block-level element, and make it spawn all available horizontal space:</p>
+			<button class="btn btn-default btn-block">Block Button</button>
+
+		</section>
+
+	</main>
+
+</article>
+</body>
+</html>
