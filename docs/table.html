@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>Tables and Grids &bull; eHopper UI-Kit</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+	<link rel="stylesheet" type="text/css" href="../static/css/pos.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/docs.css">
+	<script src="../static/js/demo.js"></script>
+</head>
+
+
+<body class="animated">
+
+<article class="docs">
+	<aside class="left cutout-right">
+		<header class="cutout-right">
+			<a class="btn icon icon-back" href="./" title="Back to UI Docs Index"></a>
+			<h1>UI Docs</h1>
+		</header>
+		<link rel="import" href="./docs-menu.html" onload="demoTemplate(this)">
+	</aside>
+
+	<main class="right">
+		<header class="docs-header">
+			<h1>Tables and Grids</h1>
+			<h2>Show data in tabular format</h2>
+		</header>
+
+
+		<section>
+			<h1>Tables</h1>
+			<p>Used to display data in tabular format.</p>
+
+			<h2>Basic</h2>
+			<p>Use regular HTML <code>&lt;table></code> with basic class <code>.table</code>.</p>
+			<p>Put table header in <code>&lt;thead></code> and data rows inside <code>&lt;tbody></code> (they have different styling).</p>
+<pre>
+&lt;<s>div</s> class=<u>"alert"</u>&gt;
+    Simple alert message
+&lt;<s>/div</s>&gt;
+</pre>
+
+			<p>It will looks like this:</p>
+
+			<table class="table">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Title</th>
+						<th class="text-right">Value</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr><td>1</td><td>First Example</td><td class="text-right">10.00</td></tr>
+					<tr><td>2</td><td>Second Row</td><td class="text-right">200.00</td></tr>
+				</tbody>
+			</table>
+
+
+
+			<h2>Additional Table styling</h2>
+			<h3>Hover</h3>
+			<p><code>.table-hover</code> modified can be added to table element to show hover mouse effects on rows. This is used when user can click entire table row for executing some action. That is why pointer cursor diplayed and they have :active effect.</p>
+			<p>Please note, hover effects applied only to <code>&lt;tbody></code></p>
+			<p>Example:</p>
+
+			<table class="table table-hover">
+				<thead>
+					<tr><th>ID</th><th>Title</th></tr>
+				</thead>
+				<tbody>
+					<tr><td>1</td><td>First line</td></tr>
+					<tr><td>2</td><td>Second row</td></tr>
+					<tr><td>3</td><td>Last third row</td></tr>
+				</tbody>
+			</table>
+
+
+			<h2>Striped</h2>
+			<p>Interleved background color for even/odd rows. Add <code>.table-striped</code> class to table. This effect can be combined with others, eg hover.</p>
+			<table class="table table-striped">
+				<thead>
+					<tr><th>ID</th><th>Title</th></tr>
+				</thead>
+				<tbody>
+					<tr><td>1</td><td>First (Odd) line</td></tr>
+					<tr><td>2</td><td>Even row</td></tr>
+					<tr><td>3</td><td>One more Odd row</td></tr>
+					<tr><td>4</td><td>Last</td></tr>
+				</tbody>
+			</table>
+
+
+			<h2>Bigger size</h2>
+			<p>Assign <code>.table-lg</code> to increase text size and table paddings for more spacier data presentation.</p>
+
+			<table class="table table-lg table-hover">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Title</th>
+						<th class="text-right">Value</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr><td>1</td><td>First Example</td><td class="text-right">10.00</td></tr>
+					<tr><td>2</td><td>Second Row</td><td class="text-right">200.00</td></tr>
+				</tbody>
+			</table>
+
+
+
+			<h2>Individual cells</h2>
+
+			<h2>Alignment</h2>
+			<p><b>Horizontal</b> alignment defaults to left. You can change whit via additional classed assigned to TD or TH: <code>.text-left</code>, <code>.text-center</code>, <code>.text-right</code></p>
+			<p><b>Vertical</b> alignment defaults to middle. You can change whit via additional classed assigned to TD or TH: <code>.valign-top</code>, <code>.valign-middle</code>, <code>.valign-bottom</code></p>
+
+			<h2>Narrow column</h2>
+			<p>Sometimes there is need to limit column width to minimal possible (eg: when it contain only one icon or checkbox). You can add <code>.table__cell-minimize</code></p>
+
+
+			<h2>First/Last cell spacing</h2>
+			<p>You can selectively increase left padding for cells in first column, and right margin in last column. Use corresponding cell classes <code>.table__cell-first</code> or <code>.table__cell-last</code></p>
+			<p>This is useful when table inserted directly into page or modal dialog spawning from edge to edge (without parent with horizontal paddings).</p>
+			<p><button class="btn btn-primary" onclick="demoDialogOpen('dialog')"><i class="icon icon-next"></i>Show Example</button></p>
+
+		</section>
+
+
+
+		<section>
+			<h1>Grids</h1>
+			<p>Used for custom layouts.</p>
+
+		</section>
+
+	</main>
+
+</article>
+
+
+	<div class="dialog dialog-fixed" id="dialog">
+		<div class="dialog__content">
+			<header class="header">
+			<div class="header__icons"><i class="btn icon icon-close dialog__close"></i></div>
+				<h1>Edte-to-edge Table</h1>
+			</header>
+			<table class="table table-striped">
+				<thead>
+					<tr><th class="table__cell-first">Title</th><th class="text-right table__cell-last">ID</th></tr>
+				</thead>
+				<tbody>
+					<tr><td class="table__cell-first">First (Odd) line</td><td class="text-right table__cell-last">1</td></tr>
+					<tr><td class="table__cell-first">Even row</td><td class="text-right table__cell-last">2</td></tr>
+					<tr><td class="table__cell-first">One more Odd row</td><td class="text-right table__cell-last">3</td></tr>
+					<tr><td class="table__cell-first">Last</td><td class="text-right table__cell-last">4</td></tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="dialog__mask"></div>
+
+
+</body>
+</html>
