@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>Form controls &bull; eHopper UI-Kit</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+	<link rel="stylesheet" type="text/css" href="../static/css/pos.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/docs.css">
+	<script src="../static/js/demo.js"></script>
+</head>
+
+
+<body class="animated">
+
+<article class="docs">
+	<aside class="left cutout-right">
+		<header class="cutout-right">
+			<a class="btn icon icon-back" href="./" title="Back to UI Docs Index"></a>
+			<h1>UI Docs</h1>
+		</header>
+		<link rel="import" href="./docs-menu.html" onload="demoTemplate(this)">
+	</aside>
+
+	<main class="right">
+		<header class="docs-header">
+			<h1>Form controls</h1>
+			<h2>Different input controls</h2>
+		</header>
+
+		<section>
+			<h2>Related</h2>
+			<p>See <a href="buttons.html">Buttons</a></p>
+		</section>
+
+
+		<section>
+			<h1>Switches</h1>
+			<p>Checkboxes <code>.checkbox</code></p>
+			<p>
+				<label class="checkbox"><input type="checkbox" class="checkbox"><i class="icon"></i>Checkbox</label>
+				<label class="checkbox"><input type="checkbox" class="checkbox" checked><i class="icon"></i>Checked</label>
+				<label class="checkbox checkbox-success"><input type="checkbox" class="checkbox" checked><i class="icon"></i>Success</label>
+				<label class="checkbox"><input type="checkbox" class="checkbox" disabled><i class="icon"></i>Disabled</label>
+			</p>
+
+			<p>Radio buttons <code>.radio</code></p>
+			<p>
+				<label class="radio"><input type="radio" name="radio" class="radio"><i class="icon"></i>Radio</label>
+				<label class="radio"><input type="radio" name="radio" class="radio" checked><i class="icon"></i>Radio selected</label>
+				<label class="radio radio-success"><input type="radio" name="radio" class="radio"><i class="icon"></i>Success</label>
+				<label class="radio"><input type="radio" name="radio" class="radio" disabled><i class="icon"></i>Disabled</label>
+			</p>
+
+			<p>Checkboxes stylized to Toggle switches <code>.toggle</code></p>
+			<p>
+				<label><input type="checkbox" class="toggle">Off</label>
+				<label><input type="checkbox" class="toggle" checked>On</label>
+				<label><input type="checkbox" class="toggle toggle-danger" checked>Danger</label>
+				<label><input type="checkbox" class="toggle toggle-success" checked>Success</label>
+				<label><input type="checkbox" class="toggle" disabled>Disabled</label>
+			</p>
+		</section>
+
+
+		<section>
+			<h1>Dropowns</h1>
+
+			<p>Replacement for standard HTML <code>&lt;select></code></p>
+
+			<p>Base element should have <code>.dropdown</code> class and have inside following components:</p>
+			<ul class="ul">
+				<li><code>.dropdown__selected</code> representing currently selected item and/or title. Can contain optional icon (<code>.dropdown__selected-icon</code>)</li>
+				<li><code>.dropdown-menu</code> with available items</li>
+				<li><code>.dropdown-menu__mask</code> (optional) background mask, that appears when dropdown is open</li>
+			</ul>
+
+<pre>
+&lt;<s>div</s> class=<u>"dropdown"</u>>
+    &lt;<s>div</s> class=<u>"dropdown__selected"</u>>
+        &lt;<s>div</s> class=<u>"icon dropdown__selected-icon"</u>>&lt;<s>/div</s>&gt;
+        &lt;<s>div</s> class=<u>"dropdown__selected-label"</u>>Option:&lt;<s>/div</s>&gt;
+        &lt;<s>div</s> class=<u>"dropdown__selected-value"</u>>With Icon&lt;<s>/div</s>&gt;
+    &lt;<s>/div</s>>
+    &lt;<s>ul</s> class=<u>"dropdown-menu"</u>>
+        &lt;<s>li</s> class=<u>"dropdown-menu__item"</u>>Option 1&lt;<s>/li</s>&gt;
+        &lt;<s>li</s> class=<u>"dropdown-menu__item"</u>>Option 2&lt;<s>/li</s>&gt;
+    &lt;<s>/ul</s>>
+    &lt;<s>div</s> class=<u>"dropdown-menu__mask"</u>>&lt;<s>/div</s>&gt;
+&lt;<s>/div</s>>
+</pre>
+
+			<p>
+			<div class="dropdown">
+				<div class="dropdown__selected">Simple Dropdown</div>
+				<div class="dropdown-menu">
+					<li class="dropdown-menu__item">Option 1</li>
+					<li class="dropdown-menu__item">Option 2</li>
+				</div>
+			</div>
+			<div class="dropdown">
+				<div class="dropdown__selected">Lightboxed</div>
+				<div class="dropdown-menu">
+					<li class="dropdown-menu__item">Option 1</li>
+					<li class="dropdown-menu__item">Option 2</li>
+				</div>
+				<div class="dropdown-menu__mask"></div>
+			</div>
+			<div class="dropdown dropdown-white">
+				<div class="dropdown__selected">White Version</div>
+				<div class="dropdown-menu">
+					<li class="dropdown-menu__item">Option 1</li>
+					<li class="dropdown-menu__item">Option 2</li>
+				</div>
+			</div>
+			<div class="dropdown">
+				<div class="dropdown__selected">
+					<div class="dropdown__selected-label">Label:</div>
+					<div class="dropdown__selected-value">Value</div>
+				</div>
+				<div class="dropdown-menu">
+					<li class="dropdown-menu__item">Option 1</li>
+					<li class="dropdown-menu__item">Option 2</li>
+				</div>
+			</div>
+			<div class="dropdown">
+				<div class="dropdown__selected">
+					<div class="icon dropdown__selected-icon"></div>
+					<div class="dropdown__selected-label">Option:</div>
+					<div class="dropdown__selected-value">With Icon</div>
+				</div>
+			</div>
+			</p>
+
+			<p><b>Note</b> JavaScript for controlling this component should be developed for selected framework.</p>
+
+		</section>
+
+
+	</main>
+
+</article>
+
+
+	<div class="dialog dialog-fixed" id="dialog">
+		<div class="dialog__content">
+			<header class="header">
+			<div class="header__icons"><i class="btn icon icon-close dialog__close"></i></div>
+				<h1>Edte-to-edge Table</h1>
+			</header>
+			<table class="table table-striped">
+				<thead>
+					<tr><th class="table__cell-first">Title</th><th class="text-right table__cell-last">ID</th></tr>
+				</thead>
+				<tbody>
+					<tr><td class="table__cell-first">First (Odd) line</td><td class="text-right table__cell-last">1</td></tr>
+					<tr><td class="table__cell-first">Even row</td><td class="text-right table__cell-last">2</td></tr>
+					<tr><td class="table__cell-first">One more Odd row</td><td class="text-right table__cell-last">3</td></tr>
+					<tr><td class="table__cell-first">Last</td><td class="text-right table__cell-last">4</td></tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="dialog__mask"></div>
+
+
+</body>
+</html>
