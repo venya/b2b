@@ -183,6 +183,9 @@ hr {
 .bg-danger {
   background: #FF6431 !important; }
 
+.bg-white {
+  background: #fff; }
+
 .pull-right {
   float: right !important; }
 
@@ -200,9 +203,6 @@ hr {
 
 .text-right {
   text-align: right !important; }
-
-.bg-white {
-  background: #fff; }
 
 .labeled-info {
   font-size: 16px; }
