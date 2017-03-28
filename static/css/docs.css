@@ -44,11 +44,12 @@ article.docs main {
   article.docs main section {
     border-bottom: solid rgba(0, 0, 0, 0.1) 1px; }
 
-.docs main ol {
+ol.ol,
+ul.ul {
+  padding-left: 30px; }
+
+ol.ol {
   list-style: decimal; }
 
-.docs main ul {
+ul.ul {
   list-style: disc; }
-
-.docs main ol, .docs main ul {
-  padding-left: 30px; }

@@ -1538,17 +1538,20 @@ textarea.input {
 .grid-2-col .grid__item {
   float: left;
   width: 50%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  list-style: none; }
 
 .grid-3-col .grid__item {
   float: left;
   width: 33.33333%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  list-style: none; }
 
 .grid-4-col .grid__item {
   float: left;
   width: 25%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  list-style: none; }
 
 .grid-normal-spacing {
   margin-right: -10px; }

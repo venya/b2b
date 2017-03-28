@@ -76,14 +76,13 @@ article.docs {
 	}
 }
 
-.docs main {
-	ol {
-		list-style: decimal;
-	}
-	ul {
-		list-style: disc;
-	}
-	ol, ul {
-		padding-left: 30px;
-	}
+ol.ol,
+ul.ul {
+	padding-left: 30px;
+}
+ol.ol {
+	list-style: decimal;
+}
+ul.ul {
+	list-style: disc;
 }

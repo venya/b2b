@@ -133,7 +133,30 @@
 
 		<section>
 			<h1>Grids</h1>
-			<p>Used for custom layouts.</p>
+			<p>Used for custom layouts in 2, 3 or 4 columns, that can have multiple rows when number of element more than fits in one row. Useful cor .card	layouts</p>
+			<p>They structured from container (base class <code>.grid</code> with column number specified <code>.grid-3-col</code>) with multiple cells (<code>.grid__item</code>) inside, that can have spacing or not.</p>
+
+			<p>Example: 3 columns, no spacing: <code>.grid .grid-3-col</code></p>
+			<ul class="grid grid-3-col">
+				<li class="grid__item"><div class="alert no-margin">Cell-1</div></li>
+				<li class="grid__item"><div class="alert alert-info no-margin">Cell-2</div></li>
+				<li class="grid__item"><div class="alert no-margin">Cell-3</div></li>
+				<li class="grid__item"><div class="alert alert-info no-margin">Cell-4</div></li>
+			</ul>
+
+			<p>2 columns, large spacing:  <code>.grid .grid-2-columns .grid-double-spacing</code></p>
+			<ul class="grid grid-2-col grid-double-spacing">
+				<li class="grid__item"><div class="alert no-margin">Cell-1</div></li>
+				<li class="grid__item"><div class="alert alert-info no-margin">Cell-2</div></li>
+			</ul>
+
+			<p>4 columns, regular spacing:  <code>.grid .grid-4-columns .grid-normal-spacing</code></p>
+			<ul class="grid grid-4-col grid-normal-spacing">
+				<li class="grid__item"><div class="alert no-margin">Cell-1</div></li>
+				<li class="grid__item"><div class="alert alert-info no-margin">Cell-2</div></li>
+				<li class="grid__item"><div class="alert no-margin">Cell-3</div></li>
+				<li class="grid__item"><div class="alert alert-info no-margin">Cell-4</div></li>
+			</ul>
 
 		</section>
 
