@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>Toolbars &bull; eHopper UI-Kit</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+	<link rel="stylesheet" type="text/css" href="../static/css/pos.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/docs.css">
+	<script src="../static/js/demo.js"></script>
+</head>
+
+
+<body class="animated">
+
+<article class="docs">
+	<aside class="left cutout-right">
+		<header class="cutout-right">
+			<a class="btn icon icon-back" href="./" title="Back to UI Docs Index"></a>
+			<h1>UI Docs</h1>
+		</header>
+		<link rel="import" href="./docs-menu.html" onload="demoTemplate(this)">
+	</aside>
+
+	<main class="right">
+		<header class="docs-header">
+			<h1>Toolbar</h1>
+			<h2>Horizontal collection of inputs and filters</h2>
+		</header>
+
+
+		<section>
+
+			<h2>Basic structure</h2>
+			<p>Toolbar is a wrapper to organize multiple equal-height cells into perfectly aligned row. It takes full row of horizontal space.</p>
+
+			<div class="toolbar">
+				<div class="toolbar__item">
+					<div class="dropdown w100">
+						<div class="dropdown__selected">
+							<div class="dropdown__selected-label">First:</div>
+							<div class="dropdown__selected-value">Dropdown</div>
+						</div>
+						<div class="dropdown-menu">
+							<li class="dropdown-menu__item">Option 1</li>
+							<li class="dropdown-menu__item">Option 2</li>
+						</div>
+						<div class="dropdown-menu__mask"></div>
+					</div>
+				</div>
+				<div class="toolbar__item">
+					<div class="dropdown w100">
+						<div class="dropdown__selected">Simple Dropdown</div>
+						<div class="dropdown-menu">
+							<li class="dropdown-menu__item">Option 1</li>
+							<li class="dropdown-menu__item">Option 2</li>
+						</div>
+						<div class="dropdown-menu__mask"></div>
+					</div>
+				</div>
+				<div class="toolbar__item">
+					<button class="btn btn-lg btn-default">Button</button>
+				</div>
+			</div>
+
+<pre>
+&lt;<s>div</s> class=<u>"toolbar"</u>>
+    &lt;<s>div</s> class=<u>"toolbar__item"</u>>Component 1&lt;<s>/div</s>>
+    &lt;<s>div</s> class=<u>"toolbar__item"</u>>Component 2&lt;<s>/div</s>>
+&lt;<s>/div</s>>	
+</pre>
+		</section>
+
+
+		<section>
+			<h2>Options</h2>
+			<p>Additional modifiers can be assigned to main <code>.toolbar</code> element</p>
+
+			<h3>Cells Autowidth</h3>
+			<p>Add class <code>.toolbar-flex</code> to make cells fill entire space</p>
+			<p>You can specify your own desired width for every cell (in pixels or percents) or use predefined <code>.w50</code> and <code>.w100</code> classes for 50%/100%.</p>
+
+<pre>
+&lt;<s>div</s> class=<u>"toolbar tolbar-flex"</u>>
+    &lt;<s>div</s> class=<u>"toolbar__item w50"</u>>Component 1&lt;<s>/div</s>>
+    &lt;<s>div</s> class=<u>"toolbar__item w50"</u>>Component 2&lt;<s>/div</s>>
+&lt;<s>/div</s>>	
+</pre>
+
+			<div class="toolbar toolbar-flex">
+				<div class="toolbar__item w50">
+					<div class="dropdown w100">
+						<div class="dropdown__selected">
+							<div class="dropdown__selected-label">First:</div>
+							<div class="dropdown__selected-value">Dropdown</div>
+						</div>
+						<div class="dropdown-menu">
+							<li class="dropdown-menu__item">Option 1</li>
+							<li class="dropdown-menu__item">Option 2</li>
+						</div>
+						<div class="dropdown-menu__mask"></div>
+					</div>
+				</div>
+				<div class="toolbar__item w50">
+					<div class="dropdown w100">
+						<div class="dropdown__selected">Simple Dropdown</div>
+						<div class="dropdown-menu">
+							<li class="dropdown-menu__item">Option 1</li>
+							<li class="dropdown-menu__item">Option 2</li>
+						</div>
+						<div class="dropdown-menu__mask"></div>
+					</div>
+				</div>
+				<div class="toolbar__item">
+					<button class="btn btn-lg btn-default">Button</button>
+				</div>
+			</div>
+
+			<h2>Horizontal delimiter</h2>
+			<p>To visually separate toolbar from following content you can add bottom border via class <code>.toolbar-delimiter</code></p>
+
+			<div class="toolbar toolbar-delimiter">
+				<div class="toolbar__item">
+					<div class="dropdown w100">
+						<div class="dropdown__selected">
+							<div class="dropdown__selected-label">First:</div>
+							<div class="dropdown__selected-value">Dropdown</div>
+						</div>
+					</div>
+				</div>
+				<div class="toolbar__item">
+					<div class="dropdown w100">
+						<div class="dropdown__selected">Simple Dropdown</div>
+						<div class="dropdown-menu__mask"></div>
+					</div>
+				</div>
+				<div class="toolbar__item">
+					<button class="btn btn-lg btn-default">Button</button>
+				</div>
+			</div>
+
+		</section>
+
+
+
+	</main>
+
+</article>
+
+
+
+</body>
+</html>
