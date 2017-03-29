@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>Inputs &bull; eHopper UI-Kit</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+	<link rel="stylesheet" type="text/css" href="../static/css/pos.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/docs.css">
+	<script src="../static/js/demo.js"></script>
+</head>
+
+
+<body class="animated">
+
+<article class="docs">
+	<aside class="left cutout-right">
+		<header class="cutout-right">
+			<a class="btn icon icon-back" href="./" title="Back to UI Docs Index"></a>
+			<h1>UI Docs</h1>
+		</header>
+		<link rel="import" href="./docs-menu.html" onload="demoTemplate(this)">
+	</aside>
+
+	<main class="right">
+		<header class="docs-header">
+			<h1>Inputs</h1>
+			<h2>Form elements</h2>
+		</header>
+
+
+		<section>
+
+			<h2>Basic usage</h2>
+			<p>Add basic <code>.input</code> class to any <code>&lt;input></code>, <code>&lt;textarea></code> or <code>&lt;select></code> element.</p>
+			<p></p>
+
+			<p>
+				<input class="input input-focus-highlight" placeholder="Enter something" autofocus>
+				<select class="input input-focus-highlight"><option>Select Me<option>Or me</select>
+			</p>
+
+		</section>
+
+
+		<section>
+			<h2>Options</h2>
+			<h3>Size</h3>
+			<p>5 sizes available: normal, small <code>.input-sm</code>, extra-small <code>.input-xs</code>, large <code>.input-lg</code> and extra large <code>.input-xl</code></p>
+
+			<p><input class="input input-xs" placeholder="Extra small"></p>
+			<p><input class="input input-sm" placeholder="Small"></p>
+			<p><input class="input" placeholder="Normal"></p>
+			<p><input class="input input-lg" placeholder="Large"></p>
+			<p><input class="input input-xl" placeholder="Extra Large"></p>
+
+
+			<h3>Colors</h3>
+			<p>
+			Additional styling classes:<br>
+				<code></code> Unstyled<br>
+				<code>.input-default</code> Default light gray<br>
+				<code>.input-white</code> White background<br>
+				<code>.input-silver</code> Silver gray<br>
+				<code>.input-transparent</code> Transparent<br>
+			</p>
+
+			<p>
+				<input class="input" placeholder="Unstyled">
+				<input class="input input-default" placeholder="Default">
+				<input class="input input-white" placeholder="White">
+				<input class="input input-silver" placeholder="Silver">
+				<input class="input input-transparent" placeholder="Transparent">
+			</p>
+
+
+			<h3>Highlight focus</h3>
+			<p>Add following class to have blue outline when focus in input <code>.input-focus-highlight</code></p>
+			<input class="input input-focus-highlight" placeholder="Click me">
+
+			<h3>Full width</h3>
+			<p>You can add <code>.w100</code> class to make input full-with</p>
+			<input class="input input-default w100" placeholder="Full width">
+		</section>
+
+
+
+
+	</main>
+
+</article>
+
+
+
+</body>
+</html>
